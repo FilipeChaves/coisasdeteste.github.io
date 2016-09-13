@@ -109,7 +109,7 @@ img.concept:hover, img.conceptHover, img.concept-active
 
 div.conceptSymbol
 {
-	background-image: url('../img/symbols/ConceptSymbol.png');
+	background: url('../img/symbols/ConceptSymbol.png') no-repeat;
 	position: absolute;
 	top: 40.96%;
 	left: 10.24%;
@@ -120,9 +120,9 @@ div.conceptSymbol
 	background-size: contain;
 }
 
-div.conceptSymbol:hover, img.conceptSymbolHover
+div.conceptSymbol:hover, div.conceptSymbolHover
 {
-	background-image: url('../img/symbols/ConceptSymbolHover.png');
+	background: url('../img/symbols/ConceptSymbolHover.png') no-repeat;
 	background-size: contain;
 }
 
@@ -142,7 +142,7 @@ img.edition:hover, img.editionHover, img.edition-active
 
 div.editionSymbol
 {
-	background: url('../img/symbols/EditionSymbol.png');
+	background: url('../img/symbols/EditionSymbol.png') no-repeat;
 	position: absolute;
 	top: 24.12%;
 	left: 16.98%;
@@ -153,9 +153,9 @@ div.editionSymbol
 	background-size: contain;
 }
 
-div.editionSymbol:hover, img.editionSymbolHover
+div.editionSymbol:hover, div.editionSymbolHover
 {
-	background: url('../img/symbols/EditionSymbolHover.png');
+	background: url('../img/symbols/EditionSymbolHover.png') no-repeat;
 	background-size: contain;
 }
 
@@ -175,7 +175,7 @@ img.gallery:hover, img.galleryHover, img.gallery-active
 
 div.gallerySymbol
 {
-	background: url('../img/symbols/GallerySymbol.png');
+	background: url('../img/symbols/GallerySymbol.png') no-repeat;
 	position: absolute;
 	top: 11.05%;
 	left: 26.04%;
@@ -186,9 +186,9 @@ div.gallerySymbol
 	background-size: contain;
 }
 
-div.gallerySymbol:hover, img.gallerySymbolHover
+div.gallerySymbol:hover, div.gallerySymbolHover
 {
-	background: url('../img/symbols/GallerySymbolHover.png');
+	background: url('../img/symbols/GallerySymbolHover.png') no-repeat;
 	background-size: contain;
 }
 
@@ -208,7 +208,7 @@ img.information:hover, img.informationHover, img.information-active
 
 div.informationSymbol
 {
-	background: url('../img/symbols/InformationSymbol.png');
+	background: url('../img/symbols/InformationSymbol.png') no-repeat;
 	position: absolute;
 	top: 11.05%;
 	left: 60.10%;
@@ -219,9 +219,9 @@ div.informationSymbol
 	background-size: contain;
 }
 
-div.informationSymbol:hover, img.informationSymbolHover
+div.informationSymbol:hover, div.informationSymbolHover
 {
-	background: url('../img/symbols/InformationSymbolHover.png');
+	background: url('../img/symbols/InformationSymbolHover.png') no-repeat;
 	background-size: contain;
 }
 
@@ -241,7 +241,7 @@ img.program:hover, img.programHover, img.program-active
 
 div.programSymbol
 {
-	background: url('../img/symbols/ProgramSymbol.png');
+	background: url('../img/symbols/ProgramSymbol.png') no-repeat;
 	position: absolute;
 	top: 24.12%;
 	left: 69.01%;
@@ -252,9 +252,9 @@ div.programSymbol
 	background-size: contain;
 }
 
-div.programSymbol:hover, img.programSymbolHover
+div.programSymbol:hover, div.programSymbolHover
 {
-	background: url('../img/symbols/ProgramSymbolHover.png');
+	background: url('../img/symbols/ProgramSymbolHover.png') no-repeat;
 	background-size: contain;
 }
 
@@ -274,7 +274,7 @@ img.tickets:hover, img.ticketsHover, img.tickets-active
 
 div.ticketsSymbol
 {
-	background: url('../img/symbols/TicketsSymbol.png');
+	background: url('../img/symbols/TicketsSymbol.png') no-repeat;
 	position: absolute;
 	top: 40.96%;
 	left: 75.57%;
@@ -285,9 +285,9 @@ div.ticketsSymbol
 	background-size: contain;
 }
 
-div.ticketsSymbol:hover, img.ticketsSymbolHover
+div.ticketsSymbol:hover, div.ticketsSymbolHover
 {
-	background: url('../img/symbols/TicketsSymbolHover.png');
+	background: url('../img/symbols/TicketsSymbolHover.png') no-repeat;
 	background-size: contain;
 }
 
