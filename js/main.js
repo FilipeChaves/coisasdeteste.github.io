@@ -51,8 +51,8 @@ function fadeout(){
 	$('img.arvore').addClass("turnTransparent");
 	
 	$('img.mandala').fadeOut(1000, "linear");
-	$('img.conceptSymbol, img.editionSymbol, img.gallerySymbol').addClass('goLeft');
-	$('img.informationSymbol, img.programSymbol, img.ticketsSymbol').addClass('goRight');
+	$('div.conceptSymbol, div.editionSymbol, div.gallerySymbol').addClass('goLeft');
+	$('div.informationSymbol, div.programSymbol, div.ticketsSymbol').addClass('goRight');
 	//$('img.arvore').fadeOut(2500, "linear");
 	$('#clickMe').fadeOut();
 };
@@ -81,14 +81,14 @@ function resizeImg (img)
 function onLoadedPage(){
 	$('img.concept').on({
 		'mouseover': function() {
-			$('img.conceptSymbol').addClass('conceptSymbolHover');
+			$('div.conceptSymbol').addClass('conceptSymbolHover');
 		},
 		'mouseout': function() {
-			$('img.conceptSymbol').removeClass('conceptSymbolHover');
+			$('div.conceptSymbol').removeClass('conceptSymbolHover');
 		}
 	});
 
-	$('img.conceptSymbol').on({
+	$('div.conceptSymbol').on({
 		'mouseover': function() {
 			$('img.concept').addClass('conceptHover');
 		},
@@ -99,14 +99,14 @@ function onLoadedPage(){
 
 	$('img.information').on({
 		'mouseover': function() {
-			$('img.informationSymbol').addClass('informationSymbolHover');
+			$('div.informationSymbol').addClass('informationSymbolHover');
 		},
 		'mouseout': function() {
-			$('img.informationSymbol').removeClass('informationSymbolHover');
+			$('div.informationSymbol').removeClass('informationSymbolHover');
 		}
 	});
 
-	$('img.informationSymbol').on({
+	$('div.informationSymbol').on({
 		'mouseover': function() {
 			$('img.information').addClass('informationHover');
 		},
@@ -117,14 +117,14 @@ function onLoadedPage(){
 
 	$('img.gallery').on({
 		'mouseover': function() {
-			$('img.gallerySymbol').addClass('gallerySymbolHover');
+			$('div.gallerySymbol').addClass('gallerySymbolHover');
 		},
 		'mouseout': function() {
-			$('img.gallerySymbol').removeClass('gallerySymbolHover');
+			$('div.gallerySymbol').removeClass('gallerySymbolHover');
 		}
 	});
 
-	$('img.gallerySymbol').on({
+	$('div.gallerySymbol').on({
 		'mouseover': function() {
 			$('img.gallery').addClass('galleryHover');
 		},
@@ -135,14 +135,14 @@ function onLoadedPage(){
 
 	$('img.edition').on({
 		'mouseover': function() {
-			$('img.editionSymbol').addClass('editionSymbolHover');
+			$('div.editionSymbol').addClass('editionSymbolHover');
 		},
 		'mouseout': function() {
-			$('img.editionSymbol').removeClass('editionSymbolHover');
+			$('div.editionSymbol').removeClass('editionSymbolHover');
 		}
 	});
 
-	$('img.editionSymbol').on({
+	$('div.editionSymbol').on({
 		'mouseover': function() {
 			$('img.edition').addClass('editionHover');
 		},
@@ -153,14 +153,14 @@ function onLoadedPage(){
 
 	$('img.program').on({
 		'mouseover': function() {
-			$('img.programSymbol').addClass('programSymbolHover');
+			$('div.programSymbol').addClass('programSymbolHover');
 		},
 		'mouseout': function() {
-			$('img.programSymbol').removeClass('programSymbolHover');
+			$('div.programSymbol').removeClass('programSymbolHover');
 		}
 	});
 
-	$('img.programSymbol').on({
+	$('div.programSymbol').on({
 		'mouseover': function() {
 			$('img.program').addClass('programHover');
 		},
@@ -171,14 +171,14 @@ function onLoadedPage(){
 
 	$('img.tickets').on({
 		'mouseover': function() {
-			$('img.ticketsSymbol').addClass('ticketsSymbolHover');
+			$('div.ticketsSymbol').addClass('ticketsSymbolHover');
 		},
 		'mouseout': function() {
-			$('img.ticketsSymbol').removeClass('ticketsSymbolHover');
+			$('div.ticketsSymbol').removeClass('ticketsSymbolHover');
 		}
 	});
 
-	$('img.ticketsSymbol').on({
+	$('div.ticketsSymbol').on({
 		'mouseover': function() {
 			$('img.tickets').addClass('ticketsHover');
 		},

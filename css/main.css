@@ -99,28 +99,31 @@ img.separador
 
 img.concept
 {
-	content: url('../img/menu/Concept.png');
+	background: url('../img/menu/Concept.png');
 }
 
 img.concept:hover, img.conceptHover, img.concept-active
 {
-	content: url('../img/menu/ConceptHover.png');
+	background: url('../img/menu/ConceptHover.png');
 }
 
-img.conceptSymbol
+div.conceptSymbol
 {
-	content: url('../img/symbols/ConceptSymbol.png');
+	background-image: url('../img/symbols/ConceptSymbol.png');
 	position: absolute;
 	top: 40.96%;
 	left: 10.24%;
 	width: 13.59%;
 	height: 26.34%;
+	transition: background 0.3s ease-in-out;
 	transition: all 1s ease-in-out;
+	background-size: contain;
 }
 
-img.conceptSymbol:hover, img.conceptSymbolHover
+div.conceptSymbol:hover, img.conceptSymbolHover
 {
-	content: url('../img/symbols/ConceptSymbolHover.png');
+	background-image: url('../img/symbols/ConceptSymbolHover.png');
+	background-size: contain;
 }
 
 /******************************************************
@@ -129,28 +132,31 @@ img.conceptSymbol:hover, img.conceptSymbolHover
 
 img.edition
 {
-	content: url('../img/menu/Edition.png');
+	background: url('../img/menu/Edition.png');
 }
 
 img.edition:hover, img.editionHover, img.edition-active
 {
-	content: url('../img/menu/EditionHover.png');
+	background: url('../img/menu/EditionHover.png');
 }
 
-img.editionSymbol
+div.editionSymbol
 {
-	content: url('../img/symbols/EditionSymbol.png');
+	background: url('../img/symbols/EditionSymbol.png');
 	position: absolute;
 	top: 24.12%;
 	left: 16.98%;
 	width: 13.59%;
 	height: 26.34%;
+	transition: background 0.3s ease-in-out;
 	transition: all 1s ease-in-out;
+	background-size: contain;
 }
 
-img.editionSymbol:hover, img.editionSymbolHover
+div.editionSymbol:hover, img.editionSymbolHover
 {
-	content: url('../img/symbols/EditionSymbolHover.png');
+	background: url('../img/symbols/EditionSymbolHover.png');
+	background-size: contain;
 }
 
 /******************************************************
@@ -159,28 +165,31 @@ img.editionSymbol:hover, img.editionSymbolHover
 
 img.gallery
 {
-	content: url('../img/menu/Gallery.png');
+	background: url('../img/menu/Gallery.png');
 }
 
 img.gallery:hover, img.galleryHover, img.gallery-active
 {
-	content: url('../img/menu/GalleryHover.png');
+	background: url('../img/menu/GalleryHover.png');
 }
 
-img.gallerySymbol
+div.gallerySymbol
 {
-	content: url('../img/symbols/GallerySymbol.png');
+	background: url('../img/symbols/GallerySymbol.png');
 	position: absolute;
 	top: 11.05%;
 	left: 26.04%;
 	width: 13.59%;
 	height: 26.34%;
+	transition: background 0.3s ease-in-out;
 	transition: all 1s ease-in-out;
+	background-size: contain;
 }
 
-img.gallerySymbol:hover, img.gallerySymbolHover
+div.gallerySymbol:hover, img.gallerySymbolHover
 {
-	content: url('../img/symbols/GallerySymbolHover.png');
+	background: url('../img/symbols/GallerySymbolHover.png');
+	background-size: contain;
 }
 
 /******************************************************
@@ -189,28 +198,31 @@ img.gallerySymbol:hover, img.gallerySymbolHover
 
 img.information
 {
-	content: url('../img/menu/Information.png');
+	background: url('../img/menu/Information.png');
 }
 
 img.information:hover, img.informationHover, img.information-active
 {
-	content: url('../img/menu/InformationHover.png');
+	background: url('../img/menu/InformationHover.png');
 }
 
-img.informationSymbol
+div.informationSymbol
 {
-	content: url('../img/symbols/InformationSymbol.png');
+	background: url('../img/symbols/InformationSymbol.png');
 	position: absolute;
 	top: 11.05%;
 	left: 60.10%;
 	width: 13.59%;
 	height: 26.34%;
+	transition: background 0.3s ease-in-out;
 	transition: all 1s ease-in-out;
+	background-size: contain;
 }
 
-img.informationSymbol:hover, img.informationSymbolHover
+div.informationSymbol:hover, img.informationSymbolHover
 {
-	content: url('../img/symbols/InformationSymbolHover.png');
+	background: url('../img/symbols/InformationSymbolHover.png');
+	background-size: contain;
 }
 
 /******************************************************
@@ -219,28 +231,31 @@ img.informationSymbol:hover, img.informationSymbolHover
 
 img.program
 {
-	content: url('../img/menu/Program.png');
+	background: url('../img/menu/Program.png');
 }
 
 img.program:hover, img.programHover, img.program-active
 {
-	content: url('../img/menu/ProgramHover.png');
+	background: url('../img/menu/ProgramHover.png');
 }
 
-img.programSymbol
+div.programSymbol
 {
-	content: url('../img/symbols/ProgramSymbol.png');
+	background: url('../img/symbols/ProgramSymbol.png');
 	position: absolute;
 	top: 24.12%;
 	left: 69.01%;
 	width: 13.59%;
 	height: 26.34%;
+	transition: background 0.3s ease-in-out;
 	transition: all 1s ease-in-out;
+	background-size: contain;
 }
 
-img.programSymbol:hover, img.programSymbolHover
+div.programSymbol:hover, img.programSymbolHover
 {
-	content: url('../img/symbols/ProgramSymbolHover.png');
+	background: url('../img/symbols/ProgramSymbolHover.png');
+	background-size: contain;
 }
 
 /******************************************************
@@ -249,39 +264,42 @@ img.programSymbol:hover, img.programSymbolHover
 
 img.tickets
 {
-	content: url('../img/menu/Tickets.png');
+	background: url('../img/menu/Tickets.png');
 }
 
 img.tickets:hover, img.ticketsHover, img.tickets-active
 {
-	content: url('../img/menu/TicketsHover.png');
+	background: url('../img/menu/TicketsHover.png');
 }
 
-img.ticketsSymbol
+div.ticketsSymbol
 {
-	content: url('../img/symbols/TicketsSymbol.png');
+	background: url('../img/symbols/TicketsSymbol.png');
 	position: absolute;
 	top: 40.96%;
 	left: 75.57%;
 	width: 13.59%;
 	height: 26.34%;
+	transition: background 0.3s ease-in-out;
 	transition: all 1s ease-in-out;
+	background-size: contain;
 }
 
-img.ticketsSymbol:hover, img.ticketsSymbolHover
+div.ticketsSymbol:hover, img.ticketsSymbolHover
 {
-	content: url('../img/symbols/TicketsSymbolHover.png');
+	background: url('../img/symbols/TicketsSymbolHover.png');
+	background-size: contain;
 }
 
 
-img.goCenter
+div.goCenter
 {
 	opacity: 0;
 	filter: alpha(opacity=0);
 	top: 43.5%;
 	left: 43.5%;
 }
-img.goLeft
+div.goLeft
 {
 	opacity: 0;
 	filter: alpha(opacity=0);
@@ -290,7 +308,7 @@ img.goLeft
 }
 
 
-img.goRight
+div.goRight
 {
 	opacity: 0;
 	filter: alpha(opacity=0);
