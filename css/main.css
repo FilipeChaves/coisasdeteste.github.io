@@ -1,0 +1,299 @@
+
+img.background
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index: -4;
+}
+
+body
+{
+	overflow: hidden;
+}
+
+img.mandala
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index: -1;
+	transition: all 1.5s ease-in-out;
+}
+.grow
+{
+	transform: scale(5);
+}
+
+.turnTransparent
+{
+	opacity: 0.15;
+	filter: alpha(opacity=15);
+}
+
+img.arvore
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index: -2;
+	transition: all 2.5s ease-in-out;
+}
+
+.divMenu
+{
+	text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+	display:inline-block;
+	list-style:none outside none;
+	margin:auto auto;
+	padding:0;
+	z-index:-3;
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	user-select: none;          /* Likely future */  
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+img.separador
+{
+	margin-top: 46px;
+}
+
+/******************************************************
+********* Concept Symbols and Hover *******************
+******************************************************/
+
+img.concept
+{
+	content: url('../img/menu/Concept.png');
+}
+
+img.concept:hover, img.conceptHover, img.concept-active
+{
+	content: url('../img/menu/ConceptHover.png');
+}
+
+img.conceptSymbol
+{
+	content: url('../img/symbols/ConceptSymbol.png');
+	position: absolute;
+	top: 40.96%;
+	left: 10.24%;
+	width: 13.59%;
+	height: 26.34%;
+	transition: all 1s ease-in-out;
+}
+
+img.conceptSymbol:hover, img.conceptSymbolHover
+{
+	content: url('../img/symbols/ConceptSymbolHover.png');
+}
+
+/******************************************************
+********* Edition Symbols and Hover *******************
+******************************************************/
+
+img.edition
+{
+	content: url('../img/menu/Edition.png');
+}
+
+img.edition:hover, img.editionHover, img.edition-active
+{
+	content: url('../img/menu/EditionHover.png');
+}
+
+img.editionSymbol
+{
+	content: url('../img/symbols/EditionSymbol.png');
+	position: absolute;
+	top: 24.12%;
+	left: 16.98%;
+	width: 13.59%;
+	height: 26.34%;
+	transition: all 1s ease-in-out;
+}
+
+img.editionSymbol:hover, img.editionSymbolHover
+{
+	content: url('../img/symbols/EditionSymbolHover.png');
+}
+
+/******************************************************
+********* Gallery Symbols and Hover *******************
+******************************************************/
+
+img.gallery
+{
+	content: url('../img/menu/Gallery.png');
+}
+
+img.gallery:hover, img.galleryHover, img.gallery-active
+{
+	content: url('../img/menu/GalleryHover.png');
+}
+
+img.gallerySymbol
+{
+	content: url('../img/symbols/GallerySymbol.png');
+	position: absolute;
+	top: 11.05%;
+	left: 26.04%;
+	width: 13.59%;
+	height: 26.34%;
+	transition: all 1s ease-in-out;
+}
+
+img.gallerySymbol:hover, img.gallerySymbolHover
+{
+	content: url('../img/symbols/GallerySymbolHover.png');
+}
+
+/******************************************************
+********* Information Symbols and Hover ***************
+******************************************************/
+
+img.information
+{
+	content: url('../img/menu/Information.png');
+}
+
+img.information:hover, img.informationHover, img.information-active
+{
+	content: url('../img/menu/InformationHover.png');
+}
+
+img.informationSymbol
+{
+	content: url('../img/symbols/InformationSymbol.png');
+	position: absolute;
+	top: 11.05%;
+	left: 60.10%;
+	width: 13.59%;
+	height: 26.34%;
+	transition: all 1s ease-in-out;
+}
+
+img.informationSymbol:hover, img.informationSymbolHover
+{
+	content: url('../img/symbols/InformationSymbolHover.png');
+}
+
+/******************************************************
+********* Program Symbols and Hover *******************
+******************************************************/
+
+img.program
+{
+	content: url('../img/menu/Program.png');
+}
+
+img.program:hover, img.programHover, img.program-active
+{
+	content: url('../img/menu/ProgramHover.png');
+}
+
+img.programSymbol
+{
+	content: url('../img/symbols/ProgramSymbol.png');
+	position: absolute;
+	top: 24.12%;
+	left: 69.01%;
+	width: 13.59%;
+	height: 26.34%;
+	transition: all 1s ease-in-out;
+}
+
+img.programSymbol:hover, img.programSymbolHover
+{
+	content: url('../img/symbols/ProgramSymbolHover.png');
+}
+
+/******************************************************
+********* Tickets Symbols and Hover *******************
+******************************************************/
+
+img.tickets
+{
+	content: url('../img/menu/Tickets.png');
+}
+
+img.tickets:hover, img.ticketsHover, img.tickets-active
+{
+	content: url('../img/menu/TicketsHover.png');
+}
+
+img.ticketsSymbol
+{
+	content: url('../img/symbols/TicketsSymbol.png');
+	position: absolute;
+	top: 40.96%;
+	left: 75.57%;
+	width: 13.59%;
+	height: 26.34%;
+	transition: all 1s ease-in-out;
+}
+
+img.ticketsSymbol:hover, img.ticketsSymbolHover
+{
+	content: url('../img/symbols/TicketsSymbolHover.png');
+}
+
+
+img.goCenter
+{
+	opacity: 0;
+	filter: alpha(opacity=0);
+	top: 43.5%;
+	left: 43.5%;
+}
+img.goLeft
+{
+	opacity: 0;
+	filter: alpha(opacity=0);
+	top: -20.5%;
+	left: -20.5%;
+}
+
+
+img.goRight
+{
+	opacity: 0;
+	filter: alpha(opacity=0);
+	top: -20.5%;
+	left: 120.5%;
+}
