@@ -49,8 +49,8 @@ function fadeout(){
 	
 	$('img.mandala').addClass("grow");
 	$('img.arvore').addClass("turnTransparent");
-	
-	$('img.mandala').fadeOut(1000, "linear");
+	$('h3.titulo').fadeIn(1000, "linear");
+	$('div.textArea').fadeIn(1000, "linear");
 	$('div.conceptSymbol, div.editionSymbol, div.gallerySymbol').addClass('goLeft');
 	$('div.informationSymbol, div.programSymbol, div.ticketsSymbol').addClass('goRight');
 	//$('img.arvore').fadeOut(2500, "linear");
@@ -186,4 +186,9 @@ function onLoadedPage(){
 			$('img.tickets').removeClass('ticketsHover');
 		}
 	});
+	
+	var nicesx = $("div.textArea").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8});
+
+	//.cursor.css({"background-image":"url(img/mac6scroll.png)"}); // MAC like scrollbar
+
 }

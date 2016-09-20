@@ -16,6 +16,37 @@ body
 	overflow: hidden;
 }
 
+div.textArea p.texto 
+{
+	overflow: visible;
+}
+
+@font-face {
+    font-family: "Title Custom Font";
+    src: url(../fonts/New_Vera.otf) format("truetype");
+}
+
+h3.titulo
+{
+	font-family: "Title Custom Font", Verdana, Tahoma;
+	color: white;
+	font-size: 250%;
+}
+
+@font-face2 {
+    font-family: "Text Custom Font";
+    src: url(../fonts/New_Vera.otf) format("truetype");
+}
+
+p.texto
+{
+	font-family: "Text Custom Font", Verdana, Tahoma;
+	color: white;
+	font-size: 120%;
+}
+
+
+
 img.mandala
 {
 	width: 100%;
@@ -30,13 +61,15 @@ img.mandala
 }
 .grow
 {
-	transform: scale(5);
+	transform: scale(2);
+	opacity: 0;
+	filter: alpha(opacity=0);
 }
 
 .turnTransparent
 {
-	opacity: 0.15;
-	filter: alpha(opacity=15);
+	opacity: 0;
+	filter: alpha(opacity=0);
 }
 
 img.arvore
@@ -49,12 +82,13 @@ img.arvore
 	margin-left:auto;
 	margin-right:auto;
 	z-index: -2;
-	transition: all 2.5s ease-in-out;
+	transition: all 1.5s ease-in-out;
 }
 
 .divMenu
 {
 	text-align: center;
+	max-height:12.01%;
 }
 
 ul {
@@ -69,6 +103,8 @@ ul {
 	-moz-user-select: none;     /* Firefox all */
 	-ms-user-select: none;      /* IE 10+ */
 	user-select: none;          /* Likely future */  
+	max-height:12.01%;
+	text-align: center;
 }
 
 li {
@@ -81,6 +117,7 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+	max-height:12.01%;
 }
 
 /* Change the link color to #111 (black) on hover */
@@ -90,7 +127,8 @@ li a:hover {
 
 img.separador
 {
-	margin-top: 46px;
+	display:inline-block;
+	background-position: center;
 }
 
 /******************************************************
@@ -100,11 +138,16 @@ img.separador
 img.concept
 {
 	background: url('../img/menu/Concept.png');
+	max-width:17,85%;
+	background-size: contain;
 }
 
 img.concept:hover, img.conceptHover, img.concept-active
 {
 	background: url('../img/menu/ConceptHover.png');
+	max-height:12,01%;
+	max-width:17,85%;
+	background-size: contain;
 }
 
 div.conceptSymbol
@@ -116,7 +159,9 @@ div.conceptSymbol
 	width: 13.59%;
 	height: 26.34%;
 	transition: background 0.3s ease-in-out;
-	transition: all 1s ease-in-out;
+	transition: opacity 1s, filter 1s, top 1s, left 1s ease-in-out;
+	-webkit-transition: background 0.3s ease-in-out;
+	-webkit-transition: opacity 1s, filter 1s, top 1s, left 1s ease-in-out;
 	background-size: contain;
 }
 
@@ -133,11 +178,13 @@ div.conceptSymbol:hover, div.conceptSymbolHover
 img.edition
 {
 	background: url('../img/menu/Edition.png');
+	background-size: contain;
 }
 
 img.edition:hover, img.editionHover, img.edition-active
 {
 	background: url('../img/menu/EditionHover.png');
+	background-size: contain;
 }
 
 div.editionSymbol
@@ -149,7 +196,9 @@ div.editionSymbol
 	width: 13.59%;
 	height: 26.34%;
 	transition: background 0.3s ease-in-out;
-	transition: all 1s ease-in-out;
+	transition: opacity 1s, filter 1s, top 1s, left 1s ease-in-out;
+	-webkit-transition: background 0.3s ease-in-out;
+	-webkit-transition: opacity 1s, filter 1s, top 1s, left 1s ease-in-out;
 	background-size: contain;
 }
 
@@ -166,11 +215,13 @@ div.editionSymbol:hover, div.editionSymbolHover
 img.gallery
 {
 	background: url('../img/menu/Gallery.png');
+	background-size: contain;
 }
 
 img.gallery:hover, img.galleryHover, img.gallery-active
 {
 	background: url('../img/menu/GalleryHover.png');
+	background-size: contain;
 }
 
 div.gallerySymbol
@@ -182,7 +233,9 @@ div.gallerySymbol
 	width: 13.59%;
 	height: 26.34%;
 	transition: background 0.3s ease-in-out;
-	transition: all 1s ease-in-out;
+	transition: opacity 1s, filter 1s, top 1s, left 1s ease-in-out;
+	-webkit-transition: background 0.3s ease-in-out;
+	-webkit-transition: opacity 1s, filter 1s, top 1s, left 1s ease-in-out;
 	background-size: contain;
 }
 
@@ -199,11 +252,15 @@ div.gallerySymbol:hover, div.gallerySymbolHover
 img.information
 {
 	background: url('../img/menu/Information.png');
+	background-size: contain;
+	width: 19.47%;
 }
 
 img.information:hover, img.informationHover, img.information-active
 {
 	background: url('../img/menu/InformationHover.png');
+	background-size: contain;
+	width: 19.47%;
 }
 
 div.informationSymbol
@@ -215,7 +272,9 @@ div.informationSymbol
 	width: 13.59%;
 	height: 26.34%;
 	transition: background 0.3s ease-in-out;
-	transition: all 1s ease-in-out;
+	transition: opacity 1s, filter 1s, top 1s, left 1s ease-in-out;
+	-webkit-transition: background 0.3s ease-in-out;
+	-webkit-transition: opacity 1s, filter 1s, top 1s, left 1s ease-in-out;
 	background-size: contain;
 }
 
@@ -232,11 +291,13 @@ div.informationSymbol:hover, div.informationSymbolHover
 img.program
 {
 	background: url('../img/menu/Program.png');
+	background-size: contain;
 }
 
 img.program:hover, img.programHover, img.program-active
 {
 	background: url('../img/menu/ProgramHover.png');
+	background-size: contain;
 }
 
 div.programSymbol
@@ -248,7 +309,7 @@ div.programSymbol
 	width: 13.59%;
 	height: 26.34%;
 	transition: background 0.3s ease-in-out;
-	transition: all 1s ease-in-out;
+	transition: opacity 1s, filter 1s, top 1s, left 1s ease-in-out;
 	background-size: contain;
 }
 
@@ -265,11 +326,13 @@ div.programSymbol:hover, div.programSymbolHover
 img.tickets
 {
 	background: url('../img/menu/Tickets.png');
+	background-size: contain;
 }
 
 img.tickets:hover, img.ticketsHover, img.tickets-active
 {
 	background: url('../img/menu/TicketsHover.png');
+	background-size: contain;
 }
 
 div.ticketsSymbol
@@ -281,7 +344,7 @@ div.ticketsSymbol
 	width: 13.59%;
 	height: 26.34%;
 	transition: background 0.3s ease-in-out;
-	transition: all 1s ease-in-out;
+	transition: opacity 1s, filter 1s, top 1s, left 1s ease-in-out;
 	background-size: contain;
 }
 
