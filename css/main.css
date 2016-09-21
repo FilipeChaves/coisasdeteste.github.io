@@ -306,14 +306,14 @@ img.information
 {
 	background: url('../img/menu/Information.png');
 	background-size: contain;
-	width: 19.47%;
+	/*width: 19.47%;*/
 }
 
 img.information:hover, img.informationHover, img.information-active
 {
 	background: url('../img/menu/InformationHover.png');
 	background-size: contain;
-	width: 19.47%;
+	/*width: 19.47%;*/
 }
 
 div.informationSymbol
