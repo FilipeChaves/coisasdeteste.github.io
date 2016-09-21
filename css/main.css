@@ -16,9 +16,16 @@ body
 	overflow: hidden;
 }
 
-div.textArea p.texto 
+div.textArea-concept, div.textArea-program
 {
-	overflow: visible;
+	position: absolute;
+	margin-left:10%;
+	margin-top:4%;
+	width:85%; 
+	height:500px;
+	opacity:0;
+	filter: alpha(opacity=0);
+	transition: all 1s ease-in-out;
 }
 
 @font-face {
@@ -26,11 +33,16 @@ div.textArea p.texto
     src: url(../fonts/New_Vera.otf) format("truetype");
 }
 
-h3.titulo
+h3.titulo-concept, h3.titulo-program
 {
+	position: absolute;
 	font-family: "Title Custom Font", Verdana, Tahoma;
+	margin-top: 0%;
+	margin-left:48%;
 	color: white;
 	font-size: 250%;
+	text-align: center;
+	transition: all 1s ease-in-out;
 }
 
 @font-face2 {
@@ -43,9 +55,36 @@ p.texto
 	font-family: "Text Custom Font", Verdana, Tahoma;
 	color: white;
 	font-size: 120%;
+	transition: all 1s ease-in-out;
 }
 
+div.textToLeft, h3.textToLeft
+{
+	left: -200%;
+	opacity:0;
+	filter: alpha(opacity=0);
+}
 
+div.textToCenter
+{
+	left: 0%;
+	opacity:100;
+	filter: alpha(opacity=1);
+}
+
+h3.textToCenter
+{
+	left: auto;
+	opacity:100;
+	filter: alpha(opacity=1);
+}
+
+div.textToRight, h3.textToRight
+{
+	left: 200%;
+	opacity:0;
+	filter: alpha(opacity=0);
+}
 
 img.mandala
 {

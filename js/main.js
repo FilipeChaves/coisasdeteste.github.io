@@ -1,5 +1,13 @@
 function conceptClick()
 {
+	$('h3.titulo-program').addClass('textToRight');
+	$('div.textArea-program').addClass('textToRight');
+	$('h3.titulo-concept').removeClass('textToLeft');
+	$('div.textArea-concept').removeClass('textToLeft');
+	$('h3.titulo-concept').addClass('textToCenter');
+	$('div.textArea-concept').addClass('textToCenter');
+	$('h3.titulo-program').removeClass('textToCenter');
+	$('div.textArea-program').removeClass('textToCenter');
 	removeActives();
 	$('img.concept').addClass('concept-active');
 	fadeout();
@@ -24,6 +32,14 @@ function informationClick()
 }
 function programClick()
 {
+	$('h3.titulo-concept').addClass('textToLeft');
+	$('div.textArea-concept').addClass('textToLeft');
+	$('h3.titulo-program').removeClass('textToRight');
+	$('div.textArea-program').removeClass('textToRight');
+	$('h3.titulo-program').addClass('textToCenter');
+	$('div.textArea-program').addClass('textToCenter');
+	$('h3.titulo-concept').removeClass('textToCenter');
+	$('div.textArea-concept').removeClass('textToCenter');
 	removeActives();
 	$('img.program').addClass('program-active');
 	fadeout();
@@ -46,15 +62,16 @@ function removeActives(){
 
 function fadeout(){
 	//$('img').scale(2,2);
-	
-	$('img.mandala').addClass("grow");
-	$('img.arvore').addClass("turnTransparent");
-	$('h3.titulo').fadeIn(1000, "linear");
-	$('div.textArea').fadeIn(1000, "linear");
-	$('div.conceptSymbol, div.editionSymbol, div.gallerySymbol').addClass('goLeft');
-	$('div.informationSymbol, div.programSymbol, div.ticketsSymbol').addClass('goRight');
-	//$('img.arvore').fadeOut(2500, "linear");
-	$('#clickMe').fadeOut();
+	if($('img.grow').length === 0){
+		$('img.mandala').addClass("grow");
+		$('img.arvore').addClass("turnTransparent");
+		$('h3.titulo-concept').fadeIn(1000, "linear");
+		$('div.textArea-concept').fadeIn(1000, "linear");
+		$('div.conceptSymbol, div.editionSymbol, div.gallerySymbol').addClass('goLeft');
+		$('div.informationSymbol, div.programSymbol, div.ticketsSymbol').addClass('goRight');
+		//$('img.arvore').fadeOut(2500, "linear");
+		$('#clickMe').fadeOut();
+	}
 };
 
 function resizeImg (img)
@@ -187,7 +204,8 @@ function onLoadedPage(){
 		}
 	});
 	
-	var nicesx = $("div.textArea").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8});
+	var nicesx = $("div.textArea-concept").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8});
+	var nicesxs = $("div.textArea-program").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8});
 
 	//.cursor.css({"background-image":"url(img/mac6scroll.png)"}); // MAC like scrollbar
 
