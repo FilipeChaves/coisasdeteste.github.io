@@ -1,54 +1,99 @@
 function conceptClick()
 {
-	$('h3.titulo-program').addClass('textToRight');
-	$('div.textArea-program').addClass('textToRight');
-	$('h3.titulo-concept').removeClass('textToLeft');
-	$('div.textArea-concept').removeClass('textToLeft');
-	$('h3.titulo-concept').addClass('textToCenter');
-	$('div.textArea-concept').addClass('textToCenter');
-	$('h3.titulo-program').removeClass('textToCenter');
-	$('div.textArea-program').removeClass('textToCenter');
+	removeCenter(0);
 	removeActives();
+	
 	$('img.concept').addClass('concept-active');
 	fadeout();
 }
+
 function editionClick()
 {
+	removeCenter(1);
 	removeActives();
+	
 	$('img.edition').addClass('edition-active');
 	fadeout();
 }
+
 function galleryClick()
 {
+	removeCenter(2);
 	removeActives();
+	
 	$('img.gallery').addClass('gallery-active');
 	fadeout();
 }
+
 function informationClick()
 {
+	removeCenter(3);
 	removeActives();
+	
 	$('img.information').addClass('information-active');
 	fadeout();
 }
+
 function programClick()
 {
-	$('h3.titulo-concept').addClass('textToLeft');
-	$('div.textArea-concept').addClass('textToLeft');
-	$('h3.titulo-program').removeClass('textToRight');
-	$('div.textArea-program').removeClass('textToRight');
-	$('h3.titulo-program').addClass('textToCenter');
-	$('div.textArea-program').addClass('textToCenter');
-	$('h3.titulo-concept').removeClass('textToCenter');
-	$('div.textArea-concept').removeClass('textToCenter');
+	removeCenter(4);
 	removeActives();
+	
 	$('img.program').addClass('program-active');
 	fadeout();
 }
 function ticketsClick()
 {
+	removeCenter(5);
 	removeActives();
+	
 	$('img.tickets').addClass('tickets-active');
 	fadeout();
+}
+
+function removeCenter(nextID){
+	var allTitleAreas = ['h3.titulo-concept',
+						'h3.titulo-edition',
+						'h3.titulo-gallery',
+						'h3.titulo-information',
+						'h3.titulo-program',
+						'h3.titulo-tickets'];
+						
+	var allTextAreas = ['div.textArea-concept', 
+						'div.textArea-edition',
+						'div.textArea-gallery',
+						'div.textArea-information',
+						'div.textArea-program',
+						'div.textArea-tickets']; 
+						
+	for(var i = 0; i < allTextAreas.length; i++){
+		if(nextID === i){
+			$(allTextAreas[i]).removeClass('textToLeft');
+			$(allTitleAreas[i]).removeClass('textToLeft');
+			$(allTextAreas[i]).removeClass('textToRight');
+			$(allTitleAreas[i]).removeClass('textToRight');
+			$(allTextAreas[i]).addClass('textToCenter');
+			$(allTitleAreas[i]).addClass('textToCenter');
+			continue;
+		}
+		
+		$(allTextAreas[i]).removeClass('textToCenter');
+		$(allTitleAreas[i]).removeClass('textToCenter');
+		$(allTextAreas[i]).removeClass('textToLeft');
+		$(allTitleAreas[i]).removeClass('textToLeft');
+		$(allTextAreas[i]).removeClass('textToRight');
+		$(allTitleAreas[i]).removeClass('textToRight');
+		
+		if(nextID > i){
+			$(allTextAreas[i]).addClass('textToLeft');
+			$(allTitleAreas[i]).addClass('textToLeft');
+		}
+		else{
+			$(allTextAreas[i]).addClass('textToRight');
+			$(allTitleAreas[i]).addClass('textToRight');
+		}
+		
+	}
 }
 
 function removeActives(){
@@ -204,9 +249,8 @@ function onLoadedPage(){
 		}
 	});
 	
-	var nicesx = $("div.textArea-concept").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8});
-	var nicesxs = $("div.textArea-program").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8});
-
+	var nicesx = $("div.textArea-concept").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-program").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	//.cursor.css({"background-image":"url(img/mac6scroll.png)"}); // MAC like scrollbar
 
 }

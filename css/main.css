@@ -16,7 +16,7 @@ body
 	overflow: hidden;
 }
 
-div.textArea-concept, div.textArea-program
+div.textArea-concept, div.textArea-program, div.textArea-information, div.textArea-gallery, div.textArea-tickets, div.textArea-edition
 {
 	position: absolute;
 	margin-left:10%;
@@ -33,7 +33,7 @@ div.textArea-concept, div.textArea-program
     src: url(../fonts/New_Vera.otf) format("truetype");
 }
 
-h3.titulo-concept, h3.titulo-program
+h3.titulo-concept, h3.titulo-program, h3.titulo-information, h3.titulo-gallery, h3.titulo-tickets, h3.titulo-edition
 {
 	position: absolute;
 	font-family: "Title Custom Font", Verdana, Tahoma;
