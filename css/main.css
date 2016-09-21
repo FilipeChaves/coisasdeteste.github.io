@@ -39,6 +39,7 @@ h3.titulo-concept, h3.titulo-program, h3.titulo-information, h3.titulo-gallery, 
 	font-family: "Title Custom Font", Verdana, Tahoma;
 	margin-top: 0%;
 	margin-left:48%;
+	margin-left:48%;
 	color: white;
 	font-size: 250%;
 	text-align: center;
@@ -58,9 +59,15 @@ p.texto
 	transition: all 1s ease-in-out;
 }
 
-div.textToLeft, h3.textToLeft
+div.textToLeft
 {
 	left: -200%;
+	opacity:0;
+	filter: alpha(opacity=0);
+}
+h3.textToLeft
+{
+	margin-left: -200%;
 	opacity:0;
 	filter: alpha(opacity=0);
 }
@@ -74,14 +81,21 @@ div.textToCenter
 
 h3.textToCenter
 {
-	left: auto;
+	margin-left: 48%;
 	opacity:100;
 	filter: alpha(opacity=1);
 }
 
-div.textToRight, h3.textToRight
+div.textToRight
 {
 	left: 200%;
+	opacity:0;
+	filter: alpha(opacity=0);
+}
+
+h3.textToRight
+{
+	margin-left: 200%;
 	opacity:0;
 	filter: alpha(opacity=0);
 }
