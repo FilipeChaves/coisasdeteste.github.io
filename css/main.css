@@ -1,4 +1,3 @@
-
 img.background
 {
 	width: 100%;
@@ -16,39 +15,49 @@ body
 	overflow: hidden;
 }
 
+@font-face {
+    font-family: "Title Custom Font";
+    src: url(../fonts/New_Vera.otf) format("truetype");
+}
+
+@font-face2 {
+    font-family: "Text Custom Font";
+    src: url(../fonts/New_Vera.otf) format("truetype");
+}
+
 div.textArea-concept, div.textArea-program, div.textArea-information, div.textArea-gallery, div.textArea-tickets, div.textArea-edition
 {
 	position: absolute;
 	margin-left:10%;
 	margin-top:4%;
-	width:85%; 
+	width:80%; 
 	height:500px;
 	opacity:0;
 	filter: alpha(opacity=0);
 	transition: all 1s ease-in-out;
 }
 
-@font-face {
-    font-family: "Title Custom Font";
-    src: url(../fonts/New_Vera.otf) format("truetype");
-}
-
-h3.titulo-concept, h3.titulo-program, h3.titulo-information, h3.titulo-gallery, h3.titulo-tickets, h3.titulo-edition
+div.titleDiv
 {
 	position: absolute;
-	font-family: "Title Custom Font", Verdana, Tahoma;
-	margin-top: 0%;
-	margin-left:48%;
-	margin-left:48%;
-	color: white;
-	font-size: 250%;
+	width: 100%;
+	height: 5%;
+	top: 10%;
 	text-align: center;
 	transition: all 1s ease-in-out;
 }
 
-@font-face2 {
-    font-family: "Text Custom Font";
-    src: url(../fonts/New_Vera.otf) format("truetype");
+
+h3.titulo-concept, h3.titulo-program, h3.titulo-information, h3.titulo-gallery, h3.titulo-tickets, h3.titulo-edition
+{
+	font-family: "Title Custom Font", Verdana, Tahoma;
+	color: white;
+	font-size: 250%;
+	text-align: center;
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	user-select: none;          /* Likely future */  
 }
 
 p.texto
@@ -57,17 +66,13 @@ p.texto
 	color: white;
 	font-size: 120%;
 	transition: all 1s ease-in-out;
+	text-align: justify;
+    text-justify: inter-word;
 }
 
 div.textToLeft
 {
 	left: -200%;
-	opacity:0;
-	filter: alpha(opacity=0);
-}
-h3.textToLeft
-{
-	margin-left: -200%;
 	opacity:0;
 	filter: alpha(opacity=0);
 }
@@ -79,23 +84,9 @@ div.textToCenter
 	filter: alpha(opacity=1);
 }
 
-h3.textToCenter
-{
-	margin-left: 48%;
-	opacity:100;
-	filter: alpha(opacity=1);
-}
-
 div.textToRight
 {
 	left: 200%;
-	opacity:0;
-	filter: alpha(opacity=0);
-}
-
-h3.textToRight
-{
-	margin-left: 200%;
 	opacity:0;
 	filter: alpha(opacity=0);
 }
@@ -112,6 +103,7 @@ img.mandala
 	z-index: -1;
 	transition: all 1.5s ease-in-out;
 }
+
 .grow
 {
 	transform: scale(2);
@@ -144,7 +136,8 @@ img.arvore
 	max-height:12.01%;
 }
 
-ul {
+ul 
+{
     list-style-type: none;
     overflow: hidden;
 	display:inline-block;
@@ -162,14 +155,6 @@ ul {
 
 li {
     float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
 	max-height:12.01%;
 }
 
@@ -193,6 +178,7 @@ img.concept
 	background: url('../img/menu/Concept.png');
 	max-width:17,85%;
 	background-size: contain;
+	cursor:pointer;
 }
 
 img.concept:hover, img.conceptHover, img.concept-active
@@ -216,6 +202,7 @@ div.conceptSymbol
 	-webkit-transition: background 0.3s ease-in-out;
 	-webkit-transition: opacity 1s, filter 1s, top 1s, left 1s ease-in-out;
 	background-size: contain;
+	cursor:pointer;
 }
 
 div.conceptSymbol:hover, div.conceptSymbolHover
@@ -232,6 +219,7 @@ img.edition
 {
 	background: url('../img/menu/Edition.png');
 	background-size: contain;
+	cursor:pointer;
 }
 
 img.edition:hover, img.editionHover, img.edition-active
@@ -253,6 +241,7 @@ div.editionSymbol
 	-webkit-transition: background 0.3s ease-in-out;
 	-webkit-transition: opacity 1s, filter 1s, top 1s, left 1s ease-in-out;
 	background-size: contain;
+	cursor:pointer;
 }
 
 div.editionSymbol:hover, div.editionSymbolHover
@@ -269,6 +258,7 @@ img.gallery
 {
 	background: url('../img/menu/Gallery.png');
 	background-size: contain;
+	cursor:pointer;
 }
 
 img.gallery:hover, img.galleryHover, img.gallery-active
@@ -290,6 +280,7 @@ div.gallerySymbol
 	-webkit-transition: background 0.3s ease-in-out;
 	-webkit-transition: opacity 1s, filter 1s, top 1s, left 1s ease-in-out;
 	background-size: contain;
+	cursor:pointer;
 }
 
 div.gallerySymbol:hover, div.gallerySymbolHover
@@ -306,6 +297,7 @@ img.information
 {
 	background: url('../img/menu/Information.png');
 	background-size: contain;
+	cursor:pointer;
 	/*width: 19.47%;*/
 }
 
@@ -329,6 +321,7 @@ div.informationSymbol
 	-webkit-transition: background 0.3s ease-in-out;
 	-webkit-transition: opacity 1s, filter 1s, top 1s, left 1s ease-in-out;
 	background-size: contain;
+	cursor:pointer;
 }
 
 div.informationSymbol:hover, div.informationSymbolHover
@@ -345,6 +338,7 @@ img.program
 {
 	background: url('../img/menu/Program.png');
 	background-size: contain;
+	cursor:pointer;
 }
 
 img.program:hover, img.programHover, img.program-active
@@ -364,6 +358,7 @@ div.programSymbol
 	transition: background 0.3s ease-in-out;
 	transition: opacity 1s, filter 1s, top 1s, left 1s ease-in-out;
 	background-size: contain;
+	cursor:pointer;
 }
 
 div.programSymbol:hover, div.programSymbolHover
@@ -380,6 +375,7 @@ img.tickets
 {
 	background: url('../img/menu/Tickets.png');
 	background-size: contain;
+	cursor:pointer;
 }
 
 img.tickets:hover, img.ticketsHover, img.tickets-active
@@ -399,6 +395,7 @@ div.ticketsSymbol
 	transition: background 0.3s ease-in-out;
 	transition: opacity 1s, filter 1s, top 1s, left 1s ease-in-out;
 	background-size: contain;
+	cursor:pointer;
 }
 
 div.ticketsSymbol:hover, div.ticketsSymbolHover
@@ -407,7 +404,6 @@ div.ticketsSymbol:hover, div.ticketsSymbolHover
 	background-size: contain;
 }
 
-
 div.goCenter
 {
 	opacity: 0;
@@ -415,6 +411,7 @@ div.goCenter
 	top: 43.5%;
 	left: 43.5%;
 }
+
 div.goLeft
 {
 	opacity: 0;
@@ -422,7 +419,6 @@ div.goLeft
 	top: -20.5%;
 	left: -20.5%;
 }
-
 
 div.goRight
 {

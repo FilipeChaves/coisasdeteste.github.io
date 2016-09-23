@@ -52,12 +52,12 @@ function ticketsClick()
 }
 
 function removeCenter(nextID){
-	var allTitleAreas = ['h3.titulo-concept',
-						'h3.titulo-edition',
-						'h3.titulo-gallery',
-						'h3.titulo-information',
-						'h3.titulo-program',
-						'h3.titulo-tickets'];
+	var allTitleAreas = ['div.titulo-concept',
+						 'div.titulo-edition',
+						 'div.titulo-gallery',
+						 'div.titulo-information',
+						 'div.titulo-program',
+						 'div.titulo-tickets'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-edition',
