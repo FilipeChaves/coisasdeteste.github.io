@@ -92,8 +92,42 @@ function removeCenter(nextID){
 			$(allTextAreas[i]).addClass('textToRight');
 			$(allTitleAreas[i]).addClass('textToRight');
 		}
-		
 	}
+	if($('img.grow').length === 0){
+		for(var allIdx = 0; allIdx < allTextAreas.length; allIdx++){
+			$(allTextAreas[allIdx]).css('display', 'block');
+			$(allTitleAreas[allIdx]).css('display', 'block');
+			
+			$(allTextAreas[allIdx]).animate({ 'opacity':"1" }, {
+										duration: 400,
+										complete: function() { removeStyles() }
+									});
+			$(allTitleAreas[allIdx]).animate({ 'opacity':"1" }, {
+										duration: 400,
+										complete: function() { removeStyles() }
+									});
+		}
+	}
+}
+
+function removeStyles(){
+		var allTitleAreas = ['div.titulo-concept',
+						 'div.titulo-edition',
+						 'div.titulo-gallery',
+						 'div.titulo-information',
+						 'div.titulo-program',
+						 'div.titulo-tickets'];
+						
+	var allTextAreas = ['div.textArea-concept', 
+						'div.textArea-edition',
+						'div.textArea-gallery',
+						'div.textArea-information',
+						'div.textArea-program',
+						'div.textArea-tickets']; 
+	for(var allIdx = 0; allIdx < allTextAreas.length; allIdx++){
+			$(allTextAreas[allIdx]).removeAttr("style");
+			$(allTitleAreas[allIdx]).removeAttr("style");
+		}
 }
 
 function removeActives(){
