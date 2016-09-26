@@ -64,7 +64,7 @@ p.texto
 {
 	font-family: "Text Custom Font", Verdana, Tahoma;
 	color: white;
-	font-size: 120%;
+	font-size: 110%;
 	transition: all 1s ease-in-out;
 	text-align: justify;
     text-justify: inter-word;
@@ -182,7 +182,7 @@ ul.socialMenu
 
 img.facebook
 {
-	width: 37%;
+	/*width: 37%;*/
 	height: auto;
 	background-size: contain;
 	background-image: url("img/social/facebook.png");
@@ -190,7 +190,7 @@ img.facebook
 
 img.youtube
 {
-	width: 37%;
+	/*width: 37%;*/
 	height: auto;
 	background-size: contain;
 	background-image: url("img/social/youtube.png");
@@ -212,7 +212,14 @@ img.socialText
 	background-image: url("img/social/youtube.png");
 }
 
-li {
+div.divMenu li {
+    float: left;
+	max-height:10.01%;
+	list-style-type: none;
+	background-size: contain;
+}
+
+div.divMenuSocial li {
     float: left;
 	max-height:12.01%;
 	list-style-type: none;
