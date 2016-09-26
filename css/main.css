@@ -29,7 +29,7 @@ div.textArea-concept, div.textArea-program, div.textArea-information, div.textAr
 {
 	position: absolute;
 	margin-left:10%;
-	margin-top:4%;
+	margin-top:10%;
 	width:80%; 
 	height:500px;
 	opacity:0;
@@ -130,13 +130,13 @@ img.arvore
 	transition: all 1.5s ease-in-out;
 }
 
-.divMenu
+div.divMenu
 {
 	text-align: center;
-	max-height:12.01%;
+	max-height: 12.01%;
 }
 
-ul 
+ul.menuPrincipal
 {
     list-style-type: none;
     overflow: hidden;
@@ -144,18 +144,79 @@ ul
 	list-style:none outside none;
 	margin:auto auto;
 	padding:0;
-	z-index:-3;
 	-webkit-user-select: none;  /* Chrome all / Safari all */
 	-moz-user-select: none;     /* Firefox all */
 	-ms-user-select: none;      /* IE 10+ */
 	user-select: none;          /* Likely future */  
 	max-height:12.01%;
 	text-align: center;
+	list-style-type: none;
+}
+
+div.divMenuSocial
+{
+	position: absolute;
+	text-align: center;
+	max-height: 12.01%;
+	text-align: center;
+	margin-top: 42%;
+	margin-left: 33%;
+    overflow: hidden;
+	width: 100%;
+	list-style-type: none;
+}
+
+ul.socialMenu
+{
+    list-style-type: none;
+    overflow: hidden;
+	list-style: none outside none;
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	user-select: none;          /* Likely future */  
+	max-height:12.01%;
+	text-align: center;
+	list-style-type: none;
+}
+
+img.facebook
+{
+	width: 37%;
+	height: auto;
+	background-size: contain;
+	background-image: url("img/social/facebook.png");
+}
+
+img.youtube
+{
+	width: 37%;
+	height: auto;
+	background-size: contain;
+	background-image: url("img/social/youtube.png");
+}
+
+img.facebook:hover
+{
+	background-image: url("img/social/facebookHover.png");
+}
+
+img.youtube:hover
+{
+	background-image: url("img/social/youtubeHover.png");
+}
+
+img.socialText
+{
+	background-size: contain;
+	background-image: url("img/social/youtube.png");
 }
 
 li {
     float: left;
 	max-height:12.01%;
+	list-style-type: none;
+	background-size: contain;
 }
 
 /* Change the link color to #111 (black) on hover */
