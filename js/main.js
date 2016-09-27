@@ -3,7 +3,7 @@ function conceptClick()
 	removeCenter(0);
 	removeActives();
 	
-	$('img.concept').addClass('concept-active');
+	$('div.concept').addClass('concept-active');
 	fadeout();
 }
 
@@ -12,7 +12,7 @@ function editionClick()
 	removeCenter(1);
 	removeActives();
 	
-	$('img.edition').addClass('edition-active');
+	$('div.edition').addClass('edition-active');
 	fadeout();
 }
 
@@ -21,7 +21,7 @@ function galleryClick()
 	removeCenter(2);
 	removeActives();
 	
-	$('img.gallery').addClass('gallery-active');
+	$('div.gallery').addClass('gallery-active');
 	fadeout();
 }
 
@@ -30,7 +30,7 @@ function informationClick()
 	removeCenter(3);
 	removeActives();
 	
-	$('img.information').addClass('information-active');
+	$('div.information').addClass('information-active');
 	fadeout();
 }
 
@@ -39,7 +39,7 @@ function programClick()
 	removeCenter(4);
 	removeActives();
 	
-	$('img.program').addClass('program-active');
+	$('div.program').addClass('program-active');
 	fadeout();
 }
 function ticketsClick()
@@ -47,7 +47,7 @@ function ticketsClick()
 	removeCenter(5);
 	removeActives();
 	
-	$('img.tickets').addClass('tickets-active');
+	$('div.tickets').addClass('tickets-active');
 	fadeout();
 }
 
@@ -68,50 +68,35 @@ function removeCenter(nextID){
 						
 	for(var i = 0; i < allTextAreas.length; i++){
 		if(nextID === i){
-			$(allTextAreas[i]).removeClass('textToLeft');
-			$(allTitleAreas[i]).removeClass('textToLeft');
-			$(allTextAreas[i]).removeClass('textToRight');
-			$(allTitleAreas[i]).removeClass('textToRight');
-			$(allTextAreas[i]).addClass('textToCenter');
-			$(allTitleAreas[i]).addClass('textToCenter');
+			$(allTextAreas[i]).fadeIn(1000, "linear");
+			$(allTitleAreas[i]).fadeIn(1000, "linear");
 			continue;
 		}
 		
-		$(allTextAreas[i]).removeClass('textToCenter');
-		$(allTitleAreas[i]).removeClass('textToCenter');
-		$(allTextAreas[i]).removeClass('textToLeft');
-		$(allTitleAreas[i]).removeClass('textToLeft');
-		$(allTextAreas[i]).removeClass('textToRight');
-		$(allTitleAreas[i]).removeClass('textToRight');
+		$(allTextAreas[i]).fadeOut(500, "linear");
+		$(allTitleAreas[i]).fadeOut(500, "linear");
 		
-		if(nextID > i){
-			$(allTextAreas[i]).addClass('textToLeft');
-			$(allTitleAreas[i]).addClass('textToLeft');
-		}
-		else{
-			$(allTextAreas[i]).addClass('textToRight');
-			$(allTitleAreas[i]).addClass('textToRight');
-		}
+		
 	}
 	if($('img.grow').length === 0){
 		for(var allIdx = 0; allIdx < allTextAreas.length; allIdx++){
 			$(allTextAreas[allIdx]).css('display', 'block');
 			$(allTitleAreas[allIdx]).css('display', 'block');
 			
-			$(allTextAreas[allIdx]).animate({ 'opacity':"1" }, {
+			/*$(allTextAreas[allIdx]).animate({ 'opacity':"1" }, {
 										duration: 400,
 										complete: function() { removeStyles() }
 									});
 			$(allTitleAreas[allIdx]).animate({ 'opacity':"1" }, {
 										duration: 400,
 										complete: function() { removeStyles() }
-									});
+									});*/
 		}
 	}
 }
 
 function removeStyles(){
-		var allTitleAreas = ['div.titulo-concept',
+	var allTitleAreas = ['div.titulo-concept',
 						 'div.titulo-edition',
 						 'div.titulo-gallery',
 						 'div.titulo-information',
@@ -131,12 +116,12 @@ function removeStyles(){
 }
 
 function removeActives(){
-	$('img.concept').removeClass('concept-active');
-	$('img.edition').removeClass('edition-active');
-	$('img.gallery').removeClass('gallery-active');
-	$('img.information').removeClass('information-active');
-	$('img.program').removeClass('program-active');
-	$('img.tickets').removeClass('tickets-active');
+	$('div.concept').removeClass('concept-active');
+	$('div.edition').removeClass('edition-active');
+	$('div.gallery').removeClass('gallery-active');
+	$('div.information').removeClass('information-active');
+	$('div.program').removeClass('program-active');
+	$('div.tickets').removeClass('tickets-active');
 }
 
 function fadeout(){
@@ -175,7 +160,7 @@ function resizeImg (img)
 }
 
 function onLoadedPage(){
-	$('img.concept').on({
+	$('div.concept').on({
 		'mouseover': function() {
 			$('div.conceptSymbol').addClass('conceptSymbolHover');
 		},
@@ -186,14 +171,14 @@ function onLoadedPage(){
 
 	$('div.conceptSymbol').on({
 		'mouseover': function() {
-			$('img.concept').addClass('conceptHover');
+			$('div.concept').addClass('conceptHover');
 		},
 		'mouseout': function() {
-			$('img.concept').removeClass('conceptHover');
+			$('div.concept').removeClass('conceptHover');
 		}
 	});
 
-	$('img.information').on({
+	$('div.information').on({
 		'mouseover': function() {
 			$('div.informationSymbol').addClass('informationSymbolHover');
 		},
@@ -204,14 +189,14 @@ function onLoadedPage(){
 
 	$('div.informationSymbol').on({
 		'mouseover': function() {
-			$('img.information').addClass('informationHover');
+			$('div.information').addClass('informationHover');
 		},
 		'mouseout': function() {
-			$('img.information').removeClass('informationHover');
+			$('div.information').removeClass('informationHover');
 		}
 	});
 
-	$('img.gallery').on({
+	$('div.gallery').on({
 		'mouseover': function() {
 			$('div.gallerySymbol').addClass('gallerySymbolHover');
 		},
@@ -222,14 +207,14 @@ function onLoadedPage(){
 
 	$('div.gallerySymbol').on({
 		'mouseover': function() {
-			$('img.gallery').addClass('galleryHover');
+			$('div.gallery').addClass('galleryHover');
 		},
 		'mouseout': function() {
-			$('img.gallery').removeClass('galleryHover');
+			$('div.gallery').removeClass('galleryHover');
 		}
 	});
 
-	$('img.edition').on({
+	$('div.edition').on({
 		'mouseover': function() {
 			$('div.editionSymbol').addClass('editionSymbolHover');
 		},
@@ -240,14 +225,14 @@ function onLoadedPage(){
 
 	$('div.editionSymbol').on({
 		'mouseover': function() {
-			$('img.edition').addClass('editionHover');
+			$('div.edition').addClass('editionHover');
 		},
 		'mouseout': function() {
-			$('img.edition').removeClass('editionHover');
+			$('div.edition').removeClass('editionHover');
 		}
 	});
 
-	$('img.program').on({
+	$('div.program').on({
 		'mouseover': function() {
 			$('div.programSymbol').addClass('programSymbolHover');
 		},
@@ -258,14 +243,14 @@ function onLoadedPage(){
 
 	$('div.programSymbol').on({
 		'mouseover': function() {
-			$('img.program').addClass('programHover');
+			$('div.program').addClass('programHover');
 		},
 		'mouseout': function() {
-			$('img.program').removeClass('programHover');
+			$('div.program').removeClass('programHover');
 		}
 	});
 
-	$('img.tickets').on({
+	$('div.tickets').on({
 		'mouseover': function() {
 			$('div.ticketsSymbol').addClass('ticketsSymbolHover');
 		},
@@ -276,10 +261,10 @@ function onLoadedPage(){
 
 	$('div.ticketsSymbol').on({
 		'mouseover': function() {
-			$('img.tickets').addClass('ticketsHover');
+			$('div.tickets').addClass('ticketsHover');
 		},
 		'mouseout': function() {
-			$('img.tickets').removeClass('ticketsHover');
+			$('div.tickets').removeClass('ticketsHover');
 		}
 	});
 	

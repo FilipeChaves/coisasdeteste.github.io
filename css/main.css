@@ -151,6 +151,7 @@ ul.menuPrincipal
 	max-height:12.01%;
 	text-align: center;
 	list-style-type: none;
+	align-content: center;
 }
 
 div.divMenuSocial
@@ -231,31 +232,11 @@ li a:hover {
     background-color: #111;
 }
 
-img.separador
-{
-	display:inline-block;
-	background-position: center;
-}
-
 /******************************************************
 ********* Concept Symbols and Hover *******************
 ******************************************************/
 
-img.concept
-{
-	background: url('../img/menu/Concept.png');
-	max-width:17,85%;
-	background-size: contain;
-	cursor:pointer;
-}
 
-img.concept:hover, img.conceptHover, img.concept-active
-{
-	background: url('../img/menu/ConceptHover.png');
-	max-height:12,01%;
-	max-width:17,85%;
-	background-size: contain;
-}
 
 div.conceptSymbol
 {
@@ -283,19 +264,6 @@ div.conceptSymbol:hover, div.conceptSymbolHover
 ********* Edition Symbols and Hover *******************
 ******************************************************/
 
-img.edition
-{
-	background: url('../img/menu/Edition.png');
-	background-size: contain;
-	cursor:pointer;
-}
-
-img.edition:hover, img.editionHover, img.edition-active
-{
-	background: url('../img/menu/EditionHover.png');
-	background-size: contain;
-}
-
 div.editionSymbol
 {
 	background: url('../img/symbols/EditionSymbol.png') no-repeat;
@@ -321,19 +289,6 @@ div.editionSymbol:hover, div.editionSymbolHover
 /******************************************************
 ********* Gallery Symbols and Hover *******************
 ******************************************************/
-
-img.gallery
-{
-	background: url('../img/menu/Gallery.png');
-	background-size: contain;
-	cursor:pointer;
-}
-
-img.gallery:hover, img.galleryHover, img.gallery-active
-{
-	background: url('../img/menu/GalleryHover.png');
-	background-size: contain;
-}
 
 div.gallerySymbol
 {
@@ -361,21 +316,6 @@ div.gallerySymbol:hover, div.gallerySymbolHover
 ********* Information Symbols and Hover ***************
 ******************************************************/
 
-img.information
-{
-	background: url('../img/menu/Information.png');
-	background-size: contain;
-	cursor:pointer;
-	/*width: 19.47%;*/
-}
-
-img.information:hover, img.informationHover, img.information-active
-{
-	background: url('../img/menu/InformationHover.png');
-	background-size: contain;
-	/*width: 19.47%;*/
-}
-
 div.informationSymbol
 {
 	background: url('../img/symbols/InformationSymbol.png') no-repeat;
@@ -402,19 +342,6 @@ div.informationSymbol:hover, div.informationSymbolHover
 ********* Program Symbols and Hover *******************
 ******************************************************/
 
-img.program
-{
-	background: url('../img/menu/Program.png');
-	background-size: contain;
-	cursor:pointer;
-}
-
-img.program:hover, img.programHover, img.program-active
-{
-	background: url('../img/menu/ProgramHover.png');
-	background-size: contain;
-}
-
 div.programSymbol
 {
 	background: url('../img/symbols/ProgramSymbol.png') no-repeat;
@@ -438,19 +365,6 @@ div.programSymbol:hover, div.programSymbolHover
 /******************************************************
 ********* Tickets Symbols and Hover *******************
 ******************************************************/
-
-img.tickets
-{
-	background: url('../img/menu/Tickets.png');
-	background-size: contain;
-	cursor:pointer;
-}
-
-img.tickets:hover, img.ticketsHover, img.tickets-active
-{
-	background: url('../img/menu/TicketsHover.png');
-	background-size: contain;
-}
 
 div.ticketsSymbol
 {
@@ -495,3 +409,399 @@ div.goRight
 	top: -20.5%;
 	left: 120.5%;
 }
+
+@media screen and (min-width: 1660px) {   
+	div.separador
+	{
+		background-image: url('../img/menu/Separador.png');
+		display:inline-block;
+		background-position: center;
+		height: 94px;
+		width: 6px;
+		background-repeat: no-repeat;
+	}
+	
+    div.concept
+	{
+		background-image: url('../img/menu/Concept.png');
+		max-width:17,85%;
+		background-size: contain;
+		cursor:pointer;
+		height: 94px;
+		width: 257px;
+		background-repeat: no-repeat;
+	}
+
+	div.concept:hover, div.conceptHover, div.concept-active
+	{
+		background-image: url('../img/menu/ConceptHover.png');
+		max-height:12,01%;
+		max-width:17,85%;
+		background-size: contain;
+		height: 94px;
+		width: 257px;
+		background-repeat: no-repeat;
+	}
+	
+	div.edition
+	{
+		background-image: url('../img/menu/Edition.png');
+		background-size: contain;
+		cursor:pointer;
+		height: 94px;
+		width: 242px;
+		background-repeat: no-repeat;
+	}
+
+	div.edition:hover, div.editionHover, div.edition-active
+	{
+		background-image: url('../img/menu/EditionHover.png');
+		background-size: contain;
+		height: 94px;
+		width: 242px;
+		background-repeat: no-repeat;
+	}
+
+	div.gallery
+	{
+		background-image: url('../img/menu/Gallery.png');
+		background-size: contain;
+		cursor:pointer;
+		height: 94px;
+		width: 180px;
+		background-repeat: no-repeat;
+	}
+
+	div.gallery:hover, div.galleryHover, div.gallery-active
+	{
+		background-image: url('../img/menu/GalleryHover.png');
+		background-size: contain;
+		height: 94px;
+		width: 180px;
+		background-repeat: no-repeat;
+	}
+
+	div.information
+	{
+		background-image: url('../img/menu/Information.png');
+		background-size: contain;
+		cursor:pointer;
+		height: 94px;
+		width: 260px;
+		background-repeat: no-repeat;
+		/*width: 19.47%;*/
+	}
+
+	div.information:hover, div.informationHover, div.information-active
+	{
+		background-image: url('../img/menu/InformationHover.png');
+		background-size: contain;
+		height: 94px;
+		width: 260px;
+		background-repeat: no-repeat;
+		/*width: 19.47%;*/
+	}
+
+	div.program
+	{
+		background-image: url('../img/menu/Program.png');
+		background-size: contain;
+		cursor:pointer;
+		height: 94px;
+		width: 202px;
+		background-repeat: no-repeat;
+	}
+
+	div.program:hover, div.programHover, div.program-active
+	{
+		background-image: url('../img/menu/ProgramHover.png');
+		background-size: contain;
+		height: 94px;
+		width: 202px;
+		background-repeat: no-repeat;
+	}
+
+	div.tickets
+	{
+		background-image: url('../img/menu/Tickets.png');
+		background-size: contain;
+		cursor:pointer;
+		height: 94px;
+		width: 164px;
+		background-repeat: no-repeat;
+	}
+
+	div.tickets:hover, div.ticketsHover, div.tickets-active
+	{
+		background-image: url('../img/menu/TicketsHover.png');
+		background-size: contain;
+		height: 94px;
+		width: 164px;
+		background-repeat: no-repeat;
+	}
+}  
+@media screen and (min-width: 1440px) and (max-width: 1659px) { 
+	div.separador
+	{
+		background-image: url('../img/menu/Separador.png');
+		display:inline-block;
+		background-position: center;
+		height: 75px;
+		width: 6px;
+		background-repeat: no-repeat;
+	}
+	
+    div.concept
+	{
+		background-image: url('../img/menu/Concept.png');
+		max-width:17,85%;
+		background-size: contain;
+		cursor:pointer;
+		width: 206px;
+		height: 75px;
+		background-repeat: no-repeat;
+	}
+
+	div.concept:hover, div.conceptHover, div.concept-active
+	{
+		background-image: url('../img/menu/ConceptHover.png');
+		max-height:12,01%;
+		max-width:17,85%;
+		background-size: contain;
+		width: 206px;
+		height: 75px;
+		background-repeat: no-repeat;
+	}
+	
+	div.edition
+	{
+		background-image: url('../img/menu/Edition.png');
+		background-size: contain;
+		cursor:pointer;
+		width: 194px;
+		height: 75px;
+		background-repeat: no-repeat;
+	}
+
+	div.edition:hover, div.editionHover, div.edition-active
+	{
+		background-image: url('../img/menu/EditionHover.png');
+		background-size: contain;
+		width: 194px;
+		height: 75px;
+		background-repeat: no-repeat;
+	}
+
+	div.gallery
+	{
+		background-image: url('../img/menu/Gallery.png');
+		background-size: contain;
+		cursor:pointer;
+		width: 144px;
+		height: 75px;
+		background-repeat: no-repeat;
+	}
+
+	div.gallery:hover, div.galleryHover, div.gallery-active
+	{
+		background-image: url('../img/menu/GalleryHover.png');
+		background-size: contain;
+		width: 144px;
+		height: 75px;
+		background-repeat: no-repeat;
+	}
+
+	div.information
+	{
+		background-image: url('../img/menu/Information.png');
+		background-size: contain;
+		cursor:pointer;
+		width: 208px;
+		height: 75px;
+		background-repeat: no-repeat;
+		/*width: 19.47%;*/
+	}
+
+	div.information:hover, div.informationHover, div.information-active
+	{
+		background-image: url('../img/menu/InformationHover.png');
+		background-size: contain;
+		width: 208px;
+		height: 75px;
+		background-repeat: no-repeat;
+		/*width: 19.47%;*/
+	}
+
+	div.program
+	{
+		background-image: url('../img/menu/Program.png');
+		background-size: contain;
+		cursor:pointer;
+		width: 162px;
+		height: 75px;
+		background-repeat: no-repeat;
+	}
+
+	div.program:hover, div.programHover, div.program-active
+	{
+		background-image: url('../img/menu/ProgramHover.png');
+		background-size: contain;
+		width: 162px;
+		height: 75px;
+		background-repeat: no-repeat;
+	}
+
+	div.tickets
+	{
+		background-image: url('../img/menu/Tickets.png');
+		background-size: contain;
+		cursor:pointer;
+		width: 131px;
+		height: 75px;
+		background-repeat: no-repeat;
+	}
+
+	div.tickets:hover, div.ticketsHover, div.tickets-active
+	{
+		background-image: url('../img/menu/TicketsHover.png');
+		background-size: contain;
+		width: 131px;
+		height: 75px;
+		background-repeat: no-repeat;
+	}
+}  
+
+@media screen and (max-width: 1439px) { 
+	div.separador
+	{
+		background-image: url('../img/menu/Separador.png');
+		display:inline-block;
+		background-position: center;
+		height: 60px;
+		width: 5px;
+		background-repeat: no-repeat;
+	}
+	
+    div.concept
+	{
+		background-image: url('../img/menu/Concept.png');
+		max-width:17,85%;
+		background-size: contain;
+		cursor:pointer;
+		width: 165px;
+		height: 60px;
+		background-repeat: no-repeat;
+	}
+
+	div.concept:hover, div.conceptHover, div.concept-active
+	{
+		background-image: url('../img/menu/ConceptHover.png');
+		max-height:12,01%;
+		max-width:17,85%;
+		background-size: contain;
+		width: 165px;
+		height: 60px;
+		background-repeat: no-repeat;
+	}
+	
+	div.edition
+	{
+		background-image: url('../img/menu/Edition.png');
+		background-size: contain;
+		cursor:pointer;
+		width: 155px;
+		height: 60px;
+		background-repeat: no-repeat;
+	}
+
+	div.edition:hover, div.editionHover, div.edition-active
+	{
+		background-image: url('../img/menu/EditionHover.png');
+		background-size: contain;
+		width: 155px;
+		height: 60px;
+		background-repeat: no-repeat;
+	}
+
+	div.gallery
+	{
+		background-image: url('../img/menu/Gallery.png');
+		background-size: contain;
+		cursor:pointer;
+		width: 115px;
+		height: 60px;
+		background-repeat: no-repeat;
+	}
+
+	div.gallery:hover, div.galleryHover, div.gallery-active
+	{
+		background-image: url('../img/menu/GalleryHover.png');
+		background-size: contain;
+		width: 115px;
+		height: 60px;
+		background-repeat: no-repeat;
+	}
+
+	div.information
+	{
+		background-image: url('../img/menu/Information.png');
+		background-size: contain;
+		cursor:pointer;
+		width: 166px;
+		height: 60px;
+		background-repeat: no-repeat;
+		/*width: 19.47%;*/
+	}
+
+	div.information:hover, div.informationHover, div.information-active
+	{
+		background-image: url('../img/menu/InformationHover.png');
+		background-size: contain;
+		width: 166px;
+		height: 60px;
+		background-repeat: no-repeat;
+		/*width: 19.47%;*/
+	}
+
+	div.program
+	{
+		background-image: url('../img/menu/Program.png');
+		background-size: contain;
+		cursor:pointer;
+		width: 130px;
+		height: 60px;
+		background-repeat: no-repeat;
+	}
+
+	div.program:hover, div.programHover, div.program-active
+	{
+		background-image: url('../img/menu/ProgramHover.png');
+		background-size: contain;
+		width: 130px;
+		height: 60px;
+		background-repeat: no-repeat;
+	}
+
+	div.tickets
+	{
+		background-image: url('../img/menu/Tickets.png');
+		background-size: contain;
+		cursor:pointer;
+		width: 105px;
+		height: 60px;
+		background-repeat: no-repeat;
+	}
+
+	div.tickets:hover, div.ticketsHover, div.tickets-active
+	{
+		background-image: url('../img/menu/TicketsHover.png');
+		background-size: contain;
+		width: 105px;
+		height: 60px;
+		background-repeat: no-repeat;
+	}
+}
+
+
+
+
