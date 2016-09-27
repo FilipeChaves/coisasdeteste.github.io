@@ -134,6 +134,7 @@ div.divMenu
 {
 	text-align: center;
 	max-height: 12.01%;
+	margin-left: 15%;
 }
 
 ul.menuPrincipal
@@ -161,7 +162,7 @@ div.divMenuSocial
 	max-height: 12.01%;
 	text-align: center;
 	margin-top: 42%;
-	margin-left: 33%;
+	margin-left: 35%;
     overflow: hidden;
 	width: 100%;
 	list-style-type: none;
