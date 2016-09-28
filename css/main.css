@@ -132,86 +132,91 @@ img.arvore
 
 div.divMenu
 {
+	position: fixed;
 	text-align: center;
-	max-height: 12.01%;
-	margin-left: 15%;
+    top: 0px;
+	
 }
 
 ul.menuPrincipal
 {
-    list-style-type: none;
-    overflow: hidden;
-	display:inline-block;
 	list-style:none outside none;
-	margin:auto auto;
-	padding:0;
+    list-style-type: none;
+	display:inline-block;
+    margin: 0 auto;
+			
 	-webkit-user-select: none;  /* Chrome all / Safari all */
 	-moz-user-select: none;     /* Firefox all */
 	-ms-user-select: none;      /* IE 10+ */
 	user-select: none;          /* Likely future */  
-	max-height:12.01%;
-	text-align: center;
-	list-style-type: none;
-	align-content: center;
 }
 
 div.divMenuSocial
 {
-	position: absolute;
+	position:fixed;
+	left:0px;
+	bottom:0px;
 	text-align: center;
-	max-height: 12.01%;
-	text-align: center;
-	margin-top: 42%;
-	margin-left: 35%;
-    overflow: hidden;
 	width: 100%;
 	list-style-type: none;
 }
 
 ul.socialMenu
 {
-    list-style-type: none;
-    overflow: hidden;
+	width:35%;
+	height:40px;
+	display: inline-block;
 	list-style: none outside none;
+	text-align: center;
+	list-style-type: none;
+	
 	-webkit-user-select: none;  /* Chrome all / Safari all */
 	-moz-user-select: none;     /* Firefox all */
 	-ms-user-select: none;      /* IE 10+ */
 	user-select: none;          /* Likely future */  
-	max-height:12.01%;
-	text-align: center;
-	list-style-type: none;
 }
 
-img.facebook
+div.facebook
 {
-	/*width: 37%;*/
-	height: auto;
+	height: 40px;
+	width: 40px;
 	background-size: contain;
-	background-image: url("img/social/facebook.png");
+	background-repeat: no-repeat;
+	background-image: url("../img/social/facebook.png");
 }
 
-img.youtube
+div.youtube
 {
-	/*width: 37%;*/
-	height: auto;
+	height: 40px;
+	width: 40px;
 	background-size: contain;
-	background-image: url("img/social/youtube.png");
+	background-repeat: no-repeat;
+	background-image: url("../img/social/youtube.png");
 }
 
-img.facebook:hover
+div.facebook:hover
 {
-	background-image: url("img/social/facebookHover.png");
+	height: 40px;
+	width: 40px;
+	background-image: url("../img/social/facebookHover.png");
+	background-repeat: no-repeat;
 }
 
-img.youtube:hover
+div.youtube:hover
 {
-	background-image: url("img/social/youtubeHover.png");
+	height: 40px;
+	width: 40px;
+	background-image: url("../img/social/youtubeHover.png");
+	background-repeat: no-repeat;
 }
 
-img.socialText
+div.socialText
 {
+	height: 40px;
+	width: 240px;
 	background-size: contain;
-	background-image: url("img/social/youtube.png");
+	background-image: url("../img/social/socialText.png");
+	background-repeat: no-repeat;
 }
 
 div.divMenu li {
@@ -223,7 +228,7 @@ div.divMenu li {
 
 div.divMenuSocial li {
     float: left;
-	max-height:12.01%;
+	height: 40px;
 	list-style-type: none;
 	background-size: contain;
 }
