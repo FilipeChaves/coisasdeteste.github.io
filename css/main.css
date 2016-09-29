@@ -78,6 +78,18 @@ p.texto
 	line-height: 150%;
 }
 
+p.textoBold
+{
+	font-family: "Text Custom Font", Verdana, Tahoma;
+	color: white;
+	font-weight: bold;
+	font-size: 110%;
+	transition: all 1s ease-in-out;
+	text-align: justify;
+    text-justify: inter-word;
+	line-height: 150%;
+}
+
 div.textToLeft
 {
 	left: -200%;
