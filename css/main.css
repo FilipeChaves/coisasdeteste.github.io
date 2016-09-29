@@ -249,6 +249,7 @@ div.divMenu li {
 div.divMenuSocial li {
     float: left;
 	height: 40px;
+	padding-right:15px;
 	list-style-type: none;
 	background-size: contain;
 }
