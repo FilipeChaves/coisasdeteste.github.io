@@ -68,8 +68,8 @@ function removeCenter(nextID){
 						
 	if($('img.grow').length === 0){
 		for(var allIdx = 0; allIdx < allTextAreas.length; allIdx++){
-			$(allTextAreas[allIdx]).css('display', 'block');
-			$(allTitleAreas[allIdx]).css('display', 'block');
+			$(allTextAreas[allIdx]).css('display', 'inline-block');
+			$(allTitleAreas[allIdx]).css('display', 'inline-block');
 		}
 	}
 	

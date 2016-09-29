@@ -27,10 +27,9 @@ body
 
 div.textArea-concept, div.textArea-program, div.textArea-information, div.textArea-gallery, div.textArea-tickets, div.textArea-edition
 {
-	position: absolute;
-	margin-left:10%;
+	position: fixed;
 	margin-top:10%;
-	width:80%; 
+	width:60%; 
 	height:500px;
 	opacity:0;
 	filter: alpha(opacity=0);
@@ -39,7 +38,7 @@ div.textArea-concept, div.textArea-program, div.textArea-information, div.textAr
 
 div.titleDiv
 {
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	height: 5%;
 	top: 13%;
@@ -50,21 +49,21 @@ div.titleDiv
 
 h3.titulo-concept, h3.titulo-program, h3.titulo-information, h3.titulo-gallery, h3.titulo-tickets, h3.titulo-edition
 {
-	    font-family: "Title Custom Font", Verdana, Tahoma;
-    color: white;
-    font-size: 250%;
-    text-align: center;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    /* display: block; */
-    font-size: auto;
-    -webkit-margin-before: 0px;
-    -webkit-margin-after: 0px;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    font-weight: bold;
+	font-family: "Title Custom Font", Verdana, Tahoma;
+	color: white;
+	font-size: 250%;
+	text-align: center;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	/* display: block; */
+	font-size: auto;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	font-weight: bold;
 }
 
 p.texto
