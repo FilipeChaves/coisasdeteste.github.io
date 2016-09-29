@@ -66,6 +66,13 @@ function removeCenter(nextID){
 						'div.textArea-program',
 						'div.textArea-tickets']; 
 						
+	if($('img.grow').length === 0){
+		for(var allIdx = 0; allIdx < allTextAreas.length; allIdx++){
+			$(allTextAreas[allIdx]).css('display', 'block');
+			$(allTitleAreas[allIdx]).css('display', 'block');
+		}
+	}
+	
 	for(var i = 0; i < allTextAreas.length; i++){
 		if(nextID === i){
 			$(allTextAreas[i]).css('opacity', '100');
@@ -79,12 +86,7 @@ function removeCenter(nextID){
 		
 		
 	}
-	if($('img.grow').length === 0){
-		for(var allIdx = 0; allIdx < allTextAreas.length; allIdx++){
-			$(allTextAreas[allIdx]).css('display', 'block');
-			$(allTitleAreas[allIdx]).css('display', 'block');
-		}
-	}
+
 }
 
 function removeStyles(){

@@ -71,7 +71,7 @@ p.texto
 {
 	font-family: "Text Custom Font", Verdana, Tahoma;
 	color: white;
-	font-size: 110%;
+	font-size: 90%;
 	transition: all 1s ease-in-out;
 	text-align: justify;
     text-justify: inter-word;
@@ -83,7 +83,7 @@ p.textoBold
 	font-family: "Text Custom Font", Verdana, Tahoma;
 	color: white;
 	font-weight: bold;
-	font-size: 110%;
+	font-size: 95%;
 	transition: all 1s ease-in-out;
 	text-align: justify;
     text-justify: inter-word;
