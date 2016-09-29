@@ -68,13 +68,14 @@ function removeCenter(nextID){
 						
 	for(var i = 0; i < allTextAreas.length; i++){
 		if(nextID === i){
-			$(allTextAreas[i]).fadeIn(1000, "linear");
-			$(allTitleAreas[i]).fadeIn(1000, "linear");
+			$(allTextAreas[i]).css('opacity', '100');
+			$(allTitleAreas[i]).css('opacity', '100');
+			
 			continue;
 		}
 		
-		$(allTextAreas[i]).fadeOut(500, "linear");
-		$(allTitleAreas[i]).fadeOut(500, "linear");
+			$(allTextAreas[i]).css('opacity', '0');
+			$(allTitleAreas[i]).css('opacity', '0');
 		
 		
 	}
@@ -82,15 +83,6 @@ function removeCenter(nextID){
 		for(var allIdx = 0; allIdx < allTextAreas.length; allIdx++){
 			$(allTextAreas[allIdx]).css('display', 'block');
 			$(allTitleAreas[allIdx]).css('display', 'block');
-			
-			/*$(allTextAreas[allIdx]).animate({ 'opacity':"1" }, {
-										duration: 400,
-										complete: function() { removeStyles() }
-									});
-			$(allTitleAreas[allIdx]).animate({ 'opacity':"1" }, {
-										duration: 400,
-										complete: function() { removeStyles() }
-									});*/
 		}
 	}
 }
