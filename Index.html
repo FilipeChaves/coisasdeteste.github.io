@@ -10,6 +10,26 @@
 		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 		<meta content="utf-8" http-equiv="encoding">
 		<title>ZNA Gathering</title>
+		
+		    <script>
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: 'V-_Io8jPcuY'
+        });
+      }
+    </script>
 	</head>
 	
 	<body onLoad="onLoadedPage()">
@@ -57,6 +77,9 @@
 			<br>A unique location, under the shade of trees, in the middle of nature, built with love by dancers for dancers. 
 			All the musicians on stage are active members of the global trance scene, and have careers which started back in the 90's. 
 			We believe that the most important ingredient in a party are the participants, everyone is a part of it, everyone makes the gathering! Collective energy gives wings to a gathering, your presence makes it magical.</p>
+			
+			<div id="player"></div>
+			
 			<p class="textoBold"> So, what does ZNA stand for?</p>
 			<p class="texto"> ZNA is the Zeoxyribonucleic Acid.
 			<br>ZNA is a strand that encodes the genetic instructions used in the development and functioning of all Zambu living organisms.
@@ -105,8 +128,43 @@
 			<h3 class="titulo-program textToCenter" >Program</h3>
 		</div>
 		<div class="textArea-program textToCenter"  style="display:none;opacity:0;transition: all 1s ease-in-out;">
+			<!--div class="divProgram" style="width:100%;">
+				<ul id="menuPrincipal" style="
+					-webkit-margin-before: auto;
+					-webkit-margin-after: auto;
+					-webkit-margin-start: auto;
+					-webkit-margin-end: auto;
+					-webkit-padding-start: inherit;
+					text-align: center;
+					display: inline-table;">
+					
+				  <li style="padding-left:15px; text-color:white">Dancefloor</li>
+				  <li style="padding-left:15px; text-color:white">Chillout area</li>
+				  <li style="padding-left:15px; text-color:white">Goa Guardians Night</li>
+				  <li style="padding-left:15px; text-color:white">Zambukids</li>
+				  <li style="padding-left:15px; text-color:white">Zenbuspace</li>
+				</ul> 
+			</div-->
 			<p class="texto"> FULL PROGRAM + MAP</p>
-			<p class="texto">It's here that all info will appear</p>
+			<p class="texto">Our dancing grounds under the cool shade of the old pine trees. An area for physical and spiritual sharing, a space dedicated to transcendence. A few meters from the crystal clear waters of the lake, cool in the day and cozy during the night. The following list of acts are a true materialization of our effort and collective wishes. We believe it truly represents the golden age of Psi-Trance we all miss and love so much.
+</p>
+			<p class="textoBold">Line Up (Live set)</p>
+			<p class="textoBold">►EAT STATIC►</p>
+			<p class="textoBold">❖ Mesmobeat Records / UK ❖</p>
+			<p class="textoBold">►INDOOR VS PHREAKY►</p>
+			<p class="textoBold">❖ Mdma Records / IL ❖</p>
+			<p class="textoBold">►LOGIC BOMB VS TRANAN►</p>
+			<p class="textoBold">❖ Z-Plane Records / SE ❖</p>
+			<p class="textoBold">►MAN WITH NO NAME►</p>
+			<p class="textoBold">❖ Dragonfly Records / UK ❖</p>
+			<p class="textoBold">►OFORIA►</p>
+			<p class="textoBold">❖ Mdma Records / IL ❖</p>
+			<p class="textoBold">►SPACE CAT VS DNA ►</p>
+			<p class="textoBold">❖ Mdma Records / IL ❖</p>
+			<p class="textoBold">►THE INFINITY PROJECT by Graham Wood ►</p>
+			<p class="textoBold">❖ TIP Records / UK ❖</p>
+			<p class="textoBold">►X-DREAM►</p>
+			<p class="textoBold">❖ Boshke Beat Records / DE ❖</p>
 		</div>
 		
 		<div class="titleDiv titulo-tickets textToCenter" style="display:none;opacity:0;transition: all 1s ease-in-out;">

@@ -245,6 +245,13 @@ div.divMenu li {
 	background-size: contain;
 }
 
+div.divProgram li {
+    float: left;
+	max-height:10.01%;
+	list-style-type: none;
+	background-size: contain;
+}
+
 div.divMenuSocial li {
     float: left;
 	height: 40px;
