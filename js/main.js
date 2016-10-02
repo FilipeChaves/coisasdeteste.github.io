@@ -7,12 +7,12 @@ function conceptClick()
 	fadeout();
 }
 
-function editionClick()
+function locationClick()
 {
 	removeCenter(1);
 	removeActives();
 	
-	$('div.edition').addClass('edition-active');
+	$('div.location').addClass('location-active');
 	fadeout();
 }
 
@@ -111,7 +111,7 @@ function removeStyles(){
 
 function removeActives(){
 	$('div.concept').removeClass('concept-active');
-	$('div.edition').removeClass('edition-active');
+	$('div.location').removeClass('location-active');
 	$('div.gallery').removeClass('gallery-active');
 	$('div.information').removeClass('information-active');
 	$('div.program').removeClass('program-active');
@@ -125,7 +125,7 @@ function fadeout(){
 		$('img.arvore').addClass("turnTransparent");
 		$('h3.titulo-concept').fadeIn(1000, "linear");
 		$('div.textArea-concept').fadeIn(1000, "linear");
-		$('div.conceptSymbol, div.editionSymbol, div.gallerySymbol').addClass('goLeft');
+		$('div.conceptSymbol, div.locationSymbol, div.gallerySymbol').addClass('goLeft');
 		$('div.informationSymbol, div.programSymbol, div.ticketsSymbol').addClass('goRight');
 		//$('img.arvore').fadeOut(2500, "linear");
 		$('#clickMe').fadeOut();
@@ -208,21 +208,21 @@ function onLoadedPage(){
 		}
 	});
 
-	$('div.edition').on({
+	$('div.location').on({
 		'mouseover': function() {
-			$('div.editionSymbol').addClass('editionSymbolHover');
+			$('div.locationSymbol').addClass('locationSymbolHover');
 		},
 		'mouseout': function() {
-			$('div.editionSymbol').removeClass('editionSymbolHover');
+			$('div.locationSymbol').removeClass('locationSymbolHover');
 		}
 	});
 
-	$('div.editionSymbol').on({
+	$('div.locationSymbol').on({
 		'mouseover': function() {
-			$('div.edition').addClass('editionHover');
+			$('div.location').addClass('locationHover');
 		},
 		'mouseout': function() {
-			$('div.edition').removeClass('editionHover');
+			$('div.location').removeClass('locationHover');
 		}
 	});
 

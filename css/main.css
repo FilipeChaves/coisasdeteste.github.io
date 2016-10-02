@@ -290,12 +290,12 @@ div.conceptSymbol:hover, div.conceptSymbolHover
 ********* Edition Symbols and Hover *******************
 ******************************************************/
 
-div.editionSymbol
+div.locationSymbol
 {
-	background: url('../img/symbols/EditionSymbol.png') no-repeat;
+	background: url('../img/symbols/LocationSymbol.png') no-repeat;
 	position: absolute;
-	top: 24.12%;
-	left: 16.98%;
+	top: 11.05%;
+	left: 26.04%;
 	width: 13.59%;
 	height: 26.34%;
 	transition: background 0.3s ease-in-out;
@@ -306,9 +306,9 @@ div.editionSymbol
 	cursor:pointer;
 }
 
-div.editionSymbol:hover, div.editionSymbolHover
+div.locationSymbol:hover, div.locationSymbolHover
 {
-	background: url('../img/symbols/EditionSymbolHover.png') no-repeat;
+	background: url('../img/symbols/LocationSymbolHover.png') no-repeat;
 	background-size: contain;
 }
 
@@ -320,8 +320,8 @@ div.gallerySymbol
 {
 	background: url('../img/symbols/GallerySymbol.png') no-repeat;
 	position: absolute;
-	top: 11.05%;
-	left: 26.04%;
+	top: 24.12%;
+	left: 69.01%;
 	width: 13.59%;
 	height: 26.34%;
 	transition: background 0.3s ease-in-out;
@@ -373,7 +373,7 @@ div.programSymbol
 	background: url('../img/symbols/ProgramSymbol.png') no-repeat;
 	position: absolute;
 	top: 24.12%;
-	left: 69.01%;
+	left: 16.98%;
 	width: 13.59%;
 	height: 26.34%;
 	transition: background 0.3s ease-in-out;
@@ -439,7 +439,7 @@ div.goRight
 @media screen and (min-width: 1600px) {   
 	div.separador
 	{
-		background-image: url('../img/menu/Separador.png');
+		background-image: url('../img/menu/separador.png');
 		display:inline-block;
 		background-position: center;
 		height: 94px;
@@ -449,7 +449,7 @@ div.goRight
 	
     div.concept
 	{
-		background-image: url('../img/menu/Concept.png');
+		background-image: url('../img/menu/concept.png');
 		max-width:17,85%;
 		background-size: contain;
 		cursor:pointer;
@@ -460,7 +460,7 @@ div.goRight
 
 	div.concept:hover, div.conceptHover, div.concept-active
 	{
-		background-image: url('../img/menu/ConceptHover.png');
+		background-image: url('../img/menu/conceptHover.png');
 		max-height:12,01%;
 		max-width:17,85%;
 		background-size: contain;
@@ -469,9 +469,9 @@ div.goRight
 		background-repeat: no-repeat;
 	}
 	
-	div.edition
+	div.location
 	{
-		background-image: url('../img/menu/Edition.png');
+		background-image: url('../img/menu/location.png');
 		background-size: contain;
 		cursor:pointer;
 		height: 94px;
@@ -479,9 +479,9 @@ div.goRight
 		background-repeat: no-repeat;
 	}
 
-	div.edition:hover, div.editionHover, div.edition-active
+	div.location:hover, div.locationHover, div.location-active
 	{
-		background-image: url('../img/menu/EditionHover.png');
+		background-image: url('../img/menu/locationHover.png');
 		background-size: contain;
 		height: 94px;
 		width: 242px;
@@ -490,7 +490,7 @@ div.goRight
 
 	div.gallery
 	{
-		background-image: url('../img/menu/Gallery.png');
+		background-image: url('../img/menu/gallery.png');
 		background-size: contain;
 		cursor:pointer;
 		height: 94px;
@@ -500,7 +500,7 @@ div.goRight
 
 	div.gallery:hover, div.galleryHover, div.gallery-active
 	{
-		background-image: url('../img/menu/GalleryHover.png');
+		background-image: url('../img/menu/galleryHover.png');
 		background-size: contain;
 		height: 94px;
 		width: 180px;
@@ -509,7 +509,7 @@ div.goRight
 
 	div.information
 	{
-		background-image: url('../img/menu/Information.png');
+		background-image: url('../img/menu/information.png');
 		background-size: contain;
 		cursor:pointer;
 		height: 94px;
@@ -520,7 +520,7 @@ div.goRight
 
 	div.information:hover, div.informationHover, div.information-active
 	{
-		background-image: url('../img/menu/InformationHover.png');
+		background-image: url('../img/menu/informationHover.png');
 		background-size: contain;
 		height: 94px;
 		width: 260px;
@@ -530,7 +530,7 @@ div.goRight
 
 	div.program
 	{
-		background-image: url('../img/menu/Program.png');
+		background-image: url('../img/menu/program.png');
 		background-size: contain;
 		cursor:pointer;
 		height: 94px;
@@ -540,7 +540,7 @@ div.goRight
 
 	div.program:hover, div.programHover, div.program-active
 	{
-		background-image: url('../img/menu/ProgramHover.png');
+		background-image: url('../img/menu/programHover.png');
 		background-size: contain;
 		height: 94px;
 		width: 202px;
@@ -549,7 +549,7 @@ div.goRight
 
 	div.tickets
 	{
-		background-image: url('../img/menu/Tickets.png');
+		background-image: url('../img/menu/tickets.png');
 		background-size: contain;
 		cursor:pointer;
 		height: 94px;
@@ -559,7 +559,7 @@ div.goRight
 
 	div.tickets:hover, div.ticketsHover, div.tickets-active
 	{
-		background-image: url('../img/menu/TicketsHover.png');
+		background-image: url('../img/menu/ticketsHover.png');
 		background-size: contain;
 		height: 94px;
 		width: 164px;
@@ -569,7 +569,7 @@ div.goRight
 @media screen and (min-width: 1440px) and (max-width: 1599px) { 
 	div.separador
 	{
-		background-image: url('../img/menu/Separador.png');
+		background-image: url('../img/menu/separador.png');
 		display:inline-block;
 		background-position: center;
 		height: 75px;
@@ -579,7 +579,7 @@ div.goRight
 	
     div.concept
 	{
-		background-image: url('../img/menu/Concept.png');
+		background-image: url('../img/menu/concept.png');
 		max-width:17,85%;
 		background-size: contain;
 		cursor:pointer;
@@ -590,7 +590,7 @@ div.goRight
 
 	div.concept:hover, div.conceptHover, div.concept-active
 	{
-		background-image: url('../img/menu/ConceptHover.png');
+		background-image: url('../img/menu/conceptHover.png');
 		max-height:12,01%;
 		max-width:17,85%;
 		background-size: contain;
@@ -599,9 +599,9 @@ div.goRight
 		background-repeat: no-repeat;
 	}
 	
-	div.edition
+	div.location
 	{
-		background-image: url('../img/menu/Edition.png');
+		background-image: url('../img/menu/location.png');
 		background-size: contain;
 		cursor:pointer;
 		width: 194px;
@@ -609,9 +609,9 @@ div.goRight
 		background-repeat: no-repeat;
 	}
 
-	div.edition:hover, div.editionHover, div.edition-active
+	div.location:hover, div.locationHover, div.location-active
 	{
-		background-image: url('../img/menu/EditionHover.png');
+		background-image: url('../img/menu/locationHover.png');
 		background-size: contain;
 		width: 194px;
 		height: 75px;
@@ -620,7 +620,7 @@ div.goRight
 
 	div.gallery
 	{
-		background-image: url('../img/menu/Gallery.png');
+		background-image: url('../img/menu/gallery.png');
 		background-size: contain;
 		cursor:pointer;
 		width: 144px;
@@ -630,7 +630,7 @@ div.goRight
 
 	div.gallery:hover, div.galleryHover, div.gallery-active
 	{
-		background-image: url('../img/menu/GalleryHover.png');
+		background-image: url('../img/menu/galleryHover.png');
 		background-size: contain;
 		width: 144px;
 		height: 75px;
@@ -639,7 +639,7 @@ div.goRight
 
 	div.information
 	{
-		background-image: url('../img/menu/Information.png');
+		background-image: url('../img/menu/information.png');
 		background-size: contain;
 		cursor:pointer;
 		width: 208px;
@@ -650,7 +650,7 @@ div.goRight
 
 	div.information:hover, div.informationHover, div.information-active
 	{
-		background-image: url('../img/menu/InformationHover.png');
+		background-image: url('../img/menu/informationHover.png');
 		background-size: contain;
 		width: 208px;
 		height: 75px;
@@ -660,7 +660,7 @@ div.goRight
 
 	div.program
 	{
-		background-image: url('../img/menu/Program.png');
+		background-image: url('../img/menu/program.png');
 		background-size: contain;
 		cursor:pointer;
 		width: 162px;
@@ -670,7 +670,7 @@ div.goRight
 
 	div.program:hover, div.programHover, div.program-active
 	{
-		background-image: url('../img/menu/ProgramHover.png');
+		background-image: url('../img/menu/programHover.png');
 		background-size: contain;
 		width: 162px;
 		height: 75px;
@@ -679,7 +679,7 @@ div.goRight
 
 	div.tickets
 	{
-		background-image: url('../img/menu/Tickets.png');
+		background-image: url('../img/menu/tickets.png');
 		background-size: contain;
 		cursor:pointer;
 		width: 131px;
@@ -689,7 +689,7 @@ div.goRight
 
 	div.tickets:hover, div.ticketsHover, div.tickets-active
 	{
-		background-image: url('../img/menu/TicketsHover.png');
+		background-image: url('../img/menu/ticketsHover.png');
 		background-size: contain;
 		width: 131px;
 		height: 75px;
@@ -700,7 +700,7 @@ div.goRight
 @media screen and (max-width: 1439px) { 
 	div.separador
 	{
-		background-image: url('../img/menu/Separador.png');
+		background-image: url('../img/menu/separador.png');
 		display:inline-block;
 		background-position: center;
 		height: 60px;
@@ -710,7 +710,7 @@ div.goRight
 	
     div.concept
 	{
-		background-image: url('../img/menu/Concept.png');
+		background-image: url('../img/menu/concept.png');
 		max-width:17,85%;
 		background-size: contain;
 		cursor:pointer;
@@ -721,7 +721,7 @@ div.goRight
 
 	div.concept:hover, div.conceptHover, div.concept-active
 	{
-		background-image: url('../img/menu/ConceptHover.png');
+		background-image: url('../img/menu/conceptHover.png');
 		max-height:12,01%;
 		max-width:17,85%;
 		background-size: contain;
@@ -730,9 +730,9 @@ div.goRight
 		background-repeat: no-repeat;
 	}
 	
-	div.edition
+	div.location
 	{
-		background-image: url('../img/menu/Edition.png');
+		background-image: url('../img/menu/location.png');
 		background-size: contain;
 		cursor:pointer;
 		width: 155px;
@@ -740,9 +740,9 @@ div.goRight
 		background-repeat: no-repeat;
 	}
 
-	div.edition:hover, div.editionHover, div.edition-active
+	div.location:hover, div.locationHover, div.location-active
 	{
-		background-image: url('../img/menu/EditionHover.png');
+		background-image: url('../img/menu/locationHover.png');
 		background-size: contain;
 		width: 155px;
 		height: 60px;
@@ -751,7 +751,7 @@ div.goRight
 
 	div.gallery
 	{
-		background-image: url('../img/menu/Gallery.png');
+		background-image: url('../img/menu/gallery.png');
 		background-size: contain;
 		cursor:pointer;
 		width: 115px;
@@ -761,7 +761,7 @@ div.goRight
 
 	div.gallery:hover, div.galleryHover, div.gallery-active
 	{
-		background-image: url('../img/menu/GalleryHover.png');
+		background-image: url('../img/menu/galleryHover.png');
 		background-size: contain;
 		width: 115px;
 		height: 60px;
@@ -770,7 +770,7 @@ div.goRight
 
 	div.information
 	{
-		background-image: url('../img/menu/Information.png');
+		background-image: url('../img/menu/information.png');
 		background-size: contain;
 		cursor:pointer;
 		width: 166px;
@@ -781,7 +781,7 @@ div.goRight
 
 	div.information:hover, div.informationHover, div.information-active
 	{
-		background-image: url('../img/menu/InformationHover.png');
+		background-image: url('../img/menu/informationHover.png');
 		background-size: contain;
 		width: 166px;
 		height: 60px;
@@ -791,7 +791,7 @@ div.goRight
 
 	div.program
 	{
-		background-image: url('../img/menu/Program.png');
+		background-image: url('../img/menu/program.png');
 		background-size: contain;
 		cursor:pointer;
 		width: 130px;
@@ -801,7 +801,7 @@ div.goRight
 
 	div.program:hover, div.programHover, div.program-active
 	{
-		background-image: url('../img/menu/ProgramHover.png');
+		background-image: url('../img/menu/programHover.png');
 		background-size: contain;
 		width: 130px;
 		height: 60px;
@@ -810,7 +810,7 @@ div.goRight
 
 	div.tickets
 	{
-		background-image: url('../img/menu/Tickets.png');
+		background-image: url('../img/menu/tickets.png');
 		background-size: contain;
 		cursor:pointer;
 		width: 105px;
@@ -820,7 +820,7 @@ div.goRight
 
 	div.tickets:hover, div.ticketsHover, div.tickets-active
 	{
-		background-image: url('../img/menu/TicketsHover.png');
+		background-image: url('../img/menu/ticketsHover.png');
 		background-size: contain;
 		width: 105px;
 		height: 60px;
