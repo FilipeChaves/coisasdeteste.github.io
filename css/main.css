@@ -590,6 +590,18 @@ div.goRight
 		height: 94px;
 		width: 164px;
 		background-repeat: no-repeat;
+		transition: all 1s ease-in-out;
+	}
+	
+	div.turnToZNALogo
+	{
+		background-image: url('../img/menu/znaLogo.png');
+		display:inline-block;
+		background-position: center;
+		height: 134px;
+		width: 308px;
+		background-repeat: no-repeat;
+		transition: all 1s ease-in-out;
 	}
 }  
 @media screen and (min-width: 1440px) and (max-width: 1599px) { 
@@ -731,6 +743,17 @@ div.goRight
 		margin-top: 25px;
 		height: 75px;
 		width: 131px;
+		background-repeat: no-repeat;
+		transition: all 1s ease-in-out;
+	}
+	
+	div.turnToZNALogo
+	{
+		background-image: url('../img/menu/znaLogo.png');
+		display:inline-block;
+		background-position: center;
+		height: 134px;
+		width: 308px;
 		background-repeat: no-repeat;
 	}
 }  
@@ -874,6 +897,17 @@ div.goRight
 		margin-top: 20px;
 		height: 60px;
 		width: 105px;
+		background-repeat: no-repeat;
+		transition: all 1s ease-in-out;
+	}
+	
+	div.turnToZNALogo
+	{
+		background-image: url('../img/menu/znaLogo.png');
+		display:inline-block;
+		background-position: center;
+		height: 67px;
+		width: 154px;
 		background-repeat: no-repeat;
 	}
 }

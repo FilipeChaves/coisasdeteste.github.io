@@ -122,17 +122,26 @@ function removeActives(){
 function countdownClick()
 {
 	if($('img.grow').length === 1){
+		var milliseconds = 1000 - new Date().getMilliseconds();
+		setTimeout(countdown, milliseconds);
+		$("div.countdown").removeClass('turnToZNALogo');
+		
 		removeActives();
 		removeCenter(-1);
 		$('img.mandala').removeClass("grow");
 		$('img.arvore').removeClass("turnTransparent");
 		$('div.conceptSymbol, div.locationSymbol, div.programSymbol').removeClass('goLeft');
 		$('div.informationSymbol, div.gallerySymbol, div.ticketsSymbol').removeClass('goRight');
+		
 	}
 }
 function fadeout(){
 	//$('img').scale(2,2);
-	if($('img.grow').length === 0){
+	if($('img.grow').length === 0)
+	{
+		$("div.countdown").text("");
+		$("div.countdown").addClass('turnToZNALogo');
+		
 		$('img.mandala').addClass("grow");
 		$('img.arvore').addClass("turnTransparent");
 		$('div.conceptSymbol, div.locationSymbol, div.programSymbol').addClass('goLeft');
@@ -140,25 +149,16 @@ function fadeout(){
 	}
 };
 
-function resizeImg (img)
-{
-        var resize = 150; // resize amount in percentage
-        var origH  = 1920;  // original image height
-        var origW  = 1080; // original image width
-        var mouseX = event.x;
-        var mouseY = event.y;
-        var newH   = origH * (resize / 100);
-        var newW   = origW * (resize / 100);
 
-        // Set the new width and height
-        img.style.height = newH;
-        img.style.width  = newW;
 
-        var c = img.parentNode;
-
-        // Work out the new center
-        c.scrollLeft = (mouseX * (resize / 100)) - (newW / 2) / 2;
-        c.scrollTop  = (mouseY * (resize / 100)) - (newH / 2) / 2;
+function countdown(){
+	if($('img.grow').length === 0){	
+		var time = getTimeRemaining();
+		$("div.countdown").text( (time.days < 10 ? "0" :"") + time.days+ "." + (time.hours < 10 ? "0" : "") + time.hours + ":" + 
+								 (time.minutes < 10 ? "0" :"") + time.minutes + ":" + (time.seconds < 10 ? "0" :"") + time.seconds);
+								 
+		setTimeout(countdown, 1000);
+	}
 }
 
 function onLoadedPage(){
@@ -275,16 +275,7 @@ function onLoadedPage(){
 	//.cursor.css({"background-image":"url(img/mac6scroll.png)"}); // MAC like scrollbar
 	
 	var milliseconds = 1000 - new Date().getMilliseconds();
-	
 	setTimeout(countdown, milliseconds);
-}
-
-function countdown(){
-	var time = getTimeRemaining();
-	$("div.countdown").text( (time.days < 10 ? "0" :"") + time.days+ "." + (time.hours < 10 ? "0" : "") + time.hours + ":" + 
-							 (time.minutes < 10 ? "0" :"") + time.minutes + ":" + (time.seconds < 10 ? "0" :"") + time.seconds);
-							 
-	setTimeout(countdown, 1000);
 }
 
 function getTimeRemaining(){
