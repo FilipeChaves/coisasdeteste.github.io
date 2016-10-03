@@ -9,49 +9,51 @@ function conceptClick()
 
 function locationClick()
 {
-	removeCenter(1);
-	removeActives();
-	
 	$('div.location').addClass('location-active');
 	fadeout();
+	
+	removeCenter(1);
+	removeActives();
 }
 
 function galleryClick()
 {
-	removeCenter(2);
-	removeActives();
-	
 	$('div.gallery').addClass('gallery-active');
 	fadeout();
+	
+	removeCenter(2);
+	removeActives();
 }
 
 function informationClick()
-{
-	removeCenter(3);
-	removeActives();
-	
+{	
 	$('div.information').addClass('information-active');
 	fadeout();
+
+	removeCenter(3);
+	removeActives();
 }
 
 function programClick()
 {
-	removeCenter(4);
-	removeActives();
-	
 	$('div.program').addClass('program-active');
 	fadeout();
-}
-function ticketsClick()
-{
-	removeCenter(5);
-	removeActives();
 	
-	$('div.tickets').addClass('tickets-active');
-	fadeout();
+	removeCenter(4);
+	removeActives();
 }
 
-function removeCenter(nextID){
+function ticketsClick()
+{
+	$('div.tickets').addClass('tickets-active');
+	fadeout();
+	
+	removeCenter(5);
+	removeActives();
+}
+
+function removeCenter(nextID) 
+{
 	var allTitleAreas = ['div.titulo-concept',
 						 'div.titulo-edition',
 						 'div.titulo-gallery',
@@ -66,31 +68,28 @@ function removeCenter(nextID){
 						'div.textArea-program',
 						'div.textArea-tickets']; 
 						
-	if($('img.grow').length === 0){
-		for(var allIdx = 0; allIdx < allTextAreas.length; allIdx++){
-			$(allTextAreas[allIdx]).css('display', 'inline-block');
-			$(allTitleAreas[allIdx]).css('display', 'inline-block');
-		}
-	}else{
-		for(var allIdx = 0; allIdx < allTextAreas.length; allIdx++){
-			$(allTextAreas[allIdx]).css('display', 'none');
-			$(allTitleAreas[allIdx]).css('display', 'none');
-		}
-	}
-	
-	for(var i = 0; i < allTextAreas.length; i++){
-		if(nextID === i){
-			$(allTextAreas[i]).css('opacity', '100');
-			$(allTitleAreas[i]).css('opacity', '100');
+	for(var i = 0; i < allTextAreas.length; i++)
+	{
+		if(nextID === i)
+		{
+			$(allTextAreas[i]).css('display', 'inline-block');
+			$(allTitleAreas[i]).css('display', 'inline-block');
+			setTimeout(function() { 
+				$(allTextAreas[nextID]).css('opacity', '100');
+				$(allTitleAreas[nextID]).css('opacity', '100');
+			}, 200)
 			continue;
 		}
 		$(allTextAreas[i]).css('opacity', '0');
 		$(allTitleAreas[i]).css('opacity', '0');
 	}
-
+	setTimeout(function() {
+		removeDisplay(nextID);
+	}, 1000)
 }
 
-function removeStyles(){
+function removeDisplay(nextID)
+{
 	var allTitleAreas = ['div.titulo-concept',
 						 'div.titulo-edition',
 						 'div.titulo-gallery',
@@ -104,10 +103,13 @@ function removeStyles(){
 						'div.textArea-information',
 						'div.textArea-program',
 						'div.textArea-tickets']; 
+	
 	for(var allIdx = 0; allIdx < allTextAreas.length; allIdx++){
-			$(allTextAreas[allIdx]).removeAttr("style");
-			$(allTitleAreas[allIdx]).removeAttr("style");
-		}
+		if(nextID == allIdx)
+			continue;
+		$(allTextAreas[allIdx]).css('display', 'none');
+		$(allTitleAreas[allIdx]).css('display', 'none');
+	}
 }
 
 function removeActives(){
@@ -123,10 +125,10 @@ function countdownClick()
 {
 	if($('img.grow').length === 1){
 		$("div.countdown").removeClass('turnToZNALogo');
-		removeActives();
-		removeCenter(-1);
 		$('img.mandala').removeClass("grow");
 		$('img.arvore').removeClass("turnTransparent");
+		removeActives();
+		removeCenter(-1);
 		$('div.conceptSymbol, div.locationSymbol, div.programSymbol').removeClass('goLeft');
 		$('div.informationSymbol, div.gallerySymbol, div.ticketsSymbol').removeClass('goRight');
 		
