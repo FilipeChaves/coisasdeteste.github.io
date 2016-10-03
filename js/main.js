@@ -122,10 +122,7 @@ function removeActives(){
 function countdownClick()
 {
 	if($('img.grow').length === 1){
-		var milliseconds = 1000 - new Date().getMilliseconds();
-		setTimeout(countdown, milliseconds);
 		$("div.countdown").removeClass('turnToZNALogo');
-		
 		removeActives();
 		removeCenter(-1);
 		$('img.mandala').removeClass("grow");
@@ -133,6 +130,7 @@ function countdownClick()
 		$('div.conceptSymbol, div.locationSymbol, div.programSymbol').removeClass('goLeft');
 		$('div.informationSymbol, div.gallerySymbol, div.ticketsSymbol').removeClass('goRight');
 		
+		countdown();
 	}
 }
 function fadeout(){
@@ -157,7 +155,8 @@ function countdown(){
 		$("div.countdown").text( (time.days < 10 ? "0" :"") + time.days+ "." + (time.hours < 10 ? "0" : "") + time.hours + ":" + 
 								 (time.minutes < 10 ? "0" :"") + time.minutes + ":" + (time.seconds < 10 ? "0" :"") + time.seconds);
 								 
-		setTimeout(countdown, 1000);
+		var milliseconds = 1000 - new Date().getMilliseconds();
+		setTimeout(countdown, milliseconds);
 	}
 }
 
@@ -274,8 +273,7 @@ function onLoadedPage(){
 	var nicesxs = $("div.textArea-program").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	//.cursor.css({"background-image":"url(img/mac6scroll.png)"}); // MAC like scrollbar
 	
-	var milliseconds = 1000 - new Date().getMilliseconds();
-	setTimeout(countdown, milliseconds);
+	countdown();
 }
 
 function getTimeRemaining(){
