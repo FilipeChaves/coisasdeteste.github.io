@@ -475,6 +475,25 @@ div.goRight
 		width: 257px;
 		background-repeat: no-repeat;
 	}
+
+	div.program
+	{
+		background-image: url('../img/menu/program.png');
+		background-size: contain;
+		cursor:pointer;
+		height: 94px;
+		width: 242px;
+		background-repeat: no-repeat;
+	}
+
+	div.program:hover, div.programHover, div.program-active
+	{
+		background-image: url('../img/menu/programHover.png');
+		background-size: contain;
+		height: 94px;
+		width: 242px;
+		background-repeat: no-repeat;
+	}
 	
 	div.location
 	{
@@ -482,7 +501,7 @@ div.goRight
 		background-size: contain;
 		cursor:pointer;
 		height: 94px;
-		width: 242px;
+		width: 260px;
 		background-repeat: no-repeat;
 	}
 
@@ -491,26 +510,7 @@ div.goRight
 		background-image: url('../img/menu/locationHover.png');
 		background-size: contain;
 		height: 94px;
-		width: 242px;
-		background-repeat: no-repeat;
-	}
-
-	div.gallery
-	{
-		background-image: url('../img/menu/gallery.png');
-		background-size: contain;
-		cursor:pointer;
-		height: 94px;
-		width: 180px;
-		background-repeat: no-repeat;
-	}
-
-	div.gallery:hover, div.galleryHover, div.gallery-active
-	{
-		background-image: url('../img/menu/galleryHover.png');
-		background-size: contain;
-		height: 94px;
-		width: 180px;
+		width: 260px;
 		background-repeat: no-repeat;
 	}
 
@@ -535,22 +535,22 @@ div.goRight
 		/*width: 19.47%;*/
 	}
 
-	div.program
+	div.gallery
 	{
-		background-image: url('../img/menu/program.png');
+		background-image: url('../img/menu/gallery.png');
 		background-size: contain;
 		cursor:pointer;
 		height: 94px;
-		width: 202px;
+		width: 180px;
 		background-repeat: no-repeat;
 	}
 
-	div.program:hover, div.programHover, div.program-active
+	div.gallery:hover, div.galleryHover, div.gallery-active
 	{
-		background-image: url('../img/menu/programHover.png');
+		background-image: url('../img/menu/galleryHover.png');
 		background-size: contain;
 		height: 94px;
-		width: 202px;
+		width: 180px;
 		background-repeat: no-repeat;
 	}
 
@@ -568,6 +568,17 @@ div.goRight
 	{
 		background-image: url('../img/menu/ticketsHover.png');
 		background-size: contain;
+		height: 94px;
+		width: 164px;
+		background-repeat: no-repeat;
+	}
+
+	div.countdown
+	{
+		color: green;
+		font-weight: bold;
+		background-size: contain;
+		margin-top: 31px;
 		height: 94px;
 		width: 164px;
 		background-repeat: no-repeat;
@@ -590,8 +601,8 @@ div.goRight
 		max-width:17,85%;
 		background-size: contain;
 		cursor:pointer;
-		width: 206px;
 		height: 75px;
+		width: 206px;
 		background-repeat: no-repeat;
 	}
 
@@ -601,8 +612,27 @@ div.goRight
 		max-height:12,01%;
 		max-width:17,85%;
 		background-size: contain;
-		width: 206px;
 		height: 75px;
+		width: 206px;
+		background-repeat: no-repeat;
+	}
+
+	div.program
+	{
+		background-image: url('../img/menu/program.png');
+		background-size: contain;
+		cursor:pointer;
+		height: 75px;
+		width: 194px;
+		background-repeat: no-repeat;
+	}
+
+	div.program:hover, div.programHover, div.program-active
+	{
+		background-image: url('../img/menu/programHover.png');
+		background-size: contain;
+		height: 75px;
+		width: 194px;
 		background-repeat: no-repeat;
 	}
 	
@@ -611,8 +641,8 @@ div.goRight
 		background-image: url('../img/menu/location.png');
 		background-size: contain;
 		cursor:pointer;
-		width: 194px;
 		height: 75px;
+		width: 208px;
 		background-repeat: no-repeat;
 	}
 
@@ -620,27 +650,8 @@ div.goRight
 	{
 		background-image: url('../img/menu/locationHover.png');
 		background-size: contain;
-		width: 194px;
 		height: 75px;
-		background-repeat: no-repeat;
-	}
-
-	div.gallery
-	{
-		background-image: url('../img/menu/gallery.png');
-		background-size: contain;
-		cursor:pointer;
-		width: 144px;
-		height: 75px;
-		background-repeat: no-repeat;
-	}
-
-	div.gallery:hover, div.galleryHover, div.gallery-active
-	{
-		background-image: url('../img/menu/galleryHover.png');
-		background-size: contain;
-		width: 144px;
-		height: 75px;
+		width: 208px;
 		background-repeat: no-repeat;
 	}
 
@@ -649,8 +660,8 @@ div.goRight
 		background-image: url('../img/menu/information.png');
 		background-size: contain;
 		cursor:pointer;
-		width: 208px;
 		height: 75px;
+		width: 208px;
 		background-repeat: no-repeat;
 		/*width: 19.47%;*/
 	}
@@ -659,28 +670,28 @@ div.goRight
 	{
 		background-image: url('../img/menu/informationHover.png');
 		background-size: contain;
-		width: 208px;
 		height: 75px;
+		width: 208px;
 		background-repeat: no-repeat;
 		/*width: 19.47%;*/
 	}
 
-	div.program
+	div.gallery
 	{
-		background-image: url('../img/menu/program.png');
+		background-image: url('../img/menu/gallery.png');
 		background-size: contain;
 		cursor:pointer;
-		width: 162px;
 		height: 75px;
+		width: 144px;
 		background-repeat: no-repeat;
 	}
 
-	div.program:hover, div.programHover, div.program-active
+	div.gallery:hover, div.galleryHover, div.gallery-active
 	{
-		background-image: url('../img/menu/programHover.png');
+		background-image: url('../img/menu/galleryHover.png');
 		background-size: contain;
-		width: 162px;
 		height: 75px;
+		width: 144px;
 		background-repeat: no-repeat;
 	}
 
@@ -689,8 +700,8 @@ div.goRight
 		background-image: url('../img/menu/tickets.png');
 		background-size: contain;
 		cursor:pointer;
-		width: 131px;
 		height: 75px;
+		width: 131px;
 		background-repeat: no-repeat;
 	}
 
@@ -698,8 +709,19 @@ div.goRight
 	{
 		background-image: url('../img/menu/ticketsHover.png');
 		background-size: contain;
-		width: 131px;
 		height: 75px;
+		width: 131px;
+		background-repeat: no-repeat;
+	}
+
+	div.countdown
+	{
+		color: green;
+		font-weight: bold;
+		background-size: contain;
+		margin-top: 25px;
+		height: 75px;
+		width: 131px;
 		background-repeat: no-repeat;
 	}
 }  
@@ -711,7 +733,7 @@ div.goRight
 		display:inline-block;
 		background-position: center;
 		height: 60px;
-		width: 5px;
+		width: 6px;
 		background-repeat: no-repeat;
 	}
 	
@@ -721,8 +743,8 @@ div.goRight
 		max-width:17,85%;
 		background-size: contain;
 		cursor:pointer;
-		width: 165px;
 		height: 60px;
+		width: 165px;
 		background-repeat: no-repeat;
 	}
 
@@ -732,8 +754,27 @@ div.goRight
 		max-height:12,01%;
 		max-width:17,85%;
 		background-size: contain;
-		width: 165px;
 		height: 60px;
+		width: 165px;
+		background-repeat: no-repeat;
+	}
+
+	div.program
+	{
+		background-image: url('../img/menu/program.png');
+		background-size: contain;
+		cursor:pointer;
+		height: 60px;
+		width: 155px;
+		background-repeat: no-repeat;
+	}
+
+	div.program:hover, div.programHover, div.program-active
+	{
+		background-image: url('../img/menu/programHover.png');
+		background-size: contain;
+		height: 60px;
+		width: 155px;
 		background-repeat: no-repeat;
 	}
 	
@@ -742,8 +783,8 @@ div.goRight
 		background-image: url('../img/menu/location.png');
 		background-size: contain;
 		cursor:pointer;
-		width: 155px;
 		height: 60px;
+		width: 166px;
 		background-repeat: no-repeat;
 	}
 
@@ -751,27 +792,8 @@ div.goRight
 	{
 		background-image: url('../img/menu/locationHover.png');
 		background-size: contain;
-		width: 155px;
 		height: 60px;
-		background-repeat: no-repeat;
-	}
-
-	div.gallery
-	{
-		background-image: url('../img/menu/gallery.png');
-		background-size: contain;
-		cursor:pointer;
-		width: 115px;
-		height: 60px;
-		background-repeat: no-repeat;
-	}
-
-	div.gallery:hover, div.galleryHover, div.gallery-active
-	{
-		background-image: url('../img/menu/galleryHover.png');
-		background-size: contain;
-		width: 115px;
-		height: 60px;
+		width: 166px;
 		background-repeat: no-repeat;
 	}
 
@@ -780,8 +802,8 @@ div.goRight
 		background-image: url('../img/menu/information.png');
 		background-size: contain;
 		cursor:pointer;
-		width: 166px;
 		height: 60px;
+		width: 166px;
 		background-repeat: no-repeat;
 		/*width: 19.47%;*/
 	}
@@ -790,28 +812,28 @@ div.goRight
 	{
 		background-image: url('../img/menu/informationHover.png');
 		background-size: contain;
-		width: 166px;
 		height: 60px;
+		width: 166px;
 		background-repeat: no-repeat;
 		/*width: 19.47%;*/
 	}
 
-	div.program
+	div.gallery
 	{
-		background-image: url('../img/menu/program.png');
+		background-image: url('../img/menu/gallery.png');
 		background-size: contain;
 		cursor:pointer;
-		width: 130px;
 		height: 60px;
+		width: 115px;
 		background-repeat: no-repeat;
 	}
 
-	div.program:hover, div.programHover, div.program-active
+	div.gallery:hover, div.galleryHover, div.gallery-active
 	{
-		background-image: url('../img/menu/programHover.png');
+		background-image: url('../img/menu/galleryHover.png');
 		background-size: contain;
-		width: 130px;
 		height: 60px;
+		width: 115px;
 		background-repeat: no-repeat;
 	}
 
@@ -820,8 +842,8 @@ div.goRight
 		background-image: url('../img/menu/tickets.png');
 		background-size: contain;
 		cursor:pointer;
-		width: 105px;
 		height: 60px;
+		width: 105px;
 		background-repeat: no-repeat;
 	}
 
@@ -829,8 +851,19 @@ div.goRight
 	{
 		background-image: url('../img/menu/ticketsHover.png');
 		background-size: contain;
-		width: 105px;
 		height: 60px;
+		width: 105px;
+		background-repeat: no-repeat;
+	}
+
+	div.countdown
+	{
+		color: green;
+		font-weight: bold;
+		background-size: contain;
+		margin-top: 20px;
+		height: 60px;
+		width: 105px;
 		background-repeat: no-repeat;
 	}
 }
