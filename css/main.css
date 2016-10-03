@@ -199,6 +199,7 @@ div.facebook
 {
 	height: 40px;
 	width: 40px;
+	padding-right:15px;
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-image: url("../img/social/facebook.png");
@@ -208,6 +209,7 @@ div.youtube
 {
 	height: 40px;
 	width: 40px;
+	padding-right:15px;
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-image: url("../img/social/youtube.png");
@@ -255,10 +257,11 @@ div.divProgram li {
 div.divMenuSocial li {
     float: left;
 	height: 40px;
-	padding-right:15px;
 	list-style-type: none;
 	background-size: contain;
 }
+
+
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
@@ -280,9 +283,9 @@ div.conceptSymbol
 	width: 13.59%;
 	height: 26.34%;
 	transition: background 0.3s ease-in-out;
-	transition: opacity 1s, filter 1s, top 1s, left 1s ease-in-out;
+	transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s ease-in-out;
 	-webkit-transition: background 0.3s ease-in-out;
-	-webkit-transition: opacity 1s, filter 1s, top 1s, left 1s ease-in-out;
+	-webkit-transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s ease-in-out;
 	background-size: contain;
 	cursor:pointer;
 }
@@ -306,9 +309,9 @@ div.locationSymbol
 	width: 13.59%;
 	height: 26.34%;
 	transition: background 0.3s ease-in-out;
-	transition: opacity 1s, filter 1s, top 1s, left 1s ease-in-out;
+	transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s ease-in-out;
 	-webkit-transition: background 0.3s ease-in-out;
-	-webkit-transition: opacity 1s, filter 1s, top 1s, left 1s ease-in-out;
+	-webkit-transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s ease-in-out;
 	background-size: contain;
 	cursor:pointer;
 }
@@ -332,9 +335,9 @@ div.gallerySymbol
 	width: 13.59%;
 	height: 26.34%;
 	transition: background 0.3s ease-in-out;
-	transition: opacity 1s, filter 1s, top 1s, left 1s ease-in-out;
+	transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s ease-in-out;
 	-webkit-transition: background 0.3s ease-in-out;
-	-webkit-transition: opacity 1s, filter 1s, top 1s, left 1s ease-in-out;
+	-webkit-transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s ease-in-out;
 	background-size: contain;
 	cursor:pointer;
 }
@@ -358,9 +361,9 @@ div.informationSymbol
 	width: 13.59%;
 	height: 26.34%;
 	transition: background 0.3s ease-in-out;
-	transition: opacity 1s, filter 1s, top 1s, left 1s ease-in-out;
+	transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s ease-in-out;
 	-webkit-transition: background 0.3s ease-in-out;
-	-webkit-transition: opacity 1s, filter 1s, top 1s, left 1s ease-in-out;
+	-webkit-transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s ease-in-out;
 	background-size: contain;
 	cursor:pointer;
 }
@@ -384,7 +387,9 @@ div.programSymbol
 	width: 13.59%;
 	height: 26.34%;
 	transition: background 0.3s ease-in-out;
-	transition: opacity 1s, filter 1s, top 1s, left 1s ease-in-out;
+	transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s ease-in-out;
+	-webkit-transition: background 0.3s ease-in-out;
+	-webkit-transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s ease-in-out;
 	background-size: contain;
 	cursor:pointer;
 }
@@ -408,7 +413,9 @@ div.ticketsSymbol
 	width: 13.59%;
 	height: 26.34%;
 	transition: background 0.3s ease-in-out;
-	transition: opacity 1s, filter 1s, top 1s, left 1s ease-in-out;
+	transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s ease-in-out;
+	-webkit-transition: background 0.3s ease-in-out;
+	-webkit-transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s ease-in-out;
 	background-size: contain;
 	cursor:pointer;
 }

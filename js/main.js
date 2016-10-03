@@ -121,9 +121,9 @@ function removeActives(){
 
 function countdownClick()
 {
-	removeActives();
-	removeCenter(-1);
 	if($('img.grow').length === 1){
+		removeActives();
+		removeCenter(-1);
 		$('img.mandala').removeClass("grow");
 		$('img.arvore').removeClass("turnTransparent");
 		$('div.conceptSymbol, div.locationSymbol, div.programSymbol').removeClass('goLeft');
