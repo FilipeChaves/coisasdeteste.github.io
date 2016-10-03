@@ -71,20 +71,21 @@ function removeCenter(nextID){
 			$(allTextAreas[allIdx]).css('display', 'inline-block');
 			$(allTitleAreas[allIdx]).css('display', 'inline-block');
 		}
+	}else{
+		for(var allIdx = 0; allIdx < allTextAreas.length; allIdx++){
+			$(allTextAreas[allIdx]).css('display', 'none');
+			$(allTitleAreas[allIdx]).css('display', 'none');
+		}
 	}
 	
 	for(var i = 0; i < allTextAreas.length; i++){
 		if(nextID === i){
 			$(allTextAreas[i]).css('opacity', '100');
 			$(allTitleAreas[i]).css('opacity', '100');
-			
 			continue;
 		}
-		
-			$(allTextAreas[i]).css('opacity', '0');
-			$(allTitleAreas[i]).css('opacity', '0');
-		
-		
+		$(allTextAreas[i]).css('opacity', '0');
+		$(allTitleAreas[i]).css('opacity', '0');
 	}
 
 }
@@ -118,17 +119,24 @@ function removeActives(){
 	$('div.tickets').removeClass('tickets-active');
 }
 
+function countdownClick()
+{
+	removeActives();
+	removeCenter(-1);
+	if($('img.grow').length === 1){
+		$('img.mandala').removeClass("grow");
+		$('img.arvore').removeClass("turnTransparent");
+		$('div.conceptSymbol, div.locationSymbol, div.programSymbol').removeClass('goLeft');
+		$('div.informationSymbol, div.gallerySymbol, div.ticketsSymbol').removeClass('goRight');
+	}
+}
 function fadeout(){
 	//$('img').scale(2,2);
 	if($('img.grow').length === 0){
 		$('img.mandala').addClass("grow");
 		$('img.arvore').addClass("turnTransparent");
-		$('h3.titulo-concept').fadeIn(1000, "linear");
-		$('div.textArea-concept').fadeIn(1000, "linear");
-		$('div.conceptSymbol, div.locationSymbol, div.gallerySymbol').addClass('goLeft');
-		$('div.informationSymbol, div.programSymbol, div.ticketsSymbol').addClass('goRight');
-		//$('img.arvore').fadeOut(2500, "linear");
-		$('#clickMe').fadeOut();
+		$('div.conceptSymbol, div.locationSymbol, div.programSymbol').addClass('goLeft');
+		$('div.informationSymbol, div.gallerySymbol, div.ticketsSymbol').addClass('goRight');
 	}
 };
 

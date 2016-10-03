@@ -578,6 +578,7 @@ div.goRight
 		color: green;
 		font-weight: bold;
 		background-size: contain;
+		cursor:pointer;
 		margin-top: 31px;
 		height: 94px;
 		width: 164px;
@@ -719,6 +720,7 @@ div.goRight
 		color: green;
 		font-weight: bold;
 		background-size: contain;
+		cursor:pointer;
 		margin-top: 25px;
 		height: 75px;
 		width: 131px;
@@ -861,6 +863,7 @@ div.goRight
 		color: green;
 		font-weight: bold;
 		background-size: contain;
+		cursor:pointer;
 		margin-top: 20px;
 		height: 60px;
 		width: 105px;
