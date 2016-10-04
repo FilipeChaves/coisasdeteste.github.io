@@ -7,18 +7,19 @@ function conceptClick()
 	fadeout();
 }
 
-function locationClick()
+function programClick()
 {
-	$('div.location').addClass('location-active');
+	$('div.program').addClass('program-active');
 	fadeout();
 	
 	removeCenter(1);
 	removeActives();
 }
 
-function galleryClick()
+
+function locationClick()
 {
-	$('div.gallery').addClass('gallery-active');
+	$('div.location').addClass('location-active');
 	fadeout();
 	
 	removeCenter(2);
@@ -34,9 +35,9 @@ function informationClick()
 	removeActives();
 }
 
-function programClick()
+function galleryClick()
 {
-	$('div.program').addClass('program-active');
+	$('div.gallery').addClass('gallery-active');
 	fadeout();
 	
 	removeCenter(4);
@@ -55,17 +56,17 @@ function ticketsClick()
 function removeCenter(nextID) 
 {
 	var allTitleAreas = ['div.titulo-concept',
-						 'div.titulo-edition',
-						 'div.titulo-gallery',
-						 'div.titulo-information',
 						 'div.titulo-program',
+						 'div.titulo-location',
+						 'div.titulo-information',
+						 'div.titulo-gallery',
 						 'div.titulo-tickets'];
 						
 	var allTextAreas = ['div.textArea-concept', 
-						'div.textArea-edition',
-						'div.textArea-gallery',
-						'div.textArea-information',
 						'div.textArea-program',
+						'div.textArea-location',
+						'div.textArea-information',
+						'div.textArea-gallery',
 						'div.textArea-tickets']; 
 						
 	for(var i = 0; i < allTextAreas.length; i++)
@@ -74,14 +75,25 @@ function removeCenter(nextID)
 		{
 			$(allTextAreas[i]).css('display', 'inline-block');
 			$(allTitleAreas[i]).css('display', 'inline-block');
+						
 			setTimeout(function() { 
 				$(allTextAreas[nextID]).css('opacity', '100');
 				$(allTitleAreas[nextID]).css('opacity', '100');
 			}, 200)
+			
+			setTimeout(function() { 
+				var allScrolls = $("div#ascrail200" + nextID);
+				allScrolls.css("top", "18%");
+				allScrolls.css("left", "87%");
+			}, 1000)
+			
 			continue;
 		}
 		$(allTextAreas[i]).css('opacity', '0');
 		$(allTitleAreas[i]).css('opacity', '0');
+		var allScrolls = $("div#ascrail200" + i);
+		allScrolls.css("top", "18%");
+		allScrolls.css("left", "87%");
 	}
 	setTimeout(function() {
 		removeDisplay(nextID);
@@ -91,17 +103,17 @@ function removeCenter(nextID)
 function removeDisplay(nextID)
 {
 	var allTitleAreas = ['div.titulo-concept',
-						 'div.titulo-edition',
-						 'div.titulo-gallery',
-						 'div.titulo-information',
 						 'div.titulo-program',
+						 'div.titulo-location',
+						 'div.titulo-information',
+						 'div.titulo-gallery',
 						 'div.titulo-tickets'];
 						
 	var allTextAreas = ['div.textArea-concept', 
-						'div.textArea-edition',
-						'div.textArea-gallery',
-						'div.textArea-information',
 						'div.textArea-program',
+						'div.textArea-location',
+						'div.textArea-information',
+						'div.textArea-gallery',
 						'div.textArea-tickets']; 
 	
 	for(var allIdx = 0; allIdx < allTextAreas.length; allIdx++){
@@ -146,6 +158,12 @@ function fadeout(){
 		$('img.arvore').addClass("turnTransparent");
 		$('div.conceptSymbol, div.locationSymbol, div.programSymbol').addClass('goLeft');
 		$('div.informationSymbol, div.gallerySymbol, div.ticketsSymbol').addClass('goRight');
+		
+		for(var i = 0; i < 6; i++){
+			var allScrolls = $("div#ascrail200" + i);
+			allScrolls.css("top", "18%");
+			allScrolls.css("left", "87%");
+		}
 	}
 };
 
@@ -273,6 +291,10 @@ function onLoadedPage(){
 	
 	var nicesx = $("div.textArea-concept").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-program").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-location").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-information").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-gallery").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-tickets").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	//.cursor.css({"background-image":"url(img/mac6scroll.png)"}); // MAC like scrollbar
 	
 	countdown();

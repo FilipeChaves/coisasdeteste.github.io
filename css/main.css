@@ -25,7 +25,7 @@ body
     src: url(../fonts/New_Vera.otf) format("truetype");
 }
 
-div.textArea-concept, div.textArea-program, div.textArea-information, div.textArea-gallery, div.textArea-tickets, div.textArea-edition
+div.textArea-concept, div.textArea-program, div.textArea-information, div.textArea-gallery, div.textArea-tickets, div.textArea-location
 {
 	position: fixed;
 	margin-top:10%;
@@ -49,7 +49,7 @@ div.titleDiv
 }
 
 
-h3.titulo-concept, h3.titulo-program, h3.titulo-information, h3.titulo-gallery, h3.titulo-tickets, h3.titulo-edition
+h3.titulo-concept, h3.titulo-program, h3.titulo-information, h3.titulo-gallery, h3.titulo-tickets, h3.titulo-location
 {
 	font-family: "Title Custom Font", Verdana, Tahoma;
 	color: white;
@@ -452,6 +452,36 @@ div.goRight
 	left: 120.5%;
 }
 
+div.Stage
+{
+	height:200px;
+	width:400px;
+	background-color:green;
+	cursor:pointer;
+	transition: opacity 1s ease-in-out;
+}
+
+div.StageRight
+{
+	float:right;
+}
+
+p.StageName
+{
+	font-family: "Title Custom Font", Verdana, Tahoma;
+	color: white;
+	font-size: 200%;
+	text-align: center;
+	width: 35%;
+	margin-bottom: 40px;
+	cursor:pointer;
+}
+
+p.NameRight
+{
+	float:right;
+}
+
 @media screen and (min-width: 1600px) {   
 	div.separador
 	{
@@ -604,7 +634,7 @@ div.goRight
 		width: 308px;
 		background-repeat: no-repeat;
 		transition: all 1s ease-in-out;
-	}
+	}	
 }  
 @media screen and (min-width: 1440px) and (max-width: 1599px) { 
 	div.separador
