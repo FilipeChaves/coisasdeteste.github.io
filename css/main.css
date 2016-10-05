@@ -525,7 +525,6 @@ div.znaSymbol
 	transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s, width 1.5s, height 1.5s ease-in-out;
 	-webkit-transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s, width 1.5s, height 1.5s ease-in-out;
 	background-size: contain;
-	cursor:pointer;
 }
 
 @media screen and (min-width: 1600px) {   
@@ -664,7 +663,6 @@ div.znaSymbol
 		color: green;
 		font-weight: bold;
 		background-size: contain;
-		cursor:pointer;
 		margin-top: 31px;
 		height: 147px;
 		width: 272px;
@@ -674,6 +672,7 @@ div.znaSymbol
 	
 	div.turnToZNALogo
 	{
+		cursor:pointer;
 		background-image: url('../img/menu/znaLogo.png');
 		margin-top: 0px;
 		height: 147px;
@@ -820,7 +819,6 @@ div.znaSymbol
 		color: green;
 		font-weight: bold;
 		background-size: contain;
-		cursor:pointer;
 		margin-top: 25px;
 		height: 118px;
 		width: 218px;
@@ -830,6 +828,7 @@ div.znaSymbol
 	
 	div.turnToZNALogo
 	{
+		cursor:pointer;
 		background-image: url('../img/menu/znaLogo.png');
 		display:inline-block;
 		margin-top: 0px;
@@ -976,7 +975,6 @@ div.znaSymbol
 		color: green;
 		font-weight: bold;
 		background-size: contain;
-		cursor:pointer;
 		margin-top: 20px;
 		height: 94px;
 		width: 174px;
@@ -986,6 +984,7 @@ div.znaSymbol
 	
 	div.turnToZNALogo
 	{
+		cursor:pointer;
 		background-image: url('../img/menu/znaLogo.png');
 		display:inline-block;
 		margin-top: 0px;
