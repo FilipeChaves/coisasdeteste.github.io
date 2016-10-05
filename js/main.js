@@ -136,9 +136,13 @@ function removeActives(){
 function countdownClick()
 {
 	if($('img.grow').length === 1){
-		$("div.countdown").removeClass('turnToZNALogo');
+		$("div.znaSymbol").removeClass('turnToZNALogo');
 		$('img.mandala').removeClass("grow");
+		$('div.moonSymbol, div.sunSymbol').removeClass('turnTransparent');
 		$('img.arvore').removeClass("turnTransparent");
+		$('div.countdown').removeClass("turnTransparent");
+		$("div.znaSymbol").removeAttr("style");
+		$("div.znaSymbol").off('click');
 		removeActives();
 		removeCenter(-1);
 		$('div.conceptSymbol, div.locationSymbol, div.programSymbol').removeClass('goLeft');
@@ -151,11 +155,16 @@ function fadeout(){
 	//$('img').scale(2,2);
 	if($('img.grow').length === 0)
 	{
-		$("div.countdown").text("");
-		$("div.countdown").addClass('turnToZNALogo');
+		$("div.znaSymbol").addClass('turnToZNALogo');
+		var countdownPosition = $('div.countdown').position();
+		$("div.znaSymbol").css('top', countdownPosition.top);
+		$("div.znaSymbol").css('left', countdownPosition.left + 10);
+		$("div.znaSymbol").on('click', countdownClick);
 		
+		$('div.moonSymbol, div.sunSymbol').addClass("turnTransparent");
 		$('img.mandala').addClass("grow");
 		$('img.arvore').addClass("turnTransparent");
+		$('div.countdown').addClass("turnTransparent");
 		$('div.conceptSymbol, div.locationSymbol, div.programSymbol').addClass('goLeft');
 		$('div.informationSymbol, div.gallerySymbol, div.ticketsSymbol').addClass('goRight');
 		

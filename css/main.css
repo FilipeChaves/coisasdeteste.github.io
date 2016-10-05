@@ -22,7 +22,7 @@ body
 
 @font-face2 {
     font-family: "Text Custom Font";
-    src: url(../fonts/New_Vera.otf) format("truetype");
+    src: url(../fonts/olney_light.otf) format("truetype");
 }
 
 div.textArea-concept, div.textArea-program, div.textArea-information, div.textArea-gallery, div.textArea-tickets, div.textArea-location
@@ -136,6 +136,9 @@ img.mandala
 {
 	opacity: 0;
 	filter: alpha(opacity=0);
+	
+	transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s ease-in-out;
+	-webkit-transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s ease-in-out;
 }
 
 img.arvore
@@ -428,6 +431,32 @@ div.ticketsSymbol:hover, div.ticketsSymbolHover
 	background-size: contain;
 }
 
+div.sunSymbol
+{
+	background: url('../img/symbols/SunSymbol.png') no-repeat;
+	position: absolute;
+	bottom: 2.96%;
+	left: 6.24%;
+	width: 38.88%;
+	height: 31.95%;
+	transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s ease-in-out;
+	-webkit-transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s ease-in-out;
+	background-size: contain;
+}
+
+div.moonSymbol
+{
+	background: url('../img/symbols/MoonSymbol.png') no-repeat;
+	position: absolute;
+	bottom: 2.96%;
+	left: 76.57%;
+	width: 38.88%;
+	height: 31.95%;
+	transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s ease-in-out;
+	-webkit-transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s ease-in-out;
+	background-size: contain;
+}
+
 div.goCenter
 {
 	opacity: 0;
@@ -482,6 +511,23 @@ p.NameRight
 	float:right;
 }
 
+div.znaSymbol
+{
+	background: url('../img/menu/znaLogo.png') no-repeat;
+	position: absolute;
+	/*top: 24.12%;/*425.230
+	left: 69.01%;
+	*/
+	top: 17.05%;
+	left: 43%;
+	width: 15.97%;
+	height: 21.46%;
+	transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s, width 1.5s, height 1.5s ease-in-out;
+	-webkit-transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s, width 1.5s, height 1.5s ease-in-out;
+	background-size: contain;
+	cursor:pointer;
+}
+
 @media screen and (min-width: 1600px) {   
 	div.separador
 	{
@@ -500,7 +546,7 @@ p.NameRight
 		background-size: contain;
 		cursor:pointer;
 		height: 94px;
-		width: 257px;
+		width: 183px;
 		background-repeat: no-repeat;
 	}
 
@@ -511,7 +557,7 @@ p.NameRight
 		max-width:17,85%;
 		background-size: contain;
 		height: 94px;
-		width: 257px;
+		width: 183px;
 		background-repeat: no-repeat;
 	}
 
@@ -521,7 +567,7 @@ p.NameRight
 		background-size: contain;
 		cursor:pointer;
 		height: 94px;
-		width: 242px;
+		width: 202px;
 		background-repeat: no-repeat;
 	}
 
@@ -530,7 +576,7 @@ p.NameRight
 		background-image: url('../img/menu/programHover.png');
 		background-size: contain;
 		height: 94px;
-		width: 242px;
+		width: 202px;
 		background-repeat: no-repeat;
 	}
 	
@@ -540,7 +586,7 @@ p.NameRight
 		background-size: contain;
 		cursor:pointer;
 		height: 94px;
-		width: 260px;
+		width: 204px;
 		background-repeat: no-repeat;
 	}
 
@@ -549,7 +595,7 @@ p.NameRight
 		background-image: url('../img/menu/locationHover.png');
 		background-size: contain;
 		height: 94px;
-		width: 260px;
+		width: 204px;
 		background-repeat: no-repeat;
 	}
 
@@ -614,13 +660,14 @@ p.NameRight
 
 	div.countdown
 	{
+		font-family: "Text Custom Font", Verdana, Tahoma;
 		color: green;
 		font-weight: bold;
 		background-size: contain;
 		cursor:pointer;
 		margin-top: 31px;
-		height: 94px;
-		width: 164px;
+		height: 147px;
+		width: 272px;
 		background-repeat: no-repeat;
 		transition: all 1s ease-in-out;
 	}
@@ -628,13 +675,14 @@ p.NameRight
 	div.turnToZNALogo
 	{
 		background-image: url('../img/menu/znaLogo.png');
-		display:inline-block;
-		background-position: center;
-		height: 134px;
-		width: 308px;
+		margin-top: 0px;
+		height: 147px;
+		width: 272px;
 		background-repeat: no-repeat;
 		transition: all 1s ease-in-out;
-	}	
+	}
+	
+	
 }  
 @media screen and (min-width: 1440px) and (max-width: 1599px) { 
 	div.separador
@@ -654,7 +702,7 @@ p.NameRight
 		background-size: contain;
 		cursor:pointer;
 		height: 75px;
-		width: 206px;
+		width: 146px;
 		background-repeat: no-repeat;
 	}
 
@@ -665,7 +713,7 @@ p.NameRight
 		max-width:17,85%;
 		background-size: contain;
 		height: 75px;
-		width: 206px;
+		width: 146px;
 		background-repeat: no-repeat;
 	}
 
@@ -675,7 +723,7 @@ p.NameRight
 		background-size: contain;
 		cursor:pointer;
 		height: 75px;
-		width: 194px;
+		width: 162px;
 		background-repeat: no-repeat;
 	}
 
@@ -684,7 +732,7 @@ p.NameRight
 		background-image: url('../img/menu/programHover.png');
 		background-size: contain;
 		height: 75px;
-		width: 194px;
+		width: 162px;
 		background-repeat: no-repeat;
 	}
 	
@@ -694,7 +742,7 @@ p.NameRight
 		background-size: contain;
 		cursor:pointer;
 		height: 75px;
-		width: 208px;
+		width: 163px;
 		background-repeat: no-repeat;
 	}
 
@@ -703,7 +751,7 @@ p.NameRight
 		background-image: url('../img/menu/locationHover.png');
 		background-size: contain;
 		height: 75px;
-		width: 208px;
+		width: 163px;
 		background-repeat: no-repeat;
 	}
 
@@ -768,13 +816,14 @@ p.NameRight
 
 	div.countdown
 	{
+		font-family: "Text Custom Font", Verdana, Tahoma;
 		color: green;
 		font-weight: bold;
 		background-size: contain;
 		cursor:pointer;
 		margin-top: 25px;
-		height: 75px;
-		width: 131px;
+		height: 118px;
+		width: 218px;
 		background-repeat: no-repeat;
 		transition: all 1s ease-in-out;
 	}
@@ -783,9 +832,10 @@ p.NameRight
 	{
 		background-image: url('../img/menu/znaLogo.png');
 		display:inline-block;
+		margin-top: 0px;
 		background-position: center;
-		height: 134px;
-		width: 308px;
+		height: 118px;
+		width: 218px;
 		background-repeat: no-repeat;
 	}
 }  
@@ -808,7 +858,7 @@ p.NameRight
 		background-size: contain;
 		cursor:pointer;
 		height: 60px;
-		width: 165px;
+		width: 117px;
 		background-repeat: no-repeat;
 	}
 
@@ -819,7 +869,7 @@ p.NameRight
 		max-width:17,85%;
 		background-size: contain;
 		height: 60px;
-		width: 165px;
+		width: 117px;
 		background-repeat: no-repeat;
 	}
 
@@ -829,7 +879,7 @@ p.NameRight
 		background-size: contain;
 		cursor:pointer;
 		height: 60px;
-		width: 155px;
+		width: 130px;
 		background-repeat: no-repeat;
 	}
 
@@ -838,7 +888,7 @@ p.NameRight
 		background-image: url('../img/menu/programHover.png');
 		background-size: contain;
 		height: 60px;
-		width: 155px;
+		width: 130px;
 		background-repeat: no-repeat;
 	}
 	
@@ -848,7 +898,7 @@ p.NameRight
 		background-size: contain;
 		cursor:pointer;
 		height: 60px;
-		width: 166px;
+		width: 130px;
 		background-repeat: no-repeat;
 	}
 
@@ -857,7 +907,7 @@ p.NameRight
 		background-image: url('../img/menu/locationHover.png');
 		background-size: contain;
 		height: 60px;
-		width: 166px;
+		width: 130px;
 		background-repeat: no-repeat;
 	}
 
@@ -922,13 +972,14 @@ p.NameRight
 
 	div.countdown
 	{
+		font-family: "Text Custom Font", Verdana, Tahoma;
 		color: green;
 		font-weight: bold;
 		background-size: contain;
 		cursor:pointer;
 		margin-top: 20px;
-		height: 60px;
-		width: 105px;
+		height: 94px;
+		width: 174px;
 		background-repeat: no-repeat;
 		transition: all 1s ease-in-out;
 	}
@@ -937,9 +988,10 @@ p.NameRight
 	{
 		background-image: url('../img/menu/znaLogo.png');
 		display:inline-block;
+		margin-top: 0px;
 		background-position: center;
-		height: 67px;
-		width: 154px;
+		height: 94px;
+		width: 174px;
 		background-repeat: no-repeat;
 	}
 }
