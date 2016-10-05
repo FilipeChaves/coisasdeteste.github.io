@@ -257,6 +257,31 @@ div.divMenuSocial li {
 	background-size: contain;
 }
 
+div.dataText
+{
+	background: url('../img/social/dataText.png') no-repeat;
+	position: absolute;
+	bottom: 0%;
+	left: 5%;
+	width: 175px;
+	height: 65px;
+	transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s, width 1.5s, height 1.5s ease-in-out;
+	-webkit-transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s, width 1.5s, height 1.5s ease-in-out;
+	background-size: contain;
+}
+
+div.localText
+{
+	background: url('../img/social/localText.png') no-repeat;
+	position: absolute;
+	bottom: 0%;
+	right: 5%;
+	width: 175px;
+	height: 65px;
+	transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s, width 1.5s, height 1.5s ease-in-out;
+	-webkit-transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s, width 1.5s, height 1.5s ease-in-out;
+	background-size: contain;
+}
 
 
 /* Change the link color to #111 (black) on hover */

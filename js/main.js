@@ -148,6 +148,7 @@ function countdownClick()
 		$('div.conceptSymbol, div.locationSymbol, div.programSymbol').removeClass('goLeft');
 		$('div.informationSymbol, div.gallerySymbol, div.ticketsSymbol').removeClass('goRight');
 		
+		$('div.dataText, div.localText').addClass("turnTransparent");
 		countdown();
 	}
 }
@@ -161,6 +162,7 @@ function fadeout(){
 		$("div.znaSymbol").css('left', countdownPosition.left + 10);
 		$("div.znaSymbol").on('click', countdownClick);
 		
+		$('div.dataText, div.localText').removeClass("turnTransparent");
 		$('div.moonSymbol, div.sunSymbol').addClass("turnTransparent");
 		$('img.mandala').addClass("grow");
 		$('img.arvore').addClass("turnTransparent");
