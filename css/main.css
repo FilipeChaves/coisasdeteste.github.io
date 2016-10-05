@@ -25,25 +25,13 @@ body
     src: url(../fonts/olney_light.otf) format("truetype");
 }
 
-div.textArea-concept, div.textArea-program, div.textArea-information, div.textArea-gallery, div.textArea-tickets, div.textArea-location
-{
-	position: fixed;
-	margin-top:10%;
-	margin-left:15%;
-	width:70%; 
-	height:500px;
-	opacity:0;
-	filter: alpha(opacity=0);
-	transition: all 1s ease-in-out;
-}
-
 div.titleDiv
 {
-	position: fixed;
+	position: absolute;
 	width: 70%;
 	margin-left:15%;
 	height: 5%;
-	top: 13%;
+	top: 14%;
 	text-align: center;
 	transition: all 1s ease-in-out;
 }
@@ -66,6 +54,8 @@ h3.titulo-concept, h3.titulo-program, h3.titulo-information, h3.titulo-gallery, 
 	-webkit-margin-start: 0px;
 	-webkit-margin-end: 0px;
 	font-weight: bold;
+	margin-block-start: 0px;
+	margin-block-end: 0px;
 }
 
 p.texto
@@ -168,7 +158,8 @@ ul.menuPrincipal
     list-style-type: none;
 	display:inline-block;
     margin: 0 auto;
-			
+	padding-inline-start: 0px;
+	
 	-webkit-user-select: none;  /* Chrome all / Safari all */
 	-moz-user-select: none;     /* Firefox all */
 	-ms-user-select: none;      /* IE 10+ */
@@ -681,6 +672,17 @@ div.znaSymbol
 		transition: all 1s ease-in-out;
 	}
 	
+	div.textArea-concept, div.textArea-program, div.textArea-information, div.textArea-gallery, div.textArea-tickets, div.textArea-location
+	{
+		position: fixed;
+		margin-top:10%;
+		margin-left:15%;
+		width:70%; 
+		height:700px;
+		opacity:0;
+		filter: alpha(opacity=0);
+		transition: all 1s ease-in-out;
+	}
 	
 }  
 @media screen and (min-width: 1440px) and (max-width: 1599px) { 
@@ -837,6 +839,18 @@ div.znaSymbol
 		width: 218px;
 		background-repeat: no-repeat;
 	}
+	
+	div.textArea-concept, div.textArea-program, div.textArea-information, div.textArea-gallery, div.textArea-tickets, div.textArea-location
+	{
+		position: fixed;
+		margin-top:10%;
+		margin-left:15%;
+		width:70%; 
+		height:500px;
+		opacity:0;
+		filter: alpha(opacity=0);
+		transition: all 1s ease-in-out;
+	}
 }  
 
 @media screen and (max-width: 1439px) { 
@@ -992,6 +1006,18 @@ div.znaSymbol
 		height: 94px;
 		width: 174px;
 		background-repeat: no-repeat;
+	}
+	
+	div.textArea-concept, div.textArea-program, div.textArea-information, div.textArea-gallery, div.textArea-tickets, div.textArea-location
+	{
+		position: fixed;
+		margin-top:10%;
+		margin-left:15%;
+		width:70%; 
+		height:450px;
+		opacity:0;
+		filter: alpha(opacity=0);
+		transition: all 1s ease-in-out;
 	}
 }
 
