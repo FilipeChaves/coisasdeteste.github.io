@@ -9,48 +9,83 @@ function conceptClick()
 
 function programClick()
 {
-	$('div.program').addClass('program-active');
-	fadeout();
-	
 	removeCenter(1);
 	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
 }
 
 
 function locationClick()
 {
-	$('div.location').addClass('location-active');
-	fadeout();
-	
 	removeCenter(2);
 	removeActives();
+	
+	$('div.location').addClass('location-active');
+	fadeout();
 }
 
 function informationClick()
-{	
-	$('div.information').addClass('information-active');
-	fadeout();
-
+{
 	removeCenter(3);
 	removeActives();
+	
+	$('div.information').addClass('information-active');
+	fadeout();
 }
 
 function galleryClick()
 {
-	$('div.gallery').addClass('gallery-active');
-	fadeout();
-	
 	removeCenter(4);
 	removeActives();
+	
+	$('div.gallery').addClass('gallery-active');
+	fadeout();
 }
 
 function ticketsClick()
 {
-	$('div.tickets').addClass('tickets-active');
-	fadeout();
-	
 	removeCenter(5);
 	removeActives();
+	
+	$('div.tickets').addClass('tickets-active');
+	fadeout();
+}
+
+function dancefloorClick()
+{
+	fadeout();
+	
+	removeCenter(6);
+}
+
+function chilloutClick()
+{
+	fadeout();
+	
+	removeCenter(7);
+}
+
+function goaClick()
+{
+	fadeout();
+	
+	removeCenter(8);
+}
+
+function zenbuspaceClick()
+{
+	fadeout();
+	
+	removeCenter(9);
+}
+
+function zambukidsClick()
+{
+	fadeout();
+	
+	removeCenter(10);
 }
 
 function removeCenter(nextID) 
@@ -60,14 +95,24 @@ function removeCenter(nextID)
 						 'div.titulo-location',
 						 'div.titulo-information',
 						 'div.titulo-gallery',
-						 'div.titulo-tickets'];
+						 'div.titulo-tickets',
+						 'div.titulo-dancefloor', 
+						 'div.titulo-chillout',
+						 'div.titulo-goa',
+						 'div.titulo-zenbuspace',
+						 'div.titulo-zambukids'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
 						'div.textArea-location',
 						'div.textArea-information',
 						'div.textArea-gallery',
-						'div.textArea-tickets']; 
+						'div.textArea-tickets',
+						'div.textArea-dancefloor', 
+						'div.textArea-chillout',
+						'div.textArea-goa',
+						'div.textArea-zenbuspace',
+						'div.textArea-zambukids'];
 						
 	for(var i = 0; i < allTextAreas.length; i++)
 	{
@@ -107,14 +152,24 @@ function removeDisplay(nextID)
 						 'div.titulo-location',
 						 'div.titulo-information',
 						 'div.titulo-gallery',
-						 'div.titulo-tickets'];
+						 'div.titulo-tickets',
+						 'div.titulo-dancefloor', 
+						 'div.titulo-chillout',
+						 'div.titulo-goa',
+						 'div.titulo-zenbuspace',
+						 'div.titulo-zambukids'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
 						'div.textArea-location',
 						'div.textArea-information',
 						'div.textArea-gallery',
-						'div.textArea-tickets']; 
+						'div.textArea-tickets',
+						'div.textArea-dancefloor', 
+						'div.textArea-chillout',
+						'div.textArea-goa',
+						'div.textArea-zenbuspace',
+						'div.textArea-zambukids'];
 	
 	for(var allIdx = 0; allIdx < allTextAreas.length; allIdx++){
 		if(nextID == allIdx)

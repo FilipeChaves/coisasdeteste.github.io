@@ -38,6 +38,7 @@ div.titleDiv
 
 
 h3.titulo-concept, h3.titulo-program, h3.titulo-information, h3.titulo-gallery, h3.titulo-tickets, h3.titulo-location
+, h3.titulo-dancefloor, h3.titulo-chillout, h3.titulo-goa, h3.titulo-zenbuspace, h3.titulo-zambukids
 {
 	font-family: "Title Custom Font", Verdana, Tahoma;
 	color: white;
@@ -678,37 +679,21 @@ div.znaSymbol
 		font-family: "Text Custom Font", Verdana, Tahoma;
 		color: green;
 		font-weight: bold;
+		font-size: 1.7vw;
 		background-size: contain;
 		margin-top: 31px;
-		height: 147px;
-		width: 272px;
+		height: 118px;
+		width: 218px;
 		background-repeat: no-repeat;
 		transition: all 1s ease-in-out;
-	}
+	}	
 	
 	div.turnToZNALogo
 	{
 		cursor:pointer;
-		background-image: url('../img/menu/znaLogo.png');
-		margin-top: 0px;
-		height: 147px;
-		width: 272px;
-		background-repeat: no-repeat;
-		transition: all 1s ease-in-out;
+		height: 118px;
+		width: 218px;
 	}
-	
-	div.textArea-concept, div.textArea-program, div.textArea-information, div.textArea-gallery, div.textArea-tickets, div.textArea-location
-	{
-		position: fixed;
-		margin-top:10%;
-		margin-left:15%;
-		width:70%; 
-		height:700px;
-		opacity:0;
-		filter: alpha(opacity=0);
-		transition: all 1s ease-in-out;
-	}
-	
 }  
 @media screen and (min-width: 1440px) and (max-width: 1599px) { 
 	div.separador
@@ -845,10 +830,11 @@ div.znaSymbol
 		font-family: "Text Custom Font", Verdana, Tahoma;
 		color: green;
 		font-weight: bold;
+		font-size: 1.7vw;
 		background-size: contain;
 		margin-top: 25px;
-		height: 118px;
-		width: 218px;
+		height: 94px;
+		width: 174px;
 		background-repeat: no-repeat;
 		transition: all 1s ease-in-out;
 	}
@@ -856,25 +842,8 @@ div.znaSymbol
 	div.turnToZNALogo
 	{
 		cursor:pointer;
-		background-image: url('../img/menu/znaLogo.png');
-		display:inline-block;
-		margin-top: 0px;
-		background-position: center;
-		height: 118px;
-		width: 218px;
-		background-repeat: no-repeat;
-	}
-	
-	div.textArea-concept, div.textArea-program, div.textArea-information, div.textArea-gallery, div.textArea-tickets, div.textArea-location
-	{
-		position: fixed;
-		margin-top:10%;
-		margin-left:15%;
-		width:70%; 
-		height:500px;
-		opacity:0;
-		filter: alpha(opacity=0);
-		transition: all 1s ease-in-out;
+		height: 94px;
+		width: 174px;
 	}
 }  
 
@@ -1013,33 +982,87 @@ div.znaSymbol
 		font-family: "Text Custom Font", Verdana, Tahoma;
 		color: green;
 		font-weight: bold;
+		font-size: 1.7vw;
 		background-size: contain;
 		margin-top: 20px;
-		height: 94px;
-		width: 174px;
+		height: 75px;
+		width: 139px;
 		background-repeat: no-repeat;
 		transition: all 1s ease-in-out;
 	}
 	
+	
 	div.turnToZNALogo
 	{
 		cursor:pointer;
-		background-image: url('../img/menu/znaLogo.png');
-		display:inline-block;
-		margin-top: 0px;
-		background-position: center;
-		height: 94px;
-		width: 174px;
-		background-repeat: no-repeat;
+		height: 75px;
+		width: 139px;
 	}
-	
+}
+
+
+@media screen and (max-height: 700px) 
+{
+
 	div.textArea-concept, div.textArea-program, div.textArea-information, div.textArea-gallery, div.textArea-tickets, div.textArea-location
+	, div.textArea-dancefloor, div.textArea-chillout, div.textArea-goa, div.textArea-zenbuspace, div.textArea-zenbukids
 	{
 		position: fixed;
 		margin-top:10%;
 		margin-left:15%;
 		width:70%; 
-		height:450px;
+		height:400px;
+		opacity:0;
+		filter: alpha(opacity=0);
+		transition: all 1s ease-in-out;
+	}
+}
+
+@media screen and (min-height: 701px) and (max-height: 800px) 
+{
+
+	div.textArea-concept, div.textArea-program, div.textArea-information, div.textArea-gallery, div.textArea-tickets, div.textArea-location
+	, div.textArea-dancefloor, div.textArea-chillout, div.textArea-goa, div.textArea-zenbuspace, div.textArea-zambukids
+	{
+		position: fixed;
+		margin-top:10%;
+		margin-left:15%;
+		width:70%; 
+		height:500px;
+		opacity:0;
+		filter: alpha(opacity=0);
+		transition: all 1s ease-in-out;
+	}
+}
+
+@media screen and (min-height: 801px) and (max-height: 1000px) 
+{
+
+	div.textArea-concept, div.textArea-program, div.textArea-information, div.textArea-gallery, div.textArea-tickets, div.textArea-location
+	, div.textArea-dancefloor, div.textArea-chillout, div.textArea-goa, div.textArea-zenbuspace, div.textArea-zambukids
+	{
+		position: fixed;
+		margin-top:10%;
+		margin-left:15%;
+		width:70%; 
+		height:650px;
+		opacity:0;
+		filter: alpha(opacity=0);
+		transition: all 1s ease-in-out;
+	}
+}
+
+@media screen and (min-height: 1001px) and (max-height: 1100px) 
+{
+
+	div.textArea-concept, div.textArea-program, div.textArea-information, div.textArea-gallery, div.textArea-tickets, div.textArea-location
+	, div.textArea-dancefloor, div.textArea-chillout, div.textArea-goa, div.textArea-zenbuspace, div.textArea-zambukids
+	{
+		position: fixed;
+		margin-top:10%;
+		margin-left:15%;
+		width:70%; 
+		height:800px;
 		opacity:0;
 		filter: alpha(opacity=0);
 		transition: all 1s ease-in-out;
