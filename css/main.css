@@ -89,7 +89,7 @@ h3.titulo
 	font-weight: bold;
 	margin-block-start: 0px;
 	margin-block-end: 0px;
-	padding-top: 152px;
+	padding-top: 147px;
 }
 
 div.textArea-concept, div.textArea-program, div.textArea-information, div.textArea-gallery, div.textArea-tickets, div.textArea-location
@@ -614,6 +614,54 @@ div.znaSymbol
 	transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s, width 1.5s, height 1.5s ease-in-out;
 	-webkit-transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s, width 1.5s, height 1.5s ease-in-out;
 	background-size: contain;
+}
+
+div.chillout{
+	background: url('../img/program/chillout.png') no-repeat;
+}
+
+div.chillout:hover{
+	background: url('../img/program/chilloutHover.png') no-repeat;
+}
+
+div.dancefloor {
+	background: url('../img/program/dancefloor.png') no-repeat;
+}
+
+div.dancefloor:hover{
+	background: url('../img/program/dancefloorHover.png') no-repeat;
+}
+
+div.goa{
+	background: url('../img/program/goa.png') no-repeat;
+}
+
+div.goa:hover{
+	background: url('../img/program/goaHover.png') no-repeat;
+}
+
+div.zambukids{
+	background: url('../img/program/zambukids.png') no-repeat;
+}
+
+div.zambukids:hover{
+	background: url('../img/program/zambukidsHover.png') no-repeat;
+}
+
+div.zenbuspace {
+	background: url('../img/program/zenbuspace.png') no-repeat;
+}
+
+div.zenbuspace:hover {
+	background: url('../img/program/zenbuspaceHover.png') no-repeat;
+}
+
+div.afterparty{
+	background: url('../img/program/afterparty.png') no-repeat;
+}
+
+div.afterparty:hover{
+	background: url('../img/program/afterpartyHover.png') no-repeat;
 }
 
 @media screen and (min-width: 1600px) {   
