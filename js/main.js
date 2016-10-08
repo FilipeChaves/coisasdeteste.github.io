@@ -199,7 +199,8 @@ function countdownClick()
 	if($('img.grow').length === 1){
 		$("div.znaSymbol").removeClass('turnToZNALogo');
 		$('img.mandala').removeClass("grow");
-		$('div.moonSymbol, div.sunSymbol').removeClass('turnTransparent');
+		$('div.moonSymbol').removeClass('goDownRight grow');
+		$('div.sunSymbol').removeClass('goDownLeft grow');
 		$('img.arvore').removeClass("turnTransparent");
 		$('div.countdown').removeClass("turnTransparent");
 		$("div.znaSymbol").removeAttr("style");
@@ -226,7 +227,8 @@ function fadeout(){
 		$("div.znaSymbol").on('click', countdownClick);
 		
 		$('div.dataText, div.localText').removeClass("turnTransparent");
-		$('div.moonSymbol, div.sunSymbol').addClass("turnTransparent");
+		$('div.moonSymbol').addClass('goDownRight grow');
+		$('div.sunSymbol').addClass('goDownLeft grow');
 		$('img.mandala').addClass("grow");
 		$('img.arvore').addClass("turnTransparent");
 		$('div.countdown').addClass("turnTransparent");
