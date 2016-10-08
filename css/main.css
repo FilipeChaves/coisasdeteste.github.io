@@ -89,6 +89,7 @@ h3.titulo
 	font-weight: bold;
 	margin-block-start: 0px;
 	margin-block-end: 0px;
+	padding-top: 155px;
 }
 
 div.textArea-concept, div.textArea-program, div.textArea-information, div.textArea-gallery, div.textArea-tickets, div.textArea-location
@@ -573,8 +574,17 @@ div.Stage
 div.StageRight
 {
 	float:right;
-	margin-right: 20px;
+	margin-right: 25px;
 	margin-bottom: 20px;
+}
+
+div.StageImage
+{
+	height:40%;
+	width:98%;
+	background-color:green;
+	margin-bottom: 10px;
+	transition: opacity 1s ease-in-out;
 }
 
 p.StageName
@@ -597,12 +607,9 @@ div.znaSymbol
 {
 	background: url('../img/menu/znaLogo.png') no-repeat;
 	position: absolute;
-	/*top: 24.12%;/*425.230
-	left: 69.01%;
-	*/
-	top: 17.05%;
-	left: 43%;
-	width: 15.97%;
+	top: 16.60%;
+	left: 42%;
+	width: 17.7%;
 	height: 21.46%;
 	transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s, width 1.5s, height 1.5s ease-in-out;
 	-webkit-transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s, width 1.5s, height 1.5s ease-in-out;
@@ -756,7 +763,7 @@ div.znaSymbol
 	div.turnToZNALogo
 	{
 		cursor:pointer;
-		height: 118px;
+		height: 108px;
 		width: 218px;
 	}
 }  

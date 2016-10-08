@@ -245,7 +245,7 @@ function fadeout(){
 		$("div.znaSymbol").addClass('turnToZNALogo');
 		var countdownPosition = $('div.countdown').position();
 		$("div.znaSymbol").css('top', countdownPosition.top);
-		$("div.znaSymbol").css('left', countdownPosition.left + 10);
+		$("div.znaSymbol").css('left', countdownPosition.left + 25);
 		$("div.znaSymbol").on('click', countdownClick);
 		
 		$('div.dataText, div.localText').removeClass("turnTransparent");
@@ -401,6 +401,7 @@ function onLoadedPage(){
 	var nicesxs = $("div.textArea-zenbuspace").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-zambukids").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-useful").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-parkingCamping").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	//.cursor.css({"background-image":"url(img/mac6scroll.png)"}); // MAC like scrollbar
 		
 	countdown();
