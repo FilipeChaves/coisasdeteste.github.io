@@ -89,7 +89,7 @@ h3.titulo
 	font-weight: bold;
 	margin-block-start: 0px;
 	margin-block-end: 0px;
-	padding-top: 155px;
+	padding-top: 152px;
 }
 
 div.textArea-concept, div.textArea-program, div.textArea-information, div.textArea-gallery, div.textArea-tickets, div.textArea-location
@@ -754,8 +754,8 @@ div.znaSymbol
 		font-size: 1.3vw;
 		background-size: contain;
 		margin-top: 31px;
-		height: 118px;
-		width: 218px;
+		height: 94px;
+		width: 194px;
 		background-repeat: no-repeat;
 		transition: all 1s ease-in-out;
 	}	
@@ -763,8 +763,8 @@ div.znaSymbol
 	div.turnToZNALogo
 	{
 		cursor:pointer;
-		height: 108px;
-		width: 218px;
+		height: 94px;
+		width: 174px;
 	}
 }  
 @media screen and (min-width: 1440px) and (max-width: 1599px) { 
@@ -905,8 +905,8 @@ div.znaSymbol
 		font-size: 1.2vw;
 		background-size: contain;
 		margin-top: 25px;
-		height: 94px;
-		width: 174px;
+		height: 75px;
+		width: 159px;
 		background-repeat: no-repeat;
 		transition: all 1s ease-in-out;
 	}
@@ -914,8 +914,8 @@ div.znaSymbol
 	div.turnToZNALogo
 	{
 		cursor:pointer;
-		height: 94px;
-		width: 174px;
+		height: 75px;
+		width: 139px;
 	}
 }  
 
@@ -1057,8 +1057,8 @@ div.znaSymbol
 		font-size: 1.1vw;
 		background-size: contain;
 		margin-top: 20px;
-		height: 75px;
-		width: 139px;
+		height: 60px;
+		width: 131px;
 		background-repeat: no-repeat;
 		transition: all 1s ease-in-out;
 	}
@@ -1067,8 +1067,8 @@ div.znaSymbol
 	div.turnToZNALogo
 	{
 		cursor:pointer;
-		height: 75px;
-		width: 139px;
+		height: 60px;
+		width: 111px;
 	}
 }
 

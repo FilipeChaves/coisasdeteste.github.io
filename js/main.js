@@ -146,8 +146,8 @@ function removeCenter(nextID)
 			$(allTitleAreas[i]).css('display', 'inline-block');
 		
 			$(allTitleAreas[i]).css('top', countdownHeight + 30 + "px");
-			$(allTextAreas[i]).css('top', countdownHeight + 30 + titleHeight + 30 + "px");
-			$(allTextAreas[i]).css('height', (windowHeight - 80 - countdownHeight - titleHeight - menuSocialHeight) + "px");
+			$(allTextAreas[i]).css('top', countdownHeight + 30 + titleHeight + 25 + "px");
+			$(allTextAreas[i]).css('height', (windowHeight - 75 - countdownHeight - titleHeight - menuSocialHeight) + "px");
 			$('div.blackShadow').css('top', countdownHeight + 20 + "px");
 			$('div.blackShadow').css('height', (windowHeight - 20 - countdownHeight - menuSocialHeight) + "px");
 						
@@ -239,13 +239,12 @@ function countdownClick()
 }
 
 function fadeout(){
-	//$('img').scale(2,2);
 	if($('img.grow').length === 0)
 	{
 		$("div.znaSymbol").addClass('turnToZNALogo');
 		var countdownPosition = $('div.countdown').position();
 		$("div.znaSymbol").css('top', countdownPosition.top);
-		$("div.znaSymbol").css('left', countdownPosition.left + 15);
+		$("div.znaSymbol").css('left', countdownPosition.left + 20);
 		$("div.znaSymbol").on('click', countdownClick);
 		
 		$('div.dataText, div.localText').removeClass("turnTransparent");
@@ -384,7 +383,7 @@ function onLoadedPage(){
 		{
 			var countdownPosition = $('div.countdown').position();
 			$("div.znaSymbol").css('top', countdownPosition.top);
-			$("div.znaSymbol").css('left', countdownPosition.left + 15);
+			$("div.znaSymbol").css('left', countdownPosition.left + 20);
 		}
 	});
 	
