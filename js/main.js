@@ -109,6 +109,20 @@ function parkingCampingClick()
 	removeCenter(13);
 }
 
+function participationClick()
+{
+	fadeout();
+	
+	removeCenter(14);
+}
+
+function historyClick()
+{
+	fadeout();
+	
+	removeCenter(15);
+}
+
 function removeCenter(nextID) 
 {
 	var allTitleAreas = ['div.titulo-concept',
@@ -124,7 +138,9 @@ function removeCenter(nextID)
 						 'div.titulo-zambukids',
 						 'div.titulo-afterparty',
 						 'div.titulo-useful',
-						 'div.titulo-parkingCamping'];
+						 'div.titulo-parkingCamping',
+						 'div.titulo-participation',
+						 'div.titulo-history'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -139,7 +155,9 @@ function removeCenter(nextID)
 						'div.textArea-zambukids',
 						'div.textArea-afterparty',
 						'div.textArea-useful',
-						'div.textArea-parkingCamping'];
+						'div.textArea-parkingCamping',
+						'div.textArea-participation',
+						'div.textArea-history'];
 	
 	var windowHeight = $(window).height();
 	var countdownHeight = $('div.countdown').height();
@@ -190,7 +208,9 @@ function removeDisplay(nextID)
 						 'div.titulo-zambukids',
 						 'div.titulo-afterparty',
 						 'div.titulo-useful',
-						 'div.titulo-parkingCamping'];
+						 'div.titulo-parkingCamping',
+						 'div.titulo-participation',
+						 'div.titulo-history'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -205,7 +225,9 @@ function removeDisplay(nextID)
 						'div.textArea-zambukids',
 						'div.textArea-afterparty',
 						'div.textArea-useful',
-						'div.textArea-parkingCamping'];
+						'div.textArea-parkingCamping',
+						'div.textArea-participation',
+						'div.textArea-history'];
 	
 	var contdownHeight = $('div.countdown').height();
 	var titleHeight = $('div.titulo-concept').height();
@@ -410,8 +432,11 @@ function onLoadedPage(){
 	var nicesxs = $("div.textArea-goa").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-zenbuspace").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-zambukids").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-afterparty").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-useful").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-parkingCamping").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-participation").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-history").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	//.cursor.css({"background-image":"url(img/mac6scroll.png)"}); // MAC like scrollbar
 		
 	countdown();

@@ -49,7 +49,7 @@ div.blackShadow
 
 h3.titulo-concept, h3.titulo-program, h3.titulo-information, h3.titulo-gallery, h3.titulo-tickets, h3.titulo-location
 , h3.titulo-dancefloor, h3.titulo-chillout, h3.titulo-goa, h3.titulo-zenbuspace, h3.titulo-zambukids, h3.titulo-useful
-, h3.titulo-parkingCamping, h3.titulo-afterparty
+, h3.titulo-parkingCamping, h3.titulo-afterparty, h3.titulo-participation, h3.titulo-history
 {
 	font-family: "Title Custom Font", Verdana, Tahoma;
 	color: white;
@@ -74,7 +74,7 @@ h3.titulo
 {
 	font-family: "Title Custom Font", Verdana, Tahoma;
 	color: white;
-	font-size: 250%;
+	font-size: 150%;
 	text-align: center;
 	bottom: 0%;
 	-webkit-user-select: none;
@@ -90,12 +90,12 @@ h3.titulo
 	font-weight: bold;
 	margin-block-start: 0px;
 	margin-block-end: 0px;
-	padding-top: 147px;
+	padding-top: 168px;
 }
 
 div.textArea-concept, div.textArea-program, div.textArea-information, div.textArea-gallery, div.textArea-tickets, div.textArea-location
 , div.textArea-dancefloor, div.textArea-chillout, div.textArea-goa, div.textArea-zenbuspace, div.textArea-zambukids, div.textArea-useful
-, div.textArea-parkingCamping, div.textArea-afterparty
+, div.textArea-parkingCamping, div.textArea-afterparty, div.textArea-history, div.textArea-participation
 {
 	position: absolute;
 	margin-left:15%;
@@ -311,7 +311,7 @@ div.dataText
 {
 	background: url('../img/social/dataText.png') no-repeat;
 	position: absolute;
-	bottom: -10px;
+	bottom: 0px;
 	left: 20%;
 	width: 175px;
 	height: 65px;
@@ -324,7 +324,7 @@ div.localText
 {
 	background: url('../img/social/localText.png') no-repeat;
 	position: absolute;
-	bottom:-10px;
+	bottom:0px;
 	right: 20%;
 	width: 175px;
 	height: 65px;
@@ -688,6 +688,54 @@ div.zenbuspaceBig {
 
 div.afterpartyBig{
 	background: url('../img/program/big/afterparty.png') no-repeat;
+}
+
+div.parkingCamping{
+	background: url('../img/information/parkingCamping.png') no-repeat;
+}
+
+div.parkingCamping:hover{
+	background: url('../img/information/parkingCampingHover.png') no-repeat;
+}
+
+div.useful{
+	background: url('../img/information/useful.png') no-repeat;
+}
+
+div.useful:hover{
+	background: url('../img/information/usefulHover.png') no-repeat;
+}
+
+div.history {
+	background: url('../img/information/history.png') no-repeat;
+}
+
+div.history:hover {
+	background: url('../img/information/historyHover.png') no-repeat;
+}
+
+div.participation{
+	background: url('../img/information/participation.png') no-repeat;
+}
+
+div.participation:hover{
+	background: url('../img/information/participationHover.png') no-repeat;
+}
+
+div.parkingCampingBig{
+	background: url('../img/information/big/parkingCamping.png') no-repeat;
+}
+
+div.usefulBig{
+	background: url('../img/information/big/useful.png') no-repeat;
+}
+
+div.historyBig {
+	background: url('../img/information/big/history.png') no-repeat;
+}
+
+div.participationBig{
+	background: url('../img/information/big/participation.png') no-repeat;
 }
 
 @media screen and (min-width: 1600px) {   
