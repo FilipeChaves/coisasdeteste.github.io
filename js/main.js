@@ -261,8 +261,8 @@ function fadeout(){
 function countdown(){
 	if($('img.grow').length === 0){	
 		var time = getTimeRemaining();
-		$("div.countdown").text( (time.days < 10 ? "0" :"") + time.days+ "-" + (time.hours < 10 ? "0" : "") + time.hours + "-" + 
-								 (time.minutes < 10 ? "0" :"") + time.minutes + "-" + (time.seconds < 10 ? "0" :"") + time.seconds);
+		$("div.countdown").text( (time.days < 10 ? "0" :"") + time.days+ "d" + (time.hours < 10 ? "0" : "") + time.hours + "h" + 
+								 (time.minutes < 10 ? "0" :"") + time.minutes + "m" + (time.seconds < 10 ? "0" :"") + time.seconds + "s");
 								 
 		var milliseconds = 1000 - new Date().getMilliseconds();
 		setTimeout(countdown, milliseconds);
