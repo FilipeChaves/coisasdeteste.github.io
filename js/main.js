@@ -145,9 +145,9 @@ function removeCenter(nextID)
 			$(allTextAreas[i]).css('display', 'inline-block');
 			$(allTitleAreas[i]).css('display', 'inline-block');
 		
-			$(allTitleAreas[i]).css('top', countdownHeight + 30 + "px");
-			$(allTextAreas[i]).css('top', countdownHeight + 30 + titleHeight + 25 + "px");
-			$(allTextAreas[i]).css('height', (windowHeight - 75 - countdownHeight - titleHeight - menuSocialHeight) + "px");
+			$(allTitleAreas[i]).css('top', countdownHeight + 40 + "px");
+			$(allTextAreas[i]).css('top', countdownHeight + 40 + titleHeight + 25 + "px");
+			$(allTextAreas[i]).css('height', (windowHeight - 85 - countdownHeight - titleHeight - menuSocialHeight) + "px");
 			$('div.blackShadow').css('top', countdownHeight + 20 + "px");
 			$('div.blackShadow').css('height', (windowHeight - 20 - countdownHeight - menuSocialHeight) + "px");
 						
