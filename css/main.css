@@ -48,7 +48,8 @@ div.blackShadow
 }
 
 h3.titulo-concept, h3.titulo-program, h3.titulo-information, h3.titulo-gallery, h3.titulo-tickets, h3.titulo-location
-, h3.titulo-dancefloor, h3.titulo-chillout, h3.titulo-goa, h3.titulo-zenbuspace, h3.titulo-zambukids, h3.titulo-useful, h3.titulo-parkingCamping
+, h3.titulo-dancefloor, h3.titulo-chillout, h3.titulo-goa, h3.titulo-zenbuspace, h3.titulo-zambukids, h3.titulo-useful
+, h3.titulo-parkingCamping, h3.titulo-afterparty
 {
 	font-family: "Title Custom Font", Verdana, Tahoma;
 	color: white;
@@ -93,7 +94,8 @@ h3.titulo
 }
 
 div.textArea-concept, div.textArea-program, div.textArea-information, div.textArea-gallery, div.textArea-tickets, div.textArea-location
-, div.textArea-dancefloor, div.textArea-chillout, div.textArea-goa, div.textArea-zenbuspace, div.textArea-zambukids, div.textArea-useful, div.textArea-parkingCamping
+, div.textArea-dancefloor, div.textArea-chillout, div.textArea-goa, div.textArea-zenbuspace, div.textArea-zambukids, div.textArea-useful
+, div.textArea-parkingCamping, div.textArea-afterparty
 {
 	position: absolute;
 	margin-left:15%;
@@ -662,6 +664,30 @@ div.afterparty{
 
 div.afterparty:hover{
 	background: url('../img/program/afterpartyHover.png') no-repeat;
+}
+
+div.chilloutBig{
+	background: url('../img/program/big/chillout.png') no-repeat;
+}
+
+div.dancefloorBig{
+	background: url('../img/program/big/dancefloor.png') no-repeat;
+}
+
+div.goaBig{
+	background: url('../img/program/big/goa.png') no-repeat;
+}
+
+div.zambukidsBig{
+	background: url('../img/program/big/zambukids.png') no-repeat;
+}
+
+div.zenbuspaceBig {
+	background: url('../img/program/big/zenbuspace.png') no-repeat;
+}
+
+div.afterpartyBig{
+	background: url('../img/program/big/afterparty.png') no-repeat;
 }
 
 @media screen and (min-width: 1600px) {   

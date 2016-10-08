@@ -88,18 +88,25 @@ function zambukidsClick()
 	removeCenter(10);
 }
 
-function usefulClick()
+function afterpartyClick()
 {
 	fadeout();
 	
 	removeCenter(11);
 }
 
-function parkingCampingClick()
+function usefulClick()
 {
 	fadeout();
 	
 	removeCenter(12);
+}
+
+function parkingCampingClick()
+{
+	fadeout();
+	
+	removeCenter(13);
 }
 
 function removeCenter(nextID) 
@@ -115,6 +122,7 @@ function removeCenter(nextID)
 						 'div.titulo-goa',
 						 'div.titulo-zenbuspace',
 						 'div.titulo-zambukids',
+						 'div.titulo-afterparty',
 						 'div.titulo-useful',
 						 'div.titulo-parkingCamping'];
 						
@@ -129,6 +137,7 @@ function removeCenter(nextID)
 						'div.textArea-goa',
 						'div.textArea-zenbuspace',
 						'div.textArea-zambukids',
+						'div.textArea-afterparty',
 						'div.textArea-useful',
 						'div.textArea-parkingCamping'];
 	
@@ -179,6 +188,7 @@ function removeDisplay(nextID)
 						 'div.titulo-goa',
 						 'div.titulo-zenbuspace',
 						 'div.titulo-zambukids',
+						 'div.titulo-afterparty',
 						 'div.titulo-useful',
 						 'div.titulo-parkingCamping'];
 						
@@ -193,6 +203,7 @@ function removeDisplay(nextID)
 						'div.textArea-goa',
 						'div.textArea-zenbuspace',
 						'div.textArea-zambukids',
+						'div.textArea-afterparty',
 						'div.textArea-useful',
 						'div.textArea-parkingCamping'];
 	
