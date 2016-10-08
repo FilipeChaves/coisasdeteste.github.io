@@ -48,7 +48,7 @@ div.blackShadow
 }
 
 h3.titulo-concept, h3.titulo-program, h3.titulo-information, h3.titulo-gallery, h3.titulo-tickets, h3.titulo-location
-, h3.titulo-dancefloor, h3.titulo-chillout, h3.titulo-goa, h3.titulo-zenbuspace, h3.titulo-zambukids
+, h3.titulo-dancefloor, h3.titulo-chillout, h3.titulo-goa, h3.titulo-zenbuspace, h3.titulo-zambukids, h3.titulo-useful, h3.titulo-parkingCamping
 {
 	font-family: "Title Custom Font", Verdana, Tahoma;
 	color: white;
@@ -92,7 +92,7 @@ h3.titulo
 }
 
 div.textArea-concept, div.textArea-program, div.textArea-information, div.textArea-gallery, div.textArea-tickets, div.textArea-location
-, div.textArea-dancefloor, div.textArea-chillout, div.textArea-goa, div.textArea-zenbuspace, div.textArea-zambukids
+, div.textArea-dancefloor, div.textArea-chillout, div.textArea-goa, div.textArea-zenbuspace, div.textArea-zambukids, div.textArea-useful, div.textArea-parkingCamping
 {
 	position: absolute;
 	margin-left:15%;

@@ -88,6 +88,20 @@ function zambukidsClick()
 	removeCenter(10);
 }
 
+function usefulClick()
+{
+	fadeout();
+	
+	removeCenter(11);
+}
+
+function parkingCampingClick()
+{
+	fadeout();
+	
+	removeCenter(12);
+}
+
 function removeCenter(nextID) 
 {
 	var allTitleAreas = ['div.titulo-concept',
@@ -100,7 +114,9 @@ function removeCenter(nextID)
 						 'div.titulo-chillout',
 						 'div.titulo-goa',
 						 'div.titulo-zenbuspace',
-						 'div.titulo-zambukids'];
+						 'div.titulo-zambukids',
+						 'div.titulo-useful',
+						 'div.titulo-parkingCamping'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -112,7 +128,9 @@ function removeCenter(nextID)
 						'div.textArea-chillout',
 						'div.textArea-goa',
 						'div.textArea-zenbuspace',
-						'div.textArea-zambukids'];
+						'div.textArea-zambukids',
+						'div.textArea-useful',
+						'div.textArea-parkingCamping'];
 	
 	var windowHeight = $(window).height();
 	var countdownHeight = $('div.countdown').height();
@@ -160,7 +178,9 @@ function removeDisplay(nextID)
 						 'div.titulo-chillout',
 						 'div.titulo-goa',
 						 'div.titulo-zenbuspace',
-						 'div.titulo-zambukids'];
+						 'div.titulo-zambukids',
+						 'div.titulo-useful',
+						 'div.titulo-parkingCamping'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -172,7 +192,9 @@ function removeDisplay(nextID)
 						'div.textArea-chillout',
 						'div.textArea-goa',
 						'div.textArea-zenbuspace',
-						'div.textArea-zambukids'];
+						'div.textArea-zambukids',
+						'div.textArea-useful',
+						'div.textArea-parkingCamping'];
 	
 	var contdownHeight = $('div.countdown').height();
 	var titleHeight = $('div.titulo-concept').height();
@@ -378,6 +400,7 @@ function onLoadedPage(){
 	var nicesxs = $("div.textArea-goa").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-zenbuspace").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-zambukids").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-useful").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	//.cursor.css({"background-image":"url(img/mac6scroll.png)"}); // MAC like scrollbar
 		
 	countdown();
