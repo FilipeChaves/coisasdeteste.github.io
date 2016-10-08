@@ -113,32 +113,35 @@ function removeCenter(nextID)
 						'div.textArea-goa',
 						'div.textArea-zenbuspace',
 						'div.textArea-zambukids'];
-						
+	
+	var windowHeight = $(window).height();
+	var countdownHeight = $('div.countdown').height();
+	var titleHeight = $('div.titulo-concept').height();
+	var menuSocialHeight = $('div.divMenuSocial').height();
+	
 	for(var i = 0; i < allTextAreas.length; i++)
 	{
 		if(nextID === i)
 		{
+			$('div.blackShadow').css('display', 'inline-block');
 			$(allTextAreas[i]).css('display', 'inline-block');
 			$(allTitleAreas[i]).css('display', 'inline-block');
+		
+			$(allTitleAreas[i]).css('top', countdownHeight + 20 + "px");
+			$(allTextAreas[i]).css('top', countdownHeight + 20 + titleHeight + 20 + "px");
+			$(allTextAreas[i]).css('height', (windowHeight - 60 - countdownHeight - titleHeight - menuSocialHeight) + "px");
+			$('div.blackShadow').css('top', countdownHeight + 20 + "px");
+			$('div.blackShadow').css('height', (windowHeight - 30 - countdownHeight - menuSocialHeight) + "px");
 						
 			setTimeout(function() { 
+				$('div.blackShadow').css('opacity', '100');
 				$(allTextAreas[nextID]).css('opacity', '100');
 				$(allTitleAreas[nextID]).css('opacity', '100');
-			}, 200)
-			
-			setTimeout(function() { 
-				var allScrolls = $("div#ascrail200" + nextID);
-				allScrolls.css("top", "18%");
-				allScrolls.css("left", "87%");
-			}, 1000)
-			
+			}, 200);
 			continue;
 		}
 		$(allTextAreas[i]).css('opacity', '0');
 		$(allTitleAreas[i]).css('opacity', '0');
-		var allScrolls = $("div#ascrail200" + i);
-		allScrolls.css("top", "18%");
-		allScrolls.css("left", "87%");
 	}
 	setTimeout(function() {
 		removeDisplay(nextID);
@@ -171,6 +174,9 @@ function removeDisplay(nextID)
 						'div.textArea-zenbuspace',
 						'div.textArea-zambukids'];
 	
+	var contdownHeight = $('div.countdown').height();
+	var titleHeight = $('div.titulo-concept').height();
+	
 	for(var allIdx = 0; allIdx < allTextAreas.length; allIdx++){
 		if(nextID == allIdx)
 			continue;
@@ -198,6 +204,7 @@ function countdownClick()
 		$('div.countdown').removeClass("turnTransparent");
 		$("div.znaSymbol").removeAttr("style");
 		$("div.znaSymbol").off('click');
+		$('div.blackShadow').css('opacity', '0');
 		removeActives();
 		removeCenter(-1);
 		$('div.conceptSymbol, div.locationSymbol, div.programSymbol').removeClass('goLeft');
@@ -207,6 +214,7 @@ function countdownClick()
 		countdown();
 	}
 }
+
 function fadeout(){
 	//$('img').scale(2,2);
 	if($('img.grow').length === 0)
@@ -224,16 +232,8 @@ function fadeout(){
 		$('div.countdown').addClass("turnTransparent");
 		$('div.conceptSymbol, div.locationSymbol, div.programSymbol').addClass('goLeft');
 		$('div.informationSymbol, div.gallerySymbol, div.ticketsSymbol').addClass('goRight');
-		
-		for(var i = 0; i < 6; i++){
-			var allScrolls = $("div#ascrail200" + i);
-			allScrolls.css("top", "18%");
-			allScrolls.css("left", "87%");
-		}
 	}
 };
-
-
 
 function countdown(){
 	if($('img.grow').length === 0){	
@@ -355,14 +355,29 @@ function onLoadedPage(){
 		}
 	});
 	
+	$(window).resize(function() {
+		if($('img.grow').length === 1)
+		{
+			var countdownPosition = $('div.countdown').position();
+			$("div.znaSymbol").css('top', countdownPosition.top);
+			$("div.znaSymbol").css('left', countdownPosition.left + 10);
+		}
+	});
+	
+	
 	var nicesx = $("div.textArea-concept").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-program").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-location").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-information").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-gallery").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-tickets").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesx = $("div.textArea-chillout").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-dancefloor").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-goa").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-zenbuspace").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-zambukids").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	//.cursor.css({"background-image":"url(img/mac6scroll.png)"}); // MAC like scrollbar
-	
+		
 	countdown();
 }
 
