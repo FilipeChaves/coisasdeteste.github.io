@@ -613,8 +613,8 @@ div.znaSymbol
 	left: 42%;
 	width: 17.7%;
 	height: 21.46%;
-	transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s, width 1.5s, height 1.5s ease-in-out;
-	-webkit-transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s, width 1.5s, height 1.5s ease-in-out;
+	transition: opacity 2s, filter 2s, top 2s, left 2s, width 2s, height 2s ease-in-out;
+	-webkit-transition: opacity 2s, filter 2s, top 2s, left 2s, width 2s, height 2s ease-in-out;
 	background-size: contain;
 }
 
