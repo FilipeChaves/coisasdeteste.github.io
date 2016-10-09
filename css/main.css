@@ -744,14 +744,14 @@ div.locationTopBig{
 
 div.locationRightSmall{
 	background: url('../img/location/rightSmall.png') no-repeat;
-	width: 500px;
-	height: 350px;	
+	width: 47%;
+	height: 70%;	
 }
 
 div.locationSmall {
 	background: url('../img/location/small.png') no-repeat;
-	width: 500px;
-	height: 350px;	
+	width: 47%;
+	height: 70%;	
 }
 
 div.locationBottomBig{
