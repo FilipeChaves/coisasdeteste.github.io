@@ -53,7 +53,7 @@ h3.titulo-concept, h3.titulo-program, h3.titulo-information, h3.titulo-gallery, 
 , h3.titulo-retro, h3.titulo-edition, h3.titulo-emel, h3.titulo-activation
 {
 	font-family: "Title Custom Font", Verdana, Tahoma;
-	color: white;
+	color: #faa200;
 	font-size: 250%;
 	text-align: center;
 	-webkit-user-select: none;
@@ -123,7 +123,7 @@ p.texto
 p.textoBold
 {
 	font-family: "Text Custom Font", Verdana, Tahoma;
-	color: white;
+	color: #00fa9e;
 	font-weight: bold;
 	font-size: 95%;
 	width: 98%;
