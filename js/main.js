@@ -5,6 +5,7 @@ function conceptClick()
 	
 	$('div.concept').addClass('concept-active');
 	fadeout();
+	window.history.pushState({"href":"concept"}, null, '#concept');
 }
 
 function programClick()
@@ -14,6 +15,7 @@ function programClick()
 	
 	$('div.program').addClass('program-active');
 	fadeout();
+	window.history.pushState({"href":"program"}, null, '#program');
 }
 
 
@@ -24,6 +26,7 @@ function locationClick()
 	
 	$('div.location').addClass('location-active');
 	fadeout();
+	window.history.pushState({"href":"location"}, null, '#location');
 }
 
 function informationClick()
@@ -33,6 +36,7 @@ function informationClick()
 	
 	$('div.information').addClass('information-active');
 	fadeout();
+	window.history.pushState({"href":"information"}, null, '#information');
 }
 
 function galleryClick()
@@ -42,6 +46,7 @@ function galleryClick()
 	
 	$('div.gallery').addClass('gallery-active');
 	fadeout();
+	window.history.pushState({"href":"location"}, null, '#location');
 }
 
 function ticketsClick()
@@ -51,76 +56,107 @@ function ticketsClick()
 	
 	$('div.tickets').addClass('tickets-active');
 	fadeout();
+	window.history.pushState({"href":"tickets"}, null, '#tickets');
 }
 
 function dancefloorClick()
 {
-	fadeout();
-	
 	removeCenter(6);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"dancefloor"}, null, '#dancefloor');
 }
 
 function chilloutClick()
 {
-	fadeout();
-	
 	removeCenter(7);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"chillout"}, null, '#chillout');
 }
 
 function goaClick()
 {
-	fadeout();
-	
 	removeCenter(8);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"goa"}, null, '#goa');
 }
 
 function zenbuspaceClick()
 {
-	fadeout();
-	
 	removeCenter(9);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"zenbuspace"}, null, '#zenbuspace');
 }
 
 function zambukidsClick()
 {
-	fadeout();
-	
 	removeCenter(10);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"zambukids"}, null, '#zambukids');
 }
 
 function afterpartyClick()
 {
-	fadeout();
-	
 	removeCenter(11);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"afterparty"}, null, '#afterparty');
 }
 
 function usefulClick()
 {
-	fadeout();
-	
 	removeCenter(12);
+	removeActives();
+	
+	$('div.information').addClass('information-active');
+	fadeout();
+	window.history.pushState({"href":"useful"}, null, '#useful');
 }
 
 function parkingCampingClick()
 {
-	fadeout();
-	
 	removeCenter(13);
+	removeActives();
+	
+	$('div.information').addClass('information-active');
+	fadeout();
+	window.history.pushState({"href":"parkingCamping"}, null, '#parkingCamping');
 }
 
 function participationClick()
 {
-	fadeout();
-	
 	removeCenter(14);
+	removeActives();
+	
+	$('div.information').addClass('information-active');
+	fadeout();
+	window.history.pushState({"href":"participation"}, null, '#participation');
 }
 
 function historyClick()
 {
-	fadeout();
-	
 	removeCenter(15);
+	removeActives();
+	
+	$('div.information').addClass('information-active');
+	fadeout();
+	window.history.pushState({"href":"history"}, null, '#history');
 }
 
 function removeCenter(nextID) 
@@ -268,6 +304,7 @@ function countdownClick()
 		
 		$('div.dataText, div.localText').addClass("turnTransparent");
 		countdown();
+		window.history.pushState({"href":""}, null, '#');
 	}
 }
 
@@ -443,10 +480,125 @@ function onLoadedPage(){
 		$("h3.titulo-concept, h3.titulo-program, h3.titulo-information, h3.titulo-gallery, h3.titulo-tickets, h3.titulo-location, h3.titulo-dancefloor, h3.titulo-chillout, h3.titulo-goa, h3.titulo-zenbuspace, h3.titulo-zambukids, h3.titulo-useful, h3.titulo-parkingCamping, h3.titulo-afterparty, h3.titulo-participation, h3.titulo-history")
 	.css("font-size", "150%");
 	}
-	
-	
 	countdown();
+	setTimeout( new function() {
+		var thisRef = window.location.href;
+		if(thisRef.includes("#")){
+			var splittedUrl = thisRef.split('#');
+			if(splittedUrl.length < 2)
+				return;
+			switch(splittedUrl[1]){
+				case 'concept':
+					conceptClick();
+					break;
+				case 'program':
+					programClick();
+					break;
+				case 'location':
+					locationClick();
+					break;
+				case 'information':
+					informationClick();
+					break;
+				case 'gallery':
+					galleryClick();
+					break;
+				case 'tickets':
+					ticketsClick();
+					break;
+				case 'dancefloor':
+					dancefloorClick();
+					break;
+				case 'chillout':
+					chilloutClick();
+					break;
+				case 'goa':
+					goaClick();
+					break;
+				case 'afterparty':
+					afterpartyClick();
+					break;
+				case 'zenbuspace':
+					zenbuspaceClick();
+					break;
+				case 'zambukids':
+					zambukidsClick();
+					break;
+				case 'useful':
+					usefulClick();
+					break;
+				case 'parkingCamping':
+					parkingCampingClick();
+					break;
+				case 'participation':
+					participationClick();
+					break;
+				case 'history':
+					historyClick();
+					break;
+			}
+		}else{
+			window.history.pushState({"href":""}, null, '#');
+		}
+	}, 400);
 }
+
+window.onpopstate = function(event) {
+	
+	switch(event.state.href){
+		case '':
+			countdownClick();
+			break;
+		case 'concept':
+			conceptClick();
+			break;
+		case 'program':
+			programClick();
+			break;
+		case 'location':
+			locationClick();
+			break;
+		case 'information':
+			informationClick();
+			break;
+		case 'gallery':
+			galleryClick();
+			break;
+		case 'tickets':
+			ticketsClick();
+			break;
+		case 'dancefloor':
+			dancefloorClick();
+			break;
+		case 'chillout':
+			chilloutClick();
+			break;
+		case 'goa':
+			goaClick();
+			break;
+		case 'afterparty':
+			afterpartyClick();
+			break;
+		case 'zenbuspace':
+			zenbuspaceClick();
+			break;
+		case 'zambukids':
+			zambukidsClick();
+			break;
+		case 'useful':
+			usefulClick();
+			break;
+		case 'parkingCamping':
+			parkingCampingClick();
+			break;
+		case 'participation':
+			participationClick();
+			break;
+		case 'history':
+			historyClick();
+			break;
+	}
+};
 
 function getTimeRemaining(){
   var t = new Date(2017, 7, 22, 21, 0, 0, 0) - new Date();
