@@ -738,6 +738,23 @@ div.participationBig{
 	background: url('../img/information/big/participation.png') no-repeat;
 }
 
+div.locationTopBig{
+	background: url('../img/location/top.png') no-repeat;
+}
+
+div.locationRightSmall{
+	background: url('../img/location/rightSmall.png') no-repeat;
+}
+
+div.locationSmall {
+	background: url('../img/location/small.png') no-repeat;
+}
+
+div.locationBottomBig{
+	background: url('../img/location/bottom.png') no-repeat;
+}
+
+
 @media screen and (min-width: 1600px) {   
 	div.separador
 	{

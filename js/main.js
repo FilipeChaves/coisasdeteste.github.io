@@ -438,7 +438,13 @@ function onLoadedPage(){
 	var nicesxs = $("div.textArea-participation").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-history").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	//.cursor.css({"background-image":"url(img/mac6scroll.png)"}); // MAC like scrollbar
-		
+	
+	if(isIE()){
+		$("h3.titulo-concept, h3.titulo-program, h3.titulo-information, h3.titulo-gallery, h3.titulo-tickets, h3.titulo-location, h3.titulo-dancefloor, h3.titulo-chillout, h3.titulo-goa, h3.titulo-zenbuspace, h3.titulo-zambukids, h3.titulo-useful, h3.titulo-parkingCamping, h3.titulo-afterparty, h3.titulo-participation, h3.titulo-history")
+	.css("font-size", "150%");
+	}
+	
+	
 	countdown();
 }
 
@@ -463,4 +469,30 @@ function getTimeRemaining(){
     'minutes': minutes,
     'seconds': seconds
   };
+}
+
+function isIE() {
+    var ua = window.navigator.userAgent;
+
+    var msie = ua.indexOf('MSIE ');
+    if (msie > 0) {
+        // IE 10 or older => return version number
+        return true;
+    }
+
+    var trident = ua.indexOf('Trident/');
+    if (trident > 0) {
+        // IE 11 => return version number
+        var rv = ua.indexOf('rv:');
+        return true;
+    }
+
+    var edge = ua.indexOf('Edge/');
+    if (edge > 0) {
+       // Edge (IE 12+) => return version number
+       return true;
+    }
+
+    // other browser
+    return false;
 }
