@@ -249,6 +249,7 @@ div.facebook
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-image: url("../img/social/facebook.png");
+	cursor: pointer;
 }
 
 div.youtube
@@ -259,6 +260,7 @@ div.youtube
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-image: url("../img/social/youtube.png");
+	cursor: pointer;
 }
 
 div.facebook:hover
