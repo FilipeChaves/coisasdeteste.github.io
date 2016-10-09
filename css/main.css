@@ -179,6 +179,7 @@ h3.titulo
 	font-family: "Title Custom Font", Verdana, Tahoma;
 	color: white;
 	font-size: 150%;
+	letter-spacing: 3px;
 	text-align: center;
 	bottom: 0%;
 	-webkit-user-select: none;
