@@ -487,56 +487,8 @@ function onLoadedPage(){
 			var splittedUrl = thisRef.split('#');
 			if(splittedUrl.length < 2)
 				return;
-			switch(splittedUrl[1]){
-				case 'concept':
-					conceptClick();
-					break;
-				case 'program':
-					programClick();
-					break;
-				case 'location':
-					locationClick();
-					break;
-				case 'information':
-					informationClick();
-					break;
-				case 'gallery':
-					galleryClick();
-					break;
-				case 'tickets':
-					ticketsClick();
-					break;
-				case 'dancefloor':
-					dancefloorClick();
-					break;
-				case 'chillout':
-					chilloutClick();
-					break;
-				case 'goa':
-					goaClick();
-					break;
-				case 'afterparty':
-					afterpartyClick();
-					break;
-				case 'zenbuspace':
-					zenbuspaceClick();
-					break;
-				case 'zambukids':
-					zambukidsClick();
-					break;
-				case 'useful':
-					usefulClick();
-					break;
-				case 'parkingCamping':
-					parkingCampingClick();
-					break;
-				case 'participation':
-					participationClick();
-					break;
-				case 'history':
-					historyClick();
-					break;
-			}
+			
+			clickInCorrectTab(splittedUrl[1]);
 		}else{
 			window.history.pushState({"href":""}, null, '#');
 		}
@@ -544,60 +496,7 @@ function onLoadedPage(){
 }
 
 window.onpopstate = function(event) {
-	
-	switch(event.state.href){
-		case '':
-			countdownClick();
-			break;
-		case 'concept':
-			conceptClick();
-			break;
-		case 'program':
-			programClick();
-			break;
-		case 'location':
-			locationClick();
-			break;
-		case 'information':
-			informationClick();
-			break;
-		case 'gallery':
-			galleryClick();
-			break;
-		case 'tickets':
-			ticketsClick();
-			break;
-		case 'dancefloor':
-			dancefloorClick();
-			break;
-		case 'chillout':
-			chilloutClick();
-			break;
-		case 'goa':
-			goaClick();
-			break;
-		case 'afterparty':
-			afterpartyClick();
-			break;
-		case 'zenbuspace':
-			zenbuspaceClick();
-			break;
-		case 'zambukids':
-			zambukidsClick();
-			break;
-		case 'useful':
-			usefulClick();
-			break;
-		case 'parkingCamping':
-			parkingCampingClick();
-			break;
-		case 'participation':
-			participationClick();
-			break;
-		case 'history':
-			historyClick();
-			break;
-	}
+	clickInCorrectTab(event.state.href);
 };
 
 function getTimeRemaining(){
@@ -648,3 +547,57 @@ function isIE() {
     // other browser
     return false;
 }
+
+function clickInCorrectTab(name){
+	switch(name){
+		case 'concept':
+			conceptClick();
+			break;
+		case 'program':
+			programClick();
+			break;
+		case 'location':
+			locationClick();
+			break;
+		case 'information':
+			informationClick();
+			break;
+		case 'gallery':
+			galleryClick();
+			break;
+		case 'tickets':
+			ticketsClick();
+			break;
+		case 'dancefloor':
+			dancefloorClick();
+			break;
+		case 'chillout':
+			chilloutClick();
+			break;
+		case 'goa':
+			goaClick();
+			break;
+		case 'afterparty':
+			afterpartyClick();
+			break;
+		case 'zenbuspace':
+			zenbuspaceClick();
+			break;
+		case 'zambukids':
+			zambukidsClick();
+			break;
+		case 'useful':
+			usefulClick();
+			break;
+		case 'parkingCamping':
+			parkingCampingClick();
+			break;
+		case 'participation':
+			participationClick();
+			break;
+		case 'history':
+			historyClick();
+			break;
+	}
+}
+
