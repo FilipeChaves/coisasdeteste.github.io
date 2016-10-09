@@ -32,13 +32,23 @@
 			  //    after the API code downloads.
 			  var player;
 			  function onYouTubeIframeAPIReady() {
-				player = new YT.Player('player', {
+				player = new YT.Player('conceptPlayer', {
 				  height: '390',
 				  width: '640',
 				  videoId: 'V-_Io8jPcuY'
 				});
+				player = new YT.Player('locationPlayer', {
+				  height: '390',
+				  width: '640',
+				  videoId: 'TgqGMIXFU64'
+				});
 			  }
 			</script>
+    <link href="dist/photoswipe.css?v=4.1.0-1.0.4" rel="stylesheet">
+    <link href="dist/default-skin/default-skin.css?v=4.1.0-1.0.4" rel="stylesheet">
+    
+	<script src="dist/photoswipe.js?v=4.1.0-1.0.4"></script>
+    <script src="dist/photoswipe-ui-default.js?v=4.1.0-1.0.4"></script>
 	</head>
 	
 	<body onLoad="onLoadedPage()">
@@ -94,7 +104,7 @@
 			All the musicians on stage are active members of the global trance scene, and have careers which started back in the 90's. 
 			We believe that the most important ingredient in a party are the participants, everyone is a part of it, everyone makes the gathering! Collective energy gives wings to a gathering, your presence makes it magical.</p>
 			
-			<div id="player" style="margin-left:15%"></div>
+			<div id="conceptPlayer" style="margin-left:15%"></div>
 			
 			<p class="textoBold"> So, what does ZNA stand for?</p>
 			<p class="texto"> ZNA is the Zeoxyribonucleic Acid.
@@ -319,7 +329,7 @@
 				<p class="textoBold">Click <a href="https://www.google.pt/maps/dir/Madrid,+Spain/Galveias/@40.1552616,-9.3105061,8z/data=!3m1!5s0xd1933755689ca89:0x7edf0a3aef69e210!4m13!4m12!1m5!1m1!1s0xd422997800a3c81:0xc436dec1618c2269!2m2!1d-3.7037902!2d40.4167754!1m5!1m1!1s0xd1831a67a037c87:0x356fe6b6735d13c5!2m2!1d-7.9978122!2d39.1582281" target="_blank">HERE</a>  to see how to get there by car from MADRID</p>
 
 
-				<div class="locationBottomBig StageImage"></div>
+				<div id="locationPlayer" style="margin-left:15%"></div>
 			</div>
 		</div>
 		
@@ -468,10 +478,117 @@
 				<h3 class="titulo-gallery textToCenter" >Gallery</h3>
 			</div>
 			<div class="textArea-gallery textToCenter" style="display:none;opacity:0;transition: opacity 1s ease-in-out;" >
-				<div class="Stage StageRight" onclick='edition2015Click()'> <h3 class="titulo" onclick='edition2015Click()'>2015 edition</h3> </div>
-				<div class="Stage" onclick='usefulClick()'> <h3 class="titulo" onclick='usefulClick()'>Useful information</h3> </div>
-				<div class="Stage StageRight"> <h3 class="titulo" onclick=''>Information 4</h3> </div>
-				<div class="Stage"> <h3 class="titulo" onclick=''>Information 3</h3> </div>
+				<div class="Stage StageRight" onclick='retroClick()'> <h3 class="titulo" onclick='retroClick()'>Retro Futurist Celebration - 2013</h3> </div>
+				<div class="Stage" onclick='editionClick()'> <h3 class="titulo" onclick='editionClick()'>ZNA Gathering - 2015</h3> </div>
+				<div class="Stage StageRight" onclick='emelClick()'> <h3 class="titulo" onclick='emelClick()'>Return of the EMEL - 2011</h3> </div>
+				<div class="Stage" onclick='activationClick()'> <h3 class="titulo" onclick='activationClick()'>Zambu Activation - 2012</h3> </div>
+			</div>
+		</div>
+		
+		<div class="allRetroArea">
+			<div class="titleDiv titulo-retro textToCenter" style="display:none;opacity:0;transition: opacity 1s ease-in-out;">
+				<h3 class="titulo-retro textToCenter" >Retro Futurist Celebration - 2013</h3>
+			</div>
+			<div class="textArea-retro textToCenter"  style="display:none;opacity:0;transition: opacity 1s ease-in-out;">
+				<div id="demo-test-gallery" class="retro-gallery" data-pswp-uid="1">
+					<ul class="list-unstyled video-list-thumbs row">
+						<a class="col-lg-3 col-sm-4 col-xs-6" href="img/information/history.png" data-size="500x350" data-med="img/information/history.png" data-med-size="250x175" data-author="ZNA Gathering">
+						  <img src="img/information/history.png" alt="history"/>
+						</a>
+						<a class="col-lg-3 col-sm-4 col-xs-6" href="img/information/participation.png" data-size="500x350" data-med="img/information/participation.png" data-med-size="250x175" data-author="ZNA Gathering">
+						  <img src="img/information/participation.png" alt="history"/>
+						</a>
+						<a class="col-lg-3 col-sm-4 col-xs-6" href="img/information/parkingCamping.png" data-size="500x350" data-med="img/information/parkingCamping.png" data-med-size="250x175" data-author="ZNA Gathering">
+						  <img src="img/information/parkingCamping.png" alt="history"/>
+						</a>
+						<a class="col-lg-3 col-sm-4 col-xs-6" href="img/information/useful.png" data-size="500x350" data-med="img/information/useful.png" data-med-size="250x175" data-author="ZNA Gathering">
+						  <img src="img/information/useful.png" alt="history"/>
+						</a>
+						<a class="col-lg-3 col-sm-4 col-xs-6" href="img/information/useful.png" data-size="500x350" data-med="img/information/useful.png" data-med-size="250x175" data-author="ZNA Gathering">
+						  <img src="img/information/useful.png" alt="history"/>
+						</a>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="allEditionArea">
+			<div class="titleDiv titulo-edition textToCenter" style="display:none;opacity:0;transition: opacity 1s ease-in-out;">
+				<h3 class="titulo-edition textToCenter" >ZNA Gathering - 2015</h3>
+			</div>
+			<div class="textArea-edition textToCenter"  style="display:none;opacity:0;transition: opacity 1s ease-in-out;">
+				<div id="demo-test-gallery" class="edition-gallery" data-pswp-uid="1">
+					<ul class="list-unstyled video-list-thumbs row">
+						<a class="col-lg-3 col-sm-4 col-xs-6" href="img/information/history.png" data-size="500x350" data-med="img/information/history.png" data-med-size="250x175" data-author="ZNA Gathering">
+						  <img src="img/information/history.png" alt="history"/>
+						</a>
+						<a class="col-lg-3 col-sm-4 col-xs-6" href="img/information/participation.png" data-size="500x350" data-med="img/information/participation.png" data-med-size="250x175" data-author="ZNA Gathering">
+						  <img src="img/information/participation.png" alt="history"/>
+						</a>
+						<a class="col-lg-3 col-sm-4 col-xs-6" href="img/information/useful.png" data-size="500x350" data-med="img/information/useful.png" data-med-size="250x175" data-author="ZNA Gathering">
+						  <img src="img/information/useful.png" alt="history"/>
+						</a>
+						<a class="col-lg-3 col-sm-4 col-xs-6" href="img/information/parkingCamping.png" data-size="500x350" data-med="img/information/parkingCamping.png" data-med-size="250x175" data-author="ZNA Gathering">
+						  <img src="img/information/parkingCamping.png" alt="history"/>
+						</a>
+						<a class="col-lg-3 col-sm-4 col-xs-6" href="img/information/parkingCamping.png" data-size="500x350" data-med="img/information/parkingCamping.png" data-med-size="250x175" data-author="ZNA Gathering">
+						  <img src="img/information/parkingCamping.png" alt="history"/>
+						</a>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="allEmelArea">
+			<div class="titleDiv titulo-emel textToCenter" style="display:none;opacity:0;transition: opacity 1s ease-in-out;">
+				<h3 class="titulo-emel textToCenter" >Return of the EMEL - 2011</h3>
+			</div>
+			<div class="textArea-emel textToCenter"  style="display:none;opacity:0;transition: opacity 1s ease-in-out;">
+				<div id="demo-test-gallery" class="emel-gallery" data-pswp-uid="1">
+					<ul class="list-unstyled video-list-thumbs row">
+						<a class="col-lg-3 col-sm-4 col-xs-6" href="img/information/useful.png" data-size="500x350" data-med="img/information/useful.png" data-med-size="250x175" data-author="ZNA Gathering">
+						  <img src="img/information/useful.png" alt="history"/>
+						</a>
+						<a class="col-lg-3 col-sm-4 col-xs-6" href="img/information/history.png" data-size="500x350" data-med="img/information/history.png" data-med-size="250x175" data-author="ZNA Gathering">
+						  <img src="img/information/history.png" alt="history"/>
+						</a>
+						<a class="col-lg-3 col-sm-4 col-xs-6" href="img/information/participation.png" data-size="500x350" data-med="img/information/participation.png" data-med-size="250x175" data-author="ZNA Gathering">
+						  <img src="img/information/participation.png" alt="history"/>
+						</a>
+						<a class="col-lg-3 col-sm-4 col-xs-6" href="img/information/parkingCamping.png" data-size="500x350" data-med="img/information/parkingCamping.png" data-med-size="250x175" data-author="ZNA Gathering">
+						  <img src="img/information/parkingCamping.png" alt="history"/>
+						</a>
+						<a class="col-lg-3 col-sm-4 col-xs-6" href="img/information/parkingCamping.png" data-size="500x350" data-med="img/information/parkingCamping.png" data-med-size="250x175" data-author="ZNA Gathering">
+						  <img src="img/information/parkingCamping.png" alt="history"/>
+						</a>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="allActiviationArea">
+			<div class="titleDiv titulo-activation textToCenter" style="display:none;opacity:0;transition: opacity 1s ease-in-out;">
+				<h3 class="titulo-activation textToCenter" >Zambu Activation - 2012</h3>
+			</div>
+			<div class="textArea-activation textToCenter"  style="display:none;opacity:0;transition: opacity 1s ease-in-out;">
+				<div id="demo-test-gallery" class="activation-gallery" data-pswp-uid="1">
+					<ul class="list-unstyled video-list-thumbs row">
+						<a class="col-lg-3 col-sm-4 col-xs-6" href="img/information/parkingCamping.png" data-size="500x350" data-med="img/information/parkingCamping.png" data-med-size="250x175" data-author="ZNA Gathering">
+						  <img src="img/information/parkingCamping.png" alt="history"/>
+						</a>
+						<a class="col-lg-3 col-sm-4 col-xs-6" href="img/information/history.png" data-size="500x350" data-med="img/information/history.png" data-med-size="250x175" data-author="ZNA Gathering">
+						  <img src="img/information/history.png" alt="history"/>
+						</a>
+						<a class="col-lg-3 col-sm-4 col-xs-6" href="img/information/participation.png" data-size="500x350" data-med="img/information/participation.png" data-med-size="250x175" data-author="ZNA Gathering">
+						  <img src="img/information/participation.png" alt="history"/>
+						</a>
+						<a class="col-lg-3 col-sm-4 col-xs-6" href="img/information/useful.png" data-size="500x350" data-med="img/information/useful.png" data-med-size="250x175" data-author="ZNA Gathering">
+						  <img src="img/information/useful.png" alt="history"/>
+						</a>
+						<a class="col-lg-3 col-sm-4 col-xs-6" href="img/information/useful.png" data-size="500x350" data-med="img/information/useful.png" data-med-size="250x175" data-author="ZNA Gathering">
+						  <img src="img/information/useful.png" alt="history"/>
+						</a>
+					</ul>
+				</div>
 			</div>
 		</div>
 		
@@ -489,6 +606,66 @@
 				</a-->
 			</div>
 		</div>
+		
+					<div id="gallery" class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="pswp__bg"></div>
+
+				<div class="pswp__scroll-wrap">
+
+				  <div class="pswp__container">
+					<div class="pswp__item"></div>
+					<div class="pswp__item"></div>
+					<div class="pswp__item"></div>
+				  </div>
+
+				  <div class="pswp__ui pswp__ui--hidden">
+
+					<div class="pswp__top-bar">
+
+						<div class="pswp__counter"></div>
+
+						<button class="pswp__button pswp__button--close" title="Fechar (Esc)"></button>
+
+						<button class="pswp__button pswp__button--share" title="Partilhar"></button>
+
+						<button class="pswp__button pswp__button--fs" title="Passar a fullscreen"></button>
+
+						<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+						<div class="pswp__preloader">
+							<div class="pswp__preloader__icn">
+							  <div class="pswp__preloader__cut">
+								<div class="pswp__preloader__donut"></div>
+							  </div>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- <div class="pswp__loading-indicator"><div class="pswp__loading-indicator__line"></div></div> -->
+
+					<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+						<div class="pswp__share-tooltip">
+							<!-- <a href="#" class="pswp__share--facebook"></a>
+							<a href="#" class="pswp__share--twitter"></a>
+							<a href="#" class="pswp__share--pinterest"></a>
+							<a href="#" download class="pswp__share--download"></a> -->
+						</div>
+					</div>
+
+					<button class="pswp__button pswp__button--arrow--left" title="Anterior (seta esquerda)"></button>
+					<button class="pswp__button pswp__button--arrow--right" title="Próxima (seta direita)"></button>
+					<div class="pswp__caption">
+					  <div class="pswp__caption__center">
+					  </div>
+					</div>
+				  </div>
+
+				</div>
+
+
+			</div>
+		
 		<div class="divMenuSocial">
 			<ul id="socialMenu" style="
 				-webkit-margin-before: auto;
@@ -508,5 +685,4 @@
 		<div class="dataText turnTransparent"></div>
 		<div class="localText turnTransparent"></div>
 	</body>
-
 </html>
