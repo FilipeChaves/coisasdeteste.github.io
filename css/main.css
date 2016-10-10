@@ -878,6 +878,49 @@ div.locationBottomBig{
 }
 
 
+div.emel{
+	background: url('../img/gallery/emel.png') no-repeat;
+}
+
+div.emel:hover{
+	background: url('../img/gallery/emelHover.png') no-repeat;
+}
+
+div.edition {
+	background: url('../img/gallery/edition.png') no-repeat;
+}
+
+div.edition:hover{
+	background: url('../img/gallery/editionHover.png') no-repeat;
+}
+
+div.activation{
+	background: url('../img/gallery/activation.png') no-repeat;
+}
+
+div.activation:hover{
+	background: url('../img/gallery/activationHover.png') no-repeat;
+}
+
+div.retro{
+	background: url('../img/gallery/retro.png') no-repeat;
+}
+
+div.retro:hover{
+	background: url('../img/gallery/retroHover.png') no-repeat;
+}
+
+div.zambu {
+	background: url('../img/gallery/zambu.png') no-repeat;
+}
+
+div.zambu:hover {
+	background: url('../img/gallery/zambuHover.png') no-repeat;
+}
+
+
+
+
 @media screen and (min-width: 1600px) {   
 	div.separador
 	{
