@@ -877,7 +877,6 @@ div.locationBottomBig{
 	background: url('../img/location/bottom.png') no-repeat;
 }
 
-
 div.emel{
 	background: url('../img/gallery/emel.png') no-repeat;
 }
@@ -917,9 +916,6 @@ div.zambu {
 div.zambu:hover {
 	background: url('../img/gallery/zambuHover.png') no-repeat;
 }
-
-
-
 
 @media screen and (min-width: 1600px) {   
 	div.separador
