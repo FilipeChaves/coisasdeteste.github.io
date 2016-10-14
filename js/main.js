@@ -199,6 +199,26 @@ function activationClick()
 	window.history.pushState({"href":"activation"}, null, '#activation');
 }
 
+function landClick()
+{
+	removeCenter(20);
+	removeActives();
+	
+	$('div.gallery').addClass('gallery-active');
+	fadeout();
+	window.history.pushState({"href":"land"}, null, '#land');
+}
+
+function zambuClick()
+{
+	removeCenter(21);
+	removeActives();
+	
+	$('div.gallery').addClass('gallery-active');
+	fadeout();
+	window.history.pushState({"href":"zambu"}, null, '#zambu');
+}
+
 function removeCenter(nextID) 
 {
 	var allTitleAreas = ['div.titulo-concept',
@@ -220,7 +240,9 @@ function removeCenter(nextID)
 						 'div.titulo-retro',
 						 'div.titulo-edition',
 						 'div.titulo-emel',
-						 'div.titulo-activation'];
+						 'div.titulo-activation',
+						 'div.titulo-land',
+						 'div.titulo-zambu'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -238,15 +260,17 @@ function removeCenter(nextID)
 						'div.textArea-parkingCamping',
 						'div.textArea-participation',
 						'div.textArea-history',
-						 'div.textArea-retro',
-						 'div.textArea-edition',
-						 'div.textArea-emel',
-						 'div.textArea-activation'];
+						'div.textArea-retro',
+						'div.textArea-edition',
+						'div.textArea-emel',
+						'div.textArea-activation',
+						'div.textArea-land',
+						'div.textArea-zambu'];
 	
-	var windowHeight = $(window).height();
-	var countdownHeight = $('div.countdown').height();
-	var titleHeight = $('div.titulo-concept').height();
-	var menuSocialHeight = $('div.divMenuSocial').height();
+	var windowHeight = $(window).outerHeight();
+	var countdownHeight = $('div.countdown').outerHeight();
+	var titleHeight = $('div.titulo-concept').outerHeight();
+	var menuSocialHeight = $('div.divMenuSocial').outerHeight();
 	
 	for(var i = 0; i < allTextAreas.length; i++)
 	{
@@ -298,7 +322,9 @@ function removeDisplay(nextID)
 						 'div.titulo-retro',
 						 'div.titulo-edition',
 						 'div.titulo-emel',
-						 'div.titulo-activation'];
+						 'div.titulo-activation',
+						 'div.titulo-land',
+						 'div.titulo-zambu'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -319,7 +345,9 @@ function removeDisplay(nextID)
 						 'div.textArea-retro',
 						 'div.textArea-edition',
 						 'div.textArea-emel',
-						 'div.textArea-activation'];
+						 'div.textArea-activation',
+						 'div.textArea-land',
+						 'div.textArea-zambu'];
 	
 	var contdownHeight = $('div.countdown').height();
 	var titleHeight = $('div.titulo-concept').height();
@@ -534,6 +562,8 @@ function onLoadedPage(){
 	var nicesxs = $("div.textArea-edition").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-emel").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-activation").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-land").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-zambu").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	//.cursor.css({"background-image":"url(img/mac6scroll.png)"}); // MAC like scrollbar
 	
 	if(isIE()){
@@ -670,6 +700,12 @@ function clickInCorrectTab(name){
 			break;
 		case 'activation':
 			activationClick();
+			break;
+		case 'land':
+			landClick();
+			break;
+		case 'zambu':
+			zambuClick();
 			break;
 	}
 }

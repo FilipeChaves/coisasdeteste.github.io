@@ -131,7 +131,7 @@ h3.titulo-information
 	margin-block-start: 0px;
 	margin-block-end: 0px;
 }
-h3.titulo-gallery, h3.titulo-retro, h3.titulo-edition, h3.titulo-emel, h3.titulo-activation
+h3.titulo-gallery, h3.titulo-retro, h3.titulo-edition, h3.titulo-emel, h3.titulo-activation, h3.titulo-zambu, h3.titulo-land
 {
 	font-family: "Title Custom Font", Verdana, Tahoma;
 	color: #a2fa00;
@@ -201,7 +201,7 @@ h3.titulo
 div.textArea-concept, div.textArea-program, div.textArea-information, div.textArea-gallery, div.textArea-tickets, div.textArea-location
 , div.textArea-dancefloor, div.textArea-chillout, div.textArea-goa, div.textArea-zenbuspace, div.textArea-zambukids, div.textArea-useful
 , div.textArea-parkingCamping, div.textArea-afterparty, div.textArea-history, div.textArea-participation
-, div.textArea-retro, div.textArea-edition, div.textArea-emel, div.textArea-activation
+, div.textArea-retro, div.textArea-edition, div.textArea-emel, div.textArea-activation, div.textArea-zambu, div.textArea-land
 {
 	position: absolute;
 	margin-left:15%;
@@ -875,6 +875,14 @@ div.locationSmall {
 
 div.locationBottomBig{
 	background: url('../img/location/bottom.png') no-repeat;
+}
+
+div.land{
+	background: url('../img/gallery/land.png') no-repeat;
+}
+
+div.land:hover{
+	background: url('../img/gallery/landHover.png') no-repeat;
 }
 
 div.emel{
