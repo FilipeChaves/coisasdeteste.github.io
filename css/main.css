@@ -68,7 +68,7 @@ h3.titulo-concept
 	margin-block-end: 0px;
 }
 
-h3.titulo-tickets
+h3.titulo-tickets, h3.titulo-terms, h3.titulo-ticketsInfo, h3.titulo-buy, h3.titulo-ambassador
 {
 	font-family: "Title Custom Font", Verdana, Tahoma;
 	color: #00fa9e;
@@ -202,6 +202,7 @@ div.textArea-concept, div.textArea-program, div.textArea-information, div.textAr
 , div.textArea-dancefloor, div.textArea-chillout, div.textArea-goa, div.textArea-zenbuspace, div.textArea-zambukids, div.textArea-useful
 , div.textArea-parkingCamping, div.textArea-afterparty, div.textArea-history, div.textArea-participation
 , div.textArea-retro, div.textArea-edition, div.textArea-emel, div.textArea-activation, div.textArea-zambu, div.textArea-land
+, div.textArea-terms, div.textArea-ticketsInfo, div.textArea-buy, div.textArea-ambassador
 {
 	position: absolute;
 	margin-left:15%;
@@ -923,6 +924,54 @@ div.zambu {
 
 div.zambu:hover {
 	background: url('../img/gallery/zambuHover.png') no-repeat;
+}
+
+div.buy {
+	background: url('../img/tickets/buy.png') no-repeat;
+}
+
+div.buy:hover{
+	background: url('../img/tickets/buyHover.png') no-repeat;
+}
+
+div.ticketsInfo{
+	background: url('../img/tickets/ticketsInfo.png') no-repeat;
+}
+
+div.ticketsInfo:hover{
+	background: url('../img/tickets/ticketsInfoHover.png') no-repeat;
+}
+
+div.terms{
+	background: url('../img/tickets/terms.png') no-repeat;
+}
+
+div.terms:hover{
+	background: url('../img/tickets/termsHover.png') no-repeat;
+}
+
+div.ambassador {
+	background: url('../img/tickets/ambassadors.png') no-repeat;
+}
+
+div.ambassador:hover {
+	background: url('../img/tickets/ambassadorsHover.png') no-repeat;
+}
+
+div.buyBig{
+	background: url('../img/tickets/big/buy.png') no-repeat;
+}
+
+div.ticketsInfoBig {
+	background: url('../img/tickets/big/ticketsInfo.png') no-repeat;
+}
+
+div.termsBig{
+	background: url('../img/tickets/big/terms.png') no-repeat;
+}
+
+div.ambassadorBig {
+	background: url('../img/tickets/big/ambassadors.png') no-repeat;
 }
 
 @media screen and (min-width: 1600px) {   

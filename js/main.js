@@ -219,6 +219,46 @@ function zambuClick()
 	window.history.pushState({"href":"zambu"}, null, '#zambu');
 }
 
+function buyClick()
+{
+	removeCenter(22);
+	removeActives();
+	
+	$('div.tickets').addClass('tickets-active');
+	fadeout();
+	window.history.pushState({"href":"buy"}, null, '#buy');
+}
+
+function ticketsInfoClick()
+{
+	removeCenter(23);
+	removeActives();
+	
+	$('div.tickets').addClass('tickets-active');
+	fadeout();
+	window.history.pushState({"href":"ticketsInfo"}, null, '#ticketsInfo');
+}
+
+function termsClick()
+{
+	removeCenter(24);
+	removeActives();
+	
+	$('div.tickets').addClass('tickets-active');
+	fadeout();
+	window.history.pushState({"href":"terms"}, null, '#terms');
+}
+
+function ambassadorClick()
+{
+	removeCenter(25);
+	removeActives();
+	
+	$('div.tickets').addClass('tickets-active');
+	fadeout();
+	window.history.pushState({"href":"ambassador"}, null, '#ambassador');
+}
+
 function removeCenter(nextID) 
 {
 	var allTitleAreas = ['div.titulo-concept',
@@ -242,7 +282,11 @@ function removeCenter(nextID)
 						 'div.titulo-emel',
 						 'div.titulo-activation',
 						 'div.titulo-land',
-						 'div.titulo-zambu'];
+						 'div.titulo-zambu',
+						 'div.titulo-buy',
+						 'div.titulo-ticketsInfo',
+						 'div.titulo-terms',
+						 'div.titulo-ambassador'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -265,7 +309,11 @@ function removeCenter(nextID)
 						'div.textArea-emel',
 						'div.textArea-activation',
 						'div.textArea-land',
-						'div.textArea-zambu'];
+						'div.textArea-zambu',
+						 'div.textArea-buy',
+						 'div.textArea-ticketsInfo',
+						 'div.textArea-terms',
+						 'div.textArea-ambassador'];
 	
 	var windowHeight = $(window).outerHeight();
 	var countdownHeight = $('div.countdown').outerHeight();
@@ -324,7 +372,11 @@ function removeDisplay(nextID)
 						 'div.titulo-emel',
 						 'div.titulo-activation',
 						 'div.titulo-land',
-						 'div.titulo-zambu'];
+						 'div.titulo-zambu',
+						 'div.titulo-buy',
+						 'div.titulo-ticketsInfo',
+						 'div.titulo-terms',
+						 'div.titulo-ambassador'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -347,7 +399,11 @@ function removeDisplay(nextID)
 						 'div.textArea-emel',
 						 'div.textArea-activation',
 						 'div.textArea-land',
-						 'div.textArea-zambu'];
+						 'div.textArea-zambu',
+						 'div.textArea-buy',
+						 'div.textArea-ticketsInfo',
+						 'div.textArea-terms',
+						 'div.textArea-ambassador'];
 	
 	var contdownHeight = $('div.countdown').height();
 	var titleHeight = $('div.titulo-concept').height();
@@ -564,6 +620,10 @@ function onLoadedPage(){
 	var nicesxs = $("div.textArea-activation").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-land").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-zambu").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-buy").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-ticketsInfo").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-terms").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-ambassador").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	//.cursor.css({"background-image":"url(img/mac6scroll.png)"}); // MAC like scrollbar
 	
 	if(isIE()){
