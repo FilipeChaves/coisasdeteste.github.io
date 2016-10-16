@@ -802,13 +802,15 @@ div.discogs:hover
 
 div.artistsCross
 {
-	margin-top: 15px;
+	position: absolute;
 	height:30px;
 	width:30px;
+	left:83%;
 	cursor:pointer;
 	transition: opacity 1s ease-in-out;
 	background: url('../img/program/artists/cross.png') no-repeat;
 	float:left;
+	z-index: 5;
 }
 
 div.artistsCross:hover

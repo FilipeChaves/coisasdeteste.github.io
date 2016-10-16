@@ -350,7 +350,10 @@ function removeCenter(nextID)
 						'div.textArea-beat',
 						'div.textArea-eat',
 						'div.textArea-miranda'];
-		
+	
+	if(nextID <= 25)
+		$('div.artistsCross').css('opacity', '0');
+	
 	for(var i = 0; i < allTextAreas.length; i++)
 	{
 		if(nextID === i)
@@ -358,6 +361,7 @@ function removeCenter(nextID)
 			$('div.blackShadow').css('display', 'inline-block');
 			$(allTextAreas[i]).css('display', 'inline-block');
 			$(allTitleAreas[i]).css('display', 'inline-block');
+			
 		
 			SetTopAndHeight(nextID, allTitleAreas[i], allTextAreas[i]);
 			
@@ -365,6 +369,9 @@ function removeCenter(nextID)
 				$('div.blackShadow').css('opacity', '100');
 				$(allTextAreas[nextID]).css('opacity', '100');
 				$(allTitleAreas[nextID]).css('opacity', '100');
+				if(nextID > 25){
+					$('div.artistsCross').css('opacity', '100');
+				}
 			}, 200);
 			continue;
 		}
@@ -384,7 +391,8 @@ function SetTopAndHeight(nextID, titleName, textName)
 	var menuSocialHeight = $('div.divMenuSocial').outerHeight();
 	
 	if(nextID > 25){
-		//$(allTitleAreas[i]).css('top', countdownHeight + 40 + "px");
+		$('div.artistsCross').css('display', 'inline-block');
+		$('div.artistsCross').css('top', countdownHeight + 40 + "px");
 		$(textName).css('top', countdownHeight + 40 + "px");
 		$(textName).css('height', (windowHeight - 60 - countdownHeight - menuSocialHeight) + "px");
 	}
@@ -468,6 +476,8 @@ function removeDisplay(nextID)
 		$(allTextAreas[allIdx]).css('display', 'none');
 		$(allTitleAreas[allIdx]).css('display', 'none');
 	}
+	if(nextID <= 25)
+		$('div.artistsCross').css('display', 'none');
 }
 
 function removeActives(){
@@ -678,6 +688,9 @@ function onLoadedPage(){
 	var nicesxs = $("div.textArea-ticketsInfo").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-terms").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-ambassador").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-beat").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-eat").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-miranda").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	//.cursor.css({"background-image":"url(img/mac6scroll.png)"}); // MAC like scrollbar
 	
 	if(isIE()){
