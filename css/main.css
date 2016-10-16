@@ -937,6 +937,7 @@ div.question
 {
 	background: url("../img/program/artists/question.png") no-repeat;
 	background-size: contain;
+	cursor: unset;
 }
 
 div.beat
