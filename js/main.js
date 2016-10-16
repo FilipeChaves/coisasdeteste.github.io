@@ -279,6 +279,16 @@ function eatClick()
 	window.history.pushState({"href":"eat"}, null, '#eat');
 }
 
+function mirandaClick()
+{
+	removeCenter(28);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"miranda"}, null, '#miranda');
+}
+
 function removeCenter(nextID) 
 {
 	var allTitleAreas = ['div.titulo-concept',
@@ -308,7 +318,8 @@ function removeCenter(nextID)
 						 'div.titulo-terms',
 						 'div.titulo-ambassador',
 						 'div.titulo-beat',
-						 'div.titulo-eat'];
+						 'div.titulo-eat',
+						 'div.titulo-miranda'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -337,7 +348,8 @@ function removeCenter(nextID)
 						'div.textArea-terms',
 						'div.textArea-ambassador',
 						'div.textArea-beat',
-						'div.textArea-eat'];
+						'div.textArea-eat',
+						'div.textArea-miranda'];
 	
 	var windowHeight = $(window).outerHeight();
 	var countdownHeight = $('div.countdown').outerHeight();
@@ -402,7 +414,8 @@ function removeDisplay(nextID)
 						 'div.titulo-terms',
 						 'div.titulo-ambassador',
 						 'div.titulo-beat',
-						 'div.titulo-eat'];
+						 'div.titulo-eat',
+						 'div.titulo-miranda'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -431,7 +444,8 @@ function removeDisplay(nextID)
 						'div.textArea-terms',
 						'div.textArea-ambassador',
 						'div.textArea-beat',
-						'div.textArea-eat'];
+						'div.textArea-eat',
+						'div.textArea-miranda'];
 	
 	var contdownHeight = $('div.countdown').height();
 	var titleHeight = $('div.titulo-concept').height();
@@ -812,6 +826,9 @@ function clickInCorrectTab(name){
 			break;
 		case 'eat':
 			eatClick();
+			break;
+		case 'miranda':
+			mirandaClick();
 			break;
 	}
 }

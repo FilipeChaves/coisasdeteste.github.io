@@ -35,6 +35,16 @@ div.titleDiv
 	transition: all 1s ease-in-out;
 }
 
+div.titleDivArtists
+{
+	width: 80%;
+	height: 5%;
+	text-align: center;
+	text-align: -moz-center;
+	text-align: -webkit-center;
+	transition: all 1s ease-in-out;
+}
+
 div.blackShadow
 {
 	position: absolute;
@@ -154,8 +164,6 @@ h3.titulo-gallery, h3.titulo-retro, h3.titulo-edition, h3.titulo-emel, h3.titulo
 
 h3.titulo-program, h3.titulo-afterparty
 , h3.titulo-dancefloor, h3.titulo-chillout, h3.titulo-goa, h3.titulo-zenbuspace, h3.titulo-zambukids
-, h3.titulo-beat, h3.titulo-eat, h3.titulo-indoor, h3.titulo-noName, h3.titulo-logicBomb, h3.titulo-oforia
-, h3.titulo-infinity, h3.titulo-xDream, h3.titulo-ticon, h3.titulo-reek
 {
 	font-family: "Title Custom Font", Verdana, Tahoma;
 	color: #fa0000;
@@ -174,6 +182,33 @@ h3.titulo-program, h3.titulo-afterparty
 	font-weight: bold;
 	margin-block-start: 0px;
 	margin-block-end: 0px;
+}
+
+
+h3.titulo-beat, h3.titulo-eat, h3.titulo-indoor, h3.titulo-noName, h3.titulo-logicBomb, h3.titulo-oforia
+, h3.titulo-infinity, h3.titulo-xDream, h3.titulo-ticon, h3.titulo-reek, h3.titulo-miranda
+{
+	font-family: "Title Custom Font", Verdana, Tahoma;
+	color: #fa0000;
+	font-size: 250%;
+	width:100%;
+	text-align: center;
+	text-align: -moz-center;
+	text-align: -webkit-center;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	/* display: block; */
+	font-size: auto;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	font-weight: bold;
+	margin-block-start: 0px;
+	margin-block-end: 0px;
+	float: left;
 }
 
 h3.titulo
@@ -252,11 +287,21 @@ div.textArea-concept, div.textArea-program, div.textArea-information, div.textAr
 , div.textArea-dancefloor, div.textArea-chillout, div.textArea-goa, div.textArea-zenbuspace, div.textArea-zambukids, div.textArea-useful
 , div.textArea-parkingCamping, div.textArea-afterparty, div.textArea-history, div.textArea-participation
 , div.textArea-retro, div.textArea-edition, div.textArea-emel, div.textArea-activation, div.textArea-zambu, div.textArea-land
-, div.textArea-terms, div.textArea-ticketsInfo, div.textArea-buy, div.textArea-ambassador, div.textArea-beat, div.textArea-eat
-, div.textArea-indoor, div.textArea-noName, div.textArea-logicBomb, div.textArea-oforia
-, div.textArea-infinity, div.textArea-xDream, div.textArea-ticon, div.textArea-reek
+, div.textArea-terms, div.textArea-ticketsInfo, div.textArea-buy, div.textArea-ambassador
 {
 	position: absolute;
+	margin-left:15%;
+	width:70%; 
+	height:400px;
+	opacity:0;
+	filter: alpha(opacity=0);
+	transition: all 1s ease-in-out;
+}
+
+div.textArea-indoor, div.textArea-noName, div.textArea-logicBomb, div.textArea-oforia, div.textArea-beat, div.textArea-eat
+, div.textArea-infinity, div.textArea-xDream, div.textArea-ticon, div.textArea-reek, div.textArea-miranda
+{
+	position: fixed;
 	margin-left:15%;
 	width:70%; 
 	height:400px;
