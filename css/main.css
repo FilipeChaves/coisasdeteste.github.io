@@ -198,6 +198,53 @@ h3.titulo
 	padding-top: 168px;
 }
 
+h3.tituloArtist
+{
+	font-family: "Title Custom Font", Verdana, Tahoma;
+	color: white;
+	font-size: 120%;
+	letter-spacing: 3px;
+	text-align: center;
+	bottom: 0%;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	/* display: block; */
+	font-size: auto;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	font-weight: bold;
+	margin-block-start: 0px;
+	margin-block-end: 0px;
+	padding-top: 200px;
+}
+
+h2.titulo2
+{
+	font-family: "Text Custom Font", Verdana, Tahoma;
+	color: white;
+	font-size: 70%;
+	letter-spacing: 3px;
+	text-align: center;
+	bottom: 0%;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	/* display: block; */
+	font-size: auto;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	font-weight: bold;
+	margin-block-start: 0px;
+	margin-block-end: 0px;
+}
+
 div.textArea-concept, div.textArea-program, div.textArea-information, div.textArea-gallery, div.textArea-tickets, div.textArea-location
 , div.textArea-dancefloor, div.textArea-chillout, div.textArea-goa, div.textArea-zenbuspace, div.textArea-zambukids, div.textArea-useful
 , div.textArea-parkingCamping, div.textArea-afterparty, div.textArea-history, div.textArea-participation
@@ -237,14 +284,6 @@ p.textoBold
     text-justify: inter-word;
 	line-height: 150%;
 }
-
-
-
-{
-	
-}
-
-
 
 div.textToLeft
 {
@@ -678,6 +717,148 @@ div.goDownRight
 	filter: alpha(opacity=0);
 	bottom: -20.5%;
 	left: 120.5%;
+}
+
+div.artist
+{
+	height:250px;
+	width:200px;
+	background-color:green;
+	cursor:pointer;
+	transition: opacity 1s ease-in-out;
+	margin-bottom: 20px;
+	max-height: 350px;
+	float: left;
+	margin-left: 10px;
+}
+
+div.indoor
+{
+	background: url("../img/program/artists/indoor.png") no-repeat;
+	background-size: contain;
+}
+
+div.indoor:hover
+{
+	background: url("../img/program/artists/indoorHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.eat
+{
+	background: url("../img/program/artists/eat.png") no-repeat;
+	background-size: contain;
+}
+
+div.eat:hover
+{
+	background: url("../img/program/artists/eatHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.logicBomb
+{
+	background: url("../img/program/artists/logicBomb.png") no-repeat;
+	background-size: contain;
+}
+
+div.logicBomb:hover
+{
+	background: url("../img/program/artists/logicBombHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.noName
+{
+	background: url("../img/program/artists/noName.png") no-repeat;
+	background-size: contain;
+}
+
+div.noName:hover
+{
+	background: url("../img/program/artists/noNameHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.oforia
+{
+	background: url("../img/program/artists/oforia.png") no-repeat;
+	background-size: contain;
+}
+
+div.oforia:hover
+{
+	background: url("../img/program/artists/oforiaHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.spaceCat
+{
+	background: url("../img/program/artists/spaceCat.png") no-repeat;
+	background-size: contain;
+}
+
+div.spaceCat:hover
+{
+	background: url("../img/program/artists/spaceCatHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.infinity
+{
+	background: url("../img/program/artists/infinity.png") no-repeat;
+	background-size: contain;
+}
+
+div.infinity:hover
+{
+	background: url("../img/program/artists/infinityHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.xDream
+{
+	background: url("../img/program/artists/xDream.png") no-repeat;
+	background-size: contain;
+}
+
+div.xDream:hover
+{
+	background: url("../img/program/artists/xDreamHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.beat
+{
+	background: url("../img/program/artists/beat.png") no-repeat;
+	background-size: contain;
+}
+
+div.beat:hover
+{
+	background: url("../img/program/artists/beatHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.miranda
+{
+	background: url("../img/program/artists/miranda.png") no-repeat;
+	background-size: contain;
+}
+
+div.miranda:hover
+{
+	background: url("../img/program/artists/mirandaHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.Centered
+{
+	width: 50%;
+    float: right;
+    text-align: center;
+    text-align: -webkit-center;
+	text-align: -moz-center;
 }
 
 div.Stage
