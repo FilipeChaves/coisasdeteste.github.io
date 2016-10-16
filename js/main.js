@@ -350,12 +350,7 @@ function removeCenter(nextID)
 						'div.textArea-beat',
 						'div.textArea-eat',
 						'div.textArea-miranda'];
-	
-	var windowHeight = $(window).outerHeight();
-	var countdownHeight = $('div.countdown').outerHeight();
-	var titleHeight = $('div.titulo-concept').outerHeight();
-	var menuSocialHeight = $('div.divMenuSocial').outerHeight();
-	
+		
 	for(var i = 0; i < allTextAreas.length; i++)
 	{
 		if(nextID === i)
@@ -364,12 +359,8 @@ function removeCenter(nextID)
 			$(allTextAreas[i]).css('display', 'inline-block');
 			$(allTitleAreas[i]).css('display', 'inline-block');
 		
-			$(allTitleAreas[i]).css('top', countdownHeight + 40 + "px");
-			$(allTextAreas[i]).css('top', countdownHeight + 40 + titleHeight + 25 + "px");
-			$(allTextAreas[i]).css('height', (windowHeight - 85 - countdownHeight - titleHeight - menuSocialHeight) + "px");
-			$('div.blackShadow').css('top', countdownHeight + 20 + "px");
-			$('div.blackShadow').css('height', (windowHeight - 20 - countdownHeight - menuSocialHeight) + "px");
-						
+			SetTopAndHeight(nextID, allTitleAreas[i], allTextAreas[i]);
+			
 			setTimeout(function() { 
 				$('div.blackShadow').css('opacity', '100');
 				$(allTextAreas[nextID]).css('opacity', '100');
@@ -385,6 +376,27 @@ function removeCenter(nextID)
 	}, 1000)
 }
 
+function SetTopAndHeight(nextID, titleName, textName) 
+{
+	var windowHeight = $(window).outerHeight();
+	var countdownHeight = $('div.countdown').outerHeight();
+	var titleHeight = $('div.titulo-concept').outerHeight();
+	var menuSocialHeight = $('div.divMenuSocial').outerHeight();
+	
+	if(nextID > 25){
+		//$(allTitleAreas[i]).css('top', countdownHeight + 40 + "px");
+		$(textName).css('top', countdownHeight + 40 + "px");
+		$(textName).css('height', (windowHeight - 60 - countdownHeight - menuSocialHeight) + "px");
+	}
+	else{
+		$(titleName).css('top', countdownHeight + 40 + "px");
+		$(textName).css('top', countdownHeight + 40 + titleHeight + 25 + "px");
+		$(textName).css('height', (windowHeight - 85 - countdownHeight - titleHeight - menuSocialHeight) + "px");
+	}
+	
+	$('div.blackShadow').css('top', countdownHeight + 20 + "px");
+	$('div.blackShadow').css('height', (windowHeight - 20 - countdownHeight - menuSocialHeight) + "px");
+}
 function removeDisplay(nextID)
 {
 	var allTitleAreas = ['div.titulo-concept',

@@ -43,6 +43,7 @@ div.titleDivArtists
 	text-align: -moz-center;
 	text-align: -webkit-center;
 	transition: all 1s ease-in-out;
+	margin-bottom: 20px;
 }
 
 div.blackShadow
