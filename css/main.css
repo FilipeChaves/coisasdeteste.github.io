@@ -37,7 +37,7 @@ div.titleDiv
 
 div.titleDivArtists
 {
-	width: 80%;
+	width: 75%;
 	height: 5%;
 	text-align: center;
 	text-align: -moz-center;
@@ -192,7 +192,7 @@ h3.titulo-beat, h3.titulo-eat, h3.titulo-indoor, h3.titulo-noName, h3.titulo-log
 	font-family: "Title Custom Font", Verdana, Tahoma;
 	color: #fa0000;
 	font-size: 250%;
-	width:100%;
+	width:96%;
 	text-align: center;
 	text-align: -moz-center;
 	text-align: -webkit-center;
@@ -789,14 +789,31 @@ div.discogs
 	height:40px;
 	width:112px;
 	cursor:pointer;
+	margin-left: 20px;
 	transition: opacity 1s ease-in-out;
 	background: url('../img/program/artists/discogs.png') no-repeat;
-	float:right;
+	float:left;
 }
 
 div.discogs:hover
 {
 	background: url('../img/program/artists/discogsHover.png') no-repeat;
+}
+
+div.artistsCross
+{
+	margin-top: 15px;
+	height:30px;
+	width:30px;
+	cursor:pointer;
+	transition: opacity 1s ease-in-out;
+	background: url('../img/program/artists/cross.png') no-repeat;
+	float:left;
+}
+
+div.artistsCross:hover
+{
+	background: url('../img/program/artists/crossHover.png') no-repeat;
 }
 
 div.artist
