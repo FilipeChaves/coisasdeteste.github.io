@@ -259,6 +259,26 @@ function ambassadorClick()
 	window.history.pushState({"href":"ambassador"}, null, '#ambassador');
 }
 
+function beatClick()
+{
+	removeCenter(26);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"beat"}, null, '#beat');
+}
+
+function eatClick()
+{
+	removeCenter(27);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"eat"}, null, '#eat');
+}
+
 function removeCenter(nextID) 
 {
 	var allTitleAreas = ['div.titulo-concept',
@@ -286,7 +306,9 @@ function removeCenter(nextID)
 						 'div.titulo-buy',
 						 'div.titulo-ticketsInfo',
 						 'div.titulo-terms',
-						 'div.titulo-ambassador'];
+						 'div.titulo-ambassador',
+						 'div.titulo-beat',
+						 'div.titulo-eat'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -310,10 +332,12 @@ function removeCenter(nextID)
 						'div.textArea-activation',
 						'div.textArea-land',
 						'div.textArea-zambu',
-						 'div.textArea-buy',
-						 'div.textArea-ticketsInfo',
-						 'div.textArea-terms',
-						 'div.textArea-ambassador'];
+						'div.textArea-buy',
+						'div.textArea-ticketsInfo',
+						'div.textArea-terms',
+						'div.textArea-ambassador',
+						'div.textArea-beat',
+						'div.textArea-eat'];
 	
 	var windowHeight = $(window).outerHeight();
 	var countdownHeight = $('div.countdown').outerHeight();
@@ -376,7 +400,9 @@ function removeDisplay(nextID)
 						 'div.titulo-buy',
 						 'div.titulo-ticketsInfo',
 						 'div.titulo-terms',
-						 'div.titulo-ambassador'];
+						 'div.titulo-ambassador',
+						 'div.titulo-beat',
+						 'div.titulo-eat'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -394,16 +420,18 @@ function removeDisplay(nextID)
 						'div.textArea-parkingCamping',
 						'div.textArea-participation',
 						'div.textArea-history',
-						 'div.textArea-retro',
-						 'div.textArea-edition',
-						 'div.textArea-emel',
-						 'div.textArea-activation',
-						 'div.textArea-land',
-						 'div.textArea-zambu',
-						 'div.textArea-buy',
-						 'div.textArea-ticketsInfo',
-						 'div.textArea-terms',
-						 'div.textArea-ambassador'];
+						'div.textArea-retro',
+						'div.textArea-edition',
+						'div.textArea-emel',
+						'div.textArea-activation',
+						'div.textArea-land',
+						'div.textArea-zambu',
+						'div.textArea-buy',
+						'div.textArea-ticketsInfo',
+						'div.textArea-terms',
+						'div.textArea-ambassador',
+						'div.textArea-beat',
+						'div.textArea-eat'];
 	
 	var contdownHeight = $('div.countdown').height();
 	var titleHeight = $('div.titulo-concept').height();
@@ -766,6 +794,24 @@ function clickInCorrectTab(name){
 			break;
 		case 'zambu':
 			zambuClick();
+			break;
+		case 'buy':
+			buyClick();
+			break;
+		case 'ticketsInfo':
+			ticketsInfoClick();
+			break;
+		case 'terms':
+			termsClick();
+			break;
+		case 'ambassador':
+			ambassadorClick();
+			break;
+		case 'beat':
+			beatClick();
+			break;
+		case 'eat':
+			eatClick();
 			break;
 	}
 }

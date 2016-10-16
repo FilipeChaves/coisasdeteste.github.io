@@ -154,6 +154,8 @@ h3.titulo-gallery, h3.titulo-retro, h3.titulo-edition, h3.titulo-emel, h3.titulo
 
 h3.titulo-program, h3.titulo-afterparty
 , h3.titulo-dancefloor, h3.titulo-chillout, h3.titulo-goa, h3.titulo-zenbuspace, h3.titulo-zambukids
+, h3.titulo-beat, h3.titulo-eat, h3.titulo-indoor, h3.titulo-noName, h3.titulo-logicBomb, h3.titulo-oforia
+, h3.titulo-infinity, h3.titulo-xDream, h3.titulo-ticon, h3.titulo-reek
 {
 	font-family: "Title Custom Font", Verdana, Tahoma;
 	color: #fa0000;
@@ -250,7 +252,9 @@ div.textArea-concept, div.textArea-program, div.textArea-information, div.textAr
 , div.textArea-dancefloor, div.textArea-chillout, div.textArea-goa, div.textArea-zenbuspace, div.textArea-zambukids, div.textArea-useful
 , div.textArea-parkingCamping, div.textArea-afterparty, div.textArea-history, div.textArea-participation
 , div.textArea-retro, div.textArea-edition, div.textArea-emel, div.textArea-activation, div.textArea-zambu, div.textArea-land
-, div.textArea-terms, div.textArea-ticketsInfo, div.textArea-buy, div.textArea-ambassador
+, div.textArea-terms, div.textArea-ticketsInfo, div.textArea-buy, div.textArea-ambassador, div.textArea-beat, div.textArea-eat
+, div.textArea-indoor, div.textArea-noName, div.textArea-logicBomb, div.textArea-oforia
+, div.textArea-infinity, div.textArea-xDream, div.textArea-ticon, div.textArea-reek
 {
 	position: absolute;
 	margin-left:15%;
@@ -271,6 +275,20 @@ p.texto
 	text-align: justify;
     text-justify: inter-word;
 	line-height: 150%;
+}
+
+p.textoLeft
+{
+	font-family: "Text Custom Font", Verdana, Tahoma;
+	color: white;
+	margin-left: 20px;
+	width: 75%;
+	font-size: 90%;
+	transition: all 1s ease-in-out;
+	text-align: justify;
+    text-justify: inter-word;
+	line-height: 150%;
+	float: left;
 }
 
 p.textoBold
@@ -829,6 +847,12 @@ div.xDream:hover
 	background-size: contain;
 }
 
+div.beatBig
+{
+	background: url("../img/program/artists/big/beat.png") no-repeat;
+	background-size: contain;
+}
+
 div.beat
 {
 	background: url("../img/program/artists/beat.png") no-repeat;
@@ -838,6 +862,12 @@ div.beat
 div.beat:hover
 {
 	background: url("../img/program/artists/beatHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.mirandaBig
+{
+	background: url("../img/program/artists/big/miranda.png") no-repeat;
 	background-size: contain;
 }
 
@@ -924,6 +954,16 @@ p.StageName
 	width: 35%;
 	margin-bottom: 40px;
 	cursor:pointer;
+}
+
+div.artistBig
+{
+	height:475px;
+	width:200px;
+	background-color:green;
+	cursor:pointer;
+	transition: opacity 1s ease-in-out;
+	float:left;
 }
 
 p.NameRight
