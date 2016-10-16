@@ -219,7 +219,7 @@ h3.tituloArtist
 	font-weight: bold;
 	margin-block-start: 0px;
 	margin-block-end: 0px;
-	padding-top: 200px;
+	padding-top: 165px;
 }
 
 h2.titulo2
@@ -721,7 +721,7 @@ div.goDownRight
 
 div.artist
 {
-	height:250px;
+	height:200px;
 	width:200px;
 	background-color:green;
 	cursor:pointer;
@@ -849,6 +849,30 @@ div.miranda
 div.miranda:hover
 {
 	background: url("../img/program/artists/mirandaHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.ticon
+{
+	background: url("../img/program/artists/ticon.png") no-repeat;
+	background-size: contain;
+}
+
+div.ticon:hover
+{
+	background: url("../img/program/artists/ticonHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.reek
+{
+	background: url("../img/program/artists/reek.png") no-repeat;
+	background-size: contain;
+}
+
+div.reek:hover
+{
+	background: url("../img/program/artists/reekHover.png") no-repeat;
 	background-size: contain;
 }
 
