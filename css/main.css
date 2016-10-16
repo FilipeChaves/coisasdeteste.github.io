@@ -783,6 +783,21 @@ div.goDownRight
 	left: 120.5%;
 }
 
+div.discogs
+{
+	height:40px;
+	width:112px;
+	cursor:pointer;
+	transition: opacity 1s ease-in-out;
+	background: url('../img/program/artists/discogs.png') no-repeat;
+	float:right;
+}
+
+div.discogs:hover
+{
+	background: url('../img/program/artists/discogsHover.png') no-repeat;
+}
+
 div.artist
 {
 	height:210px;
