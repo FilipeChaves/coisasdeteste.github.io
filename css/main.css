@@ -233,7 +233,7 @@ h3.titulo
 	font-weight: bold;
 	margin-block-start: 0px;
 	margin-block-end: 0px;
-	padding-top: 168px;
+	padding-top: 200px;
 }
 
 h3.tituloArtist
@@ -1074,238 +1074,296 @@ div.znaSymbol
 
 div.chillout{
 	background: url('../img/program/chillout.png') no-repeat;
+		background-size: contain;
 }
 
 div.chillout:hover{
 	background: url('../img/program/chilloutHover.png') no-repeat;
+		background-size: contain;
 }
 
 div.dancefloor {
 	background: url('../img/program/dancefloor.png') no-repeat;
+		background-size: contain;
 }
 
 div.dancefloor:hover{
 	background: url('../img/program/dancefloorHover.png') no-repeat;
+		background-size: contain;
 }
 
 div.goa{
 	background: url('../img/program/goa.png') no-repeat;
+		background-size: contain;
 }
 
 div.goa:hover{
 	background: url('../img/program/goaHover.png') no-repeat;
+		background-size: contain;
 }
 
 div.zambukids{
 	background: url('../img/program/zambukids.png') no-repeat;
+		background-size: contain;
 }
 
 div.zambukids:hover{
 	background: url('../img/program/zambukidsHover.png') no-repeat;
+		background-size: contain;
 }
 
 div.zenbuspace {
 	background: url('../img/program/zenbuspace.png') no-repeat;
+		background-size: contain;
 }
 
 div.zenbuspace:hover {
 	background: url('../img/program/zenbuspaceHover.png') no-repeat;
+		background-size: contain;
 }
 
 div.afterparty{
 	background: url('../img/program/afterparty.png') no-repeat;
+	background-size: contain;
 }
 
 div.afterparty:hover{
 	background: url('../img/program/afterpartyHover.png') no-repeat;
+	background-size: contain;
 }
 
 div.chilloutBig{
 	background: url('../img/program/big/chillout.png') no-repeat;
+	background-size: contain;
 }
 
 div.dancefloorBig{
 	background: url('../img/program/big/dancefloor.png') no-repeat;
+	background-size: contain;
 }
 
 div.goaBig{
 	background: url('../img/program/big/goa.png') no-repeat;
+	background-size: contain;
 }
 
 div.zambukidsBig{
 	background: url('../img/program/big/zambukids.png') no-repeat;
+	background-size: contain;
 }
 
 div.zenbuspaceBig {
 	background: url('../img/program/big/zenbuspace.png') no-repeat;
+	background-size: contain;
 }
 
 div.afterpartyBig{
 	background: url('../img/program/big/afterparty.png') no-repeat;
+	background-size: contain;
 }
 
 div.parkingCamping{
 	background: url('../img/information/parkingCamping.png') no-repeat;
+	background-size: contain;
 }
 
 div.parkingCamping:hover{
 	background: url('../img/information/parkingCampingHover.png') no-repeat;
+	background-size: contain;
 }
 
 div.useful{
 	background: url('../img/information/useful.png') no-repeat;
+	background-size: contain;
 }
 
 div.useful:hover{
 	background: url('../img/information/usefulHover.png') no-repeat;
+	background-size: contain;
 }
 
 div.history {
 	background: url('../img/information/history.png') no-repeat;
+	background-size: contain;
 }
 
 div.history:hover {
 	background: url('../img/information/historyHover.png') no-repeat;
+	background-size: contain;
 }
 
 div.participation{
 	background: url('../img/information/participation.png') no-repeat;
+	background-size: contain;
 }
 
 div.participation:hover{
 	background: url('../img/information/participationHover.png') no-repeat;
+	background-size: contain;
 }
 
 div.parkingCampingBig{
 	background: url('../img/information/big/parkingCamping.png') no-repeat;
+	background-size: contain;
 }
 
 div.usefulBig{
 	background: url('../img/information/big/useful.png') no-repeat;
+	background-size: contain;
 }
 
 div.historyBig {
 	background: url('../img/information/big/history.png') no-repeat;
+	background-size: contain;
 }
 
 div.participationBig{
 	background: url('../img/information/big/participation.png') no-repeat;
+	background-size: contain;
 }
 
 div.locationTopBig{
 	background: url('../img/location/top.png') no-repeat;
+	background-size: contain;
 }
 
 div.locationRightSmall{
 	background: url('../img/location/rightSmall.png') no-repeat;
+	background-size: contain;
 	width: 47%;
 	height: 70%;	
 }
 
 div.locationSmall {
 	background: url('../img/location/small.png') no-repeat;
+	background-size: contain;
 	width: 47%;
 	height: 70%;	
 }
 
 div.locationBottomBig{
 	background: url('../img/location/bottom.png') no-repeat;
+	background-size: contain;
 }
 
 div.land{
 	background: url('../img/gallery/land.png') no-repeat;
+	background-size: contain;
 }
 
 div.land:hover{
 	background: url('../img/gallery/landHover.png') no-repeat;
+	background-size: contain;
 }
 
 div.emel{
 	background: url('../img/gallery/emel.png') no-repeat;
+	background-size: contain;
 }
 
 div.emel:hover{
 	background: url('../img/gallery/emelHover.png') no-repeat;
+	background-size: contain;
 }
 
 div.edition {
 	background: url('../img/gallery/edition.png') no-repeat;
+	background-size: contain;
 }
 
 div.edition:hover{
 	background: url('../img/gallery/editionHover.png') no-repeat;
+	background-size: contain;
 }
 
 div.activation{
 	background: url('../img/gallery/activation.png') no-repeat;
+	background-size: contain;
 }
 
 div.activation:hover{
 	background: url('../img/gallery/activationHover.png') no-repeat;
+	background-size: contain;
 }
 
 div.retro{
 	background: url('../img/gallery/retro.png') no-repeat;
+	background-size: contain;
 }
 
 div.retro:hover{
 	background: url('../img/gallery/retroHover.png') no-repeat;
+	background-size: contain;
 }
 
 div.zambu {
 	background: url('../img/gallery/zambu.png') no-repeat;
+	background-size: contain;
 }
 
 div.zambu:hover {
 	background: url('../img/gallery/zambuHover.png') no-repeat;
+	background-size: contain;
 }
 
 div.buy {
 	background: url('../img/tickets/buy.png') no-repeat;
+	background-size: contain;
 }
 
 div.buy:hover{
 	background: url('../img/tickets/buyHover.png') no-repeat;
+	background-size: contain;
 }
 
 div.ticketsInfo{
 	background: url('../img/tickets/ticketsInfo.png') no-repeat;
+	background-size: contain;
 }
 
 div.ticketsInfo:hover{
 	background: url('../img/tickets/ticketsInfoHover.png') no-repeat;
+	background-size: contain;
 }
 
 div.terms{
 	background: url('../img/tickets/terms.png') no-repeat;
+	background-size: contain;
 }
 
 div.terms:hover{
 	background: url('../img/tickets/termsHover.png') no-repeat;
+	background-size: contain;
 }
 
 div.ambassador {
 	background: url('../img/tickets/ambassadors.png') no-repeat;
+	background-size: contain;
 }
 
 div.ambassador:hover {
 	background: url('../img/tickets/ambassadorsHover.png') no-repeat;
+	background-size: contain;
 }
 
 div.buyBig{
 	background: url('../img/tickets/big/buy.png') no-repeat;
+	background-size: contain;
 }
 
 div.ticketsInfoBig {
 	background: url('../img/tickets/big/ticketsInfo.png') no-repeat;
+	background-size: contain;
 }
 
 div.termsBig{
 	background: url('../img/tickets/big/terms.png') no-repeat;
+	background-size: contain;
 }
 
 div.ambassadorBig {
 	background: url('../img/tickets/big/ambassadors.png') no-repeat;
+	background-size: contain;
 }
 
 @media screen and (min-width: 1600px) {   
