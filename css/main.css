@@ -933,6 +933,12 @@ div.beatBig
 	background-size: contain;
 }
 
+div.question
+{
+	background: url("../img/program/artists/question.png") no-repeat;
+	background-size: contain;
+}
+
 div.beat
 {
 	background: url("../img/program/artists/beat.png") no-repeat;
