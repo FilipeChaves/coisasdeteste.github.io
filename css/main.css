@@ -786,8 +786,8 @@ div.goDownRight
 
 div.discogs
 {
-	height:40px;
-	width:112px;
+	height:30px;
+	width:84px;
 	cursor:pointer;
 	margin-left: 20px;
 	transition: opacity 1s ease-in-out;
