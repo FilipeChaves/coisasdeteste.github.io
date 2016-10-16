@@ -712,6 +712,26 @@ function onLoadedPage(){
 		}
 	}, 400);
 }
+function facebookClick(){
+	var win = window.open('https://www.facebook.com/ZnaGathering/', '_blank');
+	if (win) {
+		//Browser has allowed it to be opened
+		win.focus();
+	} else {
+		//Browser has blocked it
+		alert('Please allow popups for this website');
+	}
+}
+function youtubeClick(){
+	var win = window.open('https://www.youtube.com/channel/UCsOPGH4h0QMqcblo13NTzSw', '_blank');
+	if (win) {
+		//Browser has allowed it to be opened
+		win.focus();
+	} else {
+		//Browser has blocked it
+		alert('Please allow popups for this website');
+	}
+}
 
 window.onpopstate = function(event) {
 	clickInCorrectTab(event.state.href);
