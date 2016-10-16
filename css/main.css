@@ -996,6 +996,14 @@ div.Centered
 	text-align: -moz-center;
 }
 
+div.CenteredFull
+{
+	width: 100%;
+    text-align: center;
+    text-align: -webkit-center;
+	text-align: -moz-center;
+}
+
 div.Stage
 {
 	height:200px;
