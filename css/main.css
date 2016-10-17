@@ -1386,6 +1386,11 @@ div.historyBig {
 	background-size: contain;
 }
 
+div.historyFinalBig {
+	background: url('../img/information/big/historyFinal.png') no-repeat;
+	background-size: contain;
+}
+
 div.participationBig{
 	background: url('../img/information/big/participation.png') no-repeat;
 	background-size: contain;
