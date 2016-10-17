@@ -310,7 +310,7 @@ div.textArea-indoor, div.textArea-noName, div.textArea-logicBomb, div.textArea-o
 , div.textArea-alexTolstey, div.textArea-mullerMaichel, div.textArea-delta
 {
 	position: fixed;
-	left:15%;
+	left:14.75%;
 	width:70%; 
 	height:400px;
 	opacity:0;
@@ -392,7 +392,7 @@ div.textToLeft
 
 div.textToCenter
 {
-	/*left: 0%;*/
+	left: 0%;
 	opacity:100;
 	filter: alpha(opacity=1);
 }
@@ -838,7 +838,7 @@ div.artistsCross
 	position: absolute;
 	height:30px;
 	width:30px;
-	left:83%;
+	left:82%;
 	cursor:pointer;
 	transition: opacity 1s ease-in-out;
 	background: url('../img/program/artists/cross.png') no-repeat;
@@ -1045,7 +1045,7 @@ div.infinity:hover
 	background-size: contain;
 }
 
-div.xDream
+div.xDreamBig
 {
 	background: url("../img/program/artists/big/xDream.png") no-repeat;
 	background-size: contain;
