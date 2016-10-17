@@ -567,7 +567,7 @@ div.authorsText
 	position: absolute;
 	bottom: 0px;
 	right: 5px;
-	width: 141px;
+	width: 154px;
 	height: 20px;
 	transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s, width 1.5s, height 1.5s ease-in-out;
 	-webkit-transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s, width 1.5s, height 1.5s ease-in-out;
