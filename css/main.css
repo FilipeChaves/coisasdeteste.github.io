@@ -194,7 +194,7 @@ h3.titulo-program, h3.titulo-afterparty
 
 h3.titulo-beat, h3.titulo-eat, h3.titulo-indoor, h3.titulo-noName, h3.titulo-logicBomb, h3.titulo-oforia
 , h3.titulo-infinity, h3.titulo-xDream, h3.titulo-ticon, h3.titulo-reek, h3.titulo-miranda
-, h3.titulo-alexTolstey, h3.titulo-mullerMaichel, h3.titulo-delta
+, h3.titulo-alexTolstey, h3.titulo-mullerMaichel, h3.titulo-delta, h3.titulo-spaceCat
 {
 	font-family: "Title Custom Font", Verdana, Tahoma;
 	color: #fa0000;
@@ -307,7 +307,7 @@ div.textArea-concept, div.textArea-program, div.textArea-information, div.textAr
 
 div.textArea-indoor, div.textArea-noName, div.textArea-logicBomb, div.textArea-oforia, div.textArea-beat, div.textArea-eat
 , div.textArea-infinity, div.textArea-xDream, div.textArea-ticon, div.textArea-reek, div.textArea-miranda
-, div.textArea-alexTolstey, div.textArea-mullerMaichel, div.textArea-delta
+, div.textArea-alexTolstey, div.textArea-mullerMaichel, div.textArea-delta, div.textArea-spaceCat
 {
 	position: fixed;
 	left:14.75%;
@@ -828,7 +828,22 @@ a.discogs
 	float:left;
 }
 
+a.discogsNoLeft
+{
+	height:30px;
+	width:84px;
+	cursor:pointer;
+	margin-left: 20px;
+	transition: opacity 1s ease-in-out;
+	background: url('../img/program/artists/discogs.png') no-repeat;
+}
+
 a.discogs:hover
+{
+	background: url('../img/program/artists/discogsHover.png') no-repeat;
+}
+
+a.discogsNoLeft:hover
 {
 	background: url('../img/program/artists/discogsHover.png') no-repeat;
 }
