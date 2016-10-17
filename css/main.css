@@ -194,6 +194,7 @@ h3.titulo-program, h3.titulo-afterparty
 
 h3.titulo-beat, h3.titulo-eat, h3.titulo-indoor, h3.titulo-noName, h3.titulo-logicBomb, h3.titulo-oforia
 , h3.titulo-infinity, h3.titulo-xDream, h3.titulo-ticon, h3.titulo-reek, h3.titulo-miranda
+, h3.titulo-alexTolstey, h3.titulo-mullerMaichel, h3.titulo-delta
 {
 	font-family: "Title Custom Font", Verdana, Tahoma;
 	color: #fa0000;
@@ -306,6 +307,7 @@ div.textArea-concept, div.textArea-program, div.textArea-information, div.textAr
 
 div.textArea-indoor, div.textArea-noName, div.textArea-logicBomb, div.textArea-oforia, div.textArea-beat, div.textArea-eat
 , div.textArea-infinity, div.textArea-xDream, div.textArea-ticon, div.textArea-reek, div.textArea-miranda
+, div.textArea-alexTolstey, div.textArea-mullerMaichel, div.textArea-delta
 {
 	position: fixed;
 	margin-left:15%;
@@ -863,6 +865,12 @@ div.artist
 	margin-bottom: 30px;
 }
 
+div.indoorBig
+{
+	background: url("../img/program/artists/big/indoor.png") no-repeat;
+	background-size: contain;
+}
+
 div.indoor
 {
 	background: url("../img/program/artists/indoor.png") no-repeat;
@@ -872,6 +880,12 @@ div.indoor
 div.indoor:hover
 {
 	background: url("../img/program/artists/indoorHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.eatBig
+{
+	background: url("../img/program/artists/big/eat.png") no-repeat;
 	background-size: contain;
 }
 
@@ -887,6 +901,66 @@ div.eat:hover
 	background-size: contain;
 }
 
+div.alexTolsteyBig
+{
+	background: url("../img/program/artists/big/alexTolstey.png") no-repeat;
+	background-size: contain;
+}
+
+div.alexTolstey
+{
+	background: url("../img/program/artists/alexTolstey.png") no-repeat;
+	background-size: contain;
+}
+
+div.alexTolstey:hover
+{
+	background: url("../img/program/artists/alexTolsteyHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.mullerMaichelBig
+{
+	background: url("../img/program/artists/big/mullerMaichel.png") no-repeat;
+	background-size: contain;
+}
+
+div.mullerMaichel
+{
+	background: url("../img/program/artists/mullerMaichel.png") no-repeat;
+	background-size: contain;
+}
+
+div.mullerMaichel:hover
+{
+	background: url("../img/program/artists/mullerMaichelHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.deltaBig
+{
+	background: url("../img/program/artists/big/delta.png") no-repeat;
+	background-size: contain;
+}
+
+div.delta
+{
+	background: url("../img/program/artists/delta.png") no-repeat;
+	background-size: contain;
+}
+
+div.delta:hover
+{
+	background: url("../img/program/artists/deltaHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.logicBombBig
+{
+	background: url("../img/program/artists/big/logicBomb.png") no-repeat;
+	background-size: contain;
+}
+
 div.logicBomb
 {
 	background: url("../img/program/artists/logicBomb.png") no-repeat;
@@ -896,6 +970,12 @@ div.logicBomb
 div.logicBomb:hover
 {
 	background: url("../img/program/artists/logicBombHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.noNameBig
+{
+	background: url("../img/program/artists/big/noName.png") no-repeat;
 	background-size: contain;
 }
 
@@ -911,6 +991,12 @@ div.noName:hover
 	background-size: contain;
 }
 
+div.oforiaBig
+{
+	background: url("../img/program/artists/big/oforia.png") no-repeat;
+	background-size: contain;
+}
+
 div.oforia
 {
 	background: url("../img/program/artists/oforia.png") no-repeat;
@@ -920,6 +1006,12 @@ div.oforia
 div.oforia:hover
 {
 	background: url("../img/program/artists/oforiaHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.spaceCatBig
+{
+	background: url("../img/program/artists/big/spaceCat.png") no-repeat;
 	background-size: contain;
 }
 
@@ -935,6 +1027,12 @@ div.spaceCat:hover
 	background-size: contain;
 }
 
+div.infinityBig
+{
+	background: url("../img/program/artists/big/infinity.png") no-repeat;
+	background-size: contain;
+}
+
 div.infinity
 {
 	background: url("../img/program/artists/infinity.png") no-repeat;
@@ -944,6 +1042,12 @@ div.infinity
 div.infinity:hover
 {
 	background: url("../img/program/artists/infinityHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.xDream
+{
+	background: url("../img/program/artists/big/xDream.png") no-repeat;
 	background-size: contain;
 }
 
@@ -1002,6 +1106,12 @@ div.miranda:hover
 	background-size: contain;
 }
 
+div.ticonBig
+{
+	background: url("../img/program/artists/big/ticon.png") no-repeat;
+	background-size: contain;
+}
+
 div.ticon
 {
 	background: url("../img/program/artists/ticon.png") no-repeat;
@@ -1011,6 +1121,12 @@ div.ticon
 div.ticon:hover
 {
 	background: url("../img/program/artists/ticonHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.reekBig
+{
+	background: url("../img/program/artists/big/reek.png") no-repeat;
 	background-size: contain;
 }
 

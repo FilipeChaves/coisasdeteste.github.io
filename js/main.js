@@ -289,7 +289,115 @@ function mirandaClick()
 	window.history.pushState({"href":"miranda"}, null, '#miranda');
 }
 
-function removeCenter(nextID) 
+function alexTolsteyClick(){
+	removeCenter(29);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"alexTolstey"}, null, '#alexTolstey');
+}
+
+function indoorClick(){
+	removeCenter(30);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"indoor"}, null, '#indoor');
+}
+
+function mullerMaichelClick(){
+	removeCenter(31);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"mullerMaichel"}, null, '#mullerMaichel');
+}
+
+function logicBombClick(){
+	removeCenter(32);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"logicBomb"}, null, '#logicBomb');
+}
+
+function noNameClick(){
+	removeCenter(33);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"noName"}, null, '#noName');
+}
+
+function oforiaClick(){
+	removeCenter(34);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"oforia"}, null, '#oforia');
+}
+
+function reekClick(){
+	removeCenter(35);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"reek"}, null, '#reek');
+}
+
+function spaceCatClick(){
+	removeCenter(36);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"spaceCat"}, null, '#spaceCat');
+}
+
+function deltaClick(){
+	removeCenter(37);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"delta"}, null, '#delta');
+}
+
+function infinityClick(){
+	removeCenter(38);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"infinity"}, null, '#infinity');
+}
+
+function ticonClick(){
+	removeCenter(39);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"ticon"}, null, '#ticon');
+}
+
+function xDreamClick(){
+	removeCenter(40);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"xDream"}, null, '#xDream');
+}
+
+function removeCenter(nextID)
 {
 	var allTitleAreas = ['div.titulo-concept',
 						 'div.titulo-program',
@@ -319,7 +427,19 @@ function removeCenter(nextID)
 						 'div.titulo-ambassador',
 						 'div.titulo-beat',
 						 'div.titulo-eat',
-						 'div.titulo-miranda'];
+						 'div.titulo-miranda',
+						 'div.titulo-alexTolstey',
+						 'div.titulo-indoor',
+						 'div.titulo-mullerMaichel',
+						 'div.titulo-logicBomb',
+						 'div.titulo-noName',
+						 'div.titulo-oforia',
+						 'div.titulo-reek',
+						 'div.titulo-spaceCat',
+						 'div.titulo-delta',
+						 'div.titulo-infinity',
+						 'div.titulo-ticon',
+						 'div.titulo-xDream'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -349,7 +469,19 @@ function removeCenter(nextID)
 						'div.textArea-ambassador',
 						'div.textArea-beat',
 						'div.textArea-eat',
-						'div.textArea-miranda'];
+						'div.textArea-miranda',
+						'div.textArea-alexTolstey',
+						'div.textArea-indoor',
+						'div.textArea-mullerMaichel',
+						'div.textArea-logicBomb',
+						'div.textArea-noName',
+						'div.textArea-oforia',
+						'div.textArea-reek',
+						'div.textArea-spaceCat',
+						'div.textArea-delta',
+						'div.textArea-infinity',
+						'div.textArea-ticon',
+						'div.textArea-xDream'];
 	
 	if(nextID <= 25)
 		$('div.artistsCross').css('opacity', '0');
@@ -435,7 +567,19 @@ function removeDisplay(nextID)
 						 'div.titulo-ambassador',
 						 'div.titulo-beat',
 						 'div.titulo-eat',
-						 'div.titulo-miranda'];
+						 'div.titulo-miranda',
+						 'div.titulo-alexTolstey',
+						 'div.titulo-indoor',
+						 'div.titulo-mullerMaichel',
+						 'div.titulo-logicBomb',
+						 'div.titulo-noName',
+						 'div.titulo-oforia',
+						 'div.titulo-reek',
+						 'div.titulo-spaceCat',
+						 'div.titulo-delta',
+						 'div.titulo-infinity',
+						 'div.titulo-ticon',
+						 'div.titulo-xDream'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -465,7 +609,19 @@ function removeDisplay(nextID)
 						'div.textArea-ambassador',
 						'div.textArea-beat',
 						'div.textArea-eat',
-						'div.textArea-miranda'];
+						'div.textArea-miranda',
+						'div.textArea-alexTolstey',
+						'div.textArea-indoor',
+						'div.textArea-mullerMaichel',
+						'div.textArea-logicBomb',
+						'div.textArea-noName',
+						'div.textArea-oforia',
+						'div.textArea-reek',
+						'div.textArea-spaceCat',
+						'div.textArea-delta',
+						'div.textArea-infinity',
+						'div.textArea-ticon',
+						'div.textArea-xDream'];
 	
 	var contdownHeight = $('div.countdown').height();
 	var titleHeight = $('div.titulo-concept').height();
@@ -691,6 +847,19 @@ function onLoadedPage(){
 	var nicesxs = $("div.textArea-beat").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-eat").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-miranda").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	
+	var nicesxs = $("div.textArea-alexTolstey").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-indoor").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-mullerMaichel").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-logicBomb").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-noName").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-oforia").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-reek").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-spaceCat").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-delta").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-infinity").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-ticon").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-xDream").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	//.cursor.css({"background-image":"url(img/mac6scroll.png)"}); // MAC like scrollbar
 	
 	if(isIE()){
@@ -874,6 +1043,42 @@ function clickInCorrectTab(name){
 			break;
 		case 'miranda':
 			mirandaClick();
+			break;
+		case 'alexTolstey':
+			alexTolsteyClick();
+			break;
+		case 'indoor':
+			indoorClick();
+			break;
+		case 'mullerMaichel':
+			mullerMaichelClick();
+			break;
+		case 'logicBomb':
+			logicBombClick();
+			break;
+		case 'noName':
+			noNameClick();
+			break;
+		case 'oforia':
+			oforiaClick();
+			break;
+		case 'reek':
+			reekClick();
+			break;
+		case 'spaceCat':
+			spaceCatClick();
+			break;
+		case 'delta':
+			deltaClick();
+			break;
+		case 'infinity':
+			infinityClick();
+			break;
+		case 'ticon':
+			ticonClick();
+			break;
+		case 'xDream':
+			xDreamClick();
 			break;
 	}
 }
