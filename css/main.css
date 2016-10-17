@@ -310,7 +310,7 @@ div.textArea-indoor, div.textArea-noName, div.textArea-logicBomb, div.textArea-o
 , div.textArea-alexTolstey, div.textArea-mullerMaichel, div.textArea-delta
 {
 	position: fixed;
-	margin-left:15%;
+	left:15%;
 	width:70%; 
 	height:400px;
 	opacity:0;
@@ -392,7 +392,7 @@ div.textToLeft
 
 div.textToCenter
 {
-	left: 0%;
+	/*left: 0%;*/
 	opacity:100;
 	filter: alpha(opacity=1);
 }
@@ -1201,9 +1201,8 @@ p.StageName
 
 div.artistBig
 {
-	height:475px;
+	height:675px;
 	width:200px;
-	background-color:green;
 	cursor:pointer;
 	transition: opacity 1s ease-in-out;
 	float:left;
