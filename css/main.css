@@ -817,7 +817,7 @@ div.goDownRight
 	left: 120.5%;
 }
 
-div.discogs
+a.discogs
 {
 	height:30px;
 	width:84px;
@@ -828,7 +828,7 @@ div.discogs
 	float:left;
 }
 
-div.discogs:hover
+a.discogs:hover
 {
 	background: url('../img/program/artists/discogsHover.png') no-repeat;
 }
@@ -1201,7 +1201,7 @@ p.StageName
 
 div.artistBig
 {
-	height:675px;
+	height:475px;
 	width:200px;
 	cursor:pointer;
 	transition: opacity 1s ease-in-out;
