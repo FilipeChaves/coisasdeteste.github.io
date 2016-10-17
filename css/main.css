@@ -561,6 +561,19 @@ div.divMenuSocial li {
 	background-size: contain;
 }
 
+div.authorsText
+{
+	background: url('../img/authors.png') no-repeat;
+	position: absolute;
+	bottom: 0px;
+	right: 5px;
+	width: 212px;
+	height: 30px;
+	transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s, width 1.5s, height 1.5s ease-in-out;
+	-webkit-transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s, width 1.5s, height 1.5s ease-in-out;
+	background-size: contain;
+}
+
 div.dataText
 {
 	background: url('../img/social/dataText.png') no-repeat;
@@ -1176,8 +1189,9 @@ div.CenteredFull
 
 div.Stage
 {
-	height:240px;
-	width:480px;
+	
+	max-height:240px;
+	max-width:480px;
 	background-color:green;
 	cursor:pointer;
 	transition: opacity 1s ease-in-out;
@@ -1216,8 +1230,8 @@ p.StageName
 
 div.artistBig
 {
-	height:475px;
-	width:200px;
+	max-height:475px;
+	max-width:200px;
 	cursor:pointer;
 	transition: opacity 1s ease-in-out;
 	float:left;
