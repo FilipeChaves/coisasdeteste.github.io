@@ -1230,8 +1230,8 @@ p.StageName
 
 div.artistBig
 {
-	max-height:475px;
-	max-width:200px;
+	height:475px;
+	width:200px;
 	cursor:pointer;
 	transition: opacity 1s ease-in-out;
 	float:left;
