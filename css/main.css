@@ -362,6 +362,19 @@ p.textoBold
 	line-height: 150%;
 }
 
+p.textoBoldCenter
+{
+	font-family: "Text Custom Font", Verdana, Tahoma;
+	color: #faa200;
+	font-weight: bold;
+	font-size: 100%;
+	width: 98%;
+	transition: all 1s ease-in-out;
+	text-align: center;
+    text-justify: inter-word;
+	line-height: 150%;
+}
+
 p.ticketsColor
 {
 	color: #00fa9e;
