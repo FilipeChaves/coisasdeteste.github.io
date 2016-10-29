@@ -615,8 +615,8 @@ div.busTicketsInfo
 {
 	margin-right: 10px;
 	margin-top: 10px;
-	height:129px;
-	width: 570px;
+	height:86px;
+	width: 380px;
 	background: url('../img/tickets/ticketsInfo/busTicketsInfo.png') no-repeat;
 	background-size: contain;
 }
@@ -625,8 +625,8 @@ div.busDepartureInfo
 {
 	margin-right: 10px;
 	margin-top: 10px;
-	height:171px;
-	width: 570px;
+	height:115px;
+	width: 380px;
 	background: url('../img/tickets/ticketsInfo/busDepartureInfo.png') no-repeat;
 	background-size: contain;
 }
