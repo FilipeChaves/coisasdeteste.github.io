@@ -194,7 +194,7 @@ h3.titulo-program, h3.titulo-afterparty
 
 h3.titulo-beat, h3.titulo-eat, h3.titulo-indoor, h3.titulo-noName, h3.titulo-logicBomb, h3.titulo-oforia
 , h3.titulo-infinity, h3.titulo-xDream, h3.titulo-ticon, h3.titulo-reek, h3.titulo-miranda
-, h3.titulo-alexTolstey, h3.titulo-mullerMaichel, h3.titulo-delta, h3.titulo-spaceCat
+, h3.titulo-alexTolstey, h3.titulo-mullerMaichel, h3.titulo-delta, h3.titulo-spaceCat, h3.titulo-humanBlue
 {
 	font-family: "Title Custom Font", Verdana, Tahoma;
 	color: #fa0000;
@@ -312,7 +312,7 @@ div.textArea-concept, div.textArea-program, div.textArea-information, div.textAr
 
 div.textArea-indoor, div.textArea-noName, div.textArea-logicBomb, div.textArea-oforia, div.textArea-beat, div.textArea-eat
 , div.textArea-infinity, div.textArea-xDream, div.textArea-ticon, div.textArea-reek, div.textArea-miranda
-, div.textArea-alexTolstey, div.textArea-mullerMaichel, div.textArea-delta, div.textArea-spaceCat
+, div.textArea-alexTolstey, div.textArea-mullerMaichel, div.textArea-delta, div.textArea-spaceCat, div.textArea-humanBlue
 {
 	position: fixed;
 	left:14.75%;
@@ -611,11 +611,40 @@ li a:hover {
     background-color: #111;
 }
 
+div.busTicketsInfo
+{
+	margin-right: 10px;
+	margin-top: 10px;
+	height:129px;
+	width: 570px;
+	background: url('../img/tickets/ticketsInfo/busTicketsInfo.png') no-repeat;
+	background-size: contain;
+}
+
+div.busDepartureInfo
+{
+	margin-right: 10px;
+	margin-top: 10px;
+	height:171px;
+	width: 570px;
+	background: url('../img/tickets/ticketsInfo/busDepartureInfo.png') no-repeat;
+	background-size: contain;
+}
+
+div.ticketsInfoText
+{
+	margin-right: 10px;
+	margin-top: 10px;
+	height:830px;
+	width:1000px;
+	background: url('../img/tickets/ticketsInfo/ticketsInfoText.png') no-repeat;
+	background-size: contain;
+}
+
+
 /******************************************************
 ********* Concept Symbols and Hover *******************
 ******************************************************/
-
-
 
 div.conceptSymbol
 {
@@ -1094,6 +1123,24 @@ div.xDream
 div.xDream:hover
 {
 	background: url("../img/program/artists/xDreamHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.humanBlueBig
+{
+	background: url("../img/program/artists/big/humanBlue.png") no-repeat;
+	background-size: contain;
+}
+
+div.humanBlue
+{
+	background: url("../img/program/artists/humanBlue.png") no-repeat;
+	background-size: contain;
+}
+
+div.humanBlue:hover
+{
+	background: url("../img/program/artists/humanBlueHover.png") no-repeat;
 	background-size: contain;
 }
 

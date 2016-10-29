@@ -397,6 +397,15 @@ function xDreamClick(){
 	window.history.pushState({"href":"xDream"}, null, '#xDream');
 }
 
+function humanBlueClick(){
+	removeCenter(41);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"humanBlue"}, null, '#humanBlue');
+}
+
 function removeCenter(nextID)
 {
 	var allTitleAreas = ['div.titulo-concept',
@@ -439,7 +448,8 @@ function removeCenter(nextID)
 						 'div.titulo-delta',
 						 'div.titulo-infinity',
 						 'div.titulo-ticon',
-						 'div.titulo-xDream'];
+						 'div.titulo-xDream',
+						 'div.titulo-humanBlue'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -481,7 +491,8 @@ function removeCenter(nextID)
 						'div.textArea-delta',
 						'div.textArea-infinity',
 						'div.textArea-ticon',
-						'div.textArea-xDream'];
+						'div.textArea-xDream',
+						'div.textArea-humanBlue'];
 	
 	if(nextID <= 25)
 		$('div.artistsCross').css('opacity', '0');
@@ -579,7 +590,8 @@ function removeDisplay(nextID)
 						 'div.titulo-delta',
 						 'div.titulo-infinity',
 						 'div.titulo-ticon',
-						 'div.titulo-xDream'];
+						 'div.titulo-xDream',
+						 'div.titulo-humanBlue'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -621,7 +633,8 @@ function removeDisplay(nextID)
 						'div.textArea-delta',
 						'div.textArea-infinity',
 						'div.textArea-ticon',
-						'div.textArea-xDream'];
+						'div.textArea-xDream',
+						'div.textArea-humanBlue'];
 	
 	var contdownHeight = $('div.countdown').height();
 	var titleHeight = $('div.titulo-concept').height();
@@ -860,6 +873,7 @@ function onLoadedPage(){
 	var nicesxs = $("div.textArea-infinity").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-ticon").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-xDream").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-humanBlue").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	//.cursor.css({"background-image":"url(img/mac6scroll.png)"}); // MAC like scrollbar
 	
 	if(isIE()){
@@ -1079,6 +1093,9 @@ function clickInCorrectTab(name){
 			break;
 		case 'xDream':
 			xDreamClick();
+			break;
+		case 'humanBlue':
+			humanBlueClick();
 			break;
 	}
 }

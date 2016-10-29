@@ -28,18 +28,18 @@
 		
 		<title>ZNA Gathering - A Retro Futuristic Celebration</title>
 		
-		    <script>
-			  // 2. This code loads the IFrame Player API code asynchronously.
-			  var tag = document.createElement('script');
+		<script>
+			// 2. This code loads the IFrame Player API code asynchronously.
+			var tag = document.createElement('script');
 
-			  tag.src = "https://www.youtube.com/iframe_api";
-			  var firstScriptTag = document.getElementsByTagName('script')[0];
-			  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+			tag.src = "https://www.youtube.com/iframe_api";
+			var firstScriptTag = document.getElementsByTagName('script')[0];
+			firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-			  // 3. This function creates an <iframe> (and YouTube player)
-			  //    after the API code downloads.
-			  var player;
-			  function onYouTubeIframeAPIReady() {
+			// 3. This function creates an <iframe> (and YouTube player)
+			//    after the API code downloads.
+			var player;
+			function onYouTubeIframeAPIReady() {
 				player = new YT.Player('conceptPlayer', {
 				  height: '390',
 				  width: '98%',
@@ -50,8 +50,17 @@
 				  width: '98%',
 				  videoId: 'TgqGMIXFU64'
 				});
-			  }
-			</script>
+			}
+		</script>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-85990722-1', 'auto');
+			ga('send', 'pageview');
+		</script>
     <link href="dist/photoswipe.css?v=4.1.0-1.0.4" rel="stylesheet">
     <link href="dist/default-skin/default-skin.css?v=4.1.0-1.0.4" rel="stylesheet">
     
@@ -172,6 +181,10 @@
 						<h3 class="tituloArtist" onclick='eatClick()'>Eat Static</h3>
 						<h2 class="titulo2" onclick='eatClick()'>Mesmobeat Records (UK)</h2>
 					</div>
+					<div class="humanBlue artist"> 
+						<h3 class="tituloArtist" onclick='humanBlueClick()'>Human Blue</h3>
+						<h2 class="titulo2" onclick='humanBlueClick()'>Spiral Trax Records (SE)</h2>
+					</div>
 					<div class="indoor artist"> 
 						<h3 class="tituloArtist" onclick='indoorClick()'>INDOOR VS PHREAKY</h3>
 						<h2 class="titulo2" onclick='indoorClick()'>Mdma Records (IL)</h2>
@@ -219,10 +232,6 @@
 					<div class="xDream artist"> 
 						<h3 class="tituloArtist" onclick='xDreamClick()'>X-DREAM</h3>
 						<h2 class="titulo2" onclick='xDreamClick()'>Boshke Beat Records (DE)</h2>
-					</div>
-					<div class="question artist"> 
-						<h3 class="tituloArtist">ARTIST T.B.A</h3>
-						<h2 class="titulo2">24th of October of 2016</h2>
 					</div>
 					<div class="question artist"> 
 						<h3 class="tituloArtist">ARTIST T.B.A</h3>
@@ -1084,12 +1093,11 @@
 			</div>
 			<div class="textArea-buy textToCenter"  style="display:none;opacity:0;transition: opacity 1s ease-in-out;">
 				<div class="buyBig StageImage"></div>
-				<p class="texto"><strong onclick='ticketsInfoClick()' style='cursor:pointer;'>For information about tickets sale click here.</strong></p>
-				<!--div id="tkt-content">Compre aqui os seus bilhetes</div>
+				<!--p class="texto"><strong onclick='ticketsInfoClick()' style='cursor:pointer;'>For information about tickets sale click here.</strong></p-->
 				<script language="javascript" type="text/javascript" src="https://www.ticketea.pt/bilhetes-festival-zna-gathering-2017/buy?width=600px&height=450px"></script>
 				<a href="https://www.ticketea.pt/bilhetes-festival-zna-gathering-2017/" alt="ZNA Gathering 2017" title="ticketea">
 					<img src="https://www.ticketea.pt/images/powered_by.png" alt="ticketea" />
-				</a-->
+				</a>
 			</div>
 		</div>
 			
@@ -1106,19 +1114,9 @@
 				<br>All we wish is to be able to evolve in every aspect, so all possible proceeds will be directed towards the continuation of this project. 
 				<br>So: more space, more Art, more comfort.</p>
 
-
 				<p class="textoBold ticketsColor">The tickets for the ZNA Gathering are limited. We are focused on keeping a familiar and cosy vibe, characterized by quality and comfort. This means there will be a maximum of 6000 tickets available. 
 
-				<br>Never buy a ticket on auction websites such as Ebay, Olx and many others.</p>
-				<p class="texto">
-				1st  Phase - 75€ + Booking Fee (limited 300 tickets, after 1st of November)
-				<br>2nd Phase - 100€  + Booking Fee (until 31st of March or sold out)
-				<br>3rd Phase - 130€ + Booking Fee (until 20th of August or sold out) 
-				<br>At the door - 140€ (until sold out)</p>
-
-				<p class="texto">Ambassador ticket:
-				<br>2nd phase - 100€
-				<br>3rd Phase - 130€</p>
+				<div class="CenteredFull"> <div class="ticketsInfoText"></div> </div>
 
 
 				<p class="textoBold ticketsColor">CHILDREN’S TICKETS</p>
@@ -1128,14 +1126,7 @@
 
 				<p class="textoBold ticketsColor">BUS TICKET:</p>
 
-				<p class="textoBold ticketsColor">PRICING</p>
-				<p class="texto">Airport - ZNA Land - Airport = 60€
-				<br>One way = 35€</p>
-
-				<p class="textoBold ticketsColor">SCHEDULE</p>
-				<p class="texto">21 of August* - 10:00pm 
-				<br>29 of August* - 10:00pm
-				<br>*if this Bus gets sold out we will program new ones with different departure times.</p>
+				<div class="CenteredFull"> <div class="busTicketsInfo"></div> <div class="busDepartureInfo"></div> </div>
 
 				<p class="texto">The ZNA Gathering bus ticket assures you:
 				<br>- A 2 way trip between Lisbon Airport and the ZNA Gathering location.
@@ -1576,6 +1567,23 @@
 				</p>
 				<p class="textoLeft">Link Jan Muller:</p><a class="discogs" href="https://www.discogs.com/artist/74256-Jan-M%C3%BCller" target="_blank"></a>
 				<p class="textoLeft">Link Marcus Maichel:</p><a class="discogs" href="https://www.discogs.com/artist/80564-Marcus-C-Maichel" target="_blank"></a>
+			</div>
+		</div>
+		
+		<!-- HumanBlue (DANCEFLOOR) -->
+		<div class="allHumanBlueArea">
+			<div class="textArea-humanBlue"  style="display:none;opacity:0;transition: opacity 1s ease-in-out;">
+				<div class="humanBlueBig artistBig"  style="height:540px"></div>
+				<div class="titleDivArtists titulo-humanBlue" style="display:none;opacity:0;transition: opacity 1s ease-in-out;">
+					<h3 class="titulo-humanBlue" >Human Blue</h3>
+				</div>
+				<p class="textoLeft">Dag Wallin is the artist behind the Human Blue musical project - known since 1996 as the artist that took the 1st steps to blend old-school Goa with crystal clear progressive trance. He is capable of creating incredibly unique, warming and floating sensations during the late morning hours for all the dancers who seek uplifting melodies and rolling bass-lines. 
+				</p><p class="textoLeft">Have you ever noticed that when artists like Dag are playing, one starts to feel all the craziness and uncharted territories of the night have suddenly been left behind, and the time comes to just rejoice and let the music make love to your brain in a smooth, mellow way?
+				<br>In that moment everything starts to make sense again and you will most probably quite surprisingly realize that his music is giving you that extra boost to keep dancing until the P.A. stops.
+				</p><p class="textoLeft">Even though his not performing anymore he will open an exception for our next edition creating this way another rare opportunity to revive an old favourite of yours. 
+				</p><p class="textoLeft">We share ZNA
+				</p>
+				<p class="textoLeft">Link Discogs:</p><a class="discogs" href="https://www.discogs.com/artist/27836-Human-Blue" target="_blank"></a>
 			</div>
 		</div>
 		
