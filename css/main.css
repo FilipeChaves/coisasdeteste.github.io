@@ -633,10 +633,8 @@ div.busDepartureInfo
 
 div.ticketsInfoText
 {
-	margin-right: 10px;
-	margin-top: 10px;
-	height:830px;
-	width:1000px;
+	height:710px;
+	width:975px;
 	background: url('../img/tickets/ticketsInfo/ticketsInfoText.png') no-repeat;
 	background-size: contain;
 }
