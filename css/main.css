@@ -880,10 +880,24 @@ a.discogs
 	height:30px;
 	width:84px;
 	cursor:pointer;
-	margin-left: 20px;
 	transition: opacity 1s ease-in-out;
 	background: url('../img/program/artists/discogs.png') no-repeat;
 	float:left;
+}
+
+div.artistLeft
+{
+	float:left;
+	width:80%;
+	padding-left:10px;
+}
+
+div.titleLeft
+{
+	width:100%;
+	display:none;
+	opacity:0;
+	transition: opacity 1s ease-in-out;
 }
 
 a.discogsNoLeft
@@ -891,7 +905,6 @@ a.discogsNoLeft
 	height:30px;
 	width:84px;
 	cursor:pointer;
-	margin-left: 20px;
 	transition: opacity 1s ease-in-out;
 	background: url('../img/program/artists/discogs.png') no-repeat;
 }
