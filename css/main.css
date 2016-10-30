@@ -924,8 +924,8 @@ div.artistsCross
 	position: absolute;
 	height:30px;
 	width:30px;
-	left:82%;
 	cursor:pointer;
+	margin-left:13%;
 	transition: opacity 1s ease-in-out;
 	background: url('../img/program/artists/cross.png') no-repeat;
 	float:left;

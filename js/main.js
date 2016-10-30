@@ -533,6 +533,7 @@ function SetTopAndHeight(nextID, titleName, textName)
 	var titleHeight = $('div.titulo-concept').outerHeight();
 	var menuSocialHeight = $('div.divMenuSocial').outerHeight();
 	var blackShadowWidth = $('div.blackShadow').outerWidth();
+	var blackShadowLeft = $('div.blackShadow').css('margin-left').split('px')[0];
 	
 	$('div.blackShadow').css('top', countdownHeight + 20 + "px");
 	$('div.blackShadow').css('height', (windowHeight - 20 - countdownHeight - menuSocialHeight) + "px");
@@ -540,6 +541,7 @@ function SetTopAndHeight(nextID, titleName, textName)
 	if(nextID > 25){
 		$('div.artistsCross').css('display', 'inline-block');
 		$('div.artistsCross').css('top', countdownHeight + 30 + "px");
+		$('div.artistsCross').css('left', (parseFloat(blackShadowLeft) + (blackShadowWidth - 265)) + "px");
 		$(textName).css('top', countdownHeight + 40 + "px");
 		$(textName).css('height', (windowHeight - 60 - countdownHeight - menuSocialHeight) + "px");
 		
