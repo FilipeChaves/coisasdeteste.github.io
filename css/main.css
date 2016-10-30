@@ -195,6 +195,7 @@ h3.titulo-program, h3.titulo-afterparty
 h3.titulo-beat, h3.titulo-eat, h3.titulo-indoor, h3.titulo-noName, h3.titulo-logicBomb, h3.titulo-oforia
 , h3.titulo-infinity, h3.titulo-xDream, h3.titulo-ticon, h3.titulo-reek, h3.titulo-miranda
 , h3.titulo-alexTolstey, h3.titulo-mullerMaichel, h3.titulo-delta, h3.titulo-spaceCat, h3.titulo-humanBlue
+, h3.titulo-transwave
 {
 	font-family: "Title Custom Font", Verdana, Tahoma;
 	color: #fa0000;
@@ -313,6 +314,7 @@ div.textArea-concept, div.textArea-program, div.textArea-information, div.textAr
 div.textArea-indoor, div.textArea-noName, div.textArea-logicBomb, div.textArea-oforia, div.textArea-beat, div.textArea-eat
 , div.textArea-infinity, div.textArea-xDream, div.textArea-ticon, div.textArea-reek, div.textArea-miranda
 , div.textArea-alexTolstey, div.textArea-mullerMaichel, div.textArea-delta, div.textArea-spaceCat, div.textArea-humanBlue
+, div.textArea-transwave
 {
 	position: fixed;
 	left:14.75%;
@@ -1165,6 +1167,24 @@ div.humanBlue
 div.humanBlue:hover
 {
 	background: url("../img/program/artists/humanBlueHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.transwaveBig
+{
+	background: url("../img/program/artists/big/transwave.png") no-repeat;
+	background-size: contain;
+}
+
+div.transwave
+{
+	background: url("../img/program/artists/transwave.png") no-repeat;
+	background-size: contain;
+}
+
+div.transwave:hover
+{
+	background: url("../img/program/artists/transwaveHover.png") no-repeat;
 	background-size: contain;
 }
 

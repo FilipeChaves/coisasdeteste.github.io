@@ -406,6 +406,15 @@ function humanBlueClick(){
 	window.history.pushState({"href":"humanBlue"}, null, '#humanBlue');
 }
 
+function transwaveClick(){
+	removeCenter(42);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"transwave"}, null, '#transwave');
+}
+
 function removeCenter(nextID)
 {
 	var allTitleAreas = ['div.titulo-concept',
@@ -449,7 +458,8 @@ function removeCenter(nextID)
 						 'div.titulo-infinity',
 						 'div.titulo-ticon',
 						 'div.titulo-xDream',
-						 'div.titulo-humanBlue'];
+						 'div.titulo-humanBlue',
+						 'div.titulo-transwave'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -492,7 +502,8 @@ function removeCenter(nextID)
 						'div.textArea-infinity',
 						'div.textArea-ticon',
 						'div.textArea-xDream',
-						'div.textArea-humanBlue'];
+						'div.textArea-humanBlue',
+						'div.textArea-transwave'];
 	
 	if(nextID <= 25)
 		$('div.artistsCross').css('opacity', '0');
@@ -599,7 +610,8 @@ function removeDisplay(nextID)
 						 'div.titulo-infinity',
 						 'div.titulo-ticon',
 						 'div.titulo-xDream',
-						 'div.titulo-humanBlue'];
+						 'div.titulo-humanBlue',
+						 'div.titulo-transwave'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -642,7 +654,8 @@ function removeDisplay(nextID)
 						'div.textArea-infinity',
 						'div.textArea-ticon',
 						'div.textArea-xDream',
-						'div.textArea-humanBlue'];
+						'div.textArea-humanBlue',
+						'div.textArea-transwave'];
 	
 	var contdownHeight = $('div.countdown').height();
 	var titleHeight = $('div.titulo-concept').height();
@@ -882,6 +895,7 @@ function onLoadedPage(){
 	var nicesxs = $("div.textArea-ticon").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-xDream").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-humanBlue").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-transwave").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	//.cursor.css({"background-image":"url(img/mac6scroll.png)"}); // MAC like scrollbar
 	
 	/*$('div.textArea-buy').append("<img src=\"https://www.ticketea.pt/images/powered_by.png\" alt=\"ticketea\" />");*/
@@ -1108,6 +1122,9 @@ function clickInCorrectTab(name){
 			break;
 		case 'humanBlue':
 			humanBlueClick();
+			break;
+		case 'transwave':
+			transwaveClick();
 			break;
 	}
 }
