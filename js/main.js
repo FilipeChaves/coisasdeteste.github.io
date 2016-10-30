@@ -541,7 +541,7 @@ function SetTopAndHeight(nextID, titleName, textName)
 	if(nextID > 25){
 		$('div.artistsCross').css('display', 'inline-block');
 		$('div.artistsCross').css('top', countdownHeight + 30 + "px");
-		$('div.artistsCross').css('left', (parseFloat(blackShadowLeft) + (blackShadowWidth - 265)) + "px");
+		$('div.artistsCross').css('left', (blackShadowWidth - 60) + "px");
 		$(textName).css('top', countdownHeight + 40 + "px");
 		$(textName).css('height', (windowHeight - 60 - countdownHeight - menuSocialHeight) + "px");
 		
