@@ -532,21 +532,27 @@ function SetTopAndHeight(nextID, titleName, textName)
 	var countdownHeight = $('div.countdown').outerHeight();
 	var titleHeight = $('div.titulo-concept').outerHeight();
 	var menuSocialHeight = $('div.divMenuSocial').outerHeight();
+	var blackShadowWidth = $('div.blackShadow').outerWidth();
+	
+	$('div.blackShadow').css('top', countdownHeight + 20 + "px");
+	$('div.blackShadow').css('height', (windowHeight - 20 - countdownHeight - menuSocialHeight) + "px");
 	
 	if(nextID > 25){
 		$('div.artistsCross').css('display', 'inline-block');
 		$('div.artistsCross').css('top', countdownHeight + 30 + "px");
 		$(textName).css('top', countdownHeight + 40 + "px");
 		$(textName).css('height', (windowHeight - 60 - countdownHeight - menuSocialHeight) + "px");
+		
+		$('div.artistLeft').each( function(){
+			$( this ).css('width', blackShadowWidth - 300);
+		});
+		
 	}
 	else{
 		$(titleName).css('top', countdownHeight + 40 + "px");
 		$(textName).css('top', countdownHeight + 40 + titleHeight + 25 + "px");
 		$(textName).css('height', (windowHeight - 85 - countdownHeight - titleHeight - menuSocialHeight) + "px");
 	}
-	
-	$('div.blackShadow').css('top', countdownHeight + 20 + "px");
-	$('div.blackShadow').css('height', (windowHeight - 20 - countdownHeight - menuSocialHeight) + "px");
 }
 function removeDisplay(nextID)
 {
@@ -875,6 +881,11 @@ function onLoadedPage(){
 	var nicesxs = $("div.textArea-xDream").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-humanBlue").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	//.cursor.css({"background-image":"url(img/mac6scroll.png)"}); // MAC like scrollbar
+	
+	/*$('div.textArea-buy').append("<script language=\"javascript\" type=\"text/javascript\" src=\"https://www.ticketea.pt/bilhetes-festival-zna-gathering-2017/buy?width=600px&height=600px\"></script>"+
+				"<a href=\"https://www.ticketea.pt/bilhetes-festival-zna-gathering-2017/\" alt=\"ZNA Gathering 2017\" title=\"ticketea\">"+
+				"<img src=\"https://www.ticketea.pt/images/powered_by.png\" alt=\"ticketea\" />");*/
+	initTickets();
 	
 	if(isIE()){
 		$("h3.titulo-concept, h3.titulo-program, h3.titulo-information, h3.titulo-gallery, h3.titulo-tickets, h3.titulo-location, h3.titulo-dancefloor, h3.titulo-chillout, h3.titulo-goa, h3.titulo-zenbuspace, h3.titulo-zambukids, h3.titulo-useful, h3.titulo-parkingCamping, h3.titulo-afterparty, h3.titulo-participation, h3.titulo-history")
@@ -1384,3 +1395,71 @@ function initializaPhoto() {
 	initPhotoSwipeFromDOM('.emel-gallery');
 
 }
+
+
+    function getCookie(name) {
+        var dc = document.cookie;
+        var prefix = name + '=';
+        var begin = dc.indexOf('; ' + prefix);
+        if (begin == -1) {
+            begin = dc.indexOf(prefix);
+            if (begin != 0) return null;
+        } else {
+            begin += 2;
+            var end = document.cookie.indexOf(';', begin);
+            if (end == -1) {
+             end = dc.length;
+            }
+        }
+        return unescape(dc.substring(begin + prefix.length, end));
+    }
+    function resizeIframe() {
+        iFrameResize({checkOrigin: false, heightCalculationMethod: 'taggedElement'}, '#tkt-iframe');
+    }
+    function createIframe() {
+        var oHead = document.getElementsByTagName('head')[0];
+        var div = document.getElementById('tkt-content');
+        div.innerHTML='';
+
+        var iframe = document.createElement('iframe');
+        iframe.setAttribute('id', 'tkt-iframe');
+        iframe.setAttribute('width', '100%');
+        iframe.setAttribute('frameborder', 0);
+        iframe.setAttribute('scrolling', 'auto');
+        iframe.src='https://www.ticketea.pt/bilhetes-festival-zna-gathering-2017/custom/';
+        div.appendChild(iframe);
+
+        var iframe_resizer_script = document.createElement('script');
+        iframe_resizer_script.setAttribute('async', 'true');
+        iframe_resizer_script.type = 'text/javascript';
+        iframe_resizer_script.src = '//dzwfh45x6m2sl.cloudfront.net/static/js/vendors/iframe-resizer/js/iframeResizer.min.js';
+        iframe_resizer_script.onload = function () {
+            resizeIframe();
+        }
+        iframe_resizer_script.onreadystatechange = function() {
+            var state = this.readyState;
+            if (!state || /loaded|complete/.test(state)) {
+                resizeIframe();
+            }
+        };
+        oHead.appendChild(iframe_resizer_script);
+    }
+	
+    function initTickets() {
+        if(
+            navigator.userAgent.indexOf('Safari') != -1 &&
+            navigator.userAgent.indexOf('Chrome') == -1 &&
+            navigator.userAgent.indexOf('Firefox') == -1
+        ) {
+            var tkt_cookie_set = getCookie('tkt_cookie_set');
+            if (tkt_cookie_set == null) {
+                var ts = new Date().getTime();
+                document.cookie = 'tkt_cookie_set='+ts;
+                window.location = 'https://www.ticketea.pt/echo_view/?referer=' + window.location.href;
+            } else {
+                createIframe();
+            }
+        } else {
+            createIframe();
+        }
+    }
