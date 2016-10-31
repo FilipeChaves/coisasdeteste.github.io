@@ -898,7 +898,7 @@ function onLoadedPage(){
 	var nicesxs = $("div.textArea-transwave").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	//.cursor.css({"background-image":"url(img/mac6scroll.png)"}); // MAC like scrollbar
 	
-	$('div.textArea-buy').append("<div id=\"tkt-content\"></div><img src=\"https://www.ticketea.pt/images/powered_by.png\" alt=\"ticketea\" />");
+	$('div.textArea-buy').append("<div id=\"tkt-content\" style=\"width:96%\"></div><img src=\"https://www.ticketea.pt/images/powered_by.png\" alt=\"ticketea\" />");
 	
 	initTickets();
 	
@@ -1433,7 +1433,7 @@ function initializaPhoto() {
     }
     function resizeIframe() {
         iFrameResize({checkOrigin: false, heightCalculationMethod: 'taggedElement'}, '#tkt-iframe');
-		$('div#tkt-iframe').css('width', '70%');
+		$('iframe#tkt-iframe').css('width', '70%');
     }
     function createIframe() {
         var oHead = document.getElementsByTagName('head')[0];
