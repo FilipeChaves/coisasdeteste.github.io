@@ -898,7 +898,7 @@ function onLoadedPage(){
 	var nicesxs = $("div.textArea-transwave").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	//.cursor.css({"background-image":"url(img/mac6scroll.png)"}); // MAC like scrollbar
 	
-	$('div.textArea-buy').append("<img src=\"https://www.ticketea.pt/images/powered_by.png\" alt=\"ticketea\" />");
+	$('div.textArea-buy').append("<div id=\"tkt-content\"></div><img src=\"https://www.ticketea.pt/images/powered_by.png\" alt=\"ticketea\" />");
 	
 	initTickets();
 	
