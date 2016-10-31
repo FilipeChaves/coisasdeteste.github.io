@@ -898,9 +898,9 @@ function onLoadedPage(){
 	var nicesxs = $("div.textArea-transwave").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	//.cursor.css({"background-image":"url(img/mac6scroll.png)"}); // MAC like scrollbar
 	
-	/*$('div.textArea-buy').append("<img src=\"https://www.ticketea.pt/images/powered_by.png\" alt=\"ticketea\" />");*/
+	$('div.textArea-buy').append("<img src=\"https://www.ticketea.pt/images/powered_by.png\" alt=\"ticketea\" />");
 	
-	//initTickets();
+	initTickets();
 	
 	if(isIE()){
 		$("h3.titulo-concept, h3.titulo-program, h3.titulo-information, h3.titulo-gallery, h3.titulo-tickets, h3.titulo-location, h3.titulo-dancefloor, h3.titulo-chillout, h3.titulo-goa, h3.titulo-zenbuspace, h3.titulo-zambukids, h3.titulo-useful, h3.titulo-parkingCamping, h3.titulo-afterparty, h3.titulo-participation, h3.titulo-history")
