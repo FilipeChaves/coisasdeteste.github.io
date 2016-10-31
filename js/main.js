@@ -1426,13 +1426,14 @@ function initializaPhoto() {
             begin += 2;
             var end = document.cookie.indexOf(';', begin);
             if (end == -1) {
-             end = dc.length;
+				end = dc.length;
             }
         }
         return unescape(dc.substring(begin + prefix.length, end));
     }
     function resizeIframe() {
         iFrameResize({checkOrigin: false, heightCalculationMethod: 'taggedElement'}, '#tkt-iframe');
+		$('div#tkt-iframe').css('width', '70%');
     }
     function createIframe() {
         var oHead = document.getElementsByTagName('head')[0];
