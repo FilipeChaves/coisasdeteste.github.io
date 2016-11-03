@@ -663,6 +663,10 @@ div.ticketsInfoText
 	background-size: contain;
 }
 
+iframe#tkt-iframe
+{
+	z-index: 500;
+}
 
 /******************************************************
 ********* Concept Symbols and Hover *******************
