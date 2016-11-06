@@ -862,16 +862,16 @@ div.goLeft
 {
 	opacity: 0;
 	filter: alpha(opacity=0);
-	top: 0%;
-	left: 0%;
+	top: -20.5%;
+	left: -20.5%;
 }
 
 div.goRight
 {
 	opacity: 0;
 	filter: alpha(opacity=0);
-	top: 0%;
-	right: 0%;
+	top: -20.5%;
+	left: 120.5%;
 }
 
 div.goDownLeft
