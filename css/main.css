@@ -879,7 +879,7 @@ div.goDownLeft
 	opacity: 0;
 	filter: alpha(opacity=0);
 	bottom: -20.5%;
-	left: 0%;
+	left: -20.5%;
 }
 
 div.goDownRight
@@ -887,7 +887,7 @@ div.goDownRight
 	opacity: 0;
 	filter: alpha(opacity=0);
 	bottom: -20.5%;
-	left: 0.0%;
+	left: 120.5%;
 }
 
 a.discogs
