@@ -1,13 +1,7 @@
-html, body{
-    margin: 0;
 
-    padding: 0;
-
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	bottom:0;
-	right:0;
+body
+{
+	overflow: hidden;
 }
 
 img.background
@@ -842,7 +836,8 @@ div.moonSymbol
 	background: url('../img/symbols/MoonSymbol.png') no-repeat;
 	position: absolute;
 	bottom: 2.96%;
-	right: 2.57%;
+	left: 76.57%;
+	width: 38.88%;
 	width: 20.88%;
 	height: 31.95%;
 	transition: all 1.5s ease-in-out;
