@@ -415,6 +415,15 @@ function transwaveClick(){
 	window.history.pushState({"href":"transwave"}, null, '#transwave');
 }
 
+function botfbClick(){
+	removeCenter(43);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"botfb"}, null, '#botfb');
+}
+
 function removeCenter(nextID)
 {
 	var allTitleAreas = ['div.titulo-concept',
@@ -459,7 +468,8 @@ function removeCenter(nextID)
 						 'div.titulo-ticon',
 						 'div.titulo-xDream',
 						 'div.titulo-humanBlue',
-						 'div.titulo-transwave'];
+						 'div.titulo-transwave',
+						 'div.titulo-botfb'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -503,7 +513,8 @@ function removeCenter(nextID)
 						'div.textArea-ticon',
 						'div.textArea-xDream',
 						'div.textArea-humanBlue',
-						'div.textArea-transwave'];
+						'div.textArea-transwave',
+						'div.textArea-botfb'];
 	
 	if(nextID <= 25)
 		$('div.artistsCross').css('opacity', '0');
@@ -611,7 +622,8 @@ function removeDisplay(nextID)
 						 'div.titulo-ticon',
 						 'div.titulo-xDream',
 						 'div.titulo-humanBlue',
-						 'div.titulo-transwave'];
+						 'div.titulo-transwave',
+						 'div.titulo-botfb'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -655,7 +667,8 @@ function removeDisplay(nextID)
 						'div.textArea-ticon',
 						'div.textArea-xDream',
 						'div.textArea-humanBlue',
-						'div.textArea-transwave'];
+						'div.textArea-transwave',
+						'div.textArea-botfb'];
 	
 	var contdownHeight = $('div.countdown').height();
 	var titleHeight = $('div.titulo-concept').height();
@@ -1130,6 +1143,9 @@ function clickInCorrectTab(name){
 			break;
 		case 'transwave':
 			transwaveClick();
+			break;
+		case 'botfb':
+			botfbClick();
 			break;
 	}
 }
