@@ -424,6 +424,15 @@ function botfbClick(){
 	window.history.pushState({"href":"botfb"}, null, '#botfb');
 }
 
+function masaClick(){
+	removeCenter(44);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"masa"}, null, '#masa');
+}
+
 function removeCenter(nextID)
 {
 	var allTitleAreas = ['div.titulo-concept',
@@ -469,7 +478,8 @@ function removeCenter(nextID)
 						 'div.titulo-xDream',
 						 'div.titulo-humanBlue',
 						 'div.titulo-transwave',
-						 'div.titulo-botfb'];
+						 'div.titulo-botfb',
+						 'div.titulo-masa'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -514,7 +524,8 @@ function removeCenter(nextID)
 						'div.textArea-xDream',
 						'div.textArea-humanBlue',
 						'div.textArea-transwave',
-						'div.textArea-botfb'];
+						'div.textArea-botfb',
+						'div.textArea-masa'];
 	
 	if(nextID <= 25)
 		$('div.artistsCross').css('opacity', '0');
@@ -623,7 +634,8 @@ function removeDisplay(nextID)
 						 'div.titulo-xDream',
 						 'div.titulo-humanBlue',
 						 'div.titulo-transwave',
-						 'div.titulo-botfb'];
+						 'div.titulo-botfb',
+						 'div.titulo-masa'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -668,7 +680,8 @@ function removeDisplay(nextID)
 						'div.textArea-xDream',
 						'div.textArea-humanBlue',
 						'div.textArea-transwave',
-						'div.textArea-botfb'];
+						'div.textArea-botfb',
+						'div.textArea-masa'];
 	
 	var contdownHeight = $('div.countdown').height();
 	var titleHeight = $('div.titulo-concept').height();
@@ -1146,6 +1159,9 @@ function clickInCorrectTab(name){
 			break;
 		case 'botfb':
 			botfbClick();
+			break;
+		case 'masa':
+			masaClick();
 			break;
 	}
 }
