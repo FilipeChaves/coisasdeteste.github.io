@@ -433,6 +433,15 @@ function masaClick(){
 	window.history.pushState({"href":"masa"}, null, '#masa');
 }
 
+function xenomorphClick(){
+	removeCenter(45);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"xenomorph"}, null, '#xenomorph');
+}
+
 function removeCenter(nextID)
 {
 	var allTitleAreas = ['div.titulo-concept',
@@ -479,7 +488,8 @@ function removeCenter(nextID)
 						 'div.titulo-humanBlue',
 						 'div.titulo-transwave',
 						 'div.titulo-botfb',
-						 'div.titulo-masa'];
+						 'div.titulo-masa',
+						 'div.titulo-xenomorph'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -525,7 +535,8 @@ function removeCenter(nextID)
 						'div.textArea-humanBlue',
 						'div.textArea-transwave',
 						'div.textArea-botfb',
-						'div.textArea-masa'];
+						'div.textArea-masa',
+						'div.textArea-xenomorph'];
 	
 	if(nextID <= 25)
 		$('div.artistsCross').css('opacity', '0');
@@ -635,7 +646,8 @@ function removeDisplay(nextID)
 						 'div.titulo-humanBlue',
 						 'div.titulo-transwave',
 						 'div.titulo-botfb',
-						 'div.titulo-masa'];
+						 'div.titulo-masa',
+						 'div.titulo-xenomorph'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -681,7 +693,8 @@ function removeDisplay(nextID)
 						'div.textArea-humanBlue',
 						'div.textArea-transwave',
 						'div.textArea-botfb',
-						'div.textArea-masa'];
+						'div.textArea-masa',
+						'div.textArea-xenomorph'];
 	
 	var contdownHeight = $('div.countdown').height();
 	var titleHeight = $('div.titulo-concept').height();
@@ -1162,6 +1175,9 @@ function clickInCorrectTab(name){
 			break;
 		case 'masa':
 			masaClick();
+			break;
+		case 'xenomorph':
+			xenomorphClick();
 			break;
 	}
 }
