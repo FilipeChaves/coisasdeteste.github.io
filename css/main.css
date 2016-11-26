@@ -108,6 +108,34 @@ h3.titulo-tickets, h3.titulo-terms, h3.titulo-ticketsInfo, h3.titulo-buy, h3.tit
 	margin-block-end: 0px;
 }
 
+div.titulo-accessallareas, div.titulo-solitare, div.titulo-farina, div.titulo-harispapa,
+div.titulo-cogniscitiva, div.titulo-pedro, div.titulo-racheladylik, div.titulo-ricardo,
+div.titulo-sagivraybi, div.titulo-svetlanavjerina, div.titulo-yumiko
+{
+	font-family: "Title Custom Font", Verdana, Tahoma;
+	color: #00fa9e;
+	font-size: 250%;
+	width:96%;
+	text-align: center;
+	text-align: -moz-center;
+	text-align: -webkit-center;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	/* display: block; */
+	font-size: auto;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	font-weight: bold;
+	margin-block-start: 0px;
+	margin-block-end: 0px;
+	float: left;
+}
+
+
 h3.titulo-location
 {
 	font-family: "Title Custom Font", Verdana, Tahoma;
@@ -270,6 +298,30 @@ h3.tituloArtist
 	margin-block-end: 0px;
     padding-top: 156px;
     margin-bottom: 3px;
+}
+
+h3.tituloAmbassador
+{
+	font-family: "Title Custom Font", Verdana, Tahoma;
+	/*color: #00fa9e;*/
+	color: white;
+	font-size: 120%;
+	letter-spacing: 3px;
+	text-align: center;
+	bottom: 0%;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	/* display: block; */
+	font-size: auto;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	font-weight: bold;
+	margin-block-start: 0px;
+	margin-block-end: 0px;
 }
 
 h3.tituloArtistBig
@@ -895,6 +947,16 @@ a.discogs
 	float:left;
 }
 
+a.face
+{
+	height:30px;
+	width:30px;
+	cursor:pointer;
+	transition: opacity 1s ease-in-out;
+	background: url('../img/tickets/ambassadors/face.png') no-repeat;
+	float:left;
+}
+
 div.artistLeft
 {
 	float:left;
@@ -959,6 +1021,16 @@ div.artist
 	margin-left: 5px;
 	margin-right: 5px;
 	margin-bottom: 30px;
+	display: inline-table;
+}
+
+div.ambassadorTile
+{
+	height:200px;
+	width:200px;
+	background-color:green;
+	transition: opacity 1s ease-in-out;
+	margin-bottom: 20px;
 	display: inline-table;
 }
 
@@ -1326,6 +1398,72 @@ div.reek
 div.reek:hover
 {
 	background: url("../img/program/artists/reekHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.accessallareas
+{
+	background: url("../img/tickets/ambassadors/accessallareas.png") no-repeat;
+	background-size: contain;
+}
+
+div.solitare
+{
+	background: url("../img/tickets/ambassadors/solitare.png") no-repeat;
+	background-size: contain;
+}
+
+div.farina
+{
+	background: url("../img/tickets/ambassadors/farina.png") no-repeat;
+	background-size: contain;
+}
+
+div.harispapa
+{
+	background: url("../img/tickets/ambassadors/harispapa.png") no-repeat;
+	background-size: contain;
+}
+
+div.cogniscitiva
+{
+	background: url("../img/tickets/ambassadors/cogniscitiva.png") no-repeat;
+	background-size: contain;
+}
+
+div.pedro
+{
+	background: url("../img/tickets/ambassadors/pedro.png") no-repeat;
+	background-size: contain;
+}
+
+div.racheladylik
+{
+	background: url("../img/tickets/ambassadors/racheladylik.png") no-repeat;
+	background-size: contain;
+}
+
+div.ricardo
+{
+	background: url("../img/tickets/ambassadors/ricardo.png") no-repeat;
+	background-size: contain;
+}
+
+div.sagivraybi
+{
+	background: url("../img/tickets/ambassadors/sagivraybi.png") no-repeat;
+	background-size: contain;
+}
+
+div.svetlanavjerina
+{
+	background: url("../img/tickets/ambassadors/svetlanavjerina.png") no-repeat;
+	background-size: contain;
+}
+
+div.yumiko
+{
+	background: url("../img/tickets/ambassadors/yumiko.png") no-repeat;
 	background-size: contain;
 }
 
