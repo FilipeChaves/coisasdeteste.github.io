@@ -442,6 +442,15 @@ function xenomorphClick(){
 	window.history.pushState({"href":"xenomorph"}, null, '#xenomorph');
 }
 
+function atmosClick(){
+	removeCenter(46);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"atmos"}, null, '#atmos');
+}
+
 function removeCenter(nextID)
 {
 	var allTitleAreas = ['div.titulo-concept',
@@ -489,7 +498,8 @@ function removeCenter(nextID)
 						 'div.titulo-transwave',
 						 'div.titulo-botfb',
 						 'div.titulo-masa',
-						 'div.titulo-xenomorph'];
+						 'div.titulo-xenomorph',
+						 'div.titulo-atmos'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -536,7 +546,8 @@ function removeCenter(nextID)
 						'div.textArea-transwave',
 						'div.textArea-botfb',
 						'div.textArea-masa',
-						'div.textArea-xenomorph'];
+						'div.textArea-xenomorph',
+						'div.textArea-atmos'];
 	
 	if(nextID <= 25)
 		$('div.artistsCross').css('opacity', '0');
@@ -647,7 +658,8 @@ function removeDisplay(nextID)
 						 'div.titulo-transwave',
 						 'div.titulo-botfb',
 						 'div.titulo-masa',
-						 'div.titulo-xenomorph'];
+						 'div.titulo-xenomorph',
+						 'div.titulo-atmos'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -694,7 +706,8 @@ function removeDisplay(nextID)
 						'div.textArea-transwave',
 						'div.textArea-botfb',
 						'div.textArea-masa',
-						'div.textArea-xenomorph'];
+						'div.textArea-xenomorph',
+						'div.textArea-atmos'];
 	
 	var contdownHeight = $('div.countdown').height();
 	var titleHeight = $('div.titulo-concept').height();
@@ -935,6 +948,10 @@ function onLoadedPage(){
 	var nicesxs = $("div.textArea-xDream").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-humanBlue").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-transwave").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-botfb").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-masa").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-xenomorph").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-atmos").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	//.cursor.css({"background-image":"url(img/mac6scroll.png)"}); // MAC like scrollbar
 	
 	
@@ -1178,6 +1195,9 @@ function clickInCorrectTab(name){
 			break;
 		case 'xenomorph':
 			xenomorphClick();
+			break;
+		case 'atmos':
+			atmosClick();
 			break;
 	}
 }
