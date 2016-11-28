@@ -1425,6 +1425,18 @@ div.accessallareas
 	background-size: contain;
 }
 
+div.lojamaria
+{
+	background: url("../img/tickets/ambassadors/lojamaria.png") no-repeat;
+	background-size: contain;
+}
+
+div.ward
+{
+	background: url("../img/tickets/ambassadors/ward.png") no-repeat;
+	background-size: contain;
+}
+
 div.solitare
 {
 	background: url("../img/tickets/ambassadors/solitare.png") no-repeat;
