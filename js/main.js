@@ -451,6 +451,14 @@ function atmosClick(){
 	window.history.pushState({"href":"atmos"}, null, '#atmos');
 }
 
+function magusClick(){
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"magus"}, null, '#magus');
+}
+
 function removeCenter(nextID)
 {
 	var allTitleAreas = ['div.titulo-concept',
@@ -499,7 +507,8 @@ function removeCenter(nextID)
 						 'div.titulo-botfb',
 						 'div.titulo-masa',
 						 'div.titulo-xenomorph',
-						 'div.titulo-atmos'];
+						 'div.titulo-atmos',
+						 'div.titulo-magus'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -547,7 +556,8 @@ function removeCenter(nextID)
 						'div.textArea-botfb',
 						'div.textArea-masa',
 						'div.textArea-xenomorph',
-						'div.textArea-atmos'];
+						'div.textArea-atmos',
+						'div.textArea-magus'];
 	
 	if(nextID <= 25)
 		$('div.artistsCross').css('opacity', '0');
@@ -659,7 +669,8 @@ function removeDisplay(nextID)
 						 'div.titulo-botfb',
 						 'div.titulo-masa',
 						 'div.titulo-xenomorph',
-						 'div.titulo-atmos'];
+						 'div.titulo-atmos',
+						 'div.titulo-magus'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -707,7 +718,8 @@ function removeDisplay(nextID)
 						'div.textArea-botfb',
 						'div.textArea-masa',
 						'div.textArea-xenomorph',
-						'div.textArea-atmos'];
+						'div.textArea-atmos',
+						'div.textArea-magus'];
 	
 	var contdownHeight = $('div.countdown').height();
 	var titleHeight = $('div.titulo-concept').height();
@@ -1195,6 +1207,9 @@ function clickInCorrectTab(name){
 			break;
 		case 'atmos':
 			atmosClick();
+			break;
+		case 'magus':
+			magusClick();
 			break;
 	}
 }
