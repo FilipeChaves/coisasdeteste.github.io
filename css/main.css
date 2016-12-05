@@ -1028,6 +1028,7 @@ div.ambassadorTile
 {
 	height:200px;
 	width:200px;
+	background-position: left; 
 	background-color:green;
 	transition: opacity 1s ease-in-out;
 	margin-bottom: 20px;
@@ -1476,6 +1477,12 @@ div.harispapa
 div.cogniscitiva
 {
 	background: url("../img/tickets/ambassadors/cogniscitiva.png") no-repeat;
+	background-size: contain;
+}
+
+div.mortalhas
+{
+	background: url("../img/tickets/ambassadors/mortalhas.png") no-repeat;
 	background-size: contain;
 }
 
