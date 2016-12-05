@@ -452,6 +452,7 @@ function atmosClick(){
 }
 
 function magusClick(){
+	removeCenter(47);
 	removeActives();
 	
 	$('div.program').addClass('program-active');
