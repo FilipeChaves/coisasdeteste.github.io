@@ -227,7 +227,7 @@ h3.titulo-beat, h3.titulo-eat, h3.titulo-indoor, h3.titulo-noName, h3.titulo-log
 , h3.titulo-infinity, h3.titulo-xDream, h3.titulo-ticon, h3.titulo-reek, h3.titulo-miranda
 , h3.titulo-alexTolstey, h3.titulo-mullerMaichel, h3.titulo-delta, h3.titulo-spaceCat, h3.titulo-humanBlue
 , h3.titulo-transwave, h3.titulo-botfb, h3.titulo-masa, h3.titulo-xenomorph, h3.titulo-atmos, h3.titulo-magus
-, h3.titulo-antaro, h3.titulo-flux
+, h3.titulo-antaro, h3.titulo-flux, h3.titulo-castle
 {
 	font-family: "Title Custom Font", Verdana, Tahoma;
 	color: #fa0000;
@@ -370,7 +370,7 @@ div.textArea-concept, div.textArea-program, div.textArea-information, div.textAr
 div.textArea-indoor, div.textArea-noName, div.textArea-logicBomb, div.textArea-oforia, div.textArea-beat, div.textArea-eat
 , div.textArea-infinity, div.textArea-xDream, div.textArea-ticon, div.textArea-reek, div.textArea-miranda
 , div.textArea-alexTolstey, div.textArea-mullerMaichel, div.textArea-delta, div.textArea-spaceCat, div.textArea-humanBlue
-, div.textArea-transwave, div.textArea-botfb, div.textArea-masa, div.textArea-xenomorph, div.textArea-atmos, div.textArea-magus
+, div.textArea-transwave, div.textArea-botfb, div.textArea-masa, div.textArea-xenomorph, div.textArea-atmos, div.textArea-magus, div.textArea-castle
 , div.textArea-antaro, div.textArea-flux
 {
 	position: fixed;
@@ -1361,17 +1361,17 @@ div.transwave:hover
 	background-size: contain;
 }
 
-div.beatBig
-{
-	background: url("../img/program/artists/big/beat.png") no-repeat;
-	background-size: contain;
-}
-
 div.question
 {
 	background: url("../img/program/artists/question.png") no-repeat;
 	background-size: contain;
 	cursor: unset;
+}
+
+div.beatBig
+{
+	background: url("../img/program/artists/big/beat.png") no-repeat;
+	background-size: contain;
 }
 
 div.beat
@@ -1383,6 +1383,24 @@ div.beat
 div.beat:hover
 {
 	background: url("../img/program/artists/beatHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.castleBig
+{
+	background: url("../img/program/artists/big/castle.png") no-repeat;
+	background-size: contain;
+}
+
+div.castle
+{
+	background: url("../img/program/artists/castle.png") no-repeat;
+	background-size: contain;
+}
+
+div.castle:hover
+{
+	background: url("../img/program/artists/castleHover.png") no-repeat;
 	background-size: contain;
 }
 

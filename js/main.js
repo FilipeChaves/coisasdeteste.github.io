@@ -478,6 +478,15 @@ function fluxClick(){
 	window.history.pushState({"href":"flux"}, null, '#flux');
 }
 
+function castleClick(){
+	removeCenter(50);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"castle"}, null, '#castle');
+}
+
 function removeCenter(nextID)
 {
 	var allTitleAreas = ['div.titulo-concept',
@@ -529,7 +538,8 @@ function removeCenter(nextID)
 						 'div.titulo-atmos',
 						 'div.titulo-magus',
 						 'div.titulo-antaro',
-						 'div.titulo-flux'];
+						 'div.titulo-flux',
+						 'div.titulo-castle'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -580,7 +590,8 @@ function removeCenter(nextID)
 						'div.textArea-atmos',
 						'div.textArea-magus',
 						'div.textArea-antaro',
-						'div.textArea-flux'];
+						'div.textArea-flux',
+						'div.textArea-castle'];
 	
 	if(nextID <= 25)
 		$('div.artistsCross').css('opacity', '0');
@@ -695,7 +706,8 @@ function removeDisplay(nextID)
 						 'div.titulo-atmos',
 						 'div.titulo-magus',
 						 'div.titulo-antaro',
-						 'div.titulo-flux'];
+						 'div.titulo-flux',
+						 'div.titulo-castle'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -746,7 +758,8 @@ function removeDisplay(nextID)
 						'div.textArea-atmos',
 						'div.textArea-magus',
 						'div.textArea-antaro',
-						'div.textArea-flux'];
+						'div.textArea-flux',
+						'div.textArea-castle'];
 	
 	var contdownHeight = $('div.countdown').height();
 	var titleHeight = $('div.titulo-concept').height();
@@ -992,7 +1005,8 @@ function onLoadedPage(){
 	var nicesxs = $("div.textArea-xenomorph").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-atmos").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
 	var nicesxs = $("div.textArea-antaro").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
-	var nicesxs = $("div.textArea-flux").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
+	var nicesxs = $("div.textArea-flux").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});		
+	var nicesxs = $("div.textArea-castle").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
 	
 	$('div.textArea-buy').append("<div id=\"tkt-content\" style=\"width:96%; height:500px\"></div><img src=\"https://www.ticketea.pt/images/powered_by.png\" alt=\"ticketea\" />" +
 				"<p class=\"texto\"> In case you need assistance please contact us through the following email - <a href=\"mailto:tickets@znagathering.com\">tickets@znagathering.com</a>.</p>");
@@ -1245,6 +1259,9 @@ function clickInCorrectTab(name){
 			break;
 		case 'flux':
 			fluxClick();
+			break;
+		case 'castle':
+			castleClick();
 			break;
 	}
 }
