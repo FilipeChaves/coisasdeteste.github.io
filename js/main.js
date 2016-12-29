@@ -487,6 +487,107 @@ function castleClick(){
 	window.history.pushState({"href":"castle"}, null, '#castle');
 }
 
+function castleClick(){
+	removeCenter(50);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"castle"}, null, '#castle');
+}
+
+
+
+function anoebisClick(){
+	removeCenter(51);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"anoebis"}, null, '#anoebis');
+}
+
+function asherunClick(){
+	removeCenter(52);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"asherun"}, null, '#asherun');
+}
+
+function diogoClick(){
+	removeCenter(53);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"diogo"}, null, '#diogo');
+}
+
+function draekeClick(){
+	removeCenter(54);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"draeke"}, null, '#draeke');
+}
+
+function inadaClick(){
+	removeCenter(55);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"inada"}, null, '#inada');
+}
+
+function psaraClick(){
+	removeCenter(56);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"psara"}, null, '#psara');
+}
+
+function saiduClick(){
+	removeCenter(57);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"saidu"}, null, '#saidu');
+}
+
+function setidatClick(){
+	removeCenter(58);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"setidat"}, null, '#setidat');
+}
+
+function sunburnClick(){
+	removeCenter(59);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"sunburn"}, null, '#sunburn');
+}
+
+function tbClick(){
+	removeCenter(60);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"tb"}, null, '#tb');
+}
+
 function removeCenter(nextID)
 {
 	var allTitleAreas = ['div.titulo-concept',
@@ -539,7 +640,17 @@ function removeCenter(nextID)
 						 'div.titulo-magus',
 						 'div.titulo-antaro',
 						 'div.titulo-flux',
-						 'div.titulo-castle'];
+						 'div.titulo-castle',
+						 'div.titulo-anoebis',
+						 'div.titulo-asherun',
+						 'div.titulo-diogo',
+						 'div.titulo-draeke',
+						 'div.titulo-inada',
+						 'div.titulo-psara',
+						 'div.titulo-saidu',
+						 'div.titulo-setidat',
+						 'div.titulo-sunburn',
+						 'div.titulo-tb'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -591,7 +702,17 @@ function removeCenter(nextID)
 						'div.textArea-magus',
 						'div.textArea-antaro',
 						'div.textArea-flux',
-						'div.textArea-castle'];
+						'div.textArea-castle',
+						'div.textArea-anoebis',
+						'div.textArea-asherun',
+						'div.textArea-diogo',
+						'div.textArea-draeke',
+						'div.textArea-inada',
+						'div.textArea-psara',
+						'div.textArea-saidu',
+						'div.textArea-setidat',
+						'div.textArea-sunburn',
+						'div.textArea-tb'];
 	
 	if(nextID <= 25)
 		$('div.artistsCross').css('opacity', '0');
@@ -707,7 +828,17 @@ function removeDisplay(nextID)
 						 'div.titulo-magus',
 						 'div.titulo-antaro',
 						 'div.titulo-flux',
-						 'div.titulo-castle'];
+						 'div.titulo-castle',
+						 'div.titulo-anoebis',
+						 'div.titulo-asherun',
+						 'div.titulo-diogo',
+						 'div.titulo-draeke',
+						 'div.titulo-inada',
+						 'div.titulo-psara',
+						 'div.titulo-saidu',
+						 'div.titulo-setidat',
+						 'div.titulo-sunburn',
+						 'div.titulo-tb'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -759,7 +890,17 @@ function removeDisplay(nextID)
 						'div.textArea-magus',
 						'div.textArea-antaro',
 						'div.textArea-flux',
-						'div.textArea-castle'];
+						'div.textArea-castle',
+						'div.textArea-anoebis',
+						'div.textArea-asherun',
+						'div.textArea-diogo',
+						'div.textArea-draeke',
+						'div.textArea-inada',
+						'div.textArea-psara',
+						'div.textArea-saidu',
+						'div.textArea-setidat',
+						'div.textArea-sunburn',
+						'div.textArea-tb'];
 	
 	var contdownHeight = $('div.countdown').height();
 	var titleHeight = $('div.titulo-concept').height();
@@ -1262,6 +1403,36 @@ function clickInCorrectTab(name){
 			break;
 		case 'castle':
 			castleClick();
+			break;
+		case 'anoebis':
+			anoebisClick();
+			break;
+		case 'asherun':
+			asherunClick();
+			break;
+		case 'diogo':
+			diogoClick();
+			break;
+		case 'draeke':
+			draekeClick();
+			break;
+		case 'inada':
+			inadaClick();
+			break;
+		case 'psara':
+			psaraClick();
+			break;
+		case 'saidu':
+			saiduClick();
+			break;
+		case 'setidat':
+			setidatClick();
+			break;
+		case 'sunburn':
+			sunburnClick();
+			break;
+		case 'tb':
+			tbClick();
 			break;
 	}
 }

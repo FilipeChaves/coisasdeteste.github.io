@@ -227,7 +227,9 @@ h3.titulo-beat, h3.titulo-eat, h3.titulo-indoor, h3.titulo-noName, h3.titulo-log
 , h3.titulo-infinity, h3.titulo-xDream, h3.titulo-ticon, h3.titulo-reek, h3.titulo-miranda
 , h3.titulo-alexTolstey, h3.titulo-mullerMaichel, h3.titulo-delta, h3.titulo-spaceCat, h3.titulo-humanBlue
 , h3.titulo-transwave, h3.titulo-botfb, h3.titulo-masa, h3.titulo-xenomorph, h3.titulo-atmos, h3.titulo-magus
-, h3.titulo-antaro, h3.titulo-flux, h3.titulo-castle
+, h3.titulo-antaro, h3.titulo-flux, h3.titulo-castle, h3.titulo-anoebis, h3.titulo-asherun, h3.titulo-diogo
+, h3.titulo-draeke, h3.titulo-inada, h3.titulo-psara, h3.titulo-saidu, h3.titulo-setidat, h3.titulo-sunburn
+, h3.titulo-tb
 {
 	font-family: "Title Custom Font", Verdana, Tahoma;
 	color: #fa0000;
@@ -372,6 +374,9 @@ div.textArea-indoor, div.textArea-noName, div.textArea-logicBomb, div.textArea-o
 , div.textArea-alexTolstey, div.textArea-mullerMaichel, div.textArea-delta, div.textArea-spaceCat, div.textArea-humanBlue
 , div.textArea-transwave, div.textArea-botfb, div.textArea-masa, div.textArea-xenomorph, div.textArea-atmos, div.textArea-magus, div.textArea-castle
 , div.textArea-antaro, div.textArea-flux
+, div.textArea-anoebis, div.textArea-asherun, div.textArea-diogo
+, div.textArea-draeke, div.textArea-inada, div.textArea-psara, div.textArea-saidu
+, div.textArea-setidat, div.textArea-sunburn, div.textArea-tb
 {
 	position: fixed;
 	left:14.75%;
@@ -1493,6 +1498,193 @@ div.reek:hover
 	background: url("../img/program/artists/reekHover.png") no-repeat;
 	background-size: contain;
 }
+
+div.anoebisBig
+{
+	background: url("../img/program/artists/goa/big/anoebis.png") no-repeat;
+	background-size: contain;
+}
+
+div.anoebis
+{
+	background: url("../img/program/artists/goa/anoebis.png") no-repeat;
+	background-size: contain;
+}
+
+div.anoebis:hover
+{
+	background: url("../img/program/artists/goa/anoebisHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.asherunBig
+{
+	background: url("../img/program/artists/goa/big/asherun.png") no-repeat;
+	background-size: contain;
+}
+
+div.asherun
+{
+	background: url("../img/program/artists/goa/asherun.png") no-repeat;
+	background-size: contain;
+}
+
+div.asherun:hover
+{
+	background: url("../img/program/artists/goa/asherunHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.diogoBig
+{
+	background: url("../img/program/artists/goa/big/diogo.png") no-repeat;
+	background-size: contain;
+}
+
+div.diogo
+{
+	background: url("../img/program/artists/goa/diogo.png") no-repeat;
+	background-size: contain;
+}
+
+div.diogo:hover
+{
+	background: url("../img/program/artists/goa/diogoHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.draekeBig
+{
+	background: url("../img/program/artists/goa/big/draeke.png") no-repeat;
+	background-size: contain;
+}
+
+div.draeke
+{
+	background: url("../img/program/artists/goa/draeke.png") no-repeat;
+	background-size: contain;
+}
+
+div.draeke:hover
+{
+	background: url("../img/program/artists/goa/draekeHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.inadaBig
+{
+	background: url("../img/program/artists/goa/big/inada.png") no-repeat;
+	background-size: contain;
+}
+
+div.inada
+{
+	background: url("../img/program/artists/goa/inada.png") no-repeat;
+	background-size: contain;
+}
+
+div.inada:hover
+{
+	background: url("../img/program/artists/goa/inadaHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.psaraBig
+{
+	background: url("../img/program/artists/goa/big/psara.png") no-repeat;
+	background-size: contain;
+}
+
+div.psara
+{
+	background: url("../img/program/artists/goa/psara.png") no-repeat;
+	background-size: contain;
+}
+
+div.psara:hover
+{
+	background: url("../img/program/artists/goa/psaraHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.saiduBig
+{
+	background: url("../img/program/artists/goa/big/saidu.png") no-repeat;
+	background-size: contain;
+}
+
+div.saidu
+{
+	background: url("../img/program/artists/goa/saidu.png") no-repeat;
+	background-size: contain;
+}
+
+div.saidu:hover
+{
+	background: url("../img/program/artists/goa/saiduHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.setidatBig
+{
+	background: url("../img/program/artists/goa/big/setidat.png") no-repeat;
+	background-size: contain;
+}
+
+div.setidat
+{
+	background: url("../img/program/artists/goa/setidat.png") no-repeat;
+	background-size: contain;
+}
+
+div.setidat:hover
+{
+	background: url("../img/program/artists/goa/setidatHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.sunburnBig
+{
+	background: url("../img/program/artists/goa/big/sunburn.png") no-repeat;
+	background-size: contain;
+}
+
+div.sunburn
+{
+	background: url("../img/program/artists/goa/sunburn.png") no-repeat;
+	background-size: contain;
+}
+
+div.sunburn:hover
+{
+	background: url("../img/program/artists/goa/sunburnHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.tbBig
+{
+	background: url("../img/program/artists/goa/big/tb.png") no-repeat;
+	background-size: contain;
+}
+
+div.tb
+{
+	background: url("../img/program/artists/goa/tb.png") no-repeat;
+	background-size: contain;
+}
+
+div.tb:hover
+{
+	background: url("../img/program/artists/goa/tbHover.png") no-repeat;
+	background-size: contain;
+}
+
+
+
+
+
+
+
 
 div.accessallareas
 {
