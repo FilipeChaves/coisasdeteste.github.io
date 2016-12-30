@@ -1016,6 +1016,24 @@ div.artistsCross:hover
 	background: url('../img/program/artists/crossHover.png') no-repeat;
 }
 
+div.artistsGoaCross
+{
+	position: absolute;
+	height:30px;
+	width:30px;
+	cursor:pointer;
+	margin-left:13%;
+	transition: opacity 1s ease-in-out;
+	background: url('../img/program/artists/cross.png') no-repeat;
+	float:left;
+	z-index: 5;
+}
+
+div.artistsGoaCross:hover
+{
+	background: url('../img/program/artists/crossHover.png') no-repeat;
+}
+
 div.artist
 {
 	height:230px;

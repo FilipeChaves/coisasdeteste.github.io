@@ -714,8 +714,15 @@ function removeCenter(nextID)
 						'div.textArea-sunburn',
 						'div.textArea-tb'];
 	
-	if(nextID <= 25)
+	if(nextID <= 25){
 		$('div.artistsCross').css('opacity', '0');
+	}
+	if(nextID <= 50 || nextID > 60){
+		$('div.artistsGoaCross').css('opacity', '0');
+	}
+	if(nextID > 50 && nextID <= 60){
+		$('div.artistsCross').css('opacity', '0');
+	}
 	
 	for(var i = 0; i < allTextAreas.length; i++)
 	{
@@ -732,8 +739,11 @@ function removeCenter(nextID)
 				$('div.blackShadow').css('opacity', '100');
 				$(allTextAreas[nextID]).css('opacity', '100');
 				$(allTitleAreas[nextID]).css('opacity', '100');
-				if(nextID > 25){
+				if(nextID > 25 && nextID <= 50 || nextID > 60){
 					$('div.artistsCross').css('opacity', '100');
+				}
+				if(nextID > 50 && nextID <= 60){
+					$('div.artistsGoaCross').css('opacity', '100');
 				}
 			}, 200);
 			continue;
@@ -759,9 +769,17 @@ function SetTopAndHeight(nextID, titleName, textName)
 	$('div.blackShadow').css('height', (windowHeight - 20 - countdownHeight - menuSocialHeight) + "px");
 	
 	if(nextID > 25){
-		$('div.artistsCross').css('display', 'inline-block');
-		$('div.artistsCross').css('top', countdownHeight + 30 + "px");
-		$('div.artistsCross').css('left', (blackShadowWidth - 60) + "px");
+		if(nextID <= 50 || nextID > 60){
+			$('div.artistsCross').css('display', 'inline-block');
+			$('div.artistsCross').css('top', countdownHeight + 30 + "px");
+			$('div.artistsCross').css('left', (blackShadowWidth - 60) + "px");
+		}
+		else{
+			$('div.artistsGoaCross').css('display', 'inline-block');
+			$('div.artistsGoaCross').css('top', countdownHeight + 30 + "px");
+			$('div.artistsGoaCross').css('left', (blackShadowWidth - 60) + "px");
+		}
+		
 		$(textName).css('top', countdownHeight + 40 + "px");
 		$(textName).css('height', (windowHeight - 60 - countdownHeight - menuSocialHeight) + "px");
 		
@@ -911,8 +929,15 @@ function removeDisplay(nextID)
 		$(allTextAreas[allIdx]).css('display', 'none');
 		$(allTitleAreas[allIdx]).css('display', 'none');
 	}
-	if(nextID <= 25)
+	if(nextID <= 25){
 		$('div.artistsCross').css('display', 'none');
+	}
+	if(nextID <= 50 || nextID > 60){
+		$('div.artistsGoaCross').css('display', 'none');
+	}
+	if(nextID > 50 && nextID <= 60){
+		$('div.artistsCross').css('display', 'none');
+	}
 }
 
 function removeActives(){
