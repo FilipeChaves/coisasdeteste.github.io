@@ -576,7 +576,7 @@ function sunburnClick(){
 	
 	$('div.program').addClass('program-active');
 	fadeout();
-	window.history.pushState({"href":"sunburn"}, null, '#sunburn');
+	window.history.pushState({"href":"sunborn"}, null, '#sunborn');
 }
 
 function tbClick(){
@@ -1465,7 +1465,7 @@ function clickInCorrectTab(name){
 		case 'setidat':
 			setidatClick();
 			break;
-		case 'sunburn':
+		case 'sunborn':
 			sunburnClick();
 			break;
 		case 'tb':
