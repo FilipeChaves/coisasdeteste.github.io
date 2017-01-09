@@ -588,6 +588,24 @@ function tbClick(){
 	window.history.pushState({"href":"tb"}, null, '#tb');
 }
 
+function yutaClick(){
+	removeCenter(61);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"yuta"}, null, '#yuta');
+}
+
+function sheybaClick(){
+	removeCenter(62);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"sheyba"}, null, '#sheyba');
+}
+
 function removeCenter(nextID)
 {
 	var allTitleAreas = ['div.titulo-concept',
@@ -650,7 +668,9 @@ function removeCenter(nextID)
 						 'div.titulo-saidu',
 						 'div.titulo-setidat',
 						 'div.titulo-sunburn',
-						 'div.titulo-tb'];
+						 'div.titulo-tb',
+						 'div.titulo-yuta',
+						 'div.titulo-sheyba'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -712,15 +732,17 @@ function removeCenter(nextID)
 						'div.textArea-saidu',
 						'div.textArea-setidat',
 						'div.textArea-sunburn',
-						'div.textArea-tb'];
+						'div.textArea-tb',
+						'div.textArea-yuta',
+						'div.textArea-sheyba'];
 	
 	if(nextID <= 25){
 		$('div.artistsCross').css('opacity', '0');
 	}
-	if(nextID <= 50 || nextID > 60){
+	if(nextID <= 50 || nextID > 61){
 		$('div.artistsGoaCross').css('opacity', '0');
 	}
-	if(nextID > 50 && nextID <= 60){
+	if(nextID > 50 && nextID <= 61){
 		$('div.artistsCross').css('opacity', '0');
 	}
 	
@@ -739,10 +761,10 @@ function removeCenter(nextID)
 				$('div.blackShadow').css('opacity', '100');
 				$(allTextAreas[nextID]).css('opacity', '100');
 				$(allTitleAreas[nextID]).css('opacity', '100');
-				if(nextID > 25 && nextID <= 50 || nextID > 60){
+				if(nextID > 25 && nextID <= 50 || nextID > 61){
 					$('div.artistsCross').css('opacity', '100');
 				}
-				if(nextID > 50 && nextID <= 60){
+				if(nextID > 50 && nextID <= 61){
 					$('div.artistsGoaCross').css('opacity', '100');
 				}
 			}, 200);
@@ -769,7 +791,7 @@ function SetTopAndHeight(nextID, titleName, textName)
 	$('div.blackShadow').css('height', (windowHeight - 20 - countdownHeight - menuSocialHeight) + "px");
 	
 	if(nextID > 25){
-		if(nextID <= 50 || nextID > 60){
+		if(nextID <= 50 || nextID > 61){
 			$('div.artistsCross').css('display', 'inline-block');
 			$('div.artistsCross').css('top', countdownHeight + 30 + "px");
 			$('div.artistsCross').css('left', (blackShadowWidth - 60) + "px");
@@ -856,7 +878,9 @@ function removeDisplay(nextID)
 						 'div.titulo-saidu',
 						 'div.titulo-setidat',
 						 'div.titulo-sunburn',
-						 'div.titulo-tb'];
+						 'div.titulo-tb',
+						 'div.titulo-yuta',
+						 'div.titulo-sheyba'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -918,7 +942,9 @@ function removeDisplay(nextID)
 						'div.textArea-saidu',
 						'div.textArea-setidat',
 						'div.textArea-sunburn',
-						'div.textArea-tb'];
+						'div.textArea-tb',
+						'div.textArea-yuta',
+						'div.textArea-sheyba'];
 	
 	var contdownHeight = $('div.countdown').height();
 	var titleHeight = $('div.titulo-concept').height();
@@ -932,10 +958,10 @@ function removeDisplay(nextID)
 	if(nextID <= 25){
 		$('div.artistsCross').css('display', 'none');
 	}
-	if(nextID <= 50 || nextID > 60){
+	if(nextID <= 50 || nextID > 61){
 		$('div.artistsGoaCross').css('display', 'none');
 	}
-	if(nextID > 50 && nextID <= 60){
+	if(nextID > 50 && nextID <= 61){
 		$('div.artistsCross').css('display', 'none');
 	}
 }
@@ -1185,6 +1211,8 @@ function onLoadedPage(){
 	var nicesxs = $("div.textArea-setidat").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
 	var nicesxs = $("div.textArea-sunburn").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});		
 	var nicesxs = $("div.textArea-tb").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
+	var nicesxs = $("div.textArea-yuta").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});		
+	var nicesxs = $("div.textArea-sheyba").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
 
 	$('div.textArea-buy').append("<div id=\"tkt-content\" style=\"width:96%; height:500px\"></div><img src=\"https://www.ticketea.pt/images/powered_by.png\" alt=\"ticketea\" />" +
 				"<p class=\"texto\"> In case you need assistance please contact us through the following email - <a href=\"mailto:tickets@znagathering.com\">tickets@znagathering.com</a>.</p>");
@@ -1470,6 +1498,12 @@ function clickInCorrectTab(name){
 			break;
 		case 'tb':
 			tbClick();
+			break;
+		case 'yuta':
+			yutaClick();
+			break;
+		case 'sheyba':
+			sheybaClick();
 			break;
 	}
 }
