@@ -615,6 +615,15 @@ function moonstoneClick(){
 	window.history.pushState({"href":"moonstone"}, null, '#moonstone');
 }
 
+function lukeClick(){
+	removeCenter(64);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"luke"}, null, '#luke');
+}
+
 function removeCenter(nextID)
 {
 	var allTitleAreas = ['div.titulo-concept',
@@ -680,7 +689,8 @@ function removeCenter(nextID)
 						 'div.titulo-tb',
 						 'div.titulo-yuta',
 						 'div.titulo-sheyba',
-						 'div.titulo-moonstone'];
+						 'div.titulo-moonstone',
+						 'div.titulo-luke'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -745,7 +755,8 @@ function removeCenter(nextID)
 						'div.textArea-tb',
 						'div.textArea-yuta',
 						'div.textArea-sheyba',
-						'div.textArea-moonstone'];
+						'div.textArea-moonstone',
+						'div.textArea-luke'];
 	
 	if(nextID <= 25){
 		$('div.artistsCross').css('opacity', '0');
@@ -892,7 +903,8 @@ function removeDisplay(nextID)
 						 'div.titulo-tb',
 						 'div.titulo-yuta',
 						 'div.titulo-sheyba',
-						 'div.titulo-moonstone'];
+						 'div.titulo-moonstone',
+						 'div.titulo-luke'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -957,7 +969,8 @@ function removeDisplay(nextID)
 						'div.textArea-tb',
 						'div.textArea-yuta',
 						'div.textArea-sheyba',
-						'div.textArea-moonstone'];
+						'div.textArea-moonstone',
+						'div.textArea-luke'];
 	
 	var contdownHeight = $('div.countdown').height();
 	var titleHeight = $('div.titulo-concept').height();
@@ -1521,6 +1534,9 @@ function clickInCorrectTab(name){
 			break;
 		case 'moonstone':
 			moonstoneClick();
+			break;
+		case 'luke':
+			lukeClick();
 			break;
 	}
 }
