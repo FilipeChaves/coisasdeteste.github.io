@@ -624,7 +624,7 @@ function lukeClick(){
 	window.history.pushState({"href":"luke"}, null, '#luke');
 }
 
-function lukeClick(){
+function manMadeClick(){
 	removeCenter(65);
 	removeActives();
 	
