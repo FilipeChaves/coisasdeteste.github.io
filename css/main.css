@@ -229,7 +229,7 @@ h3.titulo-beat, h3.titulo-eat, h3.titulo-indoor, h3.titulo-noName, h3.titulo-log
 , h3.titulo-transwave, h3.titulo-botfb, h3.titulo-masa, h3.titulo-xenomorph, h3.titulo-atmos, h3.titulo-magus
 , h3.titulo-antaro, h3.titulo-flux, h3.titulo-castle, h3.titulo-anoebis, h3.titulo-asherun, h3.titulo-diogo
 , h3.titulo-draeke, h3.titulo-inada, h3.titulo-psara, h3.titulo-saidu, h3.titulo-setidat, h3.titulo-sunburn
-, h3.titulo-tb, h3.titulo-yuta, h3.titulo-sheyba, h3.titulo-moonstone, h3.titulo-luke
+, h3.titulo-tb, h3.titulo-yuta, h3.titulo-sheyba, h3.titulo-moonstone, h3.titulo-luke, h3.titulo-manMade
 {
 	font-family: "Title Custom Font", Verdana, Tahoma;
 	color: #fa0000;
@@ -376,7 +376,7 @@ div.textArea-indoor, div.textArea-noName, div.textArea-logicBomb, div.textArea-o
 , div.textArea-antaro, div.textArea-flux, div.textArea-anoebis, div.textArea-asherun, div.textArea-diogo
 , div.textArea-draeke, div.textArea-inada, div.textArea-psara, div.textArea-saidu
 , div.textArea-setidat, div.textArea-sunburn, div.textArea-tb, div.textArea-yuta, div.textArea-sheyba, div.textArea-moonstone
-, div.textArea-luke
+, div.textArea-luke, div.textArea-manMade
 {
 	position: fixed;
 	left:14.75%;
@@ -1532,6 +1532,24 @@ div.luke
 div.luke:hover
 {
 	background: url("../img/program/artists/lukeHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.manMadeBig
+{
+	background: url("../img/program/artists/big/manMade.png") no-repeat;
+	background-size: contain;
+}
+
+div.manMade
+{
+	background: url("../img/program/artists/manMade.png") no-repeat;
+	background-size: contain;
+}
+
+div.manMade:hover
+{
+	background: url("../img/program/artists/manMadeHover.png") no-repeat;
 	background-size: contain;
 }
 
