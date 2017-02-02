@@ -661,7 +661,7 @@ div.dataText
 	background: url('../img/social/dataText.png') no-repeat;
 	position: absolute;
 	bottom: 0px;
-	left: 20%;
+	left: 18%;
 	width: 175px;
 	height: 65px;
 	transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s, width 1.5s, height 1.5s ease-in-out;
@@ -674,7 +674,7 @@ div.localText
 	background: url('../img/social/localText.png') no-repeat;
 	position: absolute;
 	bottom:0px;
-	right: 20%;
+	right: 18%;
 	width: 175px;
 	height: 65px;
 	transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s, width 1.5s, height 1.5s ease-in-out;
@@ -2717,7 +2717,6 @@ div.ambassadorBig {
 		width: 111px;
 	}
 }
-
 
 
 
