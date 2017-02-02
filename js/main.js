@@ -1281,18 +1281,7 @@ function onLoadedPage(){
 	}
 	countdown();
 	initializaPhoto();
-	setTimeout( function() {
-		var thisRef = window.location.href;
-		if(thisRef.includes("#")){
-			var splittedUrl = thisRef.split('#');
-			if(splittedUrl.length < 2)
-				return;
-			
-			clickInCorrectTab(splittedUrl[1]);
-		}else{
-			window.history.pushState({"href":""}, null, '#');
-		}
-	}, 400);
+
 	
 	var isMobile = false; //initiate as false
 	// device detection
@@ -1312,7 +1301,28 @@ function onLoadedPage(){
 		$('div.informationSymbol, div.gallerySymbol, div.ticketsSymbol').remove();
 		$('div.znaSymbol').remove();
 		$('div.delMobile').remove();
-		conceptClick();
+		window.location.href;
+		if(thisRef.includes("#")){
+			var splittedUrl = thisRef.split('#');
+			if(splittedUrl.length < 2)
+				conceptClick();
+			else{
+				clickInCorrectTab(splittedUrl[1]);
+			}
+		}else{
+			setTimeout( function() {
+				var thisRef = window.location.href;
+				if(thisRef.includes("#")){
+					var splittedUrl = thisRef.split('#');
+					if(splittedUrl.length < 2)
+						return;
+					
+					clickInCorrectTab(splittedUrl[1]);
+				}else{
+					window.history.pushState({"href":""}, null, '#');
+				}
+			}, 400);
+		}
 	}
 
 
