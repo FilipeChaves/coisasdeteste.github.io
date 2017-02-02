@@ -1305,24 +1305,28 @@ function onLoadedPage(){
 		if(thisRef.includes("#")){
 			var splittedUrl = thisRef.split('#');
 			if(splittedUrl.length < 2)
+			{
 				conceptClick();
+			}
 			else{
 				clickInCorrectTab(splittedUrl[1]);
 			}
-		}else{
-			setTimeout( function() {
-				var thisRef = window.location.href;
-				if(thisRef.includes("#")){
-					var splittedUrl = thisRef.split('#');
-					if(splittedUrl.length < 2)
-						return;
-					
-					clickInCorrectTab(splittedUrl[1]);
-				}else{
-					window.history.pushState({"href":""}, null, '#');
-				}
-			}, 400);
 		}
+	}
+	else
+	{
+		setTimeout( function() {
+			var thisRef = window.location.href;
+			if(thisRef.includes("#")){
+				var splittedUrl = thisRef.split('#');
+				if(splittedUrl.length < 2)
+					return;
+				
+				clickInCorrectTab(splittedUrl[1]);
+			}else{
+				window.history.pushState({"href":""}, null, '#');
+			}
+		}, 400);
 	}
 
 
