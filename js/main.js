@@ -1311,7 +1311,7 @@ function onLoadedPage(){
 		$('div.conceptSymbol, div.locationSymbol, div.programSymbol').remove();
 		$('div.informationSymbol, div.gallerySymbol, div.ticketsSymbol').remove();
 		$('div.znaSymbol').remove();
-		
+		$('div.delMobile').remove();
 		conceptClick();
 	}
 
