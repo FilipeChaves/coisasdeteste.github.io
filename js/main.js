@@ -1302,15 +1302,14 @@ function onLoadedPage(){
 		$('div.znaSymbol').remove();
 		$('div.delMobile').remove();
 		window.location.href;
-		if(thisRef.includes("#")){
-			var splittedUrl = thisRef.split('#');
-			if(splittedUrl.length < 2)
-			{
-				conceptClick();
-			}
-			else{
-				clickInCorrectTab(splittedUrl[1]);
-			}
+		var splittedUrl = thisRef.split('#');
+		if(splittedUrl.length < 2)
+		{
+			conceptClick();
+		}
+		else
+		{
+			clickInCorrectTab(splittedUrl[1]);
 		}
 	}
 	else
