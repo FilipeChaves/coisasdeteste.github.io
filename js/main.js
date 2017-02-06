@@ -1301,7 +1301,8 @@ function onLoadedPage(){
 		$('div.informationSymbol, div.gallerySymbol, div.ticketsSymbol').remove();
 		$('div.znaSymbol').remove();
 		$('div.delMobile').remove();
-		var splittedUrl = window.location.href.split('#');
+		window.location.href;
+		var splittedUrl = thisRef.split('#');
 		if(splittedUrl.length < 2)
 		{
 			conceptClick();
