@@ -2717,7 +2717,8 @@ div.ambassadorBig {
 		width: 111px;
 	}
 }
-@media only screen and (min-resolution: 117dpi) and (max-resolution: 119dpi), only screen and (min-resolution: 131dpi) and (max-resolution: 133dpi), only screen and (min-resolution: 145dpi) and (max-resolution: 154dpi), only screen and (min-resolution: 162dpi) and (max-resolution: 164dpi), only screen and (min-resolution: 169dpi) {
+
+@media screen and (max-width: 760px) {
 
 	div.conceptSymbol, div.locationSymbol, div.gallerySymbol,
 	div.informationSymbol, div.programSymbol, div.ticketsSymbol,
@@ -2860,8 +2861,6 @@ div.ambassadorBig {
 		background-repeat: no-repeat;
 	}
 }
-@media only screen and (min-resolution: 165dpi) and (max-resolution: 168dpi), only screen and (min-resolution: 155dpi) and (max-resolution: 160dpi), only screen and (min-resolution: 134dpi) and (max-resolution: 144dpi), only screen and (min-resolution: 120dpi) and (max-resolution: 130dpi), only screen and (max-resolution: 116dpi) {
-  /* Your click-specific css goes here */
-}
+
 
 
