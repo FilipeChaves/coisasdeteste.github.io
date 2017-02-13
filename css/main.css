@@ -230,7 +230,7 @@ h3.titulo-beat, h3.titulo-eat, h3.titulo-indoor, h3.titulo-noName, h3.titulo-log
 , h3.titulo-antaro, h3.titulo-flux, h3.titulo-castle, h3.titulo-anoebis, h3.titulo-asherun, h3.titulo-diogo
 , h3.titulo-draeke, h3.titulo-inada, h3.titulo-psara, h3.titulo-saidu, h3.titulo-setidat, h3.titulo-sunburn
 , h3.titulo-tb, h3.titulo-yuta, h3.titulo-sheyba, h3.titulo-moonstone, h3.titulo-luke, h3.titulo-manMade
-, h3.titulo-neuromotor
+, h3.titulo-neuromotor, h3.titulo-bim
 {
 	font-family: "Title Custom Font", Verdana, Tahoma;
 	color: #fa0000;
@@ -377,7 +377,7 @@ div.textArea-indoor, div.textArea-noName, div.textArea-logicBomb, div.textArea-o
 , div.textArea-antaro, div.textArea-flux, div.textArea-anoebis, div.textArea-asherun, div.textArea-diogo
 , div.textArea-draeke, div.textArea-inada, div.textArea-psara, div.textArea-saidu
 , div.textArea-setidat, div.textArea-sunburn, div.textArea-tb, div.textArea-yuta, div.textArea-sheyba, div.textArea-moonstone
-, div.textArea-luke, div.textArea-manMade, div.textArea-neuromotor
+, div.textArea-luke, div.textArea-manMade, div.textArea-neuromotor, div.textArea-bim
 {
 	position: fixed;
 	left:14.75%;
@@ -696,6 +696,16 @@ div.busTicketsInfo
 	height:86px;
 	width: 380px;
 	background: url('../img/tickets/ticketsInfo/busTicketsInfo.png') no-repeat;
+	background-size: contain;
+}
+
+div.timeTable
+{
+	margin-right: 10px;
+	margin-top: 10px;
+	height:380px;
+	width: 380px;
+	background: url('../img/information/useful/timeTable.png') no-repeat;
 	background-size: contain;
 }
 
@@ -1569,6 +1579,24 @@ div.neuromotor
 div.neuromotor:hover
 {
 	background: url("../img/program/artists/neuromotorHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.bimBig
+{
+	background: url("../img/program/artists/big/bim.png") no-repeat;
+	background-size: contain;
+}
+
+div.bim
+{
+	background: url("../img/program/artists/bim.png") no-repeat;
+	background-size: contain;
+}
+
+div.bim:hover
+{
+	background: url("../img/program/artists/bimHover.png") no-repeat;
 	background-size: contain;
 }
 
