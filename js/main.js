@@ -1604,6 +1604,9 @@ function clickInCorrectTab(name){
 		case 'bim':
 			bimClick();
 			break;
+		case 'mapusa':
+			mapusaClick();
+			break;
 	}
 }
 
