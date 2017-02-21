@@ -1161,6 +1161,24 @@ div.magus:hover
 	background-size: contain;
 }
 
+div.mapusaBig
+{
+	background: url("../img/program/artists/big/mapusa.png") no-repeat;
+	background-size: contain;
+}
+
+div.mapusa
+{
+	background: url("../img/program/artists/mapusa.png") no-repeat;
+	background-size: contain;
+}
+
+div.mapusa:hover
+{
+	background: url("../img/program/artists/mapusaHover.png") no-repeat;
+	background-size: contain;
+}
+
 div.atmosBig
 {
 	background: url("../img/program/artists/big/atmos.png") no-repeat;

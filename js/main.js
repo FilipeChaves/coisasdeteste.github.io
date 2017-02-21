@@ -651,6 +651,15 @@ function bimClick(){
 	window.history.pushState({"href":"bim"}, null, '#bim');
 }
 
+function mapusaClick(){
+	removeCenter(68);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"mapusa"}, null, '#mapusa');
+}
+
 function removeCenter(nextID)
 {
 	var allTitleAreas = ['div.titulo-concept',
@@ -720,7 +729,8 @@ function removeCenter(nextID)
 						 'div.titulo-luke',
 						 'div.titulo-manMade',
 						 'div.titulo-neuromotor',
-						 'div.titulo-bim'];
+						 'div.titulo-bim',
+						 'div.titulo-mapusa'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -789,7 +799,8 @@ function removeCenter(nextID)
 						'div.textArea-luke',
 						'div.textArea-manMade',
 						'div.textArea-neuromotor',
-						'div.textArea-bim'];
+						'div.textArea-bim',
+						'div.textArea-mapusa'];
 	
 	if(nextID <= 25){
 		$('div.artistsCross').css('opacity', '0');
@@ -940,7 +951,8 @@ function removeDisplay(nextID)
 						 'div.titulo-luke',
 						 'div.titulo-manMade',
 						 'div.titulo-neuromotor',
-						 'div.titulo-bim'];
+						 'div.titulo-bim',
+						 'div.titulo-mapusa'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -1009,7 +1021,8 @@ function removeDisplay(nextID)
 						'div.textArea-luke',
 						'div.textArea-manMade',
 						'div.textArea-neuromotor',
-						'div.textArea-bim'];
+						'div.textArea-bim',
+						'div.textArea-mapusa'];
 	
 	var contdownHeight = $('div.countdown').height();
 	var titleHeight = $('div.titulo-concept').height();
