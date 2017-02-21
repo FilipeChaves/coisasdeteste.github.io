@@ -2093,6 +2093,11 @@ div.chilloutBig{
 	background-size: contain;
 }
 
+div.zarazBig{
+	background: url('../img/program/artists/deco/zaraz.png') no-repeat;
+	background-size: contain;
+}
+
 div.dancefloorBig{
 	background: url('../img/program/big/dancefloor.png') no-repeat;
 	background-size: contain;
