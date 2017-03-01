@@ -660,6 +660,15 @@ function mapusaClick(){
 	window.history.pushState({"href":"mapusa"}, null, '#mapusa');
 }
 
+function sybClick(){
+	removeCenter(69);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"syb"}, null, '#syb');
+}
+
 function removeCenter(nextID)
 {
 	var allTitleAreas = ['div.titulo-concept',
@@ -730,7 +739,8 @@ function removeCenter(nextID)
 						 'div.titulo-manMade',
 						 'div.titulo-neuromotor',
 						 'div.titulo-bim',
-						 'div.titulo-mapusa'];
+						 'div.titulo-mapusa',
+						 'div.titulo-syb'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -800,7 +810,8 @@ function removeCenter(nextID)
 						'div.textArea-manMade',
 						'div.textArea-neuromotor',
 						'div.textArea-bim',
-						'div.textArea-mapusa'];
+						'div.textArea-mapusa',
+						'div.textArea-syb'];
 	
 	if(nextID <= 25){
 		$('div.artistsCross').css('opacity', '0');
@@ -952,7 +963,8 @@ function removeDisplay(nextID)
 						 'div.titulo-manMade',
 						 'div.titulo-neuromotor',
 						 'div.titulo-bim',
-						 'div.titulo-mapusa'];
+						 'div.titulo-mapusa',
+						 'div.titulo-syb'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -1022,7 +1034,8 @@ function removeDisplay(nextID)
 						'div.textArea-manMade',
 						'div.textArea-neuromotor',
 						'div.textArea-bim',
-						'div.textArea-mapusa'];
+						'div.textArea-mapusa',
+						'div.textArea-syb'];
 	
 	var contdownHeight = $('div.countdown').height();
 	var titleHeight = $('div.titulo-concept').height();
@@ -1295,8 +1308,9 @@ function onLoadedPage(){
 	var nicesxs = $("div.textArea-luke").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
 	var nicesxs = $("div.textArea-manMade").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
 	var nicesxs = $("div.textArea-neuromotor").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
-	var nicesxs = $("div.textArea-bim").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});		
+	var nicesxs = $("div.textArea-bim").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
 	var nicesxs = $("div.textArea-mapusa").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
+	var nicesxs = $("div.textArea-syb").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
 
 	$('div.textArea-buy').append("<div id=\"tkt-content\" style=\"width:96%; height:500px\"></div><img src=\"https://www.ticketea.pt/images/powered_by.png\" alt=\"ticketea\" />" +
 				"<p class=\"texto\"> In case you need assistance please contact us through the following email - <a href=\"mailto:tickets@znagathering.com\">tickets@znagathering.com</a>.</p>");
@@ -1606,6 +1620,9 @@ function clickInCorrectTab(name){
 			break;
 		case 'mapusa':
 			mapusaClick();
+			break;
+		case 'syb':
+			sybClick();
 			break;
 	}
 }
