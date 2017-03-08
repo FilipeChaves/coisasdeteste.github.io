@@ -230,7 +230,12 @@ h3.titulo-beat, h3.titulo-eat, h3.titulo-indoor, h3.titulo-noName, h3.titulo-log
 , h3.titulo-antaro, h3.titulo-flux, h3.titulo-castle, h3.titulo-anoebis, h3.titulo-asherun, h3.titulo-diogo
 , h3.titulo-draeke, h3.titulo-inada, h3.titulo-psara, h3.titulo-saidu, h3.titulo-setidat, h3.titulo-sunburn
 , h3.titulo-tb, h3.titulo-yuta, h3.titulo-sheyba, h3.titulo-moonstone, h3.titulo-luke, h3.titulo-manMade
-, h3.titulo-neuromotor, h3.titulo-bim, h3.titulo-mapusa, h3.titulo-syb
+, h3.titulo-neuromotor, h3.titulo-bim, h3.titulo-mapusa, h3.titulo-syb,h3.titulo-allix
+,h3.titulo-defender,h3.titulo-desterronics,h3.titulo-high,h3.titulo-kinnara,h3.titulo-fishimself
+,h3.titulo-green,h3.titulo-mijinko,h3.titulo-las,h3.titulo-nois,h3.titulo-plurgrim,h3.titulo-psayagata
+,h3.titulo-robin,h3.titulo-selecta,h3.titulo-sergio,h3.titulo-stereo,h3.titulo-steve,h3.titulo-tajmahal
+,h3.titulo-wacamolo,h3.titulo-waves,h3.titulo-xtigma,h3.titulo-yumii,h3.titulo-holeg,h3.titulo-illuminus,
+h3.titulo-gabi,h3.titulo-nashira
 {
 	font-family: "Title Custom Font", Verdana, Tahoma;
 	color: #fa0000;
@@ -378,6 +383,11 @@ div.textArea-indoor, div.textArea-noName, div.textArea-logicBomb, div.textArea-o
 , div.textArea-draeke, div.textArea-inada, div.textArea-psara, div.textArea-saidu
 , div.textArea-setidat, div.textArea-sunburn, div.textArea-tb, div.textArea-yuta, div.textArea-sheyba, div.textArea-moonstone
 , div.textArea-luke, div.textArea-manMade, div.textArea-neuromotor, div.textArea-bim, div.textArea-mapusa, div.textArea-syb
+, div.textArea-allix, div.textArea-defender,div.textArea-desterronics,div.textArea-high,div.textArea-kinnara,div.textArea-fishimself
+, div.textArea-green, div.textArea-mijinko,div.textArea-las,div.textArea-nois,div.textArea-plurgrim,div.textArea-psayagata
+, div.textArea-robin, div.textArea-selecta,div.textArea-sergio,div.textArea-stereo,div.textArea-steve,div.textArea-tajmahal
+, div.textArea-wacamolo, div.textArea-waves,div.textArea-xtigma,div.textArea-yumii,div.textArea-holeg,div.textArea-illuminus
+, div.textArea-gabi, div.textArea-nashira
 {
 	position: fixed;
 	left:14.75%;
@@ -1870,10 +1880,473 @@ div.yuta:hover
 	background-size: contain;
 }
 
+div.allixBig
+{
+	background: url("../img/program/artists/chillout/big/allix.png") no-repeat;
+	background-size: contain;
+}
 
+div.allix
+{
+	background: url("../img/program/artists/chillout/allix.png") no-repeat;
+	background-size: contain;
+}
 
+div.allix:hover
+{
+	background: url("../img/program/artists/chillout/allixHover.png") no-repeat;
+	background-size: contain;
+}
 
+div.defenderBig
+{
+	background: url("../img/program/artists/chillout/big/defender.png") no-repeat;
+	background-size: contain;
+}
 
+div.defender
+{
+	background: url("../img/program/artists/chillout/defender.png") no-repeat;
+	background-size: contain;
+}
+
+div.defender:hover
+{
+	background: url("../img/program/artists/chillout/defenderHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.desterronicsBig
+{
+	background: url("../img/program/artists/chillout/big/desterronics.png") no-repeat;
+	background-size: contain;
+}
+
+div.desterronics
+{
+	background: url("../img/program/artists/chillout/desterronics.png") no-repeat;
+	background-size: contain;
+}
+
+div.desterronics:hover
+{
+	background: url("../img/program/artists/chillout/desterronicsHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.highBig
+{
+	background: url("../img/program/artists/chillout/big/high.png") no-repeat;
+	background-size: contain;
+}
+
+div.high
+{
+	background: url("../img/program/artists/chillout/high.png") no-repeat;
+	background-size: contain;
+}
+
+div.high:hover
+{
+	background: url("../img/program/artists/chillout/highHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.kinnaraBig
+{
+	background: url("../img/program/artists/chillout/big/kinnara.png") no-repeat;
+	background-size: contain;
+}
+
+div.kinnara
+{
+	background: url("../img/program/artists/chillout/kinnara.png") no-repeat;
+	background-size: contain;
+}
+
+div.kinnara:hover
+{
+	background: url("../img/program/artists/chillout/kinnaraHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.fishimselfBig
+{
+	background: url("../img/program/artists/chillout/big/fishimself.png") no-repeat;
+	background-size: contain;
+}
+
+div.fishimself
+{
+	background: url("../img/program/artists/chillout/fishimself.png") no-repeat;
+	background-size: contain;
+}
+
+div.fishimself:hover
+{
+	background: url("../img/program/artists/chillout/fishimselfHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.greenBig
+{
+	background: url("../img/program/artists/chillout/big/green.png") no-repeat;
+	background-size: contain;
+}
+
+div.green
+{
+	background: url("../img/program/artists/chillout/green.png") no-repeat;
+	background-size: contain;
+}
+
+div.green:hover
+{
+	background: url("../img/program/artists/chillout/greenHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.mijinkoBig
+{
+	background: url("../img/program/artists/chillout/big/mijinko.png") no-repeat;
+	background-size: contain;
+}
+
+div.mijinko
+{
+	background: url("../img/program/artists/chillout/mijinko.png") no-repeat;
+	background-size: contain;
+}
+
+div.mijinko:hover
+{
+	background: url("../img/program/artists/chillout/mijinkoHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.lasBig
+{
+	background: url("../img/program/artists/chillout/big/las.png") no-repeat;
+	background-size: contain;
+}
+
+div.las
+{
+	background: url("../img/program/artists/chillout/las.png") no-repeat;
+	background-size: contain;
+}
+
+div.las:hover
+{
+	background: url("../img/program/artists/chillout/lasHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.noisBig
+{
+	background: url("../img/program/artists/chillout/big/nois.png") no-repeat;
+	background-size: contain;
+}
+
+div.nois
+{
+	background: url("../img/program/artists/chillout/nois.png") no-repeat;
+	background-size: contain;
+}
+
+div.nois:hover
+{
+	background: url("../img/program/artists/chillout/noisHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.plurgrimBig
+{
+	background: url("../img/program/artists/chillout/big/plurgrim.png") no-repeat;
+	background-size: contain;
+}
+
+div.plurgrim
+{
+	background: url("../img/program/artists/chillout/plurgrim.png") no-repeat;
+	background-size: contain;
+}
+
+div.plurgrim:hover
+{
+	background: url("../img/program/artists/chillout/plurgrimHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.psayagataBig
+{
+	background: url("../img/program/artists/chillout/big/psayagata.png") no-repeat;
+	background-size: contain;
+}
+
+div.psayagata
+{
+	background: url("../img/program/artists/chillout/psayagata.png") no-repeat;
+	background-size: contain;
+}
+
+div.psayagata:hover
+{
+	background: url("../img/program/artists/chillout/psayagataHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.robinBig
+{
+	background: url("../img/program/artists/chillout/big/robin.png") no-repeat;
+	background-size: contain;
+}
+
+div.robin
+{
+	background: url("../img/program/artists/chillout/robin.png") no-repeat;
+	background-size: contain;
+}
+
+div.robin:hover
+{
+	background: url("../img/program/artists/chillout/robinHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.selectaBig
+{
+	background: url("../img/program/artists/chillout/big/selecta.png") no-repeat;
+	background-size: contain;
+}
+
+div.selecta
+{
+	background: url("../img/program/artists/chillout/selecta.png") no-repeat;
+	background-size: contain;
+}
+
+div.selecta:hover
+{
+	background: url("../img/program/artists/chillout/selectaHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.sergioBig
+{
+	background: url("../img/program/artists/chillout/big/sergio.png") no-repeat;
+	background-size: contain;
+}
+
+div.sergio
+{
+	background: url("../img/program/artists/chillout/sergio.png") no-repeat;
+	background-size: contain;
+}
+
+div.sergio:hover
+{
+	background: url("../img/program/artists/chillout/sergioHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.stereoBig
+{
+	background: url("../img/program/artists/chillout/big/stereo.png") no-repeat;
+	background-size: contain;
+}
+
+div.stereo
+{
+	background: url("../img/program/artists/chillout/stereo.png") no-repeat;
+	background-size: contain;
+}
+
+div.stereo:hover
+{
+	background: url("../img/program/artists/chillout/stereoHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.steveBig
+{
+	background: url("../img/program/artists/chillout/big/steve.png") no-repeat;
+	background-size: contain;
+}
+
+div.steve
+{
+	background: url("../img/program/artists/chillout/steve.png") no-repeat;
+	background-size: contain;
+}
+
+div.steve:hover
+{
+	background: url("../img/program/artists/chillout/steveHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.tajmahalBig
+{
+	background: url("../img/program/artists/chillout/big/tajmahal.png") no-repeat;
+	background-size: contain;
+}
+
+div.tajmahal
+{
+	background: url("../img/program/artists/chillout/tajmahal.png") no-repeat;
+	background-size: contain;
+}
+
+div.tajmahal:hover
+{
+	background: url("../img/program/artists/chillout/tajmahalHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.wacamoloBig
+{
+	background: url("../img/program/artists/chillout/big/wacamolo.png") no-repeat;
+	background-size: contain;
+}
+
+div.wacamolo
+{
+	background: url("../img/program/artists/chillout/wacamolo.png") no-repeat;
+	background-size: contain;
+}
+
+div.wacamolo:hover
+{
+	background: url("../img/program/artists/chillout/wacamoloHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.wavesBig
+{
+	background: url("../img/program/artists/chillout/big/waves.png") no-repeat;
+	background-size: contain;
+}
+
+div.waves
+{
+	background: url("../img/program/artists/chillout/waves.png") no-repeat;
+	background-size: contain;
+}
+
+div.waves:hover
+{
+	background: url("../img/program/artists/chillout/wavesHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.xtigmaBig
+{
+	background: url("../img/program/artists/chillout/big/xtigma.png") no-repeat;
+	background-size: contain;
+}
+
+div.xtigma
+{
+	background: url("../img/program/artists/chillout/xtigma.png") no-repeat;
+	background-size: contain;
+}
+
+div.xtigma:hover
+{
+	background: url("../img/program/artists/chillout/xtigmaHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.yumiiBig
+{
+	background: url("../img/program/artists/chillout/big/yumii.png") no-repeat;
+	background-size: contain;
+}
+
+div.yumii
+{
+	background: url("../img/program/artists/chillout/yumii.png") no-repeat;
+	background-size: contain;
+}
+
+div.yumii:hover
+{
+	background: url("../img/program/artists/chillout/yumiiHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.holegBig
+{
+	background: url("../img/program/artists/chillout/big/holeg.png") no-repeat;
+	background-size: contain;
+}
+
+div.holeg
+{
+	background: url("../img/program/artists/chillout/holeg.png") no-repeat;
+	background-size: contain;
+}
+
+div.holeg:hover
+{
+	background: url("../img/program/artists/chillout/holegHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.illuminusBig
+{
+	background: url("../img/program/artists/chillout/big/illuminus.png") no-repeat;
+	background-size: contain;
+}
+
+div.illuminus
+{
+	background: url("../img/program/artists/chillout/illuminus.png") no-repeat;
+	background-size: contain;
+}
+
+div.illuminus:hover
+{
+	background: url("../img/program/artists/chillout/illuminusHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.gabiBig
+{
+	background: url("../img/program/artists/chillout/big/gabi.png") no-repeat;
+	background-size: contain;
+}
+
+div.gabi
+{
+	background: url("../img/program/artists/chillout/gabi.png") no-repeat;
+	background-size: contain;
+}
+
+div.gabi:hover
+{
+	background: url("../img/program/artists/chillout/gabiHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.nashiraBig
+{
+	background: url("../img/program/artists/chillout/big/nashira.png") no-repeat;
+	background-size: contain;
+}
+
+div.nashira
+{
+	background: url("../img/program/artists/chillout/nashira.png") no-repeat;
+	background-size: contain;
+}
+
+div.nashira:hover
+{
+	background: url("../img/program/artists/chillout/nashiraHover.png") no-repeat;
+	background-size: contain;
+}
 
 
 
