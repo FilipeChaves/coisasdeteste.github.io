@@ -235,7 +235,7 @@ h3.titulo-beat, h3.titulo-eat, h3.titulo-indoor, h3.titulo-noName, h3.titulo-log
 ,h3.titulo-green,h3.titulo-mijinko,h3.titulo-las,h3.titulo-nois,h3.titulo-plurgrim,h3.titulo-psayagata
 ,h3.titulo-robin,h3.titulo-selecta,h3.titulo-sergio,h3.titulo-stereo,h3.titulo-steve,h3.titulo-tajmahal
 ,h3.titulo-wacamolo,h3.titulo-waves,h3.titulo-xtigma,h3.titulo-yumii,h3.titulo-holeg,h3.titulo-illuminus,
-h3.titulo-gabi,h3.titulo-nashira
+h3.titulo-gabi,h3.titulo-nashira, h3.titulo-sarolta, h3.titulo-alexMarcus
 {
 	font-family: "Title Custom Font", Verdana, Tahoma;
 	color: #fa0000;
@@ -387,7 +387,7 @@ div.textArea-indoor, div.textArea-noName, div.textArea-logicBomb, div.textArea-o
 , div.textArea-green, div.textArea-mijinko,div.textArea-las,div.textArea-nois,div.textArea-plurgrim,div.textArea-psayagata
 , div.textArea-robin, div.textArea-selecta,div.textArea-sergio,div.textArea-stereo,div.textArea-steve,div.textArea-tajmahal
 , div.textArea-wacamolo, div.textArea-waves,div.textArea-xtigma,div.textArea-yumii,div.textArea-holeg,div.textArea-illuminus
-, div.textArea-gabi, div.textArea-nashira
+, div.textArea-gabi, div.textArea-nashira, div.textArea-sarolta, div.textArea-alexMarcus
 {
 	position: fixed;
 	left:14.75%;
@@ -2363,6 +2363,42 @@ div.nashira
 div.nashira:hover
 {
 	background: url("../img/program/artists/chillout/nashiraHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.alexMarcusBig
+{
+	background: url("../img/program/artists/chillout/big/alexMarcus.png") no-repeat;
+	background-size: contain;
+}
+
+div.alexMarcus
+{
+	background: url("../img/program/artists/chillout/alexMarcus.png") no-repeat;
+	background-size: contain;
+}
+
+div.alexMarcus:hover
+{
+	background: url("../img/program/artists/chillout/alexMarcusHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.saroltaBig
+{
+	background: url("../img/program/artists/big/sarolta.png") no-repeat;
+	background-size: contain;
+}
+
+div.sarolta
+{
+	background: url("../img/program/artists/sarolta.png") no-repeat;
+	background-size: contain;
+}
+
+div.sarolta:hover
+{
+	background: url("../img/program/artists/saroltaHover.png") no-repeat;
 	background-size: contain;
 }
 

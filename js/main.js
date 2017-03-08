@@ -1002,6 +1002,15 @@ function nashiraClick(){
 	window.history.pushState({"href":"nashira"}, null, '#nashira');
 }
 
+function saroltaClick(){
+	removeCenter(107);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"sarolta"}, null, '#sarolta');
+}
+
 /**CHILL - Begin 70*/
 
 function removeCenter(nextID)
@@ -1078,7 +1087,7 @@ function removeCenter(nextID)
 						 'div.titulo-mapusa',
 						 'div.titulo-syb',
 						 'div.titulo-anoebis',
-						 'div.titulo-alexTolstey',
+						 'div.titulo-alexMarcus',
 						 'div.titulo-allix',
 						 'div.titulo-antaro',
 						 'div.titulo-defender',
@@ -1113,7 +1122,8 @@ function removeCenter(nextID)
 						 'div.titulo-holeg',
 						 'div.titulo-illuminus',
 						 'div.titulo-gabi',
-						 'div.titulo-nashira'];
+						 'div.titulo-nashira',
+						 'div.titulo-sarolta'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -1186,7 +1196,7 @@ function removeCenter(nextID)
 						'div.textArea-mapusa',
 						'div.textArea-syb',
 						'div.textArea-anoebis',
-						'div.textArea-alexTolstey',
+						'div.textArea-alexMarcus',
 						'div.textArea-allix',
 						'div.textArea-antaro',
 						'div.textArea-defender',
@@ -1221,7 +1231,8 @@ function removeCenter(nextID)
 						'div.textArea-holeg',
 						'div.textArea-illuminus',
 						'div.textArea-gabi',
-						'div.textArea-nashira'];
+						'div.textArea-nashira',
+						'div.textArea-sarolta'];
 	
 	if(nextID <= 25){
 		$('div.artistsCross').css('opacity', '0');
@@ -1388,7 +1399,7 @@ function removeDisplay(nextID)
 						 'div.titulo-mapusa',
 						 'div.titulo-syb',
 						 'div.titulo-anoebis',
-						 'div.titulo-alexTolstey',
+						 'div.titulo-alexMarcus',
 						 'div.titulo-allix',
 						 'div.titulo-antaro',
 						 'div.titulo-defender',
@@ -1423,7 +1434,8 @@ function removeDisplay(nextID)
 						 'div.titulo-holeg',
 						 'div.titulo-illuminus',
 						 'div.titulo-gabi',
-						 'div.titulo-nashira'];
+						 'div.titulo-nashira',
+						 'div.titulo-sarolta'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -1496,7 +1508,7 @@ function removeDisplay(nextID)
 						'div.textArea-mapusa',
 						'div.textArea-syb',
 						'div.textArea-anoebis',
-						'div.textArea-alexTolstey',
+						'div.textArea-alexMarcus',
 						'div.textArea-allix',
 						'div.textArea-antaro',
 						'div.textArea-defender',
@@ -1531,7 +1543,8 @@ function removeDisplay(nextID)
 						'div.textArea-holeg',
 						'div.textArea-illuminus',
 						'div.textArea-gabi',
-						'div.textArea-nashira'];
+						'div.textArea-nashira',
+						'div.textArea-sarolta'];
 						
 	var contdownHeight = $('div.countdown').height();
 	var titleHeight = $('div.titulo-concept').height();
