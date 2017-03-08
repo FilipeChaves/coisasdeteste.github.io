@@ -1251,13 +1251,13 @@ function removeCenter(nextID)
 				$('div.blackShadow').css('opacity', '100');
 				$(allTextAreas[nextID]).css('opacity', '100');
 				$(allTitleAreas[nextID]).css('opacity', '100');
-				if(nextID > 25 && nextID <= 50 || (nextID > 61 && nextID < 70) || nextID > 105){
+				if(nextID > 25 && nextID <= 50 || (nextID > 61 && nextID < 70) || nextID > 106){
 					$('div.artistsCross').css('opacity', '100');
 				}
 				if(nextID > 50 && nextID <= 61){
 					$('div.artistsGoaCross').css('opacity', '100');
 				}
-				if(nextID >= 70 && nextID <= 105){
+				if(nextID >= 70 && nextID <= 106){
 					$('div.artistsChillCross').css('opacity', '100');
 				}
 			}, 200);
@@ -1289,7 +1289,7 @@ function SetTopAndHeight(nextID, titleName, textName)
 			$('div.artistsCross').css('top', countdownHeight + 30 + "px");
 			$('div.artistsCross').css('left', (blackShadowWidth - 60) + "px");
 		}
-		else if (nextID >= 70 || nextID <= 106){
+		else if (nextID >= 70 && nextID <= 106){
 			$('div.artistsChillCross').css('display', 'inline-block');
 			$('div.artistsChillCross').css('top', countdownHeight + 30 + "px");
 			$('div.artistsChillCross').css('left', (blackShadowWidth - 60) + "px");
