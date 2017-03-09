@@ -231,11 +231,14 @@ h3.titulo-beat, h3.titulo-eat, h3.titulo-indoor, h3.titulo-noName, h3.titulo-log
 , h3.titulo-draeke, h3.titulo-inada, h3.titulo-psara, h3.titulo-saidu, h3.titulo-setidat, h3.titulo-sunburn
 , h3.titulo-tb, h3.titulo-yuta, h3.titulo-sheyba, h3.titulo-moonstone, h3.titulo-luke, h3.titulo-manMade
 , h3.titulo-neuromotor, h3.titulo-bim, h3.titulo-mapusa, h3.titulo-syb,h3.titulo-allix
-,h3.titulo-defender,h3.titulo-desterronics,h3.titulo-high,h3.titulo-kinnara,h3.titulo-fishimself
-,h3.titulo-green,h3.titulo-mijinko,h3.titulo-las,h3.titulo-nois,h3.titulo-plurgrim,h3.titulo-psayagata
-,h3.titulo-robin,h3.titulo-selecta,h3.titulo-sergio,h3.titulo-stereo,h3.titulo-steve,h3.titulo-tajmahal
-,h3.titulo-wacamolo,h3.titulo-waves,h3.titulo-xtigma,h3.titulo-yumii,h3.titulo-holeg,h3.titulo-illuminus,
-h3.titulo-gabi,h3.titulo-nashira, h3.titulo-sarolta, h3.titulo-alexMarcus
+, h3.titulo-defender,h3.titulo-desterronics,h3.titulo-high,h3.titulo-kinnara,h3.titulo-fishimself
+, h3.titulo-green,h3.titulo-mijinko,h3.titulo-las,h3.titulo-nois,h3.titulo-plurgrim,h3.titulo-psayagata
+, h3.titulo-robin,h3.titulo-selecta,h3.titulo-sergio,h3.titulo-stereo,h3.titulo-steve,h3.titulo-tajmahal
+, h3.titulo-wacamolo,h3.titulo-waves,h3.titulo-xtigma,h3.titulo-yumii,h3.titulo-holeg,h3.titulo-illuminus
+, h3.titulo-gabi,h3.titulo-nashira, h3.titulo-sarolta, h3.titulo-alexMarcus
+, h3.titulo-anoebisChill, h3.titulo-antaroChill, h3.titulo-eatChill, h3.titulo-asherunChill
+, h3.titulo-manMadeChill, h3.titulo-mapusaChill, h3.titulo-masaChill, h3.titulo-reekChill
+, h3.titulo-infinityChill
 {
 	font-family: "Title Custom Font", Verdana, Tahoma;
 	color: #fa0000;
@@ -388,6 +391,9 @@ div.textArea-indoor, div.textArea-noName, div.textArea-logicBomb, div.textArea-o
 , div.textArea-robin, div.textArea-selecta,div.textArea-sergio,div.textArea-stereo,div.textArea-steve,div.textArea-tajmahal
 , div.textArea-wacamolo, div.textArea-waves,div.textArea-xtigma,div.textArea-yumii,div.textArea-holeg,div.textArea-illuminus
 , div.textArea-gabi, div.textArea-nashira, div.textArea-sarolta, div.textArea-alexMarcus
+, div.textArea-anoebisChill, div.textArea-antaroChill, div.textArea-eatChill, div.textArea-asherunChill
+, div.textArea-manMadeChill, div.textArea-mapusaChill, div.textArea-masaChill, div.textArea-reekChill
+, div.textArea-infinityChill
 {
 	position: fixed;
 	left:14.75%;

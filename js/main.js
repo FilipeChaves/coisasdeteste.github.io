@@ -1016,7 +1016,7 @@ function saroltaClick(){
 function removeCenter(nextID)
 {
 	
-	var allTitleAreas = ['div.titulo-concept',
+	var allTitleAreas = ['div.titulo-concept', 
 						 'div.titulo-program',
 						 'div.titulo-location',
 						 'div.titulo-information',
@@ -1086,35 +1086,35 @@ function removeCenter(nextID)
 						 'div.titulo-bim',
 						 'div.titulo-mapusa',
 						 'div.titulo-syb',
-						 'div.titulo-anoebis',
+						 'div.titulo-anoebisChill',
 						 'div.titulo-alexMarcus',
 						 'div.titulo-allix',
-						 'div.titulo-antaro',
+						 'div.titulo-antaroChill',
 						 'div.titulo-defender',
 						 'div.titulo-desterronics',
-						 'div.titulo-asherun',
+						 'div.titulo-asherunChill',
 						 'div.titulo-high',
-						 'div.titulo-eat',
+						 'div.titulo-eatChill',
 						 'div.titulo-kinnara',
 						 'div.titulo-fishimself',
 						 'div.titulo-green',
 						 'div.titulo-mijinko',
 						 'div.titulo-las',
-						 'div.titulo-manMade',
-						 'div.titulo-mapusa',
-						 'div.titulo-masa',
+						 'div.titulo-manMadeChill',
+						 'div.titulo-mapusaChill',
+						 'div.titulo-masaChill',
 						 'div.titulo-miranda',
 						 'div.titulo-nois',
 						 'div.titulo-plurgrim',
 						 'div.titulo-psayagata',
-						 'div.titulo-reek',
+						 'div.titulo-reekChill',
 						 'div.titulo-robin',
 						 'div.titulo-selecta',
 						 'div.titulo-sergio',
 						 'div.titulo-stereo',
 						 'div.titulo-steve',
 						 'div.titulo-tajmahal',
-						 'div.titulo-infinity',
+						 'div.titulo-infinityChill',
 						 'div.titulo-wacamolo',
 						 'div.titulo-waves',
 						 'div.titulo-xtigma',
@@ -1195,35 +1195,35 @@ function removeCenter(nextID)
 						'div.textArea-bim',
 						'div.textArea-mapusa',
 						'div.textArea-syb',
-						'div.textArea-anoebis',
+						'div.textArea-anoebisChill',
 						'div.textArea-alexMarcus',
 						'div.textArea-allix',
-						'div.textArea-antaro',
+						'div.textArea-antaroChill',
 						'div.textArea-defender',
 						'div.textArea-desterronics',
-						'div.textArea-asherun',
+						'div.textArea-asherunChill',
 						'div.textArea-high',
-						'div.textArea-eat',
+						'div.textArea-eatChill',
 						'div.textArea-kinnara',
 						'div.textArea-fishimself',
 						'div.textArea-green',
 						'div.textArea-mijinko',
 						'div.textArea-las',
-						'div.textArea-manMade',
-						'div.textArea-mapusa',
-						'div.textArea-masa',
+						'div.textArea-manMadeChill',
+						'div.textArea-mapusaChill',
+						'div.textArea-masaChill',
 						'div.textArea-miranda',
 						'div.textArea-nois',
 						'div.textArea-plurgrim',
 						'div.textArea-psayagata',
-						'div.textArea-reek',
+						'div.textArea-reekChill',
 						'div.textArea-robin',
 						'div.textArea-selecta',
 						'div.textArea-sergio',
 						'div.textArea-stereo',
 						'div.textArea-steve',
 						'div.textArea-tajmahal',
-						'div.textArea-infinity',
+						'div.textArea-infinityChill',
 						'div.textArea-wacamolo',
 						'div.textArea-waves',
 						'div.textArea-xtigma',
@@ -1328,7 +1328,7 @@ function SetTopAndHeight(nextID, titleName, textName)
 function removeDisplay(nextID)
 {
 	
-	var allTitleAreas = ['div.titulo-concept',
+	var allTitleAreas = ['div.titulo-concept', 
 						 'div.titulo-program',
 						 'div.titulo-location',
 						 'div.titulo-information',
@@ -1398,35 +1398,35 @@ function removeDisplay(nextID)
 						 'div.titulo-bim',
 						 'div.titulo-mapusa',
 						 'div.titulo-syb',
-						 'div.titulo-anoebis',
+						 'div.titulo-anoebisChill',
 						 'div.titulo-alexMarcus',
 						 'div.titulo-allix',
-						 'div.titulo-antaro',
+						 'div.titulo-antaroChill',
 						 'div.titulo-defender',
 						 'div.titulo-desterronics',
-						 'div.titulo-asherun',
+						 'div.titulo-asherunChill',
 						 'div.titulo-high',
-						 'div.titulo-eat',
+						 'div.titulo-eatChill',
 						 'div.titulo-kinnara',
 						 'div.titulo-fishimself',
 						 'div.titulo-green',
 						 'div.titulo-mijinko',
 						 'div.titulo-las',
-						 'div.titulo-manMade',
-						 'div.titulo-mapusa',
-						 'div.titulo-masa',
+						 'div.titulo-manMadeChill',
+						 'div.titulo-mapusaChill',
+						 'div.titulo-masaChill',
 						 'div.titulo-miranda',
 						 'div.titulo-nois',
 						 'div.titulo-plurgrim',
 						 'div.titulo-psayagata',
-						 'div.titulo-reek',
+						 'div.titulo-reekChill',
 						 'div.titulo-robin',
 						 'div.titulo-selecta',
 						 'div.titulo-sergio',
 						 'div.titulo-stereo',
 						 'div.titulo-steve',
 						 'div.titulo-tajmahal',
-						 'div.titulo-infinity',
+						 'div.titulo-infinityChill',
 						 'div.titulo-wacamolo',
 						 'div.titulo-waves',
 						 'div.titulo-xtigma',
@@ -1507,35 +1507,35 @@ function removeDisplay(nextID)
 						'div.textArea-bim',
 						'div.textArea-mapusa',
 						'div.textArea-syb',
-						'div.textArea-anoebis',
+						'div.textArea-anoebisChill',
 						'div.textArea-alexMarcus',
 						'div.textArea-allix',
-						'div.textArea-antaro',
+						'div.textArea-antaroChill',
 						'div.textArea-defender',
 						'div.textArea-desterronics',
-						'div.textArea-asherun',
+						'div.textArea-asherunChill',
 						'div.textArea-high',
-						'div.textArea-eat',
+						'div.textArea-eatChill',
 						'div.textArea-kinnara',
 						'div.textArea-fishimself',
 						'div.textArea-green',
 						'div.textArea-mijinko',
 						'div.textArea-las',
-						'div.textArea-manMade',
-						'div.textArea-mapusa',
-						'div.textArea-masa',
+						'div.textArea-manMadeChill',
+						'div.textArea-mapusaChill',
+						'div.textArea-masaChill',
 						'div.textArea-miranda',
 						'div.textArea-nois',
 						'div.textArea-plurgrim',
 						'div.textArea-psayagata',
-						'div.textArea-reek',
+						'div.textArea-reekChill',
 						'div.textArea-robin',
 						'div.textArea-selecta',
 						'div.textArea-sergio',
 						'div.textArea-stereo',
 						'div.textArea-steve',
 						'div.textArea-tajmahal',
-						'div.textArea-infinity',
+						'div.textArea-infinityChill',
 						'div.textArea-wacamolo',
 						'div.textArea-waves',
 						'div.textArea-xtigma',
@@ -1836,18 +1836,27 @@ function onLoadedPage(){
 	var nicesxs = $("div.textArea-mapusa").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
 	var nicesxs = $("div.textArea-syb").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
 	
+	var nicesxs = $("div.textArea-anoebisChill").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
+	var nicesxs = $("div.textArea-alexMarcus").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
 	var nicesxs = $("div.textArea-allix").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-antaroChill").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
 	var nicesxs = $("div.textArea-defender").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-desterronics").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
-	var nicesxs = $("div.textArea-high").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-asherunChill").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
+	var nicesxs = $("div.textArea-high").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
+	var nicesxs = $("div.textArea-eatChill").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
 	var nicesxs = $("div.textArea-kinnara").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-fishimself").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-green").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
 	var nicesxs = $("div.textArea-mijinko").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
 	var nicesxs = $("div.textArea-las").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});		
+	var nicesxs = $("div.textArea-manMadeChill").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-mapusaChill").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
+	var nicesxs = $("div.textArea-masaChill").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
 	var nicesxs = $("div.textArea-nois").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
 	var nicesxs = $("div.textArea-plurgrim").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});		
 	var nicesxs = $("div.textArea-psayagata").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
+	var nicesxs = $("div.textArea-reekChill").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
 	var nicesxs = $("div.textArea-robin").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
 	var nicesxs = $("div.textArea-selecta").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
 	var nicesxs = $("div.textArea-sergio").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
@@ -1855,6 +1864,7 @@ function onLoadedPage(){
 	var nicesxs = $("div.textArea-steve").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
 	var nicesxs = $("div.textArea-tajmahal").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
 
+	var nicesxs = $("div.textArea-infinityChill").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-wacamolo").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
 	var nicesxs = $("div.textArea-waves").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
 	var nicesxs = $("div.textArea-xtigma").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
@@ -1863,7 +1873,10 @@ function onLoadedPage(){
 	var nicesxs = $("div.textArea-illuminus").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
 	var nicesxs = $("div.textArea-gabi").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
 	var nicesxs = $("div.textArea-nashira").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
+	var nicesxs = $("div.textArea-sarolta").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 
+
+	
 	
 	
 	$('div.textArea-buy').append("<div id=\"tkt-content\" style=\"width:96%; height:500px\"></div><img src=\"https://www.ticketea.pt/images/powered_by.png\" alt=\"ticketea\" />" +
@@ -2324,6 +2337,9 @@ function clickInCorrectTab(name){
 			break;
 		case 'nashira':
 			nashiraClick();
+			break;
+		case 'sarolta':
+			saroltaClick();
 			break;
 	}
 }
