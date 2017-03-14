@@ -1011,6 +1011,15 @@ function saroltaClick(){
 	window.history.pushState({"href":"sarolta"}, null, '#sarolta');
 }
 
+function solitareClick(){
+	removeCenter(108);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"solitare"}, null, '#solitare');
+}
+
 /**CHILL - Begin 70*/
 
 function removeCenter(nextID)
@@ -1123,7 +1132,8 @@ function removeCenter(nextID)
 						 'div.titulo-illuminus',
 						 'div.titulo-gabi',
 						 'div.titulo-nashira',
-						 'div.titulo-sarolta'];
+						 'div.titulo-sarolta',
+						 'div.titulo-solitare'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -1232,7 +1242,8 @@ function removeCenter(nextID)
 						'div.textArea-illuminus',
 						'div.textArea-gabi',
 						'div.textArea-nashira',
-						'div.textArea-sarolta'];
+						'div.textArea-sarolta',
+						'div.textArea-solitare'];
 	
 	if(nextID <= 25){
 		$('div.artistsCross').css('opacity', '0');
@@ -1435,7 +1446,8 @@ function removeDisplay(nextID)
 						 'div.titulo-illuminus',
 						 'div.titulo-gabi',
 						 'div.titulo-nashira',
-						 'div.titulo-sarolta'];
+						 'div.titulo-sarolta',
+						 'div.titulo-solitare'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -1544,7 +1556,8 @@ function removeDisplay(nextID)
 						'div.textArea-illuminus',
 						'div.textArea-gabi',
 						'div.textArea-nashira',
-						'div.textArea-sarolta'];
+						'div.textArea-sarolta',
+						'div.textArea-solitare'];
 						
 	var contdownHeight = $('div.countdown').height();
 	var titleHeight = $('div.titulo-concept').height();
@@ -1861,7 +1874,8 @@ function onLoadedPage(){
 	var nicesxs = $("div.textArea-illuminus").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
 	var nicesxs = $("div.textArea-gabi").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
 	var nicesxs = $("div.textArea-nashira").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
-	var nicesxs = $("div.textArea-sarolta").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-sarolta").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
+	var nicesxs = $("div.textArea-solitare").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 
 
 	
@@ -2292,6 +2306,9 @@ function clickInCorrectTab(name){
 			break;
 		case 'sarolta':
 			saroltaClick();
+			break;
+		case 'solitare':
+			solitareClick();
 			break;
 	}
 }
