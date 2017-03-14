@@ -2355,6 +2355,9 @@ function clickInCorrectTab(name){
 		case 'sarolta':
 			saroltaClick();
 			break;
+		case 'solitare':
+			solitareClick();
+			break;
 	}
 }
 
