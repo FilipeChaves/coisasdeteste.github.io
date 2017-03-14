@@ -263,6 +263,31 @@ h3.titulo-beat, h3.titulo-eat, h3.titulo-indoor, h3.titulo-noName, h3.titulo-log
 	float: left;
 }
 
+h3.titulo-solitare
+{
+	font-family: "Title Custom Font", Verdana, Tahoma;
+	color: #fa0000;
+	font-size: 250%;
+	width:96%;
+	text-align: center;
+	text-align: -moz-center;
+	text-align: -webkit-center;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	/* display: block; */
+	font-size: auto;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	font-weight: bold;
+	margin-block-start: 0px;
+	margin-block-end: 0px;
+	float: left;
+}
+
 h3.titulo
 {
 	font-family: "Title Custom Font", Verdana, Tahoma;
@@ -394,6 +419,17 @@ div.textArea-indoor, div.textArea-noName, div.textArea-logicBomb, div.textArea-o
 , div.textArea-anoebisChill, div.textArea-antaroChill, div.textArea-eatChill, div.textArea-asherunChill
 , div.textArea-manMadeChill, div.textArea-mapusaChill, div.textArea-masaChill, div.textArea-reekChill
 , div.textArea-infinityChill
+{
+	position: fixed;
+	left:14.75%;
+	width:70%; 
+	height:400px;
+	opacity:0;
+	filter: alpha(opacity=0);
+	transition: all 1s ease-in-out;
+}
+
+div.textArea-solitare
 {
 	position: fixed;
 	left:14.75%;
@@ -2405,6 +2441,24 @@ div.sarolta
 div.sarolta:hover
 {
 	background: url("../img/program/artists/saroltaHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.solitareBig
+{
+	background: url("../img/program/artists/big/solitare.png") no-repeat;
+	background-size: contain;
+}
+
+div.solitare
+{
+	background: url("../img/program/artists/solitare.png") no-repeat;
+	background-size: contain;
+}
+
+div.solitare:hover
+{
+	background: url("../img/program/artists/solitareHover.png") no-repeat;
 	background-size: contain;
 }
 
