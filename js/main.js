@@ -1020,6 +1020,15 @@ function solitareClick(){
 	window.history.pushState({"href":"solitare"}, null, '#solitare');
 }
 
+function natureClick(){
+	removeCenter(109);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"nature"}, null, '#nature');
+}
+
 /**CHILL - Begin 70*/
 
 function removeCenter(nextID)
@@ -1133,7 +1142,8 @@ function removeCenter(nextID)
 						 'div.titulo-gabi',
 						 'div.titulo-nashira',
 						 'div.titulo-sarolta',
-						 'div.titulo-solitare'];
+						 'div.titulo-solitare',
+						 'div.titulo-nature'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -1243,7 +1253,8 @@ function removeCenter(nextID)
 						'div.textArea-gabi',
 						'div.textArea-nashira',
 						'div.textArea-sarolta',
-						'div.textArea-solitare'];
+						'div.textArea-solitare',
+						'div.textArea-nature'];
 	
 	if(nextID <= 25){
 		$('div.artistsCross').css('opacity', '0');
@@ -1447,7 +1458,8 @@ function removeDisplay(nextID)
 						 'div.titulo-gabi',
 						 'div.titulo-nashira',
 						 'div.titulo-sarolta',
-						 'div.titulo-solitare'];
+						 'div.titulo-solitare',
+						 'div.titulo-nature'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -1557,7 +1569,8 @@ function removeDisplay(nextID)
 						'div.textArea-gabi',
 						'div.textArea-nashira',
 						'div.textArea-sarolta',
-						'div.textArea-solitare'];
+						'div.textArea-solitare',
+						'div.textArea-nature'];
 						
 	var contdownHeight = $('div.countdown').height();
 	var titleHeight = $('div.titulo-concept').height();
@@ -1912,6 +1925,7 @@ function onLoadedPage(){
 	var nicesxs = $("div.textArea-nashira").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
 	var nicesxs = $("div.textArea-sarolta").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
 	var nicesxs = $("div.textArea-solitare").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-nature").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 
 
 	
@@ -2373,6 +2387,9 @@ function clickInCorrectTab(name){
 			break;
 		case 'solitare':
 			solitareClick();
+			break;
+		case 'nature':
+			natureClick();
 			break;
 	}
 }
