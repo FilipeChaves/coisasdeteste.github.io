@@ -1957,7 +1957,7 @@ function onLoadedPage(){
 	if(isMobile){
 		$('div.dataText, div.localText').removeClass("turnTransparent");
 
-
+		setTimeout( function() {
 		var splittedUrl = window.location.href.split('#');
 		if(splittedUrl.length < 2)
 		{
@@ -1967,6 +1967,7 @@ function onLoadedPage(){
 		{
 			clickInCorrectTab(splittedUrl[1]);
 		}
+		}, 200);
 	}
 	else
 	{
