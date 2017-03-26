@@ -1681,8 +1681,8 @@ function onLoadedPage(){
 		
 	if(!isMobile){
 		
-		$('li.addCountdown').innerHTML +="<div class='countdown' id='countdown' onclick='countdownClick()'/>";
-		$('li.addSeparador').innerHTML += "<div class='separador'/>";
+		$('li.addCountdown').html("<div class='countdown' id='countdown' onclick='countdownClick()'/>");
+		$('li.addSeparador').html("<div class='separador'/>");
 		//add cenas body
 		document.body.innerHTML += "<img src='img/arvore.png' class='arvore' alt='arvore' />"
 									+ "<img src='img/Mandala.png' class='mandala' alt='mandala' />"
