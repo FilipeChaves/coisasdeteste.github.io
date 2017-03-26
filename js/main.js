@@ -1681,6 +1681,8 @@ function onLoadedPage(){
 		
 	if(!isMobile){
 		
+		$('li.addCountdown').innerHTML +="<div class='countdown' id='countdown' onclick='countdownClick()'/>";
+		$('li.addSeparador').innerHTML += "<div class='separador'/>";
 		//add cenas body
 		document.body.innerHTML += "<img src='img/arvore.png' class='arvore' alt='arvore' />"
 									+ "<img src='img/Mandala.png' class='mandala' alt='mandala' />"
@@ -1936,7 +1938,7 @@ function onLoadedPage(){
 	
 	initTickets();
 	
-	var nicesxs = $("div.tkt-content").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	//var nicesxs = $("div.tkt-content").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	
 	if(isIE()){
 		$("h3.titulo-concept, h3.titulo-program, h3.titulo-information, h3.titulo-gallery, h3.titulo-tickets, h3.titulo-location, h3.titulo-dancefloor, h3.titulo-chillout, h3.titulo-goa, h3.titulo-zenbuspace, h3.titulo-zambukids, h3.titulo-useful, h3.titulo-parkingCamping, h3.titulo-afterparty, h3.titulo-participation, h3.titulo-history")
