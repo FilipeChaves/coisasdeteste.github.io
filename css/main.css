@@ -238,7 +238,7 @@ h3.titulo-beat, h3.titulo-eat, h3.titulo-indoor, h3.titulo-noName, h3.titulo-log
 , h3.titulo-gabi,h3.titulo-nashira, h3.titulo-sarolta, h3.titulo-alexMarcus
 , h3.titulo-anoebisChill, h3.titulo-antaroChill, h3.titulo-eatChill, h3.titulo-asherunChill
 , h3.titulo-manMadeChill, h3.titulo-mapusaChill, h3.titulo-masaChill, h3.titulo-reekChill
-, h3.titulo-infinityChill, h3.titulo-nature
+, h3.titulo-infinityChill, h3.titulo-nature, h3.titulo-dede
 {
 	font-family: "Title Custom Font", Verdana, Tahoma;
 	color: #fa0000;
@@ -417,7 +417,7 @@ div.textArea-indoor, div.textArea-noName, div.textArea-logicBomb, div.textArea-o
 , div.textArea-gabi, div.textArea-nashira, div.textArea-sarolta, div.textArea-alexMarcus
 , div.textArea-anoebisChill, div.textArea-antaroChill, div.textArea-eatChill, div.textArea-asherunChill
 , div.textArea-manMadeChill, div.textArea-mapusaChill, div.textArea-masaChill, div.textArea-reekChill
-, div.textArea-infinityChill, div.textArea-nature
+, div.textArea-infinityChill, div.textArea-nature, div.textArea-dede
 {
 	position: fixed;
 	left:14.75%;
@@ -1756,6 +1756,24 @@ div.reek
 div.reek:hover
 {
 	background: url("../img/program/artists/reekHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.dedeBig
+{
+	background: url("../img/program/artists/big/dede.png") no-repeat;
+	background-size: contain;
+}
+
+div.dede
+{
+	background: url("../img/program/artists/dede.png") no-repeat;
+	background-size: contain;
+}
+
+div.dede:hover
+{
+	background: url("../img/program/artists/dedeHover.png") no-repeat;
 	background-size: contain;
 }
 
@@ -3257,7 +3275,7 @@ div.ambassadorBig {
 	}
 }  
 
-@media screen and (min-width: 761px) and (max-width: 1439px) { 
+@media screen and (max-width: 1439px) { 
 	div.separador
 	{
 		background-image: url('../img/menu/separador.png');
@@ -3409,151 +3427,7 @@ div.ambassadorBig {
 		width: 111px;
 	}
 }
-@media only screen and (min-resolution: 117dpi) and (max-resolution: 119dpi), only screen and (min-resolution: 131dpi) and (max-resolution: 133dpi), only screen and (min-resolution: 145dpi) and (max-resolution: 154dpi), only screen and (min-resolution: 162dpi) and (max-resolution: 164dpi), only screen and (min-resolution: 169dpi) {
 
-	div.conceptSymbol, div.locationSymbol, div.gallerySymbol,
-	div.informationSymbol, div.programSymbol, div.ticketsSymbol,
-	div.sunSymbol, div.moonSymbol, div.znaSymbol, img.arvore, img.mandala
-	{
-		display: none;
-	}
-	
-	div.separador
-	{
-		background-image: url('../img/menu/separador.png');
-		display:inline-block;
-		background-position: center;
-		height: 60px;
-		width: 6px;
-		background-repeat: no-repeat;
-	}
-	div.delMobile, div.countdown
-	{
-		height: 0px;
-		width: 0px;
-	}
-	
-    div.concept
-	{
-		background-image: url('../img/menu/concept.png');
-		max-width:17,85%;
-		background-size: contain;
-		cursor:pointer;
-		height: 60px;
-		width: 117px;
-		background-repeat: no-repeat;
-	}
 
-	div.concept:hover, div.conceptHover, div.concept-active
-	{
-		background-image: url('../img/menu/conceptHover.png');
-		max-height:12,01%;
-		max-width:17,85%;
-		background-size: contain;
-		height: 60px;
-		width: 117px;
-		background-repeat: no-repeat;
-	}
-
-	div.program
-	{
-		background-image: url('../img/menu/program.png');
-		background-size: contain;
-		cursor:pointer;
-		height: 60px;
-		width: 130px;
-		background-repeat: no-repeat;
-	}
-
-	div.program:hover, div.programHover, div.program-active
-	{
-		background-image: url('../img/menu/programHover.png');
-		background-size: contain;
-		height: 60px;
-		width: 130px;
-		background-repeat: no-repeat;
-	}
-	
-	div.location
-	{
-		background-image: url('../img/menu/location.png');
-		background-size: contain;
-		cursor:pointer;
-		height: 60px;
-		width: 130px;
-		background-repeat: no-repeat;
-	}
-
-	div.location:hover, div.locationHover, div.location-active
-	{
-		background-image: url('../img/menu/locationHover.png');
-		background-size: contain;
-		height: 60px;
-		width: 130px;
-		background-repeat: no-repeat;
-	}
-
-	div.information
-	{
-		background-image: url('../img/menu/information.png');
-		background-size: contain;
-		cursor:pointer;
-		height: 60px;
-		width: 166px;
-		background-repeat: no-repeat;
-		/*width: 19.47%;*/
-	}
-
-	div.information:hover, div.informationHover, div.information-active
-	{
-		background-image: url('../img/menu/informationHover.png');
-		background-size: contain;
-		height: 60px;
-		width: 166px;
-		background-repeat: no-repeat;
-		/*width: 19.47%;*/
-	}
-
-	div.gallery
-	{
-		background-image: url('../img/menu/gallery.png');
-		background-size: contain;
-		cursor:pointer;
-		height: 60px;
-		width: 115px;
-		background-repeat: no-repeat;
-	}
-
-	div.gallery:hover, div.galleryHover, div.gallery-active
-	{
-		background-image: url('../img/menu/galleryHover.png');
-		background-size: contain;
-		height: 60px;
-		width: 115px;
-		background-repeat: no-repeat;
-	}
-
-	div.tickets
-	{
-		background-image: url('../img/menu/tickets.png');
-		background-size: contain;
-		cursor:pointer;
-		height: 60px;
-		width: 105px;
-		background-repeat: no-repeat;
-	}
-
-	div.tickets:hover, div.ticketsHover, div.tickets-active
-	{
-		background-image: url('../img/menu/ticketsHover.png');
-		background-size: contain;
-		height: 60px;
-		width: 105px;
-		background-repeat: no-repeat;
-	}
-}
-@media only screen and (min-resolution: 165dpi) and (max-resolution: 168dpi), only screen and (min-resolution: 155dpi) and (max-resolution: 160dpi), only screen and (min-resolution: 134dpi) and (max-resolution: 144dpi), only screen and (min-resolution: 120dpi) and (max-resolution: 130dpi), only screen and (max-resolution: 116dpi) {
-  /* Your click-specific css goes here */
-}
 
 
