@@ -3257,7 +3257,7 @@ div.ambassadorBig {
 	}
 }  
 
-@media screen and (min-width: 763px) and (max-width: 1439px) { 
+@media screen and (min-width: 761px) and (max-width: 1439px) { 
 	div.separador
 	{
 		background-image: url('../img/menu/separador.png');
@@ -3409,157 +3409,6 @@ div.ambassadorBig {
 		width: 111px;
 	}
 }
-@media screen and (max-width: 762px) { 
-	div.separador
-	{
-		background-image: url('../img/menu/separador.png');
-		display:inline-block;
-		background-position: center;
-		height: 50px;
-		width: 5px;
-		background-repeat: no-repeat;
-	}
-	
-    div.concept
-	{
-		background-image: url('../img/menu/concept.png');
-		max-width:17,85%;
-		background-size: contain;
-		cursor:pointer;
-		height: 50px;
-		width: 98px;
-		background-repeat: no-repeat;
-	}
-
-	div.concept:hover, div.conceptHover, div.concept-active
-	{
-		background-image: url('../img/menu/conceptHover.png');
-		max-height:12,01%;
-		max-width:17,85%;
-		background-size: contain;
-		height: 50px;
-		width: 98px;
-		background-repeat: no-repeat;
-	}
-
-	div.program
-	{
-		background-image: url('../img/menu/program.png');
-		background-size: contain;
-		cursor:pointer;
-		height: 50px;
-		width: 108px;
-		background-repeat: no-repeat;
-	}
-
-	div.program:hover, div.programHover, div.program-active
-	{
-		background-image: url('../img/menu/programHover.png');
-		background-size: contain;
-		height: 50px;
-		width: 108px;
-		background-repeat: no-repeat;
-	}
-	
-	div.location
-	{
-		background-image: url('../img/menu/location.png');
-		background-size: contain;
-		cursor:pointer;
-		height: 50px;
-		width: 108px;
-		background-repeat: no-repeat;
-	}
-
-	div.location:hover, div.locationHover, div.location-active
-	{
-		background-image: url('../img/menu/locationHover.png');
-		background-size: contain;
-		height: 50px;
-		width: 108px;
-		background-repeat: no-repeat;
-	}
-
-	div.information
-	{
-		background-image: url('../img/menu/information.png');
-		background-size: contain;
-		cursor:pointer;
-		height: 50px;
-		width: 138px;
-		background-repeat: no-repeat;
-	}
-
-	div.information:hover, div.informationHover, div.information-active
-	{
-		background-image: url('../img/menu/informationHover.png');
-		background-size: contain;
-		height: 50px;
-		width: 138px;
-		background-repeat: no-repeat;
-	}
-
-	div.gallery
-	{
-		background-image: url('../img/menu/gallery.png');
-		background-size: contain;
-		cursor:pointer;
-		height: 50px;
-		width: 96px;
-		background-repeat: no-repeat;
-	}
-
-	div.gallery:hover, div.galleryHover, div.gallery-active
-	{
-		background-image: url('../img/menu/galleryHover.png');
-		background-size: contain;
-		height: 50px;
-		width: 96px;
-		background-repeat: no-repeat;
-	}
-
-	div.tickets
-	{
-		background-image: url('../img/menu/tickets.png');
-		background-size: contain;
-		cursor:pointer;
-		height: 50px;
-		width: 88px;
-		background-repeat: no-repeat;
-	}
-
-	div.tickets:hover, div.ticketsHover, div.tickets-active
-	{
-		background-image: url('../img/menu/ticketsHover.png');
-		background-size: contain;
-		height: 50px;
-		width: 88px;
-		background-repeat: no-repeat;
-	}
-
-	div.countdown
-	{
-		font-family: "Text Custom Font", Verdana, Tahoma;
-		color: #46ff03;
-		font-weight: bold;
-		font-size: 1.1vw;
-		background-size: contain;
-		margin-top: 20px;
-		height: 50px;
-		width: 131px;
-		background-repeat: no-repeat;
-		transition: all 1s ease-in-out;
-	}
-	
-	
-	div.turnToZNALogo
-	{
-		cursor:pointer;
-		height: 50px;
-		width: 111px;
-	}
-}
-
 @media only screen and (min-resolution: 117dpi) and (max-resolution: 119dpi), only screen and (min-resolution: 131dpi) and (max-resolution: 133dpi), only screen and (min-resolution: 145dpi) and (max-resolution: 154dpi), only screen and (min-resolution: 162dpi) and (max-resolution: 164dpi), only screen and (min-resolution: 169dpi) {
 
 	div.conceptSymbol, div.locationSymbol, div.gallerySymbol,
@@ -3574,9 +3423,14 @@ div.ambassadorBig {
 		background-image: url('../img/menu/separador.png');
 		display:inline-block;
 		background-position: center;
-		height: 50px;
-		width: 5px;
+		height: 60px;
+		width: 6px;
 		background-repeat: no-repeat;
+	}
+	div.delMobile, div.countdown
+	{
+		height: 0px;
+		width: 0px;
 	}
 	
     div.concept
@@ -3585,8 +3439,8 @@ div.ambassadorBig {
 		max-width:17,85%;
 		background-size: contain;
 		cursor:pointer;
-		height: 50px;
-		width: 98px;
+		height: 60px;
+		width: 117px;
 		background-repeat: no-repeat;
 	}
 
@@ -3596,8 +3450,8 @@ div.ambassadorBig {
 		max-height:12,01%;
 		max-width:17,85%;
 		background-size: contain;
-		height: 50px;
-		width: 98px;
+		height: 60px;
+		width: 117px;
 		background-repeat: no-repeat;
 	}
 
@@ -3606,8 +3460,8 @@ div.ambassadorBig {
 		background-image: url('../img/menu/program.png');
 		background-size: contain;
 		cursor:pointer;
-		height: 50px;
-		width: 108px;
+		height: 60px;
+		width: 130px;
 		background-repeat: no-repeat;
 	}
 
@@ -3615,8 +3469,8 @@ div.ambassadorBig {
 	{
 		background-image: url('../img/menu/programHover.png');
 		background-size: contain;
-		height: 50px;
-		width: 108px;
+		height: 60px;
+		width: 130px;
 		background-repeat: no-repeat;
 	}
 	
@@ -3625,8 +3479,8 @@ div.ambassadorBig {
 		background-image: url('../img/menu/location.png');
 		background-size: contain;
 		cursor:pointer;
-		height: 50px;
-		width: 108px;
+		height: 60px;
+		width: 130px;
 		background-repeat: no-repeat;
 	}
 
@@ -3634,8 +3488,8 @@ div.ambassadorBig {
 	{
 		background-image: url('../img/menu/locationHover.png');
 		background-size: contain;
-		height: 50px;
-		width: 108px;
+		height: 60px;
+		width: 130px;
 		background-repeat: no-repeat;
 	}
 
@@ -3644,18 +3498,20 @@ div.ambassadorBig {
 		background-image: url('../img/menu/information.png');
 		background-size: contain;
 		cursor:pointer;
-		height: 50px;
-		width: 138px;
+		height: 60px;
+		width: 166px;
 		background-repeat: no-repeat;
+		/*width: 19.47%;*/
 	}
 
 	div.information:hover, div.informationHover, div.information-active
 	{
 		background-image: url('../img/menu/informationHover.png');
 		background-size: contain;
-		height: 50px;
-		width: 138px;
+		height: 60px;
+		width: 166px;
 		background-repeat: no-repeat;
+		/*width: 19.47%;*/
 	}
 
 	div.gallery
@@ -3663,8 +3519,8 @@ div.ambassadorBig {
 		background-image: url('../img/menu/gallery.png');
 		background-size: contain;
 		cursor:pointer;
-		height: 50px;
-		width: 96px;
+		height: 60px;
+		width: 115px;
 		background-repeat: no-repeat;
 	}
 
@@ -3672,8 +3528,8 @@ div.ambassadorBig {
 	{
 		background-image: url('../img/menu/galleryHover.png');
 		background-size: contain;
-		height: 50px;
-		width: 96px;
+		height: 60px;
+		width: 115px;
 		background-repeat: no-repeat;
 	}
 
@@ -3682,8 +3538,8 @@ div.ambassadorBig {
 		background-image: url('../img/menu/tickets.png');
 		background-size: contain;
 		cursor:pointer;
-		height: 50px;
-		width: 88px;
+		height: 60px;
+		width: 105px;
 		background-repeat: no-repeat;
 	}
 
@@ -3691,30 +3547,13 @@ div.ambassadorBig {
 	{
 		background-image: url('../img/menu/ticketsHover.png');
 		background-size: contain;
-		height: 50px;
-		width: 88px;
+		height: 60px;
+		width: 105px;
 		background-repeat: no-repeat;
-	}
-
-	div.countdown
-	{
-		font-family: "Text Custom Font", Verdana, Tahoma;
-		color: #46ff03;
-		font-weight: bold;
-		font-size: 1.1vw;
-		background-size: contain;
-		margin-top: 20px;
-		height: 50px;
-		width: 131px;
-		background-repeat: no-repeat;
-		transition: all 1s ease-in-out;
-	}
-	
-	
-	div.turnToZNALogo
-	{
-		cursor:pointer;
-		height: 50px;
-		width: 111px;
 	}
 }
+@media only screen and (min-resolution: 165dpi) and (max-resolution: 168dpi), only screen and (min-resolution: 155dpi) and (max-resolution: 160dpi), only screen and (min-resolution: 134dpi) and (max-resolution: 144dpi), only screen and (min-resolution: 120dpi) and (max-resolution: 130dpi), only screen and (max-resolution: 116dpi) {
+  /* Your click-specific css goes here */
+}
+
+
