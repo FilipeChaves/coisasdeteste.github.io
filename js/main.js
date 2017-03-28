@@ -1029,6 +1029,15 @@ function natureClick(){
 	window.history.pushState({"href":"nature"}, null, '#nature');
 }
 
+function dedeClick(){
+	removeCenter(110);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"dede"}, null, '#dede');
+}
+
 /**CHILL - Begin 70*/
 
 function removeCenter(nextID)
@@ -1143,7 +1152,8 @@ function removeCenter(nextID)
 						 'div.titulo-nashira',
 						 'div.titulo-sarolta',
 						 'div.titulo-solitare',
-						 'div.titulo-nature'];
+						 'div.titulo-nature',
+						 'div.titulo-dede'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -1254,7 +1264,8 @@ function removeCenter(nextID)
 						'div.textArea-nashira',
 						'div.textArea-sarolta',
 						'div.textArea-solitare',
-						'div.textArea-nature'];
+						'div.textArea-nature',
+						'div.textArea-dede'];
 	
 	if(nextID <= 25){
 		$('div.artistsCross').css('opacity', '0');
@@ -1459,7 +1470,8 @@ function removeDisplay(nextID)
 						 'div.titulo-nashira',
 						 'div.titulo-sarolta',
 						 'div.titulo-solitare',
-						 'div.titulo-nature'];
+						 'div.titulo-nature',
+						 'div.titulo-dede'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -1570,7 +1582,8 @@ function removeDisplay(nextID)
 						'div.textArea-nashira',
 						'div.textArea-sarolta',
 						'div.textArea-solitare',
-						'div.textArea-nature'];
+						'div.textArea-nature',
+						'div.textArea-dede'];
 						
 	var contdownHeight = $('div.countdown').height();
 	var titleHeight = $('div.titulo-concept').height();
