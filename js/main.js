@@ -1904,6 +1904,7 @@ function onLoadedPage(){
 	var nicesxs = $("div.textArea-sarolta").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
 	var nicesxs = $("div.textArea-solitare").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-nature").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-dede").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 
 
 	
@@ -2340,6 +2341,9 @@ function clickInCorrectTab(name){
 			break;
 		case 'nature':
 			natureClick();
+			break;
+		case 'dede':
+			dedeClick();
 			break;
 	}
 }
