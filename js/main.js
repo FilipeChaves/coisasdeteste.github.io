@@ -1038,6 +1038,15 @@ function dedeClick(){
 	window.history.pushState({"href":"dede"}, null, '#dede');
 }
 
+function spiesClick(){
+	removeCenter(111);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"spies"}, null, '#spies');
+}
+
 /**CHILL - Begin 70*/
 
 function removeCenter(nextID)
@@ -1153,7 +1162,8 @@ function removeCenter(nextID)
 						 'div.titulo-sarolta',
 						 'div.titulo-solitare',
 						 'div.titulo-nature',
-						 'div.titulo-dede'];
+						 'div.titulo-dede',
+						 'div.titulo-spies'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -1265,7 +1275,8 @@ function removeCenter(nextID)
 						'div.textArea-sarolta',
 						'div.textArea-solitare',
 						'div.textArea-nature',
-						'div.textArea-dede'];
+						'div.textArea-dede',
+						'div.textArea-spies'];
 	
 	if(nextID <= 25){
 		$('div.artistsCross').css('opacity', '0');
@@ -1471,7 +1482,8 @@ function removeDisplay(nextID)
 						 'div.titulo-sarolta',
 						 'div.titulo-solitare',
 						 'div.titulo-nature',
-						 'div.titulo-dede'];
+						 'div.titulo-dede',
+						 'div.titulo-spies'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -1583,7 +1595,8 @@ function removeDisplay(nextID)
 						'div.textArea-sarolta',
 						'div.textArea-solitare',
 						'div.textArea-nature',
-						'div.textArea-dede'];
+						'div.textArea-dede',
+						'div.textArea-spies'];
 						
 	var contdownHeight = $('div.countdown').height();
 	var titleHeight = $('div.titulo-concept').height();
@@ -1905,6 +1918,7 @@ function onLoadedPage(){
 	var nicesxs = $("div.textArea-solitare").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-nature").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-dede").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-spies").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 
 
 	
@@ -2344,6 +2358,9 @@ function clickInCorrectTab(name){
 			break;
 		case 'dede':
 			dedeClick();
+			break;
+		case 'spies':
+			spiesClick();
 			break;
 	}
 }
