@@ -238,7 +238,7 @@ h3.titulo-beat, h3.titulo-eat, h3.titulo-indoor, h3.titulo-noName, h3.titulo-log
 , h3.titulo-gabi,h3.titulo-nashira, h3.titulo-sarolta, h3.titulo-alexMarcus
 , h3.titulo-anoebisChill, h3.titulo-antaroChill, h3.titulo-eatChill, h3.titulo-asherunChill
 , h3.titulo-manMadeChill, h3.titulo-mapusaChill, h3.titulo-masaChill, h3.titulo-reekChill
-, h3.titulo-infinityChill, h3.titulo-nature, h3.titulo-dede
+, h3.titulo-infinityChill, h3.titulo-nature, h3.titulo-dede, h3.titulo-spies
 {
 	font-family: "Title Custom Font", Verdana, Tahoma;
 	color: #fa0000;
@@ -417,7 +417,7 @@ div.textArea-indoor, div.textArea-noName, div.textArea-logicBomb, div.textArea-o
 , div.textArea-gabi, div.textArea-nashira, div.textArea-sarolta, div.textArea-alexMarcus
 , div.textArea-anoebisChill, div.textArea-antaroChill, div.textArea-eatChill, div.textArea-asherunChill
 , div.textArea-manMadeChill, div.textArea-mapusaChill, div.textArea-masaChill, div.textArea-reekChill
-, div.textArea-infinityChill, div.textArea-nature, div.textArea-dede
+, div.textArea-infinityChill, div.textArea-nature, div.textArea-dede, div.textArea-spies
 {
 	position: fixed;
 	left:14.75%;
@@ -465,7 +465,7 @@ p.textoLeft
 	float: left;
 }
 
-p.textoBold
+p.textoBold, span.textoBold
 {
 	font-family: "Text Custom Font", Verdana, Tahoma;
 	color: #faa200;
@@ -504,7 +504,7 @@ p.infoColor
 {
 	color: #00cc00;
 }
-p.programColor
+p.programColor, span.programColor
 {
 	color: #fa0000;
 }
@@ -1774,6 +1774,24 @@ div.dede
 div.dede:hover
 {
 	background: url("../img/program/artists/dedeHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.spiesBig
+{
+	background: url("../img/program/artists/big/spies.png") no-repeat;
+	background-size: contain;
+}
+
+div.spies
+{
+	background: url("../img/program/artists/spies.png") no-repeat;
+	background-size: contain;
+}
+
+div.spies:hover
+{
+	background: url("../img/program/artists/spiesHover.png") no-repeat;
 	background-size: contain;
 }
 
