@@ -1047,6 +1047,15 @@ function spiesClick(){
 	window.history.pushState({"href":"spies"}, null, '#spies');
 }
 
+function migasClick(){
+	removeCenter(112);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"migas"}, null, '#migas');
+}
+
 /**CHILL - Begin 70*/
 
 function removeCenter(nextID)
@@ -1163,7 +1172,8 @@ function removeCenter(nextID)
 						 'div.titulo-solitare',
 						 'div.titulo-nature',
 						 'div.titulo-dede',
-						 'div.titulo-spies'];
+						 'div.titulo-spies',
+						 'div.titulo-migas'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -1276,7 +1286,8 @@ function removeCenter(nextID)
 						'div.textArea-solitare',
 						'div.textArea-nature',
 						'div.textArea-dede',
-						'div.textArea-spies'];
+						'div.textArea-spies',
+						'div.textArea-migas'];
 	
 	if(nextID <= 25){
 		$('div.artistsCross').css('opacity', '0');
@@ -1483,7 +1494,8 @@ function removeDisplay(nextID)
 						 'div.titulo-solitare',
 						 'div.titulo-nature',
 						 'div.titulo-dede',
-						 'div.titulo-spies'];
+						 'div.titulo-spies',
+						 'div.titulo-migas'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -1596,7 +1608,8 @@ function removeDisplay(nextID)
 						'div.textArea-solitare',
 						'div.textArea-nature',
 						'div.textArea-dede',
-						'div.textArea-spies'];
+						'div.textArea-spies',
+						'div.textArea-migas'];
 						
 	var contdownHeight = $('div.countdown').height();
 	var titleHeight = $('div.titulo-concept').height();
@@ -1919,6 +1932,7 @@ function onLoadedPage(){
 	var nicesxs = $("div.textArea-nature").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-dede").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-spies").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-migas").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 
 
 	
@@ -2361,6 +2375,9 @@ function clickInCorrectTab(name){
 			break;
 		case 'spies':
 			spiesClick();
+			break;
+		case 'migas':
+			migasClick();
 			break;
 	}
 }
