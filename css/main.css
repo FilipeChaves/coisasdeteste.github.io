@@ -740,6 +740,50 @@ li a:hover {
     background-color: #111;
 }
 
+div.tentInfo
+{
+	margin-right: 30px;
+	margin-top: 30px;
+	height:225px;
+	width: 650px;
+	background: url('../img/information/park/tentInfo.png') no-repeat;
+	background-size: contain;
+}
+
+div.tent
+{
+	margin-right: 30px;
+	margin-top: 30px;
+	height:300px;
+	width: 300px;
+	background: url('../img/information/park/tent.png') no-repeat;
+	background-size: contain;
+    display: inline-table;
+	
+}
+
+div.tent1
+{
+	margin-right: 30px;
+	margin-top: 30px;
+	height:300px;
+	width: 300px;
+	background: url('../img/information/park/tent1.png') no-repeat;
+	background-size: contain;
+	display: inline-table
+}
+
+div.tent2
+{
+	margin-right: 30px;
+	margin-top: 30px;
+	height:300px;
+	width: 300px;
+	background: url('../img/information/park/tent2.png') no-repeat;
+	background-size: contain;
+	display: inline-table
+}
+
 div.busTicketsInfo
 {
 	margin-right: 10px;
