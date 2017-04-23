@@ -2071,10 +2071,12 @@ function onLoadedPage(){
 	$(window).on("orientationchange",function(){
 		if(window.innerHeight > window.innerWidth) // Portrait
 		{
+			$("img.background").remove();
 			document.body.innerHTML += "<img src='img/backgroundMobile.png' class='background' alt='a' /> "
 		}
 		else // Landscape
 		{
+			$("img.background").remove();
 			document.body.innerHTML += "<img src='img/background.png' class='background' alt='a' /> "
 		}
 	});
