@@ -54,6 +54,11 @@ function ticketsClick()
 	removeCenter(5);
 	removeActives();
 	
+	var searchEles = $('iframe#tkt-iframe').length;
+	if(searchEles == 0){
+		initTickets();
+	}
+	
 	$('div.tickets').addClass('tickets-active');
 	fadeout();
 	window.history.pushState({"href":"tickets"}, null, '#tickets');
@@ -1351,7 +1356,7 @@ function removeCenter(nextID)
 function SetTopAndHeight(nextID, titleName, textName) 
 {
 	var windowHeight = $(window).outerHeight();
-	var countdownHeight = $('div.countdown').outerHeight();
+	var countdownHeight = $('div.information').outerHeight();
 	var titleHeight = $('div.titulo-concept').outerHeight();
 	var menuSocialHeight = $('div.divMenuSocial').outerHeight();
 	var blackShadowWidth = $('div.blackShadow').outerWidth();
