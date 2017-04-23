@@ -2009,6 +2009,20 @@ function onLoadedPage(){
 	countdown(isMobile);
 	initializaPhoto();
 
+	$(window).resize(function() {
+
+		var splittedUrl = window.location.href.split('#');
+		if(splittedUrl.length < 2)
+		{
+			conceptClick();
+		}
+		else
+		{
+			clickInCorrectTab(splittedUrl[1]);
+		}
+
+	});
+	
 	if(isMobile){
 		$('div.dataText, div.localText').removeClass("turnTransparent");
 
