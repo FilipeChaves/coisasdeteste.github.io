@@ -229,6 +229,10 @@ function buyClick()
 	removeCenter(22);
 	removeActives();
 	
+	var searchEles = $('iframe#tkt-iframe').length;
+	if(searchEles == 0){
+		initTickets();
+	}
 	$('div.tickets').addClass('tickets-active');
 	fadeout();
 	window.history.pushState({"href":"buy"}, null, '#buy');
@@ -1739,7 +1743,6 @@ function onLoadedPage(){
 	}
 		
 	if(!isMobile){
-		$("img.background").attr("src","img/background.png");
 		$('li.addCountdown').html("<div class='countdown' id='countdown' onclick='countdownClick()'/>");
 		$('li.addSeparador').html("<div class='separador'/>");
 		//add cenas body
