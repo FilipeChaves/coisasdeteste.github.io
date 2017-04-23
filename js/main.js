@@ -1738,11 +1738,13 @@ function onLoadedPage(){
 		isMobile = true;
 		if(window.innerHeight > window.innerWidth) // Portrait
 		{
-			$("img.background").attr("src","img/backgroundMobile.png");
+			$("img.background").remove();
+			document.body.innerHTML += "<img src='img/backgroundMobile.png' class='background' alt='a' /> "
 		}
 		else // Landscape
 		{
-			$("img.background").attr("src","img/background.png");
+			$("img.background").remove();
+			document.body.innerHTML += "<img src='img/background.png' class='background' alt='a' /> "
 		}
 	}
 		
@@ -1751,7 +1753,8 @@ function onLoadedPage(){
 		$('li.addCountdown').html("<div class='countdown' id='countdown' onclick='countdownClick()'/>");
 		$('li.addSeparador').html("<div class='separador'/>");
 		//add cenas body
-		document.body.innerHTML += "<img src='img/arvore.png' class='arvore' alt='arvore' />"
+		document.body.innerHTML += "<img src='img/background.png' class='background' alt='a' /> "
+									+ "<img src='img/arvore.png' class='arvore' alt='arvore' />"
 									+ "<img src='img/Mandala.png' class='mandala' alt='mandala' />"
 									+ "<div class='conceptSymbol' 		href='#concept' onclick='conceptClick()'></div>"
 									+ "<div class='programSymbol' 		href='#program' onclick='programClick()'></div>"
@@ -2068,11 +2071,11 @@ function onLoadedPage(){
 	$(window).on("orientationchange",function(){
 		if(window.innerHeight > window.innerWidth) // Portrait
 		{
-			$("img.background").attr("src","img/backgroundMobile.png");
+			document.body.innerHTML += "<img src='img/backgroundMobile.png' class='background' alt='a' /> "
 		}
 		else // Landscape
 		{
-			$("img.background").attr("src","img/background.png");
+			document.body.innerHTML += "<img src='img/background.png' class='background' alt='a' /> "
 		}
 	});
 }
