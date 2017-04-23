@@ -2024,8 +2024,12 @@ function onLoadedPage(){
 	});
 	
 	if(isMobile){
-		$('div.dataText, div.localText').removeClass("turnTransparent");
-
+		$('div.dataText').addClass('dataTextMobile');
+		$('div.dataTextMobile').removeClass('dataText');
+		$('div.localText').addClass('localTextMobile');
+		$('div.localTextMobile').removeClass('localText');
+		
+		$('div.dataTextMobile, div.localTextMobile').removeClass("turnTransparent");
 		setTimeout( function() {
 			var splittedUrl = window.location.href.split('#');
 			if(splittedUrl.length < 2)
