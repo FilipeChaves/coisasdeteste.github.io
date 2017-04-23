@@ -500,7 +500,7 @@ p.locationColor
 	color: #fa25d6;
 }
 
-p.infoColor
+p.infoColor, span.infoColor
 {
 	color: #00cc00;
 }
