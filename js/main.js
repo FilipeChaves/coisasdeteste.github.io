@@ -54,6 +54,11 @@ function ticketsClick()
 	removeCenter(5);
 	removeActives();
 	
+	var searchEles = $('iframe#tkt-iframe').length;
+	if(searchEles == 0){
+		initTickets();
+	}
+	
 	$('div.tickets').addClass('tickets-active');
 	fadeout();
 	window.history.pushState({"href":"tickets"}, null, '#tickets');
@@ -224,6 +229,10 @@ function buyClick()
 	removeCenter(22);
 	removeActives();
 	
+	var searchEles = $('iframe#tkt-iframe').length;
+	if(searchEles == 0){
+		initTickets();
+	}
 	$('div.tickets').addClass('tickets-active');
 	fadeout();
 	window.history.pushState({"href":"buy"}, null, '#buy');
@@ -1351,7 +1360,7 @@ function removeCenter(nextID)
 function SetTopAndHeight(nextID, titleName, textName) 
 {
 	var windowHeight = $(window).outerHeight();
-	var countdownHeight = $('div.countdown').outerHeight();
+	var countdownHeight = $('div.information').outerHeight();
 	var titleHeight = $('div.titulo-concept').outerHeight();
 	var menuSocialHeight = $('div.divMenuSocial').outerHeight();
 	var blackShadowWidth = $('div.blackShadow').outerWidth();
@@ -1734,7 +1743,6 @@ function onLoadedPage(){
 	}
 		
 	if(!isMobile){
-		
 		$('li.addCountdown').html("<div class='countdown' id='countdown' onclick='countdownClick()'/>");
 		$('li.addSeparador').html("<div class='separador'/>");
 		//add cenas body
@@ -1986,9 +1994,6 @@ function onLoadedPage(){
 	var nicesxs = $("div.textArea-migas").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-paulo").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 
-
-	
-	
 	
 	$('div.textArea-buy').append("<div id=\"tkt-content\" style=\"width:96%; height:500px\"></div><img src=\"https://www.ticketea.pt/images/powered_by.png\" alt=\"ticketea\" />" +
 				"<p class=\"texto\"> In case you need assistance please contact us through the following email - <a href=\"mailto:tickets@znagathering.com\">tickets@znagathering.com</a>.</p>");
@@ -2004,9 +2009,27 @@ function onLoadedPage(){
 	countdown(isMobile);
 	initializaPhoto();
 
-	if(isMobile){
-		$('div.dataText, div.localText').removeClass("turnTransparent");
+	$(window).resize(function() {
 
+		var splittedUrl = window.location.href.split('#');
+		if(splittedUrl.length < 2)
+		{
+			conceptClick();
+		}
+		else
+		{
+			clickInCorrectTab(splittedUrl[1]);
+		}
+
+	});
+	
+	if(isMobile){
+		$('div.dataText').addClass('dataTextMobile');
+		$('div.dataTextMobile').removeClass('dataText');
+		$('div.localText').addClass('localTextMobile');
+		$('div.localTextMobile').removeClass('localText');
+		
+		$('div.dataTextMobile, div.localTextMobile').removeClass("turnTransparent");
 		setTimeout( function() {
 			var splittedUrl = window.location.href.split('#');
 			if(splittedUrl.length < 2)
@@ -2034,7 +2057,6 @@ function onLoadedPage(){
 			}
 		}, 400);
 	}
-
 }
 function facebookClick(){
 	var win = window.open('https://www.facebook.com/ZnaGathering/', '_blank');

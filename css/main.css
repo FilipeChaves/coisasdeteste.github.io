@@ -734,6 +734,32 @@ div.localText
 	background-size: contain;
 }
 
+div.dataTextMobile
+{
+	background: url('../img/social/dataText.png') no-repeat;
+	position: absolute;
+	bottom: 0px;
+	left: 15%;
+	width: 175px;
+	height: 65px;
+	transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s, width 1.5s, height 1.5s ease-in-out;
+	-webkit-transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s, width 1.5s, height 1.5s ease-in-out;
+	background-size: contain;
+}
+
+div.localTextMobile
+{
+	background: url('../img/social/localText.png') no-repeat;
+	position: absolute;
+	bottom:0px;
+	right: 15%;
+	width: 175px;
+	height: 65px;
+	transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s, width 1.5s, height 1.5s ease-in-out;
+	-webkit-transition: opacity 1.5s, filter 1.5s, top 1.5s, left 1.5s, width 1.5s, height 1.5s ease-in-out;
+	background-size: contain;
+}
+
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
@@ -744,7 +770,7 @@ div.tentInfo
 {
 	margin-right: 30px;
 	margin-top: 30px;
-	height:270px;
+	height:300px;
 	width: 780px;
 	background: url('../img/information/park/tentInfo.png') no-repeat;
 	background-size: contain;
