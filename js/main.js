@@ -1923,7 +1923,6 @@ function onLoadedPage(){
 	var nicesxs = $("div.textArea-masa").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-xenomorph").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-atmos").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
-	var nicesxs = $("div.textArea-magus").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
 	var nicesxs = $("div.textArea-antaro").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
 	var nicesxs = $("div.textArea-flux").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});		
 	var nicesxs = $("div.textArea-castle").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
