@@ -1875,21 +1875,21 @@ function onLoadedPage(){
 		});
 	}
 	
-	var nicesx = $("div.textArea-concept").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
-	var nicesxs = $("div.textArea-program").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
-	var nicesxs = $("div.textArea-location").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
-	var nicesxs = $("div.textArea-information").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
-	var nicesxs = $("div.textArea-gallery").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
-	var nicesxs = $("div.textArea-tickets").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
-	var nicesx = $("div.textArea-chillout").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
-	var nicesxs = $("div.textArea-dancefloor").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
-	var nicesxs = $("div.textArea-goa").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
-	var nicesxs = $("div.textArea-zenbuspace").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
-	var nicesxs = $("div.textArea-zambukids").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
-	var nicesxs = $("div.textArea-afterparty").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
-	var nicesxs = $("div.textArea-useful").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
-	var nicesxs = $("div.textArea-parkingCamping").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
-	var nicesxs = $("div.textArea-participation").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesx = $("div.textArea-concept").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-program").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-location").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-information").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-gallery").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-tickets").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesx = $("div.textArea-chillout").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-dancefloor").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-goa").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-zenbuspace").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-zambukids").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-afterparty").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-useful").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-parkingCamping").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-participation").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-history").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-retro").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-edition").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
@@ -1991,7 +1991,7 @@ function onLoadedPage(){
 	var nicesxs = $("div.textArea-dede").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-spies").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-migas").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
-	var nicesxs = $("div.textArea-paulo").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-paulo").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:isMobile});
 
 	
 	$('div.textArea-buy').append("<div id=\"tkt-content\" style=\"width:96%; height:500px\"></div><img src=\"https://www.ticketea.pt/images/powered_by.png\" alt=\"ticketea\" />" +
@@ -1999,7 +1999,7 @@ function onLoadedPage(){
 	
 	
 	
-	var nicesxs = $("div.tkt-content").niceScroll({touchbehavior:false,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.tkt-content").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:isMobile});
 	
 	if(isIE()){
 		$("h3.titulo-concept, h3.titulo-program, h3.titulo-information, h3.titulo-gallery, h3.titulo-tickets, h3.titulo-location, h3.titulo-dancefloor, h3.titulo-chillout, h3.titulo-goa, h3.titulo-zenbuspace, h3.titulo-zambukids, h3.titulo-useful, h3.titulo-parkingCamping, h3.titulo-afterparty, h3.titulo-participation, h3.titulo-history")
