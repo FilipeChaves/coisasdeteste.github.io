@@ -18,6 +18,20 @@ img.background
 	z-index: -4;
 }
 
+img.backgroundMobile
+{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	bottom:0;
+	right:0;
+	margin-left:auto;
+	margin-right:auto;
+	z-index: -5;
+}
+
 @font-face {
     font-family: "Title Custom Font";
     src: url(../fonts/New_Vera.otf) format("truetype");
