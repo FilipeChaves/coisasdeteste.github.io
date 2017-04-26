@@ -1074,6 +1074,15 @@ function pauloClick(){
 	window.history.pushState({"href":"paulo"}, null, '#paulo');
 }
 
+function jamesClick(){
+	removeCenter(114);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"james"}, null, '#james');
+}
+
 /**CHILL - Begin 70*/
 
 function removeCenter(nextID)
@@ -1192,7 +1201,8 @@ function removeCenter(nextID)
 						 'div.titulo-dede',
 						 'div.titulo-spies',
 						 'div.titulo-migas',
-						 'div.titulo-paulo'];
+						 'div.titulo-paulo',
+						 'div.titulo-james'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -1307,7 +1317,8 @@ function removeCenter(nextID)
 						'div.textArea-dede',
 						'div.textArea-spies',
 						'div.textArea-migas',
-						'div.textArea-paulo'];
+						'div.textArea-paulo',
+						'div.textArea-james'];
 	
 	if(nextID <= 25){
 		$('div.artistsCross').css('opacity', '0');
@@ -1516,7 +1527,8 @@ function removeDisplay(nextID)
 						 'div.titulo-dede',
 						 'div.titulo-spies',
 						 'div.titulo-migas',
-						 'div.titulo-paulo'];
+						 'div.titulo-paulo',
+						 'div.titulo-james'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -1631,7 +1643,8 @@ function removeDisplay(nextID)
 						'div.textArea-dede',
 						'div.textArea-spies',
 						'div.textArea-migas',
-						'div.textArea-paulo'];
+						'div.textArea-paulo',
+						'div.textArea-james'];
 						
 	var contdownHeight = $('div.countdown').height();
 	var titleHeight = $('div.titulo-concept').height();
@@ -1997,6 +2010,7 @@ function onLoadedPage(){
 	var nicesxs = $("div.textArea-spies").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-migas").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-paulo").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-james").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 
 	
 	$('div.textArea-buy').append("<div id=\"tkt-content\" style=\"width:96%; height:500px\"></div><img src=\"https://www.ticketea.pt/images/powered_by.png\" alt=\"ticketea\" />" +
@@ -2489,6 +2503,9 @@ function clickInCorrectTab(name){
 			break;
 		case 'paulo':
 			pauloClick();
+			break;
+		case 'james':
+			jamesClick();
 			break;
 	}
 }
