@@ -253,7 +253,7 @@ h3.titulo-beat, h3.titulo-eat, h3.titulo-indoor, h3.titulo-noName, h3.titulo-log
 , h3.titulo-anoebisChill, h3.titulo-antaroChill, h3.titulo-eatChill, h3.titulo-asherunChill
 , h3.titulo-manMadeChill, h3.titulo-mapusaChill, h3.titulo-masaChill, h3.titulo-reekChill
 , h3.titulo-infinityChill, h3.titulo-nature, h3.titulo-dede, h3.titulo-spies, h3.titulo-migas
-, h3.titulo-paulo, h3.titulo-james, h3.titulo-mac
+, h3.titulo-paulo, h3.titulo-james, h3.titulo-source
 {
 	font-family: "Title Custom Font", Verdana, Tahoma;
 	color: #fa0000;
@@ -433,7 +433,7 @@ div.textArea-indoor, div.textArea-noName, div.textArea-logicBomb, div.textArea-o
 , div.textArea-anoebisChill, div.textArea-antaroChill, div.textArea-eatChill, div.textArea-asherunChill
 , div.textArea-manMadeChill, div.textArea-mapusaChill, div.textArea-masaChill, div.textArea-reekChill
 , div.textArea-infinityChill, div.textArea-nature, div.textArea-dede, div.textArea-spies, div.textArea-migas
-, div.textArea-paulo, div.textArea-james, div.textArea-mac
+, div.textArea-paulo, div.textArea-james, div.textArea-source
 {
 	position: fixed;
 	left:14.75%;
@@ -1810,21 +1810,21 @@ div.james:hover
 	background-size: contain;
 }
 
-div.macBig
+div.sourceBig
 {
-	background: url("../img/program/artists/big/mac.png") no-repeat;
+	background: url("../img/program/artists/big/source.png") no-repeat;
 	background-size: contain;
 }
 
-div.mac
+div.source
 {
-	background: url("../img/program/artists/mac.png") no-repeat;
+	background: url("../img/program/artists/source.png") no-repeat;
 	background-size: contain;
 }
 
-div.mac:hover
+div.source:hover
 {
-	background: url("../img/program/artists/macHover.png") no-repeat;
+	background: url("../img/program/artists/sourceHover.png") no-repeat;
 	background-size: contain;
 }
 
