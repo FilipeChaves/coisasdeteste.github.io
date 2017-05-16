@@ -1093,7 +1093,7 @@ function sourceClick(){
 }
 
 function fluxoClick(){
-	removeCenter(115);
+	removeCenter(116);
 	removeActives();
 	
 	$('div.program').addClass('program-active');
