@@ -1101,6 +1101,15 @@ function fluxoClick(){
 	window.history.pushState({"href":"fluxo"}, null, '#fluxo');
 }
 
+function membranaClick(){
+	removeCenter(117);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"membrana"}, null, '#membrana');
+}
+
 /**CHILL - Begin 70*/
 
 function removeCenter(nextID)
@@ -1222,7 +1231,8 @@ function removeCenter(nextID)
 						 'div.titulo-paulo',
 						 'div.titulo-james',
 						 'div.titulo-source',
-						 'div.titulo-fluxo'];
+						 'div.titulo-fluxo',
+						 'div.titulo-membrana'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -1340,7 +1350,8 @@ function removeCenter(nextID)
 						'div.textArea-paulo',
 						'div.textArea-james',
 						'div.textArea-source',
-						'div.textArea-fluxo'];
+						'div.textArea-fluxo',
+						'div.textArea-membrana'];
 	
 	if(nextID <= 25){
 		$('div.artistsCross').css('opacity', '0');
@@ -1552,7 +1563,8 @@ function removeDisplay(nextID)
 						 'div.titulo-paulo',
 						 'div.titulo-james',
 						 'div.titulo-source',
-						 'div.titulo-fluxo'];
+						 'div.titulo-fluxo',
+						 'div.titulo-membrana'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -1670,7 +1682,8 @@ function removeDisplay(nextID)
 						'div.textArea-paulo',
 						'div.textArea-james',
 						'div.textArea-source',
-						'div.textArea-fluxo'];
+						'div.textArea-fluxo',
+						'div.textArea-membrana'];
 						
 	var contdownHeight = $('div.countdown').height();
 	var titleHeight = $('div.titulo-concept').height();
@@ -2039,6 +2052,7 @@ function onLoadedPage(){
 	var nicesxs = $("div.textArea-james").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-source").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-fluxo").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-membrana").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 
 	
 	$('div.textArea-buy').append("<div id=\"tkt-content\" style=\"width:96%; height:500px\"></div><img src=\"https://www.ticketea.pt/images/powered_by.png\" alt=\"ticketea\" />" +
@@ -2540,6 +2554,9 @@ function clickInCorrectTab(name){
 			break;
 		case 'fluxo':
 			fluxoClick();
+			break;
+		case 'membrana':
+			membranaClick();
 			break;
 	}
 }
