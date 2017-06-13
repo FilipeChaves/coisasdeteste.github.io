@@ -1118,6 +1118,114 @@ function psychaosClick(){
 	fadeout();
 	window.history.pushState({"href":"psychaos"}, null, '#psychaos');
 }
+/********/
+function alexTolsteyAfterClick(){
+	removeCenter(119);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"alexTolsteyAfter"}, null, '#alexTolsteyAfter');
+}
+
+function reekAfterClick(){
+	removeCenter(120);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"reekAfter"}, null, '#reekAfter');
+}
+
+function masaAfterClick(){
+	removeCenter(121);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"masaAfter"}, null, '#masaAfter');
+}
+
+function monroClick(){
+	removeCenter(122);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"monro"}, null, '#monro');
+}
+
+function mapusaAfterClick(){
+	removeCenter(123);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"mapusaAfter"}, null, '#mapusaAfter');
+}
+
+function yutaAfterClick(){
+	removeCenter(124);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"yutaAfter"}, null, '#yutaAfter');
+}
+
+function tjakClick(){
+	removeCenter(125);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"tjak"}, null, '#tjak');
+}
+
+function marceloClick(){
+	removeCenter(126);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"marcelo"}, null, '#marcelo');
+}
+
+function cheveClick(){
+	removeCenter(127);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"cheve"}, null, '#cheve');
+}
+
+function ferroClick(){
+	removeCenter(128);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"ferro"}, null, '#ferro');
+}
+
+function alexrClick(){
+	removeCenter(129);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"alexr"}, null, '#alexr');
+}
+
+function bartClick(){
+	removeCenter(130);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"bart"}, null, '#bart');
+}
 
 /**CHILL - Begin 70*/
 
@@ -1242,7 +1350,19 @@ function removeCenter(nextID)
 						 'div.titulo-source',
 						 'div.titulo-fluxo',
 						 'div.titulo-membrana',
-						 'div.titulo-psychaos'];
+						 'div.titulo-psychaos',
+						 'div.titulo-alexTolsteyAfter',
+						 'div.titulo-reekAfter',
+						 'div.titulo-masaAfter',
+						 'div.titulo-monro',
+						 'div.titulo-mapusaAfter',
+						 'div.titulo-yutaAfter',
+						 'div.titulo-tjak',
+						 'div.titulo-marcelo',
+						 'div.titulo-cheve',
+						 'div.titulo-ferro',
+						 'div.titulo-alexr',
+						 'div.titulo-bart'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -1362,7 +1482,19 @@ function removeCenter(nextID)
 						'div.textArea-source',
 						'div.textArea-fluxo',
 						'div.textArea-membrana',
-						'div.textArea-psychaos'];
+						'div.textArea-psychaos',
+						'div.textArea-alexTolsteyAfter',
+						'div.textArea-reekAfter',
+						'div.textArea-masaAfter',
+						'div.textArea-monro',
+						'div.textArea-mapusaAfter',
+						'div.textArea-yutaAfter',
+						'div.textArea-tjak',
+						'div.textArea-marcelo',
+						'div.textArea-cheve',
+						'div.textArea-ferro',
+						'div.textArea-alexr',
+						'div.textArea-bart'];
 
 	if(nextID <= 25){
 		$('div.artistsCross').css('opacity', '0');
@@ -1373,8 +1505,11 @@ function removeCenter(nextID)
 	if(nextID < 70 || nextID > 106){
 		$('div.artistsChillCross').css('opacity', '0');
 	}
-	if(nextID > 50 && nextID <= 61 || nextID >= 70 && nextID <= 106){
+	if(nextID > 50 && nextID <= 61 || nextID >= 70 && nextID <= 106 || nextID > 118){
 		$('div.artistsCross').css('opacity', '0');
+	}
+	if(nextID <= 118){
+		$('div.artistsAfterCross').css('opacity', '0');
 	}
 	
 	for(var i = 0; i < allTextAreas.length; i++)
@@ -1392,7 +1527,7 @@ function removeCenter(nextID)
 				$('div.blackShadow').css('opacity', '100');
 				$(allTextAreas[nextID]).css('opacity', '100');
 				$(allTitleAreas[nextID]).css('opacity', '100');
-				if(nextID > 25 && nextID <= 50 || (nextID > 61 && nextID < 70) || nextID > 106){
+				if(nextID > 25 && nextID <= 50 || (nextID > 61 && nextID < 70) || nextID > 106 && nextID < 119){
 					$('div.artistsCross').css('opacity', '100');
 				}
 				if(nextID > 50 && nextID <= 61){
@@ -1400,6 +1535,9 @@ function removeCenter(nextID)
 				}
 				if(nextID >= 70 && nextID <= 106){
 					$('div.artistsChillCross').css('opacity', '100');
+				}
+				if(nextID >= 119 && nextID <= 130){
+					$('div.artistsAfterCross').css('opacity', '100');
 				}
 			}, 200);
 			continue;
@@ -1425,7 +1563,7 @@ function SetTopAndHeight(nextID, titleName, textName)
 	$('div.blackShadow').css('height', (windowHeight - 20 - countdownHeight - menuSocialHeight) + "px");
 	
 	if(nextID > 25){
-		if(nextID <= 50 || (nextID > 61 && nextID < 70) || nextID > 106){
+		if(nextID <= 50 || (nextID > 61 && nextID < 70) || nextID > 106 && nextID < 119){
 			$('div.artistsCross').css('display', 'inline-block');
 			$('div.artistsCross').css('top', countdownHeight + 30 + "px");
 			$('div.artistsCross').css('left', (blackShadowWidth - 60) + "px");
@@ -1434,6 +1572,11 @@ function SetTopAndHeight(nextID, titleName, textName)
 			$('div.artistsChillCross').css('display', 'inline-block');
 			$('div.artistsChillCross').css('top', countdownHeight + 30 + "px");
 			$('div.artistsChillCross').css('left', (blackShadowWidth - 60) + "px");
+		}
+		else if (nextID >= 119 && nextID <= 130){
+			$('div.artistsAfterCross').css('display', 'inline-block');
+			$('div.artistsAfterCross').css('top', countdownHeight + 30 + "px");
+			$('div.artistsAfterCross').css('left', (blackShadowWidth - 60) + "px");
 		}
 		else{
 			$('div.artistsGoaCross').css('display', 'inline-block');
@@ -1576,7 +1719,19 @@ function removeDisplay(nextID)
 						 'div.titulo-source',
 						 'div.titulo-fluxo',
 						 'div.titulo-membrana',
-						 'div.titulo-psychaos'];
+						 'div.titulo-psychaos',
+						 'div.titulo-alexTolsteyAfter',
+						 'div.titulo-reekAfter',
+						 'div.titulo-masaAfter',
+						 'div.titulo-monro',
+						 'div.titulo-mapusaAfter',
+						 'div.titulo-yutaAfter',
+						 'div.titulo-tjak',
+						 'div.titulo-marcelo',
+						 'div.titulo-cheve',
+						 'div.titulo-ferro',
+						 'div.titulo-alexr',
+						 'div.titulo-bart'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -1696,7 +1851,19 @@ function removeDisplay(nextID)
 						'div.textArea-source',
 						'div.textArea-fluxo',
 						'div.textArea-membrana',
-						'div.textArea-psychaos'];
+						'div.textArea-psychaos',
+						'div.textArea-alexTolsteyAfter',
+						'div.textArea-reekAfter',
+						'div.textArea-masaAfter',
+						'div.textArea-monro',
+						'div.textArea-mapusaAfter',
+						'div.textArea-yutaAfter',
+						'div.textArea-tjak',
+						'div.textArea-marcelo',
+						'div.textArea-cheve',
+						'div.textArea-ferro',
+						'div.textArea-alexr',
+						'div.textArea-bart'];
 						
 	var contdownHeight = $('div.countdown').height();
 	var titleHeight = $('div.titulo-concept').height();
@@ -1716,8 +1883,11 @@ function removeDisplay(nextID)
 	if(nextID < 70 || nextID > 106){
 		$('div.artistsChillCross').css('display', 'none');
 	}
-	if(nextID > 50 && nextID <= 61 || nextID >= 70 && nextID <= 106){
+	if(nextID > 50 && nextID <= 61 || nextID >= 70 && nextID <= 106|| nextID > 118){
 		$('div.artistsCross').css('display', 'none');
+	}
+	if(nextID <= 118){
+		$('div.artistsAfterCross').css('display', 'none');
 	}
 }
 
@@ -2067,6 +2237,19 @@ function onLoadedPage(){
 	var nicesxs = $("div.textArea-fluxo").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-membrana").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-psychaos").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+
+	var nicesxs = $("div.textArea-alexTolsteyAfter").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});	
+	var nicesxs = $("div.textArea-reekAfter").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-masaAfter").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-monro").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-mapusaAfter").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-yutaAfter").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-tjak").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-marcelo").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-cheve").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-ferro").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-alexr").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-bart").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 
 	
 	$('div.textArea-buy').append("<div id=\"tkt-content\" style=\"width:96%; height:500px\"></div><img src=\"https://www.ticketea.pt/images/powered_by.png\" alt=\"ticketea\" />" +
@@ -2574,6 +2757,45 @@ function clickInCorrectTab(name){
 			break;
 		case 'psychaos':
 			psychaosClick();
+			break;
+			
+			
+			
+		case 'alexTolsteyAfter':
+			alexTolsteyAfterClick();
+			break;
+		case 'reekAfter':
+			reekAfterClick();
+			break;
+		case 'masaAfter':
+			masaAfterClick();
+			break;
+		case 'monro':
+			monroClick();
+			break;
+		case 'mapusaAfter':
+			mapusaAfterClick();
+			break;
+		case 'yutaAfter':
+			yutaAfterClick();
+			break;
+		case 'tjak':
+			tjakClick();
+			break;
+		case 'marcelo':
+			marceloClick();
+			break;
+		case 'cheve':
+			cheveClick();
+			break;
+		case 'ferro':
+			ferroClick();
+			break;
+		case 'alexr':
+			alexrClick();
+			break;
+		case 'bart':
+			bartClick();
 			break;
 	}
 }

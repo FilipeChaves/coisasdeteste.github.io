@@ -254,6 +254,9 @@ h3.titulo-beat, h3.titulo-eat, h3.titulo-indoor, h3.titulo-noName, h3.titulo-log
 , h3.titulo-manMadeChill, h3.titulo-mapusaChill, h3.titulo-masaChill, h3.titulo-reekChill
 , h3.titulo-infinityChill, h3.titulo-nature, h3.titulo-dede, h3.titulo-spies, h3.titulo-migas
 , h3.titulo-paulo, h3.titulo-james, h3.titulo-source, h3.titulo-fluxo, h3.titulo-membrana, h3.titulo-psychaos
+, h3.titulo-alexTolsteyAfter, h3.titulo-reekAfter, h3.titulo-masaAfter, h3.titulo-monro
+, h3.titulo-mapusaAfter, h3.titulo-yutaAfter, h3.titulo-tjak, h3.titulo-marcelo
+, h3.titulo-cheve, h3.titulo-ferro, h3.titulo-alexr, h3.titulo-bart
 {
 	font-family: "Title Custom Font", Verdana, Tahoma;
 	color: #fa0000;
@@ -434,6 +437,9 @@ div.textArea-indoor, div.textArea-noName, div.textArea-logicBomb, div.textArea-o
 , div.textArea-manMadeChill, div.textArea-mapusaChill, div.textArea-masaChill, div.textArea-reekChill
 , div.textArea-infinityChill, div.textArea-nature, div.textArea-dede, div.textArea-spies, div.textArea-migas
 , div.textArea-paulo, div.textArea-james, div.textArea-source, div.textArea-fluxo, div.textArea-membrana, div.textArea-psychaos
+, div.textArea-alexTolsteyAfter, div.textArea-reekAfter, div.textArea-masaAfter, div.textArea-monro
+, div.textArea-mapusaAfter, div.textArea-yutaAfter, div.textArea-tjak, div.textArea-marcelo
+, div.textArea-cheve, div.textArea-ferro, div.textArea-alexr, div.textArea-bart
 {
 	position: fixed;
 	left:14.75%;
@@ -1196,6 +1202,24 @@ div.artistsGoaCross
 }
 
 div.artistsGoaCross:hover
+{
+	background: url('../img/program/artists/crossHover.png') no-repeat;
+}
+
+div.artistsAfterCross
+{
+	position: absolute;
+	height:30px;
+	width:30px;
+	cursor:pointer;
+	margin-left:13%;
+	transition: opacity 1s ease-in-out;
+	background: url('../img/program/artists/cross.png') no-repeat;
+	float:left;
+	z-index: 5;
+}
+
+div.artistsAfterCross:hover
 {
 	background: url('../img/program/artists/crossHover.png') no-repeat;
 }
@@ -2707,6 +2731,132 @@ div.solitare
 div.solitare:hover
 {
 	background: url("../img/program/artists/solitareHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.monroBig
+{
+	background: url("../img/program/artists/after/big/monro.png") no-repeat;
+	background-size: contain;
+}
+
+div.monro
+{
+	background: url("../img/program/artists/after/monro.png") no-repeat;
+	background-size: contain;
+}
+
+div.monro:hover
+{
+	background: url("../img/program/artists/after/monroHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.tjakBig
+{
+	background: url("../img/program/artists/after/big/tjak.png") no-repeat;
+	background-size: contain;
+}
+
+div.tjak
+{
+	background: url("../img/program/artists/after/tjak.png") no-repeat;
+	background-size: contain;
+}
+
+div.tjak:hover
+{
+	background: url("../img/program/artists/after/tjakHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.marceloBig
+{
+	background: url("../img/program/artists/after/big/marcelo.png") no-repeat;
+	background-size: contain;
+}
+
+div.marcelo
+{
+	background: url("../img/program/artists/after/marcelo.png") no-repeat;
+	background-size: contain;
+}
+
+div.marcelo:hover
+{
+	background: url("../img/program/artists/after/marceloHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.cheveBig
+{
+	background: url("../img/program/artists/after/big/cheve.png") no-repeat;
+	background-size: contain;
+}
+
+div.cheve
+{
+	background: url("../img/program/artists/after/cheve.png") no-repeat;
+	background-size: contain;
+}
+
+div.cheve:hover
+{
+	background: url("../img/program/artists/after/cheveHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.ferroBig
+{
+	background: url("../img/program/artists/after/big/ferro.png") no-repeat;
+	background-size: contain;
+}
+
+div.ferro
+{
+	background: url("../img/program/artists/after/ferro.png") no-repeat;
+	background-size: contain;
+}
+
+div.ferro:hover
+{
+	background: url("../img/program/artists/after/ferroHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.alexrBig
+{
+	background: url("../img/program/artists/after/big/alexr.png") no-repeat;
+	background-size: contain;
+}
+
+div.alexr
+{
+	background: url("../img/program/artists/after/alexr.png") no-repeat;
+	background-size: contain;
+}
+
+div.alexr:hover
+{
+	background: url("../img/program/artists/after/alexrHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.bartBig
+{
+	background: url("../img/program/artists/after/big/bart.png") no-repeat;
+	background-size: contain;
+}
+
+div.bart
+{
+	background: url("../img/program/artists/after/bart.png") no-repeat;
+	background-size: contain;
+}
+
+div.bart:hover
+{
+	background: url("../img/program/artists/after/bartHover.png") no-repeat;
 	background-size: contain;
 }
 
