@@ -2514,19 +2514,19 @@ div.wacamolo:hover
 
 div.psychaosBig
 {
-	background: url("../img/program/artists/chillout/big/psychaos.png") no-repeat;
+	background: url("../img/program/artists/big/psychaos.png") no-repeat;
 	background-size: contain;
 }
 
 div.psychaos
 {
-	background: url("../img/program/artists/chillout/psychaos.png") no-repeat;
+	background: url("../img/program/artists/psychaos.png") no-repeat;
 	background-size: contain;
 }
 
 div.psychaos:hover
 {
-	background: url("../img/program/artists/chillout/psychaosHover.png") no-repeat;
+	background: url("../img/program/artists/psychaosHover.png") no-repeat;
 	background-size: contain;
 }
 
