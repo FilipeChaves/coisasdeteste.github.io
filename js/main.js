@@ -1110,6 +1110,15 @@ function membranaClick(){
 	window.history.pushState({"href":"membrana"}, null, '#membrana');
 }
 
+function psychaosClick(){
+	removeCenter(118);
+	removeActives();
+	
+	$('div.program').addClass('program-active');
+	fadeout();
+	window.history.pushState({"href":"psychaos"}, null, '#psychaos');
+}
+
 /**CHILL - Begin 70*/
 
 function removeCenter(nextID)
@@ -1232,7 +1241,8 @@ function removeCenter(nextID)
 						 'div.titulo-james',
 						 'div.titulo-source',
 						 'div.titulo-fluxo',
-						 'div.titulo-membrana'];
+						 'div.titulo-membrana',
+						 'div.titulo-psychaos'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -1351,8 +1361,9 @@ function removeCenter(nextID)
 						'div.textArea-james',
 						'div.textArea-source',
 						'div.textArea-fluxo',
-						'div.textArea-membrana'];
-	
+						'div.textArea-membrana',
+						'div.textArea-psychaos'];
+
 	if(nextID <= 25){
 		$('div.artistsCross').css('opacity', '0');
 	}
@@ -1564,7 +1575,8 @@ function removeDisplay(nextID)
 						 'div.titulo-james',
 						 'div.titulo-source',
 						 'div.titulo-fluxo',
-						 'div.titulo-membrana'];
+						 'div.titulo-membrana',
+						 'div.titulo-psychaos'];
 						
 	var allTextAreas = ['div.textArea-concept', 
 						'div.textArea-program',
@@ -1683,7 +1695,8 @@ function removeDisplay(nextID)
 						'div.textArea-james',
 						'div.textArea-source',
 						'div.textArea-fluxo',
-						'div.textArea-membrana'];
+						'div.textArea-membrana',
+						'div.textArea-psychaos'];
 						
 	var contdownHeight = $('div.countdown').height();
 	var titleHeight = $('div.titulo-concept').height();
@@ -2053,6 +2066,7 @@ function onLoadedPage(){
 	var nicesxs = $("div.textArea-source").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-fluxo").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 	var nicesxs = $("div.textArea-membrana").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
+	var nicesxs = $("div.textArea-psychaos").niceScroll({touchbehavior:isMobile,cursorcolor:"#FFFFF",cursoropacitymax:0.6,cursorwidth:8,autohidemode:false});
 
 	
 	$('div.textArea-buy').append("<div id=\"tkt-content\" style=\"width:96%; height:500px\"></div><img src=\"https://www.ticketea.pt/images/powered_by.png\" alt=\"ticketea\" />" +
@@ -2557,6 +2571,9 @@ function clickInCorrectTab(name){
 			break;
 		case 'membrana':
 			membranaClick();
+			break;
+		case 'psychaos':
+			psychaosClick();
 			break;
 	}
 }

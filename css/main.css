@@ -253,7 +253,7 @@ h3.titulo-beat, h3.titulo-eat, h3.titulo-indoor, h3.titulo-noName, h3.titulo-log
 , h3.titulo-anoebisChill, h3.titulo-antaroChill, h3.titulo-eatChill, h3.titulo-asherunChill
 , h3.titulo-manMadeChill, h3.titulo-mapusaChill, h3.titulo-masaChill, h3.titulo-reekChill
 , h3.titulo-infinityChill, h3.titulo-nature, h3.titulo-dede, h3.titulo-spies, h3.titulo-migas
-, h3.titulo-paulo, h3.titulo-james, h3.titulo-source, h3.titulo-fluxo, h3.titulo-membrana
+, h3.titulo-paulo, h3.titulo-james, h3.titulo-source, h3.titulo-fluxo, h3.titulo-membrana, h3.titulo-psychaos
 {
 	font-family: "Title Custom Font", Verdana, Tahoma;
 	color: #fa0000;
@@ -433,7 +433,7 @@ div.textArea-indoor, div.textArea-noName, div.textArea-logicBomb, div.textArea-o
 , div.textArea-anoebisChill, div.textArea-antaroChill, div.textArea-eatChill, div.textArea-asherunChill
 , div.textArea-manMadeChill, div.textArea-mapusaChill, div.textArea-masaChill, div.textArea-reekChill
 , div.textArea-infinityChill, div.textArea-nature, div.textArea-dede, div.textArea-spies, div.textArea-migas
-, div.textArea-paulo, div.textArea-james, div.textArea-source, div.textArea-fluxo, div.textArea-membrana
+, div.textArea-paulo, div.textArea-james, div.textArea-source, div.textArea-fluxo, div.textArea-membrana, div.textArea-psychaos
 {
 	position: fixed;
 	left:14.75%;
@@ -2509,6 +2509,24 @@ div.wacamolo
 div.wacamolo:hover
 {
 	background: url("../img/program/artists/chillout/wacamoloHover.png") no-repeat;
+	background-size: contain;
+}
+
+div.psychaosBig
+{
+	background: url("../img/program/artists/chillout/big/psychaos.png") no-repeat;
+	background-size: contain;
+}
+
+div.psychaos
+{
+	background: url("../img/program/artists/chillout/psychaos.png") no-repeat;
+	background-size: contain;
+}
+
+div.psychaos:hover
+{
+	background: url("../img/program/artists/chillout/psychaosHover.png") no-repeat;
 	background-size: contain;
 }
 
